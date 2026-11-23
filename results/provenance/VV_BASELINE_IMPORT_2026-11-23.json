@@ -1,0 +1,408 @@
+{
+  "schema_version": "1.0",
+  "migration_id": "vv-baseline-import-2026-11-23",
+  "target_repository": "lm846802297-bit/radiative-dark-matter-nuclear-currents",
+  "source_repository": "lm846802297-bit/LZ-3-body-for-hdm",
+  "source_pins": {
+    "core_vv_source": {
+      "commit": "dd9a7387814cd157d9cde739fa80181e4cd7d428",
+      "branch": "research/p4-provisional-halo-fold-20261119"
+    },
+    "paper_fig3_benchmark": {
+      "commit": "5ea4d360fe03ce58079220bb0b7624b3faf03fb8",
+      "path": "research/three_body_full_current_nucleon_match/benchmarks/paper_fig3_vector_natural_xenon.json",
+      "git_blob_sha1": "af3731952da389872de21358050750235f9a688d",
+      "sha256": "940fad45c3d408a94ed755adc29e11e966d899317faa49956527e221e2035308"
+    },
+    "afh_package": {
+      "name": "DMFormFactor v6.0",
+      "sha256": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+      "redistributed": false
+    }
+  },
+  "original_pr_decision": {
+    "pull_request": 67,
+    "head": "4e0d6628d6446ee3caf91c779ef59e80145c595c",
+    "base": "research/p3b-p3c-p4-gates-20261119",
+    "changed_files": 224,
+    "state": "open",
+    "decision": "Do not merge wholesale; import selected pinned components and preserve the original PR/source archive.",
+    "latest_status": "open; not merged wholesale; latest reviewed head includes failed P3-C cross-archive and Gram-eigenmode checks, with other P4 checks pending"
+  },
+  "native_afh_validation": {
+    "isotopes": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      134,
+      136
+    ],
+    "q_points_per_isotope": 2401,
+    "q_min_GeV": 0,
+    "q_max_GeV": 0.6,
+    "q_step_GeV": 0.00025,
+    "response_rows": 16807,
+    "response_channels": [
+      "M",
+      "SigmaDoublePrime",
+      "SigmaPrime",
+      "PhiPP",
+      "PhiTildePrime",
+      "Delta",
+      "MPhiPP",
+      "SigmaPrimeDelta"
+    ],
+    "spatial_rank_rows": 9604,
+    "spatial_isotopes": [
+      129,
+      131
+    ],
+    "max_native_imaginary_residual": 0,
+    "wolfram_version": "14.2.0 for Microsoft Windows (64-bit) (December 26, 2024)",
+    "rtol": 5e-7,
+    "atol": 2e-12,
+    "max_combined_tolerance_fraction": 0.058788561677346536,
+    "normalization": "raw AFH isoscalar tau1=tau2=0; no factor-four conversion in imported raw columns",
+    "full_current_complete": false,
+    "physically_validated_full_current": false
+  },
+  "benchmark_scope": {
+    "benchmark_id": "paper_fig3_vector_natural_xenon",
+    "dark_sector": {
+      "m_chi1_GeV": 1000,
+      "m_Aprime_GeV": 5,
+      "m_s_keV": 300,
+      "Delta_m_chi2_chi1_MeV": 10
+    },
+    "couplings": {
+      "g1": 0.1,
+      "g2": 1.725,
+      "g_VN": 0.04857,
+      "g_Vq": 0.01619
+    },
+    "exposure_tonne_years": 2.84,
+    "lz_efficiency_imported": false,
+    "independent_fig3_reproduction_complete": false
+  },
+  "imported_files": {
+    "source_snapshot": [
+      {
+        "source_path": "research/three_body_calculation_and_validation/eq6_kernel.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_calculation_and_validation/eq6_kernel.py",
+        "source_git_blob_sha1": "68a9f6b3767728898b97494382234f77fc063c79",
+        "sha256": "3cdc33ded7bcebc19bba15487de0234a140f13a161f42db5b7bc81163da01619",
+        "size_bytes": 9589
+      },
+      {
+        "source_path": "research/three_body_spin_resolved_current/spin_resolved_three_body_current.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_spin_resolved_current/spin_resolved_three_body_current.py",
+        "source_git_blob_sha1": "d1adda703e2c29fdf0ee10629ecf287101cdd746",
+        "sha256": "5e570a45c79d221ba7af71b97c91219ee3870d05ca272b77b0c5e00dc984372b",
+        "size_bytes": 8952
+      },
+      {
+        "source_path": "research/three_body_spin_resolved_current/test_spin_resolved_three_body_current.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_spin_resolved_current/test_spin_resolved_three_body_current.py",
+        "source_git_blob_sha1": "d1b4fba3c8b0140869bfb33e356ce80554eb3855",
+        "sha256": "bada0672008be336e26b14d819f1f6dcf23af476ab6032c0d52cd672a4c39e97",
+        "size_bytes": 4530
+      },
+      {
+        "source_path": "research/vector_current_response_audit/vector_current_response_audit.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/vector_current_response_audit/vector_current_response_audit.py",
+        "source_git_blob_sha1": "fee65ab8daf7125fb6fe36e386d1962806efc667",
+        "sha256": "e3bd5a908d49a84085e9eb2f3f6774ef96324fffdb5fcca4c811c1e392a22ea4",
+        "size_bytes": 19691
+      },
+      {
+        "source_path": "research/vector_current_response_audit/test_vector_current_response_audit.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/vector_current_response_audit/test_vector_current_response_audit.py",
+        "source_git_blob_sha1": "41d62f433c8f7512b4ac957abdb0e1fdc3f07619",
+        "sha256": "c83de7c12831f34b81e2706de4ef4d242e238eeb968597f84eeb53e37f3594f0",
+        "size_bytes": 4739
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/three_body_phase_space_tensor.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/three_body_phase_space_tensor.py",
+        "source_git_blob_sha1": "ba34be2a2757690673ccb45f18cb2f94f5914a26",
+        "sha256": "12bc17614c17a87c2cde5ae78544011fe50b88ed865ce42d61d82ddaa7e9213f",
+        "size_bytes": 17111
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/test_three_body_phase_space_tensor.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/test_three_body_phase_space_tensor.py",
+        "source_git_blob_sha1": "772c28b7b6d03988653f7b496365cc710580792b",
+        "sha256": "b38a5318c66a2ab2300aad7c4bdd3a01629eadbb2687c0d57ded0e4a1b45afcd",
+        "size_bytes": 5245
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/phase_space_tensor_convergence.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/phase_space_tensor_convergence.py",
+        "source_git_blob_sha1": "d01a87ea8b8f4c28bd99f3ecc03338c4bc0c7a6d",
+        "sha256": "f213cf673cb0d79329f89258fc5a6c4801049bbccf3656f75c29ef9f8655c30c",
+        "size_bytes": 13973
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/test_phase_space_tensor_convergence.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/test_phase_space_tensor_convergence.py",
+        "source_git_blob_sha1": "9f4c4008cf0117304ea5c425610148d0190bf6b9",
+        "sha256": "1d0364d261b5253f1eefb2e9d6549574bd71cf487748fd64d661431655540a51",
+        "size_bytes": 3703
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/nucleon_vector_form_factors.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/nucleon_vector_form_factors.py",
+        "source_git_blob_sha1": "56c10bcf6e7786a146c2e334ffc9450d10443950",
+        "sha256": "07f956d4427abd1aba0e8d4f31cc7349e144fcd592e9066037b81b750d154eb4",
+        "size_bytes": 11087
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/test_nucleon_vector_form_factors.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/test_nucleon_vector_form_factors.py",
+        "source_git_blob_sha1": "c6c3cd4cbefcf7e42f97300393a4031c628c07f7",
+        "sha256": "887f4f1d86242f4108dc79117b348fc05fc5856614b4a83ac5e1851c88e358cf",
+        "size_bytes": 7037
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/three_body_multipole_leptonic_weights.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/three_body_multipole_leptonic_weights.py",
+        "source_git_blob_sha1": "7a0fc94ca0618b594044f15e10466184e48b4f35",
+        "sha256": "b42492780f2668cfd968c8d597b948d654ef2a4df1d9b3935e8f3831b84ad651",
+        "size_bytes": 26464
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/test_three_body_multipole_leptonic_weights.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/test_three_body_multipole_leptonic_weights.py",
+        "source_git_blob_sha1": "944a40d1f35c76c529c70ef0aa88c42911d99d2a",
+        "sha256": "007a2f511829b2a71d4d49d5f56e86785d85ea7dae425f26e28f95f0425fcd29",
+        "size_bytes": 10752
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/contract_three_body_afh_responses.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/contract_three_body_afh_responses.py",
+        "source_git_blob_sha1": "b7521f8eb6b9e7dba26f1ccc7065c20ac5cc065f",
+        "sha256": "518cba58dc814fc4cbbf381dc8c4e073ea99a798be03d4b224c7af345e17b677",
+        "size_bytes": 28506
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/test_afh_eq107_spatial_projection.py",
+        "target_path": "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/test_afh_eq107_spatial_projection.py",
+        "source_git_blob_sha1": "3d68bfec04ed0ce6e753f825de5ecd5893a4b66a",
+        "sha256": "b7d6559c26a65e98ff5edaf7bb87479889a1c16a3e1fa026de731689e25ffc5e",
+        "size_bytes": 4216
+      }
+    ],
+    "native_afh": [
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/REPORT.md",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/REPORT.md",
+        "source_git_blob_sha1": "eb93965456c5fde39e4f64fbcfcbe4c8d9ed7db6",
+        "sha256": "fc795899d290bba6241669a27bbbca343936cc5cf7d2a7eeb9b4775a79e60135",
+        "size_bytes": 7186
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/run_manifest.json",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/run_manifest.json",
+        "source_git_blob_sha1": "a7b271f1ecd8eacc0a29d67623a2ae1c31e341a6",
+        "sha256": "5cc300da9d199946a6d9df08c8e448d2ddd426a50f4310a9984ce1c1e06b39f7",
+        "size_bytes": 10803
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe128_eight_response_native.csv",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/afh_v6_xe128_eight_response_native.csv",
+        "source_git_blob_sha1": "8165513cc62d63ed75cfc058b55722fb88a3330a",
+        "sha256": "7c492562fca01cdfd2a185e671755c84b04bf6b5e34cc1a313f8e76b628a8abb",
+        "size_bytes": 293596
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe129_eight_response_native.csv",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/afh_v6_xe129_eight_response_native.csv",
+        "source_git_blob_sha1": "50479ddffbf93957bced67b7ad702866302134e4",
+        "sha256": "80684a3f1201bc312c1c60af3b5b263e1480ab5a05874743a738cce9b86dc532",
+        "size_bytes": 493415
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe130_eight_response_native.csv",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/afh_v6_xe130_eight_response_native.csv",
+        "source_git_blob_sha1": "f39d5a0b66b151c7507fc30d0cb19c3f39226938",
+        "sha256": "36534761e2b061e4e3cff14d3f3ec0f679f68fa3455f8596e23a654f21cbe44a",
+        "size_bytes": 293208
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe131_eight_response_native.csv",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/afh_v6_xe131_eight_response_native.csv",
+        "source_git_blob_sha1": "ea2aca029b6f298f79fc009a17d6fb73d53da36e",
+        "sha256": "585ab0f483be0d8131566cefc4cb420c6db7e07bebbcd2b887da568cda2f4ffb",
+        "size_bytes": 538596
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe132_eight_response_native.csv",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/afh_v6_xe132_eight_response_native.csv",
+        "source_git_blob_sha1": "64eb2640a6c9207ae2d92547176edccc76b88466",
+        "sha256": "7f03e4a14c1e646e624b2d53f8c5ca42f0538c45f4670c524d9a1e39fe8d768e",
+        "size_bytes": 293022
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe134_eight_response_native.csv",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/afh_v6_xe134_eight_response_native.csv",
+        "source_git_blob_sha1": "ab7ec7240a310869392ac701bd64e9b414599be4",
+        "sha256": "031b30c6b7b0e9e720b155979fc7c9ab37665303e7c9fbf8678bde78f39f3885",
+        "size_bytes": 293051
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe136_eight_response_native.csv",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/afh_v6_xe136_eight_response_native.csv",
+        "source_git_blob_sha1": "e227da9239a7cdc3d6568dc09ddf4069733c6951",
+        "sha256": "c00ec4ce6c55fd7fa925a2bf2c3436057a3f54ad31710e1c8f555d7622c7dea4",
+        "size_bytes": 292504
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/native_metadata.txt",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/native_metadata.txt",
+        "source_git_blob_sha1": "ed121c9f24539951113baf2d1dbf883a56bd2592",
+        "sha256": "3850b31e54670f1161b14c358f04b2ae398bee1c390925f54dd3913b85ebfaf9",
+        "size_bytes": 681
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/native_python_comparison.json",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/native_python_comparison.json",
+        "source_git_blob_sha1": "31669d05c621e9b3a3bcfc30e9e6cbec5202967f",
+        "sha256": "1d3b68ac621e22788a676a9a2f2c97bd433c70883dc30ceb191f69d4d366a030",
+        "size_bytes": 1974
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/combined_tolerance_utilization.json",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/combined_tolerance_utilization.json",
+        "source_git_blob_sha1": "e6077a47c8b75bb872165a458f6ad7ad36c62d11",
+        "sha256": "7074e110d69f6fda79f74c29bec8568ecd8319eb316715a4a62897796bedef66",
+        "size_bytes": 3022
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/comparison.log",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/comparison.log",
+        "source_git_blob_sha1": "31669d05c621e9b3a3bcfc30e9e6cbec5202967f",
+        "sha256": "1d3b68ac621e22788a676a9a2f2c97bd433c70883dc30ceb191f69d4d366a030",
+        "size_bytes": 1974
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/wolfram_native.log",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/wolfram_native.log",
+        "source_git_blob_sha1": "ed600b005d432b3e483cd77cadbc9acb22689878",
+        "sha256": "37b9c4380bb5530626791e976fab6054b1f8368fe4c0ff253f9c4af7ab7b5e61",
+        "size_bytes": 2137
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/spatial_multipoles/afh_v6_xe129_xe131_spatial_multipoles_native.csv",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/spatial_multipoles/afh_v6_xe129_xe131_spatial_multipoles_native.csv",
+        "source_git_blob_sha1": "9cf252b558db759e3385d7c72855235851b5d764",
+        "sha256": "cc1d89d0d3cce9cb138226a9dcc880e76bde8a3d2bc22698ac072900320726e1",
+        "size_bytes": 680119
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/spatial_multipoles/native_spatial_multipole_metadata.txt",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/spatial_multipoles/native_spatial_multipole_metadata.txt",
+        "source_git_blob_sha1": "020edd3524223931f7294b97dddb67569d3e4bda",
+        "sha256": "120640f5d8e8e5ab8ce6a5f32c822357bb1d955c2d4a2cf2cb9568d9058016dc",
+        "size_bytes": 933
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/spatial_multipoles/spatial_amplitude_comparison.json",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/spatial_multipoles/spatial_amplitude_comparison.json",
+        "source_git_blob_sha1": "d41eac94df7407e7af96534e98300cfce50dd190",
+        "sha256": "ebbda5a9e9b3addefb54fbe119d013f4bc20a0860b6ce8a34a5b60204924a15a",
+        "size_bytes": 2066
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/spatial_multipoles/wolfram_native_spatial.log",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/spatial_multipoles/wolfram_native_spatial.log",
+        "source_git_blob_sha1": "76654411b14da6c06e5e137b57b3a2f62844724e",
+        "sha256": "afc33230c23a89380711eefdd0dda24931db64ffeb600b690b8c6e1931ee986f",
+        "size_bytes": 610
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/README.md",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/source/README.md",
+        "source_git_blob_sha1": "f4409c5833ffa2454ff5acd80349d9274ca94702",
+        "sha256": "a24be7f7f5ea8c1f83e6e5591b4f145085de7ae9742659b026367fa7f2ca6fdf",
+        "size_bytes": 5600
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/run_afh_full_response_database.wls",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/source/run_afh_full_response_database.wls",
+        "source_git_blob_sha1": "c815500398d7f55de079dffbaaa846bc84de81f5",
+        "sha256": "10b254971a1f9dade783cfdf603f15885b08894e4de54aae2791243bf3369642",
+        "size_bytes": 2947
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/run_afh_spatial_multipoles_native.wls",
+        "target_path": "nuclear/afh/data/native_v6_2026-11-22/source/run_afh_spatial_multipoles_native.wls",
+        "source_git_blob_sha1": "109c999b1f95b7646261c99a88a87db6fa11c416",
+        "sha256": "659d8bc187119f6774d475710b758ccebaab4d87285e9812ac158ac670acf2a8",
+        "size_bytes": 6525
+      }
+    ],
+    "p3c_reference_docs": [
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/P3C_BOUND_CURRENT_AMPLITUDE_RESULTS.md",
+        "target_path": "benchmarks/vv_recovery/source_references/P3C_BOUND_CURRENT_AMPLITUDE_RESULTS.md",
+        "source_git_blob_sha1": "93b1ad06cedfb28044dd996f968a2797464321c2",
+        "sha256": "fc98b8ce95bd3ab76c82e81f1a955fc65fb2be043144839d84e7aa3e3a66ef5b",
+        "size_bytes": 15268
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/P3C_SPATIAL_AMPLITUDE_LEVEL_HELICITY_RESULTS.md",
+        "target_path": "benchmarks/vv_recovery/source_references/P3C_SPATIAL_AMPLITUDE_LEVEL_HELICITY_RESULTS.md",
+        "source_git_blob_sha1": "c7c72561bb1c13b04122b5d5a7373f7626b26eb1",
+        "sha256": "dd111f134c6b2c3c005bb5734ee7596b2776ecc77222404f6208047dc2a9e38d",
+        "size_bytes": 10594
+      },
+      {
+        "source_path": "research/three_body_full_current_nucleon_match/SPATIAL_CURRENT_AFH_MULTIPOLE_MATCHING.md",
+        "target_path": "benchmarks/vv_recovery/source_references/SPATIAL_CURRENT_AFH_MULTIPOLE_MATCHING.md",
+        "source_git_blob_sha1": "09686afa08e904a08418fdbe2a8600ee3a359874",
+        "sha256": "742105f0f6120fe59513b14cc62b387c60fd902bc81ab6207555570354f53140",
+        "size_bytes": 18476
+      }
+    ],
+    "paper_benchmark": {
+      "source_path": "research/three_body_full_current_nucleon_match/benchmarks/paper_fig3_vector_natural_xenon.json",
+      "target_path": "benchmarks/vv_recovery/paper_fig3_vector_natural_xenon.json",
+      "source_git_blob_sha1": "af3731952da389872de21358050750235f9a688d",
+      "sha256": "940fad45c3d408a94ed755adc29e11e966d899317faa49956527e221e2035308",
+      "size_bytes": 2711
+    }
+  },
+  "intentionally_not_imported": [
+    "Upstream DMFormFactor v6.0 package source; only its exact SHA-256 is pinned.",
+    "Exploratory Gram eigenmode analysis and interpolation audit.",
+    "P4 secondary-parameter halo spectrum; it is not the Fig. 3 benchmark and remains a leading-static candidate.",
+    "121-point dense-q spatial interpolation/native audit; not required for the 2,401-point Native AFH baseline imported here."
+  ],
+  "next_gate": "Independently reproduce the original Fig. 3 VV event spectrum, including the paper's LZ nuclear-recoil efficiency, 2.84 tonne-year exposure, normalized endothermic 2-to-2 curve, and F3 loop-induced elastic curve.",
+  "sha256_manifests": {
+    "native_afh_source": "nuclear/afh/data/native_v6_2026-11-22/SOURCE_SHA256SUMS.txt",
+    "native_afh_target": "nuclear/afh/data/native_v6_2026-11-22/SHA256SUMS.txt"
+  },
+  "redactions": [
+    {
+      "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/native_metadata.txt",
+      "source_sha256": "3850b31e54670f1161b14c358f04b2ae398bee1c390925f54dd3913b85ebfaf9",
+      "target_sha256": "e3f0bcc3276f7a730acc9355e9c994fce031cf4149ea80149a84593c207faca4",
+      "reason": "Absolute local Windows workspace path redacted; AFH package SHA-256 and Wolfram version retained."
+    },
+    {
+      "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/wolfram_native.log",
+      "source_sha256": "37b9c4380bb5530626791e976fab6054b1f8368fe4c0ff253f9c4af7ab7b5e61",
+      "target_sha256": "2fc586b9a8279da081ebb6ef62c99975b61404686ea22898cddc67a0ef5c0881",
+      "reason": "Absolute local Windows output paths replaced by relative native/ paths."
+    },
+    {
+      "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/spatial_multipoles/native_spatial_multipole_metadata.txt",
+      "source_sha256": "120640f5d8e8e5ab8ce6a5f32c822357bb1d955c2d4a2cf2cb9568d9058016dc",
+      "target_sha256": "33a7d613e7916d1fff30eeb081688957b019f28b60fe279fcf7f59655ba85a6b",
+      "reason": "Absolute local Windows workspace path redacted; AFH package SHA-256 and Wolfram version retained."
+    }
+  ]
+}

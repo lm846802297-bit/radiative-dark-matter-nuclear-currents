@@ -52,3 +52,14 @@
 | Published result | PR-reviewed code/data and archived manuscript figures/tables |
 
 A completed VV recovery test does not imply VA, AA, or SS is complete.
+
+## VV recovery baseline status (2026-11-23)
+
+- [x] Import the source-pinned VV/P3 code snapshot and Native AFH xenon
+  response data.
+- [x] Freeze the machine-readable paper Fig. 3 benchmark definition.
+- [ ] Independently reproduce the Fig. 3 event spectrum, including LZ
+  nuclear-recoil efficiency, 2.84 tonne-year exposure, the normalized
+  endothermic \(2\to2\) comparison, and the loop-induced \(F_3\) curve.
+- [ ] Promote no P4 or full-current result until its own current and
+  detector-response validation gates pass.

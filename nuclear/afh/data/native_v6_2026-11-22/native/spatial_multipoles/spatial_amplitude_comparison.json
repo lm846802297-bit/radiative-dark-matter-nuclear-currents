@@ -1,0 +1,60 @@
+{
+  "status": "PASS_NATIVE_AFH_MULTIPOLE_AMPLITUDE_CROSSCHECK",
+  "scope": "direct P3-B versus native Wolfram AFH DeltaJ and SigmaPJ amplitudes for Xe-129 and Xe-131",
+  "native_afh_multipole_amplitudes_validated": true,
+  "native_afh_validated": true,
+  "isotopes": [
+    129,
+    131
+  ],
+  "rank_map": {
+    "129": [
+      1
+    ],
+    "131": [
+      1,
+      2,
+      3
+    ]
+  },
+  "q_points_per_isotope": 2401,
+  "rows_compared": 9604,
+  "max_y_absolute_difference": 7.105427357601002e-15,
+  "max_native_imaginary_residual": 0.0,
+  "native_imaginary_tolerance": 2e-12,
+  "rtol": 5e-07,
+  "atol": 2e-12,
+  "P3_B_multipole_sha256": "eb556aea24e6d03a22254b242f79e24f4e77db67134f22aa3d13585fef43be50",
+  "native_multipole_csv_sha256": "cc1d89d0d3cce9cb138226a9dcc880e76bde8a3d2bc22698ac072900320726e1",
+  "native_multipole_metadata_sha256": "120640f5d8e8e5ab8ce6a5f32c822357bb1d955c2d4a2cf2cb9568d9058016dc",
+  "native_source_commit": "aac9b33d66f6a7fe1ca5d5d8cc648f5afe52a81b",
+  "native_wolfram_version": "14.2.0 for Microsoft Windows (64-bit) (December 26, 2024)",
+  "amplitude_comparisons": {
+    "Delta": {
+      "max_absolute_difference": 8.881784197001252e-16,
+      "max_relative_difference": 1.0,
+      "failed_points": 0,
+      "worst_point": {
+        "A": 131,
+        "q_GeV": 0.0,
+        "J": 3,
+        "p3_python": 0.0,
+        "native_wolfram": 5.285841083175207e-18
+      }
+    },
+    "SigmaPrime": {
+      "max_absolute_difference": 2.0539125955565396e-15,
+      "max_relative_difference": 1.0,
+      "failed_points": 0,
+      "worst_point": {
+        "A": 131,
+        "q_GeV": 0.0,
+        "J": 3,
+        "p3_python": 0.0,
+        "native_wolfram": 2.5883255180180016e-18
+      }
+    }
+  },
+  "acceptance_note": "The raw AFH package multipole amplitudes are compared before the physical equal-p/n factor-four and common C0 response conversion. This validates the two spatial amplitude channels, not the full three-body tensor contraction or event rate.",
+  "native_run_id": null
+}

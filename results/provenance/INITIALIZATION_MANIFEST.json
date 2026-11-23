@@ -41,7 +41,7 @@
   "tracked_files": [
     {
       "path": ".github/workflows/research-docs-validation.yml",
-      "sha256": "ab567fabee12f6363f7ca01a5bdc1bc2eb3ce1306fd484c436124582a254fae5"
+      "sha256": "2cc611e67c2d1a2dd581ed50d17d6855ccb893ffae71bad8e787d92a589ed298"
     },
     {
       "path": ".gitignore",
@@ -53,7 +53,7 @@
     },
     {
       "path": "benchmarks/README.md",
-      "sha256": "ecc55e1613ccbe2c19bf078a5dfa7593cda7c95718874a73b1967eb8e31ecbe5"
+      "sha256": "202b4aad9d6c76e80d5e5ac24da2a3570c89b244fcd3a57dbfaf2e571367c86c"
     },
     {
       "path": "CITATION.cff",
@@ -65,7 +65,7 @@
     },
     {
       "path": "docs/EXTERNAL_BASELINES.md",
-      "sha256": "e66bee2e2e452ecefedea11eb3a2d23e17f386380cfcf7454795e8db1c00d41e"
+      "sha256": "87dee049aa37191833122e424ecfe078f0f70cd9f7a5f05d4dd1dea4bbc36fec"
     },
     {
       "path": "docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md",
@@ -81,7 +81,7 @@
     },
     {
       "path": "docs/RESEARCH_PLAN.md",
-      "sha256": "c1deb65aeabfe2d88584ae48b590064364b6d8c1938d6122c1bf23345c91627e"
+      "sha256": "38de62ef56c110059a28836d5563279cb411046128937fd9834333c538f17c2b"
     },
     {
       "path": "environment/README.md",
@@ -89,7 +89,7 @@
     },
     {
       "path": "nuclear/afh/README.md",
-      "sha256": "0d0b2e5d3d87c3b9580bcc63d0ef7be329b66c1675f90a916c2e99fe8edf85da"
+      "sha256": "d16fb572ad6d375fbccddab4a2a64759c3584e26c95c43baeda9d346601708ec"
     },
     {
       "path": "nuclear/chiral_eft/README.md",
@@ -105,7 +105,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "b505f691fbbf9dcaffa04527ce73ec4a6722e510251ce6015b370d822ec025b7"
+      "sha256": "7d09103cf98fe3179bc7333f619e95449b6678a0f703b7ccc9830fb41a65b7f9"
     },
     {
       "path": "results/provenance/README.md",
@@ -133,7 +133,7 @@
     },
     {
       "path": "tools/validate_provenance.py",
-      "sha256": "ea54a928a1eb27f603c8beb56cceb436c2a1f030007727189e2bf0ab2708fa10"
+      "sha256": "b5322d116fccc279aa7eaf57612a75d70b12b11117dc810d40e1574e90d66541"
     }
   ],
   "external_baseline": {
