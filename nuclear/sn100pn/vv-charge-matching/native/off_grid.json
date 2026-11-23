@@ -1,0 +1,237 @@
+{
+  "source_commit": "e045901c684419ba70af9d39aacc434dbbbfbb33",
+  "exact_recoupling_helper_sha256": "ca7c7ea7dca0e56b3968688dd563eb292eeda8f9743e0331a7d292bd14ae2d70",
+  "inputs_sha256": {
+    "129Xe_OBDME_SN100PN.dat": "26ef95e96f79bcd883cc3374e26aac62fdb80be23439e1604a96703468e8dd91",
+    "131Xe_OBDME_SN100PN.dat": "2dd36c7aa74a88f8fc979b2423ac2970a605300d0eca973d94cb139bda438bd0",
+    "dmformfactor-V6.m": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372"
+  },
+  "benchmark_rows": [
+    {
+      "A": 129,
+      "E_R_keV": 200.0,
+      "q_GeV": 0.21923762378951292,
+      "bracketing_q_GeV": [
+        0.219,
+        0.21925
+      ],
+      "exact_F_AFH_BD": [
+        10.357136057506137,
+        0.2211181318177335,
+        -1.5133243459410288
+      ],
+      "exact_F_SN100PN": [
+        11.634269045187175,
+        0.36842793010900476,
+        -2.0703597906280873
+      ],
+      "exact_kernel_per_common_weight_AFH_BD": 10.24216189015776,
+      "exact_kernel_per_common_weight_SN100PN": 11.498771736892566,
+      "exact_SN100PN_over_AFH_BD": 1.1226899027970207,
+      "interpolated_SN100PN_over_AFH_BD": 1.1226899688117544,
+      "interpolation_ratio_error_relative": 5.8800505353673316e-08,
+      "interpolation_AFH_kernel_error_relative": 9.667420544090533e-07,
+      "interpolation_SN100PN_kernel_error_relative": 1.0255426166061454e-06,
+      "exact_models_absolute_T3_kernels": {
+        "AFH_BD": {
+          "L00_charge_terms": [
+            134044006.13614646,
+            214.21272027867286,
+            -338903.7101683902
+          ],
+          "L00_charge_kernel": 133705316.63869834,
+          "conditional_LC_terms": [
+            134043417.38922822,
+            214.21177941542547,
+            -338902.22163846117
+          ],
+          "conditional_LC_charge_kernel": 133704729.37936918
+        },
+        "SN100PN": {
+          "L00_charge_terms": [
+            150572901.8740106,
+            356.9221053312155,
+            -463649.8555707847
+          ],
+          "L00_charge_kernel": 150109608.94054514,
+          "conditional_LC_terms": [
+            150572240.52902022,
+            356.92053766104794,
+            -463647.8191319206
+          ],
+          "conditional_LC_charge_kernel": 150108949.63042596
+        }
+      }
+    },
+    {
+      "A": 129,
+      "E_R_keV": 267.0,
+      "q_GeV": 0.2533120092461155,
+      "bracketing_q_GeV": [
+        0.25325000000000003,
+        0.2535
+      ],
+      "exact_F_AFH_BD": [
+        0.09123903849993661,
+        0.1057843465377135,
+        -0.09824287285317485
+      ],
+      "exact_F_SN100PN": [
+        0.10806882479490747,
+        0.15836606801672526,
+        -0.13082214972227707
+      ],
+      "exact_kernel_per_common_weight_AFH_BD": 0.08796008804286132,
+      "exact_kernel_per_common_weight_SN100PN": 0.10385879485619308,
+      "exact_SN100PN_over_AFH_BD": 1.1807491007237807,
+      "interpolated_SN100PN_over_AFH_BD": 1.1807118524469853,
+      "interpolation_ratio_error_relative": -3.1546309688157415e-05,
+      "interpolation_AFH_kernel_error_relative": 0.000690331333512928,
+      "interpolation_SN100PN_kernel_error_relative": 0.0006587632464187809,
+      "exact_models_absolute_T3_kernels": {
+        "AFH_BD": {
+          "L00_charge_terms": [
+            29577159.1179707,
+            4588.0989148676,
+            -736757.5765583351
+          ],
+          "L00_charge_kernel": 28844989.640327234,
+          "conditional_LC_terms": [
+            29577008.932716627,
+            4588.07561767403,
+            -736753.8354916767
+          ],
+          "conditional_LC_charge_kernel": 28844843.172842626
+        },
+        "SN100PN": {
+          "L00_charge_terms": [
+            35032907.8342194,
+            6868.6833978819695,
+            -981080.9394141382
+          ],
+          "L00_charge_kernel": 34058695.57820315,
+          "conditional_LC_terms": [
+            35032729.94606785,
+            6868.648520463312,
+            -981075.9577358924
+          ],
+          "conditional_LC_charge_kernel": 34058522.63685241
+        }
+      }
+    },
+    {
+      "A": 131,
+      "E_R_keV": 200.0,
+      "q_GeV": 0.22093060215101032,
+      "bracketing_q_GeV": [
+        0.22075,
+        0.221
+      ],
+      "exact_F_AFH_BD": [
+        9.566880694765233,
+        0.35581355490550265,
+        -1.835138907638506
+      ],
+      "exact_F_SN100PN": [
+        10.864447496965772,
+        0.5870968351471811,
+        -2.5253372613386404
+      ],
+      "exact_kernel_per_common_weight_AFH_BD": 9.451431545889266,
+      "exact_kernel_per_common_weight_SN100PN": 10.725666622760452,
+      "exact_SN100PN_over_AFH_BD": 1.1348192673971587,
+      "interpolated_SN100PN_over_AFH_BD": 1.13481921505646,
+      "interpolation_ratio_error_relative": -4.612249737689922e-08,
+      "interpolation_AFH_kernel_error_relative": 7.962377767789519e-06,
+      "interpolation_SN100PN_kernel_error_relative": 7.916254903150843e-06,
+      "exact_models_absolute_T3_kernels": {
+        "AFH_BD": {
+          "L00_charge_terms": [
+            146750904.5767483,
+            421.3737878860334,
+            -494682.6365864864
+          ],
+          "L00_charge_kernel": 146256643.3139497,
+          "conditional_LC_terms": [
+            146750266.52691963,
+            421.3719558191447,
+            -494680.4857842653
+          ],
+          "conditional_LC_charge_kernel": 146256007.41309118
+        },
+        "SN100PN": {
+          "L00_charge_terms": [
+            166654895.02536762,
+            695.272043100132,
+            -680733.4799067846
+          ],
+          "L00_charge_kernel": 165974856.81750393,
+          "conditional_LC_terms": [
+            166654170.43612215,
+            695.2690201667521,
+            -680730.5201847886
+          ],
+          "conditional_LC_charge_kernel": 165974135.18495753
+        }
+      }
+    },
+    {
+      "A": 131,
+      "E_R_keV": 267.0,
+      "q_GeV": 0.2552681134213372,
+      "bracketing_q_GeV": [
+        0.25525000000000003,
+        0.2555
+      ],
+      "exact_F_AFH_BD": [
+        0.005595301854995073,
+        0.13339646076609604,
+        -0.025906998485851155
+      ],
+      "exact_F_SN100PN": [
+        0.010445960647328783,
+        0.2121240129726904,
+        -0.04704386667820171
+      ],
+      "exact_kernel_per_common_weight_AFH_BD": 0.004946753890051019,
+      "exact_kernel_per_common_weight_SN100PN": 0.009260846704409994,
+      "exact_SN100PN_over_AFH_BD": 1.8721058112544346,
+      "interpolated_SN100PN_over_AFH_BD": 1.8692592735215765,
+      "interpolation_ratio_error_relative": -0.0015205004523493049,
+      "interpolation_AFH_kernel_error_relative": 0.003911119033966015,
+      "interpolation_SN100PN_kernel_error_relative": 0.002384671723356213,
+      "exact_models_absolute_T3_kernels": {
+        "AFH_BD": {
+          "L00_charge_terms": [
+            2406119.0101030753,
+            7916.159570128218,
+            -261745.36719748142
+          ],
+          "L00_charge_kernel": 2152289.802475722,
+          "conditional_LC_terms": [
+            2406106.9023385406,
+            7916.119735441865,
+            -261744.05007590065
+          ],
+          "conditional_LC_charge_kernel": 2152278.9719980815
+        },
+        "SN100PN": {
+          "L00_charge_terms": [
+            4492022.976363362,
+            12588.09660844129,
+            -475296.8262533449
+          ],
+          "L00_charge_kernel": 4029314.2467184584,
+          "conditional_LC_terms": [
+            4492000.372179506,
+            12588.033264230535,
+            -475294.4345254078
+          ],
+          "conditional_LC_charge_kernel": 4029293.9709183294
+        }
+      }
+    }
+  ],
+  "charge_summary_sha256": "cc9837753476352b027b0d12bb12c013c0f5f342639ae8b02b2054f9083138df",
+  "scope": "Common T3 charge factor cancels in response swap ratios; absolute terms use the same stored factor for both models."
+}

@@ -1,0 +1,315 @@
+{
+  "scope": "charge-only fixed radiative VV diagnostic; no cross section",
+  "source_commit": "e045901c684419ba70af9d39aacc434dbbbfbb33",
+  "historical_P3_source": "dd9a7387814cd157d9cde739fa80181e4cd7d428",
+  "inputs_sha256": {
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/three_body_phase_space_tensor.py": "12bc17614c17a87c2cde5ae78544011fe50b88ed865ce42d61d82ddaa7e9213f",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/three_body_multipole_leptonic_weights.py": "b42492780f2668cfd968c8d597b948d654ef2a4df1d9b3935e8f3831b84ad651",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/nucleon_vector_form_factors.py": "07f956d4427abd1aba0e8d4f31cc7349e144fcd592e9066037b81b750d154eb4",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_calculation_and_validation/eq6_kernel.py": "3cdc33ded7bcebc19bba15487de0234a140f13a161f42db5b7bc81163da01619",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_spin_resolved_current/spin_resolved_three_body_current.py": "5e570a45c79d221ba7af71b97c91219ee3870d05ca272b77b0c5e00dc984372b",
+    "benchmarks/vv_recovery/source_snapshot/research/vector_current_response_audit/vector_current_response_audit.py": "e3bd5a908d49a84085e9eb2f3f6774ef96324fffdb5fcca4c811c1e392a22ea4",
+    "nuclear/afh/data/native_v6_2026-11-22/native/afh_v6_xe129_eight_response_native.csv": "80684a3f1201bc312c1c60af3b5b263e1480ab5a05874743a738cce9b86dc532",
+    "nuclear/sn100pn/xe129-xe131-rank0/native/xe129_rank0.csv.xz": "a58cbc360a95bbf606d7ec268c5cb79a73a672154733d996e3705fc913faf005",
+    "nuclear/sn100pn/xe129-xe131-rank0/xe129_rank0.csv (decompressed)": "5a86682e548c4bb4e604cb041c379146b9b4a6a5af59ecead61db197b824a2fd",
+    "nuclear/afh/data/native_v6_2026-11-22/native/afh_v6_xe131_eight_response_native.csv": "585ab0f483be0d8131566cefc4cb420c6db7e07bebbcd2b887da568cda2f4ffb",
+    "nuclear/sn100pn/xe131-rank2/native/xe131_rank2.csv.xz.part-00": "6bc4e443b69f0d3bde0d67475fc5a61f10085af0e5dee6035a614827b15d9487",
+    "nuclear/sn100pn/xe131-rank2/native/xe131_rank2.csv.xz.part-01": "a8913e7ccfd632086ff13d3dc51d6bc0211dd423838b677f5f99169b87536117",
+    "nuclear/sn100pn/xe131-rank2/xe131_rank2.csv (decompressed)": "1ccbd9f86fa80805570583d6ef0b4a885dbf111994e4234c2575c826bc4568f0"
+  },
+  "q_transfer": "impulse q_N=q_A, omega=E_R, Q_A^2=2 m_A E_R+E_R^2, t_N=t_A=-2 m_A E_R",
+  "form_factors": {
+    "Fhat1_anchor": 1.0,
+    "Fhat2_anchor": -0.184,
+    "mN_GeV": 0.938918
+  },
+  "response_normalization": "physical equal-p/n, native AFH raw spin factor removed once, no C0 re-normalization",
+  "dirac_pauli_small_momentum": {
+    "rows": [
+      {
+        "lambda": 1.0,
+        "error": 0.00022695590761518848,
+        "wrong_sign_error": 0.012935916702430687
+      },
+      {
+        "lambda": 0.5,
+        "error": 1.4473597359071047e-05,
+        "wrong_sign_error": 0.0032664664945679556
+      },
+      {
+        "lambda": 0.25,
+        "error": 9.092346449404648e-07,
+        "wrong_sign_error": 0.0008187069935263924
+      },
+      {
+        "lambda": 0.125,
+        "error": 5.690007260592539e-08,
+        "wrong_sign_error": 0.00020480836052735654
+      }
+    ],
+    "consecutive_error_ratios": [
+      15.680684074919926,
+      15.9184402393936,
+      15.979498852972993
+    ],
+    "wrong_spin_orbit_sign_final_error_over_correct_error": 3599.439353018127
+  },
+  "benchmark_rows": [
+    {
+      "isotope": 129,
+      "benchmark": "green_450keV",
+      "ER_keV": 200.0,
+      "Q_A_GeV": 0.21923762378951292,
+      "Q_A2_GeV2": 0.048065135684872,
+      "t_A_equals_t_N_GeV2": -0.048065095684872,
+      "c_M": 0.9956927351943599,
+      "c_PhiPP": 0.008614536780332617,
+      "L_q_frame_refinement_relative_Frobenius": 4.228446696191037e-08,
+      "charge_weights_refinement_relative": {
+        "L00": 2.6255007712035076e-11,
+        "conditional_LC": 2.625498034565123e-11
+      },
+      "L00": 13054403.755049305,
+      "conditional_L_C": 13054346.417610642,
+      "models": {
+        "AFH_BD": {
+          "F_equal_pn": [
+            10.357145966733398,
+            0.22111729273499175,
+            -1.5133198257577476
+          ],
+          "L00_terms": [
+            134044134.38323256,
+            214.2119074000764,
+            -338902.69788910664
+          ],
+          "L00_charge_kernel": 133705445.89725086,
+          "conditional_LC_terms": [
+            134043545.63575105,
+            214.2109665403993,
+            -338901.20936362376
+          ],
+          "conditional_LC_charge_kernel": 133704858.63735397,
+          "M_only_kernel": 134044134.38323256,
+          "signed_charge_correction_over_M": -0.002526693820211448
+        },
+        "SN100PN": {
+          "F_equal_pn": [
+            11.63428084849274,
+            0.3684266435117397,
+            -2.0703545016723135
+          ],
+          "L00_terms": [
+            150573054.63461494,
+            356.92085891375626,
+            -463648.6711275822
+          ],
+          "L00_charge_kernel": 150109762.88434628,
+          "conditional_LC_terms": [
+            150572393.2889536,
+            356.9192912490632,
+            -463646.6346939203
+          ],
+          "conditional_LC_charge_kernel": 150109103.57355094,
+          "M_only_kernel": 150573054.63461494,
+          "signed_charge_correction_over_M": -0.0030768569542067538
+        }
+      },
+      "SN100PN_over_AFH_BD_L00_charge_kernel": 1.1226899688117544,
+      "SN100PN_over_AFH_BD_conditional_LC_charge_kernel": 1.1226899688117542,
+      "SN100PN_over_AFH_BD_M_only_kernel": 1.1233095377685542
+    },
+    {
+      "isotope": 129,
+      "benchmark": "near_pole_362keV_g2_1",
+      "ER_keV": 267.0,
+      "Q_A_GeV": 0.2533120092461155,
+      "Q_A2_GeV2": 0.06416697402830411,
+      "t_A_equals_t_N_GeV2": -0.06416690273930412,
+      "c_M": 0.9942498014844704,
+      "c_PhiPP": 0.011500409807923453,
+      "L_q_frame_refinement_relative_Frobenius": 2.972560555314217e-11,
+      "charge_weights_refinement_relative": {
+        "L00": 2.972555607970699e-11,
+        "conditional_LC": 2.9725525259557636e-11
+      },
+      "L00": 327932705.4137509,
+      "conditional_L_C": 327931040.2552925,
+      "models": {
+        "AFH_BD": {
+          "F_equal_pn": [
+            0.09130068319737664,
+            0.10578484094525223,
+            -0.09825232940511713
+          ],
+          "L00_terms": [
+            29597142.614672765,
+            4588.120358405951,
+            -736828.4945403653
+          ],
+          "L00_charge_kernel": 28864902.24049081,
+          "conditional_LC_terms": [
+            29596992.327947605,
+            4588.097061103496,
+            -736824.7531136036
+          ],
+          "conditional_LC_charge_kernel": 28864755.671895105,
+          "M_only_kernel": 29597142.614672765,
+          "signed_charge_correction_over_M": -0.024740238735713346
+        },
+        "SN100PN": {
+          "F_equal_pn": [
+            0.10813832860171074,
+            0.15836702068437303,
+            -0.13083476759959795
+          ],
+          "L00_terms": [
+            35055439.03563191,
+            6868.724717165436,
+            -981175.5652780432
+          ],
+          "L00_charge_kernel": 34081132.19507103,
+          "conditional_LC_terms": [
+            35055261.033072665,
+            6868.689839536971,
+            -981170.5831193114
+          ],
+          "conditional_LC_charge_kernel": 34080959.13979289,
+          "M_only_kernel": 35055439.03563191,
+          "signed_charge_correction_over_M": -0.027793314457438368
+        }
+      },
+      "SN100PN_over_AFH_BD_L00_charge_kernel": 1.1807118524469848,
+      "SN100PN_over_AFH_BD_conditional_LC_charge_kernel": 1.180711852446985,
+      "SN100PN_over_AFH_BD_M_only_kernel": 1.1844197087543578
+    },
+    {
+      "isotope": 131,
+      "benchmark": "green_450keV",
+      "ER_keV": 200.0,
+      "Q_A_GeV": 0.22093060215101032,
+      "Q_A2_GeV2": 0.04881033096680801,
+      "t_A_equals_t_N_GeV2": -0.048810290966808,
+      "c_M": 0.9956259558950475,
+      "c_PhiPP": 0.008748095378957118,
+      "L_q_frame_refinement_relative_Frobenius": 4.5257388743334685e-08,
+      "charge_weights_refinement_relative": {
+        "L00": 1.1029010048941646e-10,
+        "conditional_LC": 1.1029009854021172e-10
+      },
+      "L00": 15474549.289579466,
+      "conditional_L_C": 15474482.008675465,
+      "models": {
+        "AFH_BD": {
+          "F_equal_pn": [
+            9.566956338267552,
+            0.3558088698806207,
+            -1.8351232349209525
+          ],
+          "L00_terms": [
+            146752064.9081818,
+            421.3682396244407,
+            -494678.4118266007
+          ],
+          "L00_charge_kernel": 146257807.8645948,
+          "conditional_LC_terms": [
+            146751426.8533082,
+            421.36640758167493,
+            -494676.26104274817
+          ],
+          "conditional_LC_charge_kernel": 146257171.95867303,
+          "M_only_kernel": 146752064.9081818,
+          "signed_charge_correction_over_M": -0.003367973349446344
+        },
+        "SN100PN": {
+          "F_equal_pn": [
+            10.864532847798051,
+            0.587090045957725,
+            -2.525319934828664
+          ],
+          "L00_terms": [
+            166656204.26212335,
+            695.2640029722662,
+            -680728.8093482768
+          ],
+          "L00_charge_kernel": 165976170.71677804,
+          "conditional_LC_terms": [
+            166655479.66718554,
+            695.2609800738435,
+            -680725.8496465876
+          ],
+          "conditional_LC_charge_kernel": 165975449.07851902,
+          "M_only_kernel": 166656204.26212335,
+          "signed_charge_correction_over_M": -0.004080457420449354
+        }
+      },
+      "SN100PN_over_AFH_BD_L00_charge_kernel": 1.1348192150564602,
+      "SN100PN_over_AFH_BD_conditional_LC_charge_kernel": 1.13481921505646,
+      "SN100PN_over_AFH_BD_M_only_kernel": 1.135631068403671
+    },
+    {
+      "isotope": 131,
+      "benchmark": "near_pole_362keV_g2_1",
+      "ER_keV": 267.0,
+      "Q_A_GeV": 0.2552681134213372,
+      "Q_A2_GeV2": 0.06516180972968867,
+      "t_A_equals_t_N_GeV2": -0.06516173844068868,
+      "c_M": 0.9941606511198885,
+      "c_PhiPP": 0.011678710537087163,
+      "L_q_frame_refinement_relative_Frobenius": 4.188602801774693e-11,
+      "charge_weights_refinement_relative": {
+        "L00": 4.188600753996753e-11,
+        "conditional_LC": 4.1885944326252914e-11
+      },
+      "L00": 435091344.8118852,
+      "conditional_L_C": 435089155.4008328,
+      "models": {
+        "AFH_BD": {
+          "F_equal_pn": [
+            0.005614975709223579,
+            0.13339684359243542,
+            -0.025911195930729762
+          ],
+          "L00_terms": [
+            2414579.2569115553,
+            7916.182288230128,
+            -261787.7751109895
+          ],
+          "L00_charge_kernel": 2160707.664088796,
+          "conditional_LC_terms": [
+            2414567.106574448,
+            7916.142453429456,
+            -261786.45777600905
+          ],
+          "conditional_LC_charge_kernel": 2160696.791251868,
+          "M_only_kernel": 2414579.2569115553,
+          "signed_charge_correction_over_M": -0.10514113052867104
+        },
+        "SN100PN": {
+          "F_equal_pn": [
+            0.010468434695760753,
+            0.21212462835884827,
+            -0.04704939407308036
+          ],
+          "L00_terms": [
+            4501687.376348837,
+            12588.133127363868,
+            -475352.67100907565
+          ],
+          "L00_charge_kernel": 4038922.838467126,
+          "conditional_LC_terms": [
+            4501664.723533023,
+            12588.069782969347,
+            -475350.27900012373
+          ],
+          "conditional_LC_charge_kernel": 4038902.5143158687,
+          "M_only_kernel": 4501687.376348837,
+          "signed_charge_correction_over_M": -0.10279801754182319
+        }
+      },
+      "SN100PN_over_AFH_BD_L00_charge_kernel": 1.8692592735215767,
+      "SN100PN_over_AFH_BD_conditional_LC_charge_kernel": 1.8692592735215767,
+      "SN100PN_over_AFH_BD_M_only_kernel": 1.8643775570684162
+    }
+  ]
+}

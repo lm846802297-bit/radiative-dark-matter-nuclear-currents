@@ -1,0 +1,124 @@
+{
+  "stage": "fixed-speed matched radiative VV charge-only model diagnostic",
+  "status": "replayed on 4 source-pinned benchmarks; no full current, cross section, production promotion, or claimed nuclear continuity",
+  "source": {
+    "project_base_commit": "e045901c684419ba70af9d39aacc434dbbbfbb33",
+    "project_base_clean_at_run": true,
+    "historical_immutable_P3_origin": "dd9a7387814cd157d9cde739fa80181e4cd7d428",
+    "first_calculation_checkout": "uncommitted staged driver; immutable SHA-256 snapshot replaces not-yet-assigned publication commit",
+    "staged_sources_sha256": {
+      "fixed_charge.py": "524e7c55b190bb09eb31bdba341b396cdc8c256fe9d161107999e7568020057d",
+      "check_interpolation.py": "da2b19c0624bfc4a1774822640e3cc1ba9d7eec80432bdb6e2a2ad273cf3ab6e",
+      "test_charge.py": "e5b1e47887e4e40bb0a497e20a3dfd0a26b9fde2b4f78153896bf937fd3bdcef",
+      "requirements.txt": "f7308e5b60ea62603b458da5fadbb55614b46fbb4d083200fa2cc9843085ceef"
+    }
+  },
+  "inputs_sha256": {
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/three_body_phase_space_tensor.py": "12bc17614c17a87c2cde5ae78544011fe50b88ed865ce42d61d82ddaa7e9213f",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/three_body_multipole_leptonic_weights.py": "b42492780f2668cfd968c8d597b948d654ef2a4df1d9b3935e8f3831b84ad651",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/nucleon_vector_form_factors.py": "07f956d4427abd1aba0e8d4f31cc7349e144fcd592e9066037b81b750d154eb4",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_calculation_and_validation/eq6_kernel.py": "3cdc33ded7bcebc19bba15487de0234a140f13a161f42db5b7bc81163da01619",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_spin_resolved_current/spin_resolved_three_body_current.py": "5e570a45c79d221ba7af71b97c91219ee3870d05ca272b77b0c5e00dc984372b",
+    "benchmarks/vv_recovery/source_snapshot/research/vector_current_response_audit/vector_current_response_audit.py": "e3bd5a908d49a84085e9eb2f3f6774ef96324fffdb5fcca4c811c1e392a22ea4",
+    "nuclear/afh/data/native_v6_2026-11-22/native/afh_v6_xe129_eight_response_native.csv": "80684a3f1201bc312c1c60af3b5b263e1480ab5a05874743a738cce9b86dc532",
+    "nuclear/sn100pn/xe129-xe131-rank0/native/xe129_rank0.csv.xz": "a58cbc360a95bbf606d7ec268c5cb79a73a672154733d996e3705fc913faf005",
+    "nuclear/sn100pn/xe129-xe131-rank0/xe129_rank0.csv (decompressed)": "5a86682e548c4bb4e604cb041c379146b9b4a6a5af59ecead61db197b824a2fd",
+    "nuclear/afh/data/native_v6_2026-11-22/native/afh_v6_xe131_eight_response_native.csv": "585ab0f483be0d8131566cefc4cb420c6db7e07bebbcd2b887da568cda2f4ffb",
+    "nuclear/sn100pn/xe131-rank2/native/xe131_rank2.csv.xz.part-00": "6bc4e443b69f0d3bde0d67475fc5a61f10085af0e5dee6035a614827b15d9487",
+    "nuclear/sn100pn/xe131-rank2/native/xe131_rank2.csv.xz.part-01": "a8913e7ccfd632086ff13d3dc51d6bc0211dd423838b677f5f99169b87536117",
+    "nuclear/sn100pn/xe131-rank2/xe131_rank2.csv (decompressed)": "1ccbd9f86fa80805570583d6ef0b4a885dbf111994e4234c2575c826bc4568f0",
+    "129Xe_OBDME_SN100PN.dat": "26ef95e96f79bcd883cc3374e26aac62fdb80be23439e1604a96703468e8dd91",
+    "131Xe_OBDME_SN100PN.dat": "2dd36c7aa74a88f8fc979b2423ac2970a605300d0eca973d94cb139bda438bd0",
+    "dmformfactor-V6.m": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+    "pinned_repo_exact_recoupling_helper": "ca7c7ea7dca0e56b3968688dd563eb292eeda8f9743e0331a7d292bd14ae2d70"
+  },
+  "environment": {
+    "os": "Debian GNU/Linux 13",
+    "kernel": "6.18.57",
+    "architecture": "x86_64",
+    "CPU": "Intel Xeon Platinum 8573C",
+    "visible_logical_processors": 9,
+    "meminfo_total_kB": 10206468,
+    "GPU": "none",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "BLAS_LAPACK": "SciPy OpenBLAS 0.3.30 USE64BITINT (NumPy build metadata)",
+    "OPENBLAS_NUM_THREADS": 1
+  },
+  "physics": {
+    "mchi_GeV": 1000,
+    "ms_GeV": 0.0003,
+    "isotopes": [
+      129,
+      131
+    ],
+    "m_atomic_unit_GeV": 0.93149410242,
+    "speed_km_s": 776.0,
+    "Fhat1_anchor": 1.0,
+    "Fhat2_anchor": -0.184,
+    "mN_GeV": 0.938918,
+    "g2": 1.0,
+    "width": "constant pole width",
+    "threshold_green": {
+      "ER_keV": 200,
+      "delta_m_keV": 450,
+      "mapping": "threshold_u2",
+      "quadrature_grid_coarse": [
+        24,
+        16,
+        8
+      ],
+      "quadrature_grid_fine": [
+        40,
+        24,
+        12
+      ]
+    },
+    "near_pole": {
+      "ER_keV": 267,
+      "delta_m_keV": 362,
+      "mapping": "sine2",
+      "quadrature_grid_coarse": [
+        32,
+        16,
+        8
+      ],
+      "quadrature_grid_fine": [
+        48,
+        24,
+        12
+      ]
+    },
+    "nuclear_recoil_transfer": "impulse q_N=q_A, omega=E_R, Q_A^2=2 m_A E_R+E_R^2, t_N=t_A=-2 m_A E_R",
+    "response_scheme": "exact HO evaluation and independent common linear response interpolation on 0.25 MeV native grid",
+    "numeric_precision": "binary64 and exact Wigner coefficients converted to binary64",
+    "halo_detector_flux_exposure": "not included"
+  },
+  "validation": {
+    "tensor_charge_active_refinement_relative_max": 1.1029010048941646e-10,
+    "charge_convergence_gate": 1e-08,
+    "independent_Dirac_trace_gate": 5e-09,
+    "source_level_offgrid_check": "native neighbor recoupling agrees with both tables before interpolation test"
+  },
+  "outputs_sha256": {
+    "native/summary.json": "cc9837753476352b027b0d12bb12c013c0f5f342639ae8b02b2054f9083138df",
+    "native/off_grid.json": "8b893156b31a4fc28767db227be2c6cf0528e97ff78188a0553709c44af4f4a7",
+    "native/radiative_tensors.json": "360ac092abc52fa46407536029226b00297c3e0fc7d678840012c2cb0a6e4f4d"
+  },
+  "replay_commands": [
+    "export OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1",
+    "python fixed_charge.py --repo /path/to/pinned-clean-repo --output /tmp/vv-charge-replay",
+    "python check_interpolation.py --repo /path/to/pinned-clean-repo --inputs /tmp/vv-charge-inputs --json /tmp/vv-charge-replay/off_grid.json --charge-summary /tmp/vv-charge-replay/summary.json",
+    "python -m unittest -v"
+  ],
+  "archive": {
+    "compression": "xz, single-thread, lossless",
+    "tracked_sha256": {
+      "native/radiative_tensors.json.xz": "413f0722450d644950d21857e76f0f391b78091e134ee63301773667c066f6fd"
+    },
+    "uncompressed_checksum_file": "RAW_TENSOR_SHA256SUMS.txt",
+    "verify_uncompressed": "xz -dc native/radiative_tensors.json.xz | sha256sum; compare to RAW_TENSOR_SHA256SUMS.txt"
+  }
+}
