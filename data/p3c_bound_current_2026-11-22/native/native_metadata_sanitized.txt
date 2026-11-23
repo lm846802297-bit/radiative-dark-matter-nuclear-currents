@@ -1,0 +1,14 @@
+source=AFH DMFormFactor v6.0 native Wolfram execution
+source_sha256=dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372
+wolfram_version=14.2.0 for Microsoft Windows (64-bit) (December 26, 2024)
+isotopes=129,131
+recoils_GeV=0.0002,0.000267
+mass_scheme=historical benchmark mA=A*0.93149410242 GeV; Q_A=sqrt(2*mA*ER+ER^2)
+channels=raw native M, PhiPP, Delta, SigmaPrime reduced multipole OBDME sums
+isospin=density-matrix isospin-rank index T=0 rows only; AFH target TIso=|A/2-Z|; apply AFH factor Sqrt[2/(2 TIso+1)]
+normalization=raw AFH package convention; factor-four and C0 not applied
+rank_map=129:charge=0,1;spatial=1;131:charge=0,1,2,3;spatial=1,2,3
+max_imaginary_residual=0.
+rows=40
+obdme_term_rows=128
+source_path=upstream AFH source path withheld; SHA-256 and source reference retained in provenance.

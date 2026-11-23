@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "task": "P3-C direct covariant bound-current amplitude comparison",
+  "run_date": "2026-11-22",
+  "primary_execution_environment": "Local Windows workstation; Wolfram and Python computations were executed locally, not by GitHub Actions.",
+  "status": "COMPLETED_MODEL_SPECIFIC_DIRECT_COVARIANT_VS_AFH_COMPARISON",
+  "production_status_flags": {
+    "native_afh_validated": false,
+    "full_current_complete": false
+  },
+  "scope": {
+    "isotopes": [
+      129,
+      131
+    ],
+    "recoil_energies_keV": [
+      200,
+      267
+    ],
+    "native_AFH_channels": [
+      "M",
+      "PhiPP",
+      "Delta",
+      "SigmaPrime"
+    ],
+    "direct_amplitude_rows": 12,
+    "native_multipole_rows": 40,
+    "native_OBDME_term_rows": 128,
+    "T3_tensor_count": 8,
+    "T3_contraction_rows": 24,
+    "model": "AFH v6.0 HO momentum orbitals embedded in positive-energy free Dirac spinors; one-body Dirac-Pauli impulse current; external qN0=ER for primary result; p_f-p_i=+q_A; F1=1; F2=-0.184; mN=0.938918 GeV; metric (+---); no exchange current."
+  },
+  "repository": {
+    "name": "lm846802297-bit/LZ-3-body-for-hdm",
+    "branch": "research/native-afh-eight-response-20261122",
+    "baseline_commit_before_calculation": "eec446290ed97d6845d95dff3e9648e9b9ea6f2a",
+    "target_pull_request": {
+      "number": 100,
+      "url": "https://github.com/lm846802297-bit/LZ-3-body-for-hdm/pull/100",
+      "merge_performed": false
+    }
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.14.7",
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "sympy": "1.14.0"
+    },
+    "wolfram": "14.2.0 for Microsoft Windows (64-bit)",
+    "native_metadata": [
+      "source=AFH DMFormFactor v6.0 native Wolfram execution",
+      "source_path=upstream AFH source path withheld; source SHA-256 retained\\.codex\\worktrees\\lz-pr67-review-fixes\\main\\v6\\dmformfactor-V6.m",
+      "source_sha256=dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+      "wolfram_version=14.2.0 for Microsoft Windows (64-bit) (December 26, 2024)",
+      "isotopes=129,131",
+      "recoils_GeV=0.0002,0.000267",
+      "mass_scheme=historical benchmark mA=A*0.93149410242 GeV; Q_A=sqrt(2*mA*ER+ER^2)",
+      "channels=raw native M, PhiPP, Delta, SigmaPrime reduced multipole OBDME sums",
+      "isospin=density-matrix isospin-rank index T=0 rows only; AFH target TIso=|A/2-Z|; apply AFH factor Sqrt[2/(2 TIso+1)]",
+      "normalization=raw AFH package convention; factor-four and C0 not applied",
+      "rank_map=129:charge=0,1;spatial=1;131:charge=0,1,2,3;spatial=1,2,3",
+      "max_imaginary_residual=0.",
+      "rows=40",
+      "obdme_term_rows=128"
+    ]
+  },
+  "commands": [
+    {
+      "purpose": "Native AFH rank-resolved multipoles",
+      "shell": "PowerShell; set P3C_NATIVE_OUTDIR to result/native, then run",
+      "command": "wolframscript -script research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/export_p3c_afh_multipoles_native.wls"
+    },
+    {
+      "purpose": "Direct amplitudes, external q0, Gauss-Hermite order 10",
+      "command": "python research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/p3c_bound_current_amplitude.py --order 10 --vertex-energy external --out research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o10.json"
+    },
+    {
+      "purpose": "Direct amplitudes, external q0, Gauss-Hermite order 14",
+      "command": "python research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/p3c_bound_current_amplitude.py --order 14 --vertex-energy external --out research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o14.json"
+    },
+    {
+      "purpose": "Direct amplitudes, external q0, Gauss-Hermite order 18",
+      "command": "python research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/p3c_bound_current_amplitude.py --order 18 --vertex-energy external --out research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o18.json"
+    },
+    {
+      "purpose": "Direct amplitudes, external q0, Gauss-Hermite order 22",
+      "command": "python research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/p3c_bound_current_amplitude.py --order 22 --vertex-energy external --out research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o22.json"
+    },
+    {
+      "purpose": "Direct amplitudes, internal q0 sensitivity, order 18",
+      "command": "python research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/p3c_bound_current_amplitude.py --order 18 --vertex-energy internal --out research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_internal_o18.json"
+    },
+    {
+      "purpose": "Generate Xe-129/Xe-131 Pole-width T3 tensors",
+      "command": "python research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/export_p3c_pole_tensors.py"
+    },
+    {
+      "purpose": "Contract external-q0 current and native AFH amplitudes with Pole-width T3 tensors",
+      "command": "python research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/contract_p3c_bound_current_tensor.py --vertex-energy external --out research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_t3_contraction.json"
+    },
+    {
+      "purpose": "Contract internal-q0 sensitivity amplitudes with Pole-width T3 tensors",
+      "command": "python research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/contract_p3c_bound_current_tensor.py --vertex-energy internal --out research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_internal_t3_contraction.json"
+    },
+    {
+      "purpose": "Recompute scoped current, kinematic, charge-block, and tensor acceptance checks",
+      "command": "python research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/audit_p3c_bound_current_checks.py"
+    }
+  ],
+  "inputs_sha256": {
+    "v6/dmformfactor-V6.m": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+    "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/inputs/density_matrices/afh_default_xe129_density_matrix.csv": "a0bd848d443a073b80ad731cc87fcfb29d7c899da932d5a230e2e245295f158e",
+    "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/inputs/density_matrices/afh_default_xe131_density_matrix.csv": "4ca110f6828ef6cebe4373fb0c9704220d8227c4a131bc2b5801dc2884e00a00",
+    "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/p3_python_reference/metadata.json": "5171664cad0fc5fba3672d1da394d041ab2dfdf7389d71dfe77e606fe23bd103",
+    "research/three_body_full_current_nucleon_match/three_body_phase_space_tensor.py": "12bc17614c17a87c2cde5ae78544011fe50b88ed865ce42d61d82ddaa7e9213f",
+    "research/vector_current_response_audit/vector_current_response_audit.py": "e3bd5a908d49a84085e9eb2f3f6774ef96324fffdb5fcca4c811c1e392a22ea4",
+    "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/export_p3c_afh_multipoles_native.wls": "dc2ae4ba6a7bdb03073e4c1f9ce498317112b29af6d890d915be745e610cc85a",
+    "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/p3c_bound_current_amplitude.py": "64946cdd3ded41b9974d331c164b42713b5860da69df8e34fecc6f590876c0fd",
+    "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/export_p3c_pole_tensors.py": "5ddc22b0cd529ada262590dbe236720a2a0798efb2a46c9b5f2f9b972d6a25fe",
+    "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/contract_p3c_bound_current_tensor.py": "288683e49143589024c82294e334f9dd6072c8cfaa01c38a1c07430ebacf4da2",
+    "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/source/audit_p3c_bound_current_checks.py": "a0b32e21a6c15783d07e5324b95854f43da3174c39cbb4d16b68e08568e3227b"
+  },
+  "key_acceptance_results": {
+    "native_rows": 40,
+    "native_OBDME_term_rows": 128,
+    "direct_amplitude_rows": 12,
+    "leading_NR_vs_native_AFH_max_absolute_amplitude_residual": 3.574918139293004e-14,
+    "direct_multipole_fit_max_residual": 1.1873037369376801e-14,
+    "leading_NR_vs_AFH_L00_plus_spatial_max_relative_kernel_difference": 1.431203394741177e-12,
+    "signed_M_Phi_relative_residual": 6.763967725343992e-13,
+    "signed_Delta_Sigma_relative_residual": 5.5270938577229425e-14,
+    "tensor_acceptance": {
+      "dirac_trace_max_relative_residual": 1.5878369421009312e-09,
+      "dirac_trace_tolerance": 2e-09,
+      "gram_minimum_eigenvalue": -3.1846250803277216e-14,
+      "tensor_minimum_eigenvalue": 0.0004446277326882325,
+      "minimum_eigenvalue_tolerance": -1e-10,
+      "gram_hermiticity_max_relative_residual": 0.0,
+      "hermiticity_tolerance": 1e-12,
+      "pass": true
+    },
+    "direct_contraction_acceptance": {
+      "leading_nr_vs_native_AFH_max_absolute_amplitude_residual": 3.574918139293004e-14,
+      "leading_nr_amplitude_absolute_tolerance": 1e-10,
+      "max_direct_multipole_fit_residual": 1.1873037369376801e-14,
+      "multipole_fit_tolerance": 1e-10,
+      "leading_nr_vs_AFH_L00_plus_spatial_max_relative_kernel_difference": 1.431203394741177e-12,
+      "leading_nr_kernel_tolerance": 1e-08,
+      "signed_M_Phi_interference_max_relative_residual": 6.763967725343992e-13,
+      "signed_Delta_Sigma_interference_max_relative_residual": 5.5270938577229425e-14,
+      "signed_interference_tolerance": 1e-08,
+      "kernel_decomposition_max_relative_residual": 8.146118591450589e-16,
+      "kernel_decomposition_tolerance": 1e-10,
+      "kernel_imaginary_max_relative_residual": 3.351238817221066e-31,
+      "kernel_imaginary_tolerance": 1e-10,
+      "minimum_exact_kernel_over_max_kernel_scale": 6.756725345555824e-15,
+      "kernel_nonnegativity_tolerance": -1e-10,
+      "pass": true
+    },
+    "internal_q0_contraction_acceptance": {
+      "leading_nr_vs_native_AFH_max_absolute_amplitude_residual": 2.631228568361621e-14,
+      "leading_nr_amplitude_absolute_tolerance": 1e-10,
+      "max_direct_multipole_fit_residual": 1.3491170517584639e-14,
+      "multipole_fit_tolerance": 1e-10,
+      "leading_nr_vs_AFH_L00_plus_spatial_max_relative_kernel_difference": 5.767593765068433e-13,
+      "leading_nr_kernel_tolerance": 1e-08,
+      "signed_M_Phi_interference_max_relative_residual": 2.752537043662646e-13,
+      "signed_Delta_Sigma_interference_max_relative_residual": 2.3026895777824026e-14,
+      "signed_interference_tolerance": 1e-08,
+      "kernel_decomposition_max_relative_residual": 0.0,
+      "kernel_decomposition_tolerance": 1e-10,
+      "kernel_imaginary_max_relative_residual": 9.54820363115138e-32,
+      "kernel_imaginary_tolerance": 1e-10,
+      "minimum_exact_kernel_over_max_kernel_scale": 6.760237382859465e-15,
+      "kernel_nonnegativity_tolerance": -1e-10,
+      "pass": true
+    },
+    "scoped_diagnostic_status": "PASS_SCOPED_P3C_CHECKS",
+    "scoped_diagnostics": {
+      "kinematic_identities": {
+        "max_absolute_residual_GeV2": 0.0,
+        "tolerance_absolute_GeV2": 1e-13,
+        "pass": true,
+        "cases": [
+          {
+            "A": 129,
+            "ER_GeV": 0.0002,
+            "t_A_GeV2": -0.048065095684872,
+            "Q_A2_GeV2": 0.048065135684872,
+            "identity_residual_GeV2": 0.0
+          },
+          {
+            "A": 129,
+            "ER_GeV": 0.000267,
+            "t_A_GeV2": -0.06416690273930412,
+            "Q_A2_GeV2": 0.06416697402830411,
+            "identity_residual_GeV2": 0.0
+          },
+          {
+            "A": 131,
+            "ER_GeV": 0.0002,
+            "t_A_GeV2": -0.048810290966808,
+            "Q_A2_GeV2": 0.048810330966808,
+            "identity_residual_GeV2": 0.0
+          },
+          {
+            "A": 131,
+            "ER_GeV": 0.000267,
+            "t_A_GeV2": -0.06516173844068868,
+            "Q_A2_GeV2": 0.06516180972968867,
+            "identity_residual_GeV2": 0.0
+          }
+        ]
+      },
+      "charge_only_leading_NR_vs_AFH": {
+        "relative_residual": 1.5587963237768142e-12,
+        "A": 131,
+        "ER_keV": 267.0,
+        "J": 0,
+        "AFH_L00_charge_plus_signed_M_Phi": 24730173.801682137,
+        "leading_NR_charge_plus_signed_M_Phi_times_C0": 24730173.801720686,
+        "tolerance_relative": 5e-07,
+        "pass": true
+      },
+      "on_shell_nucleon_Ward_identity_internal_q0": {
+        "max_relative_residual": 1.141885097278442e-15,
+        "tolerance_relative": 1e-10,
+        "pass": true,
+        "cases": [
+          {
+            "A": 129,
+            "ER_GeV": 0.0002,
+            "quadrature_order_per_axis": 22,
+            "quadrature_node_count": 10648,
+            "max_relative_q_mu_J_mu_residual": 9.059360553488903e-16
+          },
+          {
+            "A": 129,
+            "ER_GeV": 0.000267,
+            "quadrature_order_per_axis": 22,
+            "quadrature_node_count": 10648,
+            "max_relative_q_mu_J_mu_residual": 9.752243272267184e-16
+          },
+          {
+            "A": 131,
+            "ER_GeV": 0.0002,
+            "quadrature_order_per_axis": 22,
+            "quadrature_node_count": 10648,
+            "max_relative_q_mu_J_mu_residual": 1.141885097278442e-15
+          },
+          {
+            "A": 131,
+            "ER_GeV": 0.000267,
+            "quadrature_order_per_axis": 22,
+            "quadrature_node_count": 10648,
+            "max_relative_q_mu_J_mu_residual": 9.342482425151553e-16
+          }
+        ]
+      },
+      "q_frame_tensor_basis": {
+        "max_orthogonality_residual": 3.163583575401214e-16,
+        "tolerance": 1e-12,
+        "pass": true
+      },
+      "external_q0_bound_nuclear_current_continuity": {
+        "max_normalized_divergence": 0.0010422893326332652,
+        "A": 129,
+        "ER_keV": 267.0,
+        "J": 0,
+        "interpretation": "Reported model-specific nonconservation for bound HO orbitals with external qN0=ER; this is a diagnostic, not a pass criterion."
+      },
+      "T3_tensor_acceptance": {
+        "dirac_trace_max_relative_residual": 1.5878369421009312e-09,
+        "dirac_trace_tolerance": 2e-09,
+        "gram_minimum_eigenvalue": -3.1846250803277216e-14,
+        "tensor_minimum_eigenvalue": 0.0004446277326882325,
+        "minimum_eigenvalue_tolerance": -1e-10,
+        "gram_hermiticity_max_relative_residual": 0.0,
+        "hermiticity_tolerance": 1e-12,
+        "pass": true
+      },
+      "T3_direct_contraction_acceptance": {
+        "leading_nr_vs_native_AFH_max_absolute_amplitude_residual": 3.574918139293004e-14,
+        "leading_nr_amplitude_absolute_tolerance": 1e-10,
+        "max_direct_multipole_fit_residual": 1.1873037369376801e-14,
+        "multipole_fit_tolerance": 1e-10,
+        "leading_nr_vs_AFH_L00_plus_spatial_max_relative_kernel_difference": 1.431203394741177e-12,
+        "leading_nr_kernel_tolerance": 1e-08,
+        "signed_M_Phi_interference_max_relative_residual": 6.763967725343992e-13,
+        "signed_Delta_Sigma_interference_max_relative_residual": 5.5270938577229425e-14,
+        "signed_interference_tolerance": 1e-08,
+        "kernel_decomposition_max_relative_residual": 8.146118591450589e-16,
+        "kernel_decomposition_tolerance": 1e-10,
+        "kernel_imaginary_max_relative_residual": 3.351238817221066e-31,
+        "kernel_imaginary_tolerance": 1e-10,
+        "minimum_exact_kernel_over_max_kernel_scale": 6.756725345555824e-15,
+        "kernel_nonnegativity_tolerance": -1e-10,
+        "pass": true
+      }
+    },
+    "precision_relative_changes_amplitudes_above_1e-8": {
+      "10_to_14": 5.5e-09,
+      "14_to_18": 1.24e-09,
+      "18_to_22": 3.17e-09
+    },
+    "exact_dirac_vs_leading_NR_rank_summed_T3_kernel_percent": {
+      "Xe129_200keV": 0.0521507024,
+      "Xe129_267keV": 0.4304479102,
+      "Xe131_200keV": 0.0613860819,
+      "Xe131_267keV": 1.6400975226
+    }
+  },
+  "limitations": [
+    "Selected-point positive-energy impulse embedding, not a unique off-shell bound-nucleon current.",
+    "No exchange currents or relativistic bound-state wavefunctions.",
+    "Two-isotope comparison does not replace native seven-isotope/eight-response validation or a full-current P4 production spectrum.",
+    "native_afh_validated=false and full_current_complete=false remain unchanged."
+  ],
+  "archived_output_files": [
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o10.json",
+      "size_bytes": 61915,
+      "sha256": "ba2e9b5515a6a6719cf8d1e966a0cc5286b6b7cc082f1c09a476afafd5c605b1"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o10.csv",
+      "size_bytes": 20628,
+      "sha256": "5dd5860c377739836b54eaf368f39ffb4e8c9f3930667b03ce607a385ea15343"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o14.json",
+      "size_bytes": 61928,
+      "sha256": "15e6e53865b196d1b38f44d90ab288a9739719cee16dfaf869477ba7e3188848"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o14.csv",
+      "size_bytes": 20641,
+      "sha256": "b77516bebd829fef25c2242ffbda46774122988d3f03c6b27f36cc320cc57308"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o18.json",
+      "size_bytes": 61896,
+      "sha256": "ee1d908e28b0e6ae1df2926c4588d7d6cecd64a556b9b9e1115b0b8f04048d06"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o18.csv",
+      "size_bytes": 20609,
+      "sha256": "e7a0dbca1673d794004fc8a17d931e7ca4bf8fd0b44f56c4b30749750493df3f"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o22.json",
+      "size_bytes": 61887,
+      "sha256": "00b7b28fec4692a4224cd48e805783bf1eb9784f7f55adb69e71ad3ea4a58a64"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_o22.csv",
+      "size_bytes": 20600,
+      "sha256": "8021a729403bfead3e5edd7f06b65394069a247d783ec5343733e8ff2b74e2ee"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_internal_o18.json",
+      "size_bytes": 61889,
+      "sha256": "2c9828dd270dd6e77cf0527a7771bc4d1df1c5264627bf23ada90642d8aea367"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_internal_o18.csv",
+      "size_bytes": 20602,
+      "sha256": "7f6c443518b1b858db1eb85a0ce3c8762cbb8c5e00b961a988d9d4df826531f3"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_t3_contraction.json",
+      "size_bytes": 107493,
+      "sha256": "4ca04711425ffa025f327ebd0e052beaf1e3c97654c2f870c3071ba6ccfe8067"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/direct_bound_current_internal_t3_contraction.json",
+      "size_bytes": 107405,
+      "sha256": "ff7b812efa1e90f049b907651b74f579e5b5b45e88d6f1ecdfe885e368ab25fd"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/pole_width_t3_tensor_xe129_xe131.json",
+      "size_bytes": 1058703,
+      "sha256": "5f0bb0d379fdcc31bdf7523974a71d0477d1bb40471c73e885b3418cedc3be3d"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/p3c_current_identity_checks.json",
+      "size_bytes": 4816,
+      "sha256": "a28a4ee5e8854d16a54c18f2c0b252dfe98174df8c5cef14ec6f80ce094abfbd"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/native/afh_v6_p3c_xe129_xe131_native_multipoles.csv",
+      "size_bytes": 3097,
+      "sha256": "293fe5105a0d003ed92877a7ce16f88a9817d0f41af9af31139fff3e631a4a57"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/native/afh_v6_p3c_xe129_xe131_native_obdme_terms.csv",
+      "size_bytes": 19932,
+      "sha256": "8f08d04596cce150db1d08898feb5c1ca7b19b5eb5a9fc1a1fb66d91424019d3"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/native/native_metadata.txt",
+      "size_bytes": 824,
+      "sha256": "45d59756b99d327b1dd5bac5f4e43e77213e9f582717179b04abdbbd59063e28"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p3c_bound_current_amplitude/native/native_run.log",
+      "size_bytes": 434,
+      "sha256": "af40744482d591c0e2f9bc88e21753121cf145ffe16b008ef92253be47e9a6bb"
+    }
+  ],
+  "documentation_files": [
+    {
+      "path": "research/three_body_full_current_nucleon_match/P3C_BOUND_CURRENT_AMPLITUDE_RESULTS.md",
+      "size_bytes": 13913,
+      "sha256": "024aecdd66bde00a1872c8d9d777d5464eb61dbec3b1869cf0a256ab52b325f1"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/P3B_P3C_P4_EXECUTION_PLAN.md",
+      "size_bytes": 17222,
+      "sha256": "39c4098787e7850a7abb0dd5722f45b341df3e808c58fb380b29d9927f0c6a9a"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/task_briefs/2026-11-22-p3c-bound-current-amplitude.md",
+      "size_bytes": 15934,
+      "sha256": "08d361d13358f881bbb79b9cacaeda057db33def000c5b96901a3b9b3eabad71"
+    }
+  ],
+  "manifest_hashing_note": "SHA256SUMS.txt includes this manifest and all listed inputs, sources, outputs and documentation; the SHA256SUMS.txt file does not hash itself."
+}

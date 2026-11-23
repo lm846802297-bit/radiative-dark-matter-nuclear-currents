@@ -1,0 +1,130 @@
+{
+  "status": "PASS_SCOPED_P3C_CHECKS",
+  "scope": "Selected Xe-129/Xe-131 P3-C direct covariant comparison; external-q0 nuclear-current divergence is reported separately.",
+  "source_sha256": {
+    "direct_amplitude_script": "64946cdd3ded41b9974d331c164b42713b5860da69df8e34fecc6f590876c0fd",
+    "audit_script": "a0b32e21a6c15783d07e5324b95854f43da3174c39cbb4d16b68e08568e3227b"
+  },
+  "checks": {
+    "kinematic_identities": {
+      "max_absolute_residual_GeV2": 0.0,
+      "tolerance_absolute_GeV2": 1e-13,
+      "pass": true,
+      "cases": [
+        {
+          "A": 129,
+          "ER_GeV": 0.0002,
+          "t_A_GeV2": -0.048065095684872,
+          "Q_A2_GeV2": 0.048065135684872,
+          "identity_residual_GeV2": 0.0
+        },
+        {
+          "A": 129,
+          "ER_GeV": 0.000267,
+          "t_A_GeV2": -0.06416690273930412,
+          "Q_A2_GeV2": 0.06416697402830411,
+          "identity_residual_GeV2": 0.0
+        },
+        {
+          "A": 131,
+          "ER_GeV": 0.0002,
+          "t_A_GeV2": -0.048810290966808,
+          "Q_A2_GeV2": 0.048810330966808,
+          "identity_residual_GeV2": 0.0
+        },
+        {
+          "A": 131,
+          "ER_GeV": 0.000267,
+          "t_A_GeV2": -0.06516173844068868,
+          "Q_A2_GeV2": 0.06516180972968867,
+          "identity_residual_GeV2": 0.0
+        }
+      ]
+    },
+    "charge_only_leading_NR_vs_AFH": {
+      "relative_residual": 1.5587963237768142e-12,
+      "A": 131,
+      "ER_keV": 267.0,
+      "J": 0,
+      "AFH_L00_charge_plus_signed_M_Phi": 24730173.801682137,
+      "leading_NR_charge_plus_signed_M_Phi_times_C0": 24730173.801720686,
+      "tolerance_relative": 5e-07,
+      "pass": true
+    },
+    "on_shell_nucleon_Ward_identity_internal_q0": {
+      "max_relative_residual": 1.141885097278442e-15,
+      "tolerance_relative": 1e-10,
+      "pass": true,
+      "cases": [
+        {
+          "A": 129,
+          "ER_GeV": 0.0002,
+          "quadrature_order_per_axis": 22,
+          "quadrature_node_count": 10648,
+          "max_relative_q_mu_J_mu_residual": 9.059360553488903e-16
+        },
+        {
+          "A": 129,
+          "ER_GeV": 0.000267,
+          "quadrature_order_per_axis": 22,
+          "quadrature_node_count": 10648,
+          "max_relative_q_mu_J_mu_residual": 9.752243272267184e-16
+        },
+        {
+          "A": 131,
+          "ER_GeV": 0.0002,
+          "quadrature_order_per_axis": 22,
+          "quadrature_node_count": 10648,
+          "max_relative_q_mu_J_mu_residual": 1.141885097278442e-15
+        },
+        {
+          "A": 131,
+          "ER_GeV": 0.000267,
+          "quadrature_order_per_axis": 22,
+          "quadrature_node_count": 10648,
+          "max_relative_q_mu_J_mu_residual": 9.342482425151553e-16
+        }
+      ]
+    },
+    "q_frame_tensor_basis": {
+      "max_orthogonality_residual": 3.163583575401214e-16,
+      "tolerance": 1e-12,
+      "pass": true
+    },
+    "external_q0_bound_nuclear_current_continuity": {
+      "max_normalized_divergence": 0.0010422893326332652,
+      "A": 129,
+      "ER_keV": 267.0,
+      "J": 0,
+      "interpretation": "Reported model-specific nonconservation for bound HO orbitals with external qN0=ER; this is a diagnostic, not a pass criterion."
+    },
+    "T3_tensor_acceptance": {
+      "dirac_trace_max_relative_residual": 1.5878369421009312e-09,
+      "dirac_trace_tolerance": 2e-09,
+      "gram_minimum_eigenvalue": -3.1846250803277216e-14,
+      "tensor_minimum_eigenvalue": 0.0004446277326882325,
+      "minimum_eigenvalue_tolerance": -1e-10,
+      "gram_hermiticity_max_relative_residual": 0.0,
+      "hermiticity_tolerance": 1e-12,
+      "pass": true
+    },
+    "T3_direct_contraction_acceptance": {
+      "leading_nr_vs_native_AFH_max_absolute_amplitude_residual": 3.574918139293004e-14,
+      "leading_nr_amplitude_absolute_tolerance": 1e-10,
+      "max_direct_multipole_fit_residual": 1.1873037369376801e-14,
+      "multipole_fit_tolerance": 1e-10,
+      "leading_nr_vs_AFH_L00_plus_spatial_max_relative_kernel_difference": 1.431203394741177e-12,
+      "leading_nr_kernel_tolerance": 1e-08,
+      "signed_M_Phi_interference_max_relative_residual": 6.763967725343992e-13,
+      "signed_Delta_Sigma_interference_max_relative_residual": 5.5270938577229425e-14,
+      "signed_interference_tolerance": 1e-08,
+      "kernel_decomposition_max_relative_residual": 8.146118591450589e-16,
+      "kernel_decomposition_tolerance": 1e-10,
+      "kernel_imaginary_max_relative_residual": 3.351238817221066e-31,
+      "kernel_imaginary_tolerance": 1e-10,
+      "minimum_exact_kernel_over_max_kernel_scale": 6.756725345555824e-15,
+      "kernel_nonnegativity_tolerance": -1e-10,
+      "pass": true
+    }
+  }
+}
