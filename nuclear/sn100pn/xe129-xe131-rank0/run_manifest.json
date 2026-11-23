@@ -1,0 +1,70 @@
+{
+  "status": "provisional; no production promotion",
+  "source": {
+    "project_comparison_source_commit": "5204f1a78b32b6ff5b423cc5d278d781e88add5e",
+    "project_comparison_checkout_clean": true,
+    "upstream_density_commit": "1395f0c161905341fc89a2978148b1ce7c9ee1dd",
+    "audit_source_files_sha256": {
+      "audit.py": "7f83ac0ce395194d7b200710e5c7d8738ed8c16c1a44ba4d904dd94316d67e0a",
+      "test_audit.py": "c5e61a769d52618f6f6c704632ebd8e4266f608f4144da8f1c0b485e8cb6ddc0",
+      "requirements.txt": "1668a3152e33680d94637b13421c15e68bd97cd8701f7f555c691f5bc5c0b9f3"
+    },
+    "audit_source_commit": "working-tree first execution; immutable source snapshot by SHA-256; publication commit not assigned at execution"
+  },
+  "inputs": {
+    "arxiv_source": "2311.15764v1",
+    "arxiv_archive_sha256_at_download": "d8ce6579bf8c5e920689e74f1c4ce503963f9d9eca6e90e39eb516eadec88531",
+    "archive_canonical_tex_member": "tek/bodysupplementary.tex",
+    "archive_canonical_tex_sha256": "00d6b232355a140d70b64fae5ef01c5a58203866b3137d9bae6a61e8ec21cc38",
+    "129Xe_OBDME_SN100PN.dat": "26ef95e96f79bcd883cc3374e26aac62fdb80be23439e1604a96703468e8dd91",
+    "afh_v6_xe129_eight_response_native.csv": "80684a3f1201bc312c1c60af3b5b263e1480ab5a05874743a738cce9b86dc532",
+    "131Xe_OBDME_SN100PN.dat": "2dd36c7aa74a88f8fc979b2423ac2970a605300d0eca973d94cb139bda438bd0",
+    "afh_v6_xe131_eight_response_native.csv": "585ab0f483be0d8131566cefc4cb420c6db7e07bebbcd2b887da568cda2f4ffb"
+  },
+  "platform": {
+    "os": "Debian GNU/Linux 13 (trixie)",
+    "kernel": "6.18.57",
+    "architecture": "x86_64",
+    "cpu": "Intel Xeon Platinum 8573C",
+    "logical_processors_visible": 9,
+    "meminfo_total_kB": 10206468,
+    "accelerator": "none",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "blas_lapack": "SciPy OpenBLAS 0.3.30 USE64BITINT (NumPy build metadata)",
+    "environment": {
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "parameters": {
+    "q_A_min_GeV": 0.0,
+    "q_A_max_GeV": 0.6,
+    "q_A_grid_step_GeV": 0.00025,
+    "q_A_nodes_per_isotope": 2401,
+    "precision": "binary64",
+    "operators": [
+      "M",
+      "PhiPP",
+      "MPhiPP"
+    ],
+    "multipole": 0,
+    "harmonic_oscillator_length_fm_to_inverse_GeV": 5.0677,
+    "interpolation": "none; exact frozen native AFH grid",
+    "quadrature_nodes": [
+      32,
+      80
+    ],
+    "analytic_cross_check": "Laplace transform of Laguerre polynomial square to confluent hypergeometric function",
+    "amplitude_cross_check_tolerance_abs": 3e-11,
+    "pn_couplings": "each one for reported isoscalar total; archived species-level amplitudes",
+    "production_kinematic_cuts": "not applicable: no phase-space integral, no mediator or rates"
+  },
+  "outputs": {
+    "native/summary.json": "51e28063a804382f957d2ee1651364672a8d6a681fb6717fac9224e689a8a550",
+    "native/xe129_rank0.csv": "5a86682e548c4bb4e604cb041c379146b9b4a6a5af59ecead61db197b824a2fd",
+    "native/xe131_rank0.csv": "217edfd380889b277d4c74f67b70dd52c2678c2007192bda8e6af91c2a09fa9a"
+  },
+  "reproduce": "OPENBLAS_NUM_THREADS=1 python audit.py --inputs /tmp/xe-sn100pn-inputs --output /tmp/xe-sn100pn-replay",
+  "unit_tests": "OPENBLAS_NUM_THREADS=1 python -m unittest -v"
+}
