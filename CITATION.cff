@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this research repository, please cite the repository and the relevant theory papers listed in docs/LITERATURE_REVIEW.md."
+title: "General Radiative Dark-Matter Nuclear-Current Theory"
+type: software
+repository-code: "https://github.com/lm846802297-bit/radiative-dark-matter-nuclear-currents"
+abstract: >-
+  A research project developing three-body response kernels for dark-matter-line
+  scalar radiation and matching them to vector, axial, and scalar nuclear
+  currents, including AFH multipoles, chiral-EFT one- and two-body currents,
+  and reproducible xenon predictions.
+keywords:
+  - dark matter direct detection
+  - radiative scattering
+  - three-body phase space
+  - nuclear response
+  - chiral effective field theory
+  - xenon
