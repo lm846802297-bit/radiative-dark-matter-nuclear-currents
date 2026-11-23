@@ -1,0 +1,8 @@
+test_decimal_precision_retains_trailing_zeros (test_audit_count.Coefficients.test_decimal_precision_retains_trailing_zeros) ... ok
+test_exact_closed_core (test_audit_count.Coefficients.test_exact_closed_core) ... ok
+test_independent_forward_inverse (test_audit_count.Coefficients.test_independent_forward_inverse) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

@@ -1,0 +1,218 @@
+{
+  "afh_bd_totals_max_native_abs_error_M_Phi_Int": [
+    1.6370904631912708e-11,
+    5.684341886080801e-13,
+    2.2737367544323206e-12
+  ],
+  "afh_bd_totals_max_native_tolerance_utilization": 0.0006430548958509848,
+  "candidate_validation": {
+    "columns": [
+      "J2_amp_Mp",
+      "J2_amp_Mn",
+      "J2_amp_PhiPPp",
+      "J2_amp_PhiPPn"
+    ],
+    "max_abs_error_all": 1.1934897514720433e-15,
+    "max_abs_error_each": [
+      2.3592239273284576e-16,
+      2.203098814490545e-16,
+      1.214306433183765e-16,
+      1.1934897514720433e-15
+    ],
+    "raw_csv_sha256": "1ccbd9f86fa80805570583d6ef0b4a885dbf111994e4234c2575c826bc4568f0",
+    "signed_amplitude_abs_tolerance": 5e-13
+  },
+  "inputs_sha256": {
+    "131Xe_OBDME_SN100PN.dat": "2dd36c7aa74a88f8fc979b2423ac2970a605300d0eca973d94cb139bda438bd0",
+    "afh_v6_xe131_eight_response_native.csv": "585ab0f483be0d8131566cefc4cb420c6db7e07bebbcd2b887da568cda2f4ffb",
+    "dmformfactor-V6.m": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372"
+  },
+  "landmarks": {
+    "0.00000": {
+      "AFH_BD_rank2_equal_pn_response_M_Phi_Int": [
+        0.0,
+        0.3995242768465966,
+        0.0
+      ],
+      "SN100PN_rank0_equal_pn_response_M_Phi_Int": [
+        17151.934160616132,
+        768.0656319894625,
+        -3629.574513757126
+      ],
+      "SN100PN_rank2_equal_pn_response_M_Phi_Int": [
+        0.0,
+        0.014291735320507253,
+        0.0
+      ],
+      "SN100PN_rank2_signed_Mp_Mn_Phip_Phin": [
+        0.0,
+        0.0,
+        0.014900364709539718,
+        0.10464768136611663
+      ]
+    },
+    "0.10000": {
+      "AFH_BD_rank2_equal_pn_response_M_Phi_Int": [
+        0.4397108442942942,
+        0.0866101603194601,
+        0.19514975459511594
+      ],
+      "SN100PN_rank0_equal_pn_response_M_Phi_Int": [
+        1730.7865577828738,
+        129.26837661487903,
+        -473.00736631837634
+      ],
+      "SN100PN_rank2_equal_pn_response_M_Phi_Int": [
+        4.626874080822397e-05,
+        0.0008121405199338502,
+        -0.00019384715426509509
+      ],
+      "SN100PN_rank2_signed_Mp_Mn_Phip_Phin": [
+        0.01854098777478816,
+        -0.0253431007412291,
+        0.014475727024970608,
+        0.014022352207389075
+      ]
+    },
+    "0.15000": {
+      "AFH_BD_rank2_equal_pn_response_M_Phi_Int": [
+        0.2723489078063799,
+        0.015899844558033973,
+        0.06580505527443743
+      ],
+      "SN100PN_rank0_equal_pn_response_M_Phi_Int": [
+        6.2505911719594485,
+        6.830040423043795,
+        -6.533895497511704
+      ],
+      "SN100PN_rank2_equal_pn_response_M_Phi_Int": [
+        6.481840031605477e-06,
+        0.00014983375626893296,
+        3.116405685192138e-05
+      ],
+      "SN100PN_rank2_signed_Mp_Mn_Phip_Phin": [
+        0.006723561094403679,
+        -0.009269506897362861,
+        0.007929463135201448,
+        -0.020170123095715545
+      ]
+    },
+    "0.15675": {
+      "AFH_BD_rank2_equal_pn_response_M_Phi_Int": [
+        0.2208616753258477,
+        0.012627452144811636,
+        0.052810228514938905
+      ],
+      "SN100PN_rank0_equal_pn_response_M_Phi_Int": [
+        0.0036538692278977962,
+        3.4939704015704263,
+        0.11298898589457243
+      ],
+      "SN100PN_rank2_equal_pn_response_M_Phi_Int": [
+        2.6427578010591285e-06,
+        0.00021702273739877595,
+        2.3948664519505505e-05
+      ],
+      "SN100PN_rank2_signed_Mp_Mn_Phip_Phin": [
+        0.004256599904088986,
+        -0.005882256018111607,
+        0.006734281669674793,
+        -0.02146597326971774
+      ]
+    },
+    "0.16250": {
+      "AFH_BD_rank2_equal_pn_response_M_Phi_Int": [
+        0.1790535232348152,
+        0.010461283214723293,
+        0.04327966747970043
+      ],
+      "SN100PN_rank0_equal_pn_response_M_Phi_Int": [
+        3.1528741321643943,
+        1.7436694698129447,
+        2.3446898230721347
+      ],
+      "SN100PN_rank2_equal_pn_response_M_Phi_Int": [
+        7.077994968252677e-07,
+        0.0002656496014366301,
+        1.3712281146063178e-05
+      ],
+      "SN100PN_rank2_signed_Mp_Mn_Phip_Phin": [
+        0.002178362802448035,
+        -0.0030196710080571732,
+        0.005694154992580948,
+        -0.02199291572573579
+      ]
+    },
+    "0.20000": {
+      "AFH_BD_rank2_equal_pn_response_M_Phi_Int": [
+        0.016607125567279404,
+        0.004224881266447124,
+        0.008376343695117448
+      ],
+      "SN100PN_rank0_equal_pn_response_M_Phi_Int": [
+        24.374684838257924,
+        0.3553854378469732,
+        -2.943196908741627
+      ],
+      "SN100PN_rank2_equal_pn_response_M_Phi_Int": [
+        1.0562293466375863e-05,
+        0.0002641349813315624,
+        -5.2819231228404605e-05
+      ],
+      "SN100PN_rank2_signed_Mp_Mn_Phip_Phin": [
+        -0.007873797009828756,
+        0.011123765235269716,
+        -0.0008050000115506651,
+        -0.015447230030248596
+      ]
+    },
+    "0.30000": {
+      "AFH_BD_rank2_equal_pn_response_M_Phi_Int": [
+        0.00042356310330441744,
+        0.0013593203815631524,
+        0.0007587871633072304
+      ],
+      "SN100PN_rank0_equal_pn_response_M_Phi_Int": [
+        1.6912247370427456,
+        1.7787108590903572e-06,
+        0.0017344162721042967
+      ],
+      "SN100PN_rank2_equal_pn_response_M_Phi_Int": [
+        8.840618168896283e-06,
+        4.382640465029407e-05,
+        1.968381338127321e-05
+      ],
+      "SN100PN_rank2_signed_Mp_Mn_Phip_Phin": [
+        0.002427914536663739,
+        0.0005454031673323011,
+        -0.005582572445637169,
+        0.012202723852538228
+      ]
+    },
+    "0.60000": {
+      "AFH_BD_rank2_equal_pn_response_M_Phi_Int": [
+        1.3966939202950148e-05,
+        7.26143115272547e-08,
+        -1.0070748107093377e-06
+      ],
+      "SN100PN_rank0_equal_pn_response_M_Phi_Int": [
+        0.00035308335487930706,
+        1.4128050982776772e-06,
+        2.233468074297171e-05
+      ],
+      "SN100PN_rank2_equal_pn_response_M_Phi_Int": [
+        3.315306713755798e-07,
+        5.915641029858039e-09,
+        4.4285623426183826e-08
+      ],
+      "SN100PN_rank2_signed_Mp_Mn_Phip_Phin": [
+        -0.00043060409936391023,
+        0.0010063911011063773,
+        9.916817758238283e-06,
+        6.699638676385947e-05
+      ]
+    }
+  },
+  "q_nodes": 2401,
+  "status": "AFH-source recoupling verified against immutable native rank-summed B&D tables; independent SN100PN signed rank-two reference"
+}

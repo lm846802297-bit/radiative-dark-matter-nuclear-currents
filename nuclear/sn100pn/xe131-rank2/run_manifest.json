@@ -1,0 +1,69 @@
+{
+  "status": "Xe131 one-body elastic J=0,2 M/PhiPP/interference response calculation; no cross section",
+  "source": {
+    "project_analysis_base_commit": "51da16ceb636413c0a0c5e0b98f64224fd4a216d",
+    "source_commits": {
+      "SN100PN_OBDME": "1395f0c161905341fc89a2978148b1ce7c9ee1dd",
+      "AFH_BD_table": "5204f1a78b32b6ff5b423cc5d278d781e88add5e",
+      "rank0_audit": "51da16ceb636413c0a0c5e0b98f64224fd4a216d"
+    },
+    "audit_source_commit": "first run from staged uncommitted files; publication commit not assigned",
+    "source_snapshot_sha256": {
+      "rank2.py": "4562fbe34ab26153f09d03da05edfa498f2718fc64291af3de672f1c64c32dae",
+      "test_rank2.py": "d557317d33d146b4fe9ad6bafcd5bf68d17a227c541f5c6009634cc94b361d3e",
+      "requirements.txt": "f7308e5b60ea62603b458da5fadbb55614b46fbb4d083200fa2cc9843085ceef"
+    }
+  },
+  "inputs": {
+    "131Xe_OBDME_SN100PN.dat": "2dd36c7aa74a88f8fc979b2423ac2970a605300d0eca973d94cb139bda438bd0",
+    "afh_v6_xe131_eight_response_native.csv": "585ab0f483be0d8131566cefc4cb420c6db7e07bebbcd2b887da568cda2f4ffb",
+    "arxiv_tex_member": "00d6b232355a140d70b64fae5ef01c5a58203866b3137d9bae6a61e8ec21cc38",
+    "rank0_audit.py": "7f83ac0ce395194d7b200710e5c7d8738ed8c16c1a44ba4d904dd94316d67e0a"
+  },
+  "environment": {
+    "system": "Debian GNU/Linux 13 (trixie)",
+    "kernel": "6.18.57",
+    "architecture": "x86_64",
+    "cpu": "Intel Xeon Platinum 8573C",
+    "visible_logical_processors": 9,
+    "mem_total_kB": 10206468,
+    "accelerator": "none",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "blas_lapack": "SciPy OpenBLAS 0.3.30 USE64BITINT (NumPy build metadata)",
+    "OPENBLAS_NUM_THREADS": 1
+  },
+  "parameters": {
+    "q_A_range_GeV": [
+      0,
+      0.6
+    ],
+    "q_A_step_GeV": 0.00025,
+    "q_A_nodes": 2401,
+    "oscillator_fm_to_GeV_inverse": 5.0677,
+    "r_nodes": [
+      32,
+      80
+    ],
+    "angular_nodes": [
+      24,
+      40
+    ],
+    "precision": "binary64; exact symbolic reduced angular coupling coefficients rounded on use",
+    "ho_phase": "Laguerre positive leading value at origin; Condon\u2013Shortley spherical harmonics",
+    "cross_check_abs_tolerance": 3e-11,
+    "interpolation": "none",
+    "couplings_for_equal_pn_diagnostic": [
+      1,
+      1
+    ],
+    "phase_space_velocity_kinematic_cuts_mediator_width": "not applicable"
+  },
+  "outputs": {
+    "native/summary.json": "302153114934ea2bafd9ba271c079ca16e44f56a7ad412927474c98c37433699",
+    "native/xe131_rank2.csv": "1ccbd9f86fa80805570583d6ef0b4a885dbf111994e4234c2575c826bc4568f0"
+  },
+  "replay": "OPENBLAS_NUM_THREADS=1 python rank2.py --inputs /tmp/xe131-inputs --output /tmp/xe131-replay"
+}
