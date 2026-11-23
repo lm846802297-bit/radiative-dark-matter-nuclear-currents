@@ -22,4 +22,6 @@ The imported note preserves the original research scope, literature framing, cha
 5. Clarified that a scalar one-body density has a density-type \(M\) operator structure but is not numerically identical to vector \(W_M\) without matching source coefficients and nuclear terms.
 6. Clarified that scalar nucleon form-factor normalization and dimension follow the quark/gluon Wilson-source convention.
 
+7. Replaced an unsupported fixed-percentage characterization of scalar two-body effects with the model-dependent hierarchy stated in the cited paper.
+
 No nuclear data, numerical rates, or new physics calculations were generated during migration.
