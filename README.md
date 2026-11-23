@@ -32,7 +32,7 @@ The project develops reusable three-body response kernels and matches them to ve
 
 1. Research conventions — docs/CONVENTIONS.md
 2. Literature review — docs/LITERATURE_REVIEW.md
-3. Universal \\(u+d+s\\) VV current audit — docs/VV_UNIVERSAL_VECTOR_CURRENT_AUDIT.md
+3. Universal \(u+d+s\) VV current audit — docs/VV_UNIVERSAL_VECTOR_CURRENT_AUDIT.md
 4. General 2-to-3 current framework — docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md
 5. Research plan and gates — docs/RESEARCH_PLAN.md
 6. External baseline pins — docs/EXTERNAL_BASELINES.md
