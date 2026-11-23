@@ -23,7 +23,7 @@ The project develops reusable three-body response kernels and matches them to ve
 | Work package | Status | Evidence boundary |
 |---|---|---|
 | Literature audit and theory architecture | Initial framework established | See docs/LITERATURE_REVIEW.md and docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md |
-| VV recovery benchmark | Source and matching audit recorded; reproduction pending | The universal \\(u+d+s\\) source and one-body matching are documented; raw nuclear data and numerical spectra remain pinned in the original repository |
+| VV recovery benchmark | Source and matching audit recorded; reproduction pending | The universal \(u+d+s\) source and one-body matching are documented; raw nuclear data and numerical spectra remain pinned in the original repository |
 | VA / axial nuclear current | Theory task opened | Requires explicit \(G_A,G_P\), PCAC, and xenon axial-response normalization |
 | SS / scalar nuclear current | Theory task opened | Requires scalar Wilson-source convention and one-/two-body matching |
 | New numerical V/A/S predictions | Not yet performed | No new cross sections or rates are claimed by this bootstrap |
