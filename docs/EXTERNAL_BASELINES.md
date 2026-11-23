@@ -9,7 +9,7 @@ This repository is independent of the original model repository. The following i
 - Exact commit: dd9a7387814cd157d9cde739fa80181e4cd7d428
 - Role: source anchor for the original radiative VV benchmark, validated AFH v6.0 inputs, and the P3/P4 implementation.
 - Recorded scope at that commit: native seven-isotope/eight-response AFH production and P4 halo-fold outputs are validated; the full chiral-EFT nuclear current remains incomplete.
-- Import status: no raw AFH tables, native Wolfram outputs, source code, or numerical spectra have been copied into this repository yet.
+- Import status: PR #2 imported 15 pinned VV/P3 source files, the frozen Fig. 3 benchmark definition, and curated Native AFH response outputs. The upstream AFH package itself is not redistributed. No Fig. 3 event spectrum or new cross section has been produced in this repository; see docs/VV_BASELINE_MIGRATION.md.
 
 Do not replace this pin with a moving branch name. Any later import must record the exact file path, source commit, Git blob ID, SHA-256, license/redistribution status, and independent reproduction result.
 
@@ -33,7 +33,7 @@ The original repository remains the authoritative home for the first paper's cod
 - Repository-local theory note: `docs/VV_UNIVERSAL_VECTOR_CURRENT_AUDIT.md`.
 - Provenance record: `results/provenance/VV_VECTOR_CURRENT_ADDENDUM_2026-11-23.json`.
 - The note uses the original LZ P4 baseline pin above and the P3-C bound-current audit at source commit `d02e5e009f32a1db1b2520a789148bbd0160ccfd`.
-- This is a literature/matching import only. No LZ code, raw AFH tables, xenon OBDMEs, or numerical rates have been copied.
+- This particular audit is a literature/matching import only. The separate curated VV/P3 baseline import below contains selected LZ source code and raw Native AFH response outputs; no xenon OBDME wave functions or new numerical rates were imported.
 - The narrow q_A/q_N interface PR (#111) was merged into the source project's P4 research branch at commit `f63c58249cdf40f4551f0b0b475332e1314e2af7`; PR #112 then corrected its regression assertion only, at P4 HEAD `55e06b9403f7ac3e2913d1dd5d192167bf80617d`. Neither change has been merged to the source project's `main`; the follow-up changes no physics kernel or numerical input.
 
 ## Curated VV/P3 baseline import (2026-11-23)
