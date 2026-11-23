@@ -34,7 +34,8 @@ The project develops reusable three-body response kernels and matches them to ve
 2. Literature review — docs/LITERATURE_REVIEW.md
 3. General 2-to-3 current framework — docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md
 4. Research plan and gates — docs/RESEARCH_PLAN.md
-5. Research and provenance protocol — AGENTS.md
+5. External baseline pins — docs/EXTERNAL_BASELINES.md
+6. Research and provenance protocol — AGENTS.md
 
 ## Relationship to the original project
 
