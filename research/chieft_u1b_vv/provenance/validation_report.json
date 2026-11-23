@@ -1,0 +1,84 @@
+{
+  "record_type": "standards_validation_report",
+  "report_version": "1.0.0",
+  "task_id": "20261124-chiral-vv-source-matching",
+  "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+  "source_commit": "debbe6eddd47982ec4d7cff5240c7fde5fe8d008",
+  "central_commit_sha": "db503f0eb579bdbcac702e44237a6610c34690e7",
+  "status": "INCOMPLETE",
+  "checks": [
+    {
+      "check_id": "primary-literature-review",
+      "status": "PASS",
+      "evidence": [
+        "https://doi.org/10.1016/j.physletb.2015.05.041",
+        "https://doi.org/10.1103/PhysRevC.84.024001",
+        "https://doi.org/10.1007/s00601-019-1500-5"
+      ],
+      "details": "Reviewed direct-detection chiral power counting through O(p3), two-nucleon electromagnetic charge operators through one loop, and fourth-order nuclear electromagnetic four-current/continuity results."
+    },
+    {
+      "check_id": "vv-av-channel-separation",
+      "status": "PASS",
+      "evidence": [
+        "research/three_body_full_current_nucleon_match/CHI_EFT_VV_SOURCE_MATCHING_AUDIT_2026-11-24.md"
+      ],
+      "details": "In the HKS direct-detection counting, the AV two-body vector current appears at O(p2), with AV NLO corrections at O(p3). Table 1 places the first VV two-body time component at O(p4); the spatial piece is O(p2) in the nucleon current plus O(p2) WIMP-spatial suppression, also effective O(p4)."
+    },
+    {
+      "check_id": "universal-source-identification",
+      "status": "PASS",
+      "evidence": [
+        "research/three_body_full_current_nucleon_match/CHI_EFT_VV_SOURCE_MATCHING_AUDIT_2026-11-24.md"
+      ],
+      "details": "The three-flavor universal source is identified as three times the baryon-number current in the three-flavor low-energy theory. Electromagnetic operators are not treated as drop-in replacements."
+    },
+    {
+      "check_id": "xenon-many-body-reuse-audit",
+      "status": "PASS",
+      "evidence": [
+        "https://doi.org/10.1103/PhysRevLett.128.072502",
+        "https://github.com/BaishanHu/AbInitio4DarkMatter"
+      ],
+      "details": "The Hu et al. VS-IMSRG/NAT workflow is a method reference for Xe-129/Xe-131; the public repository contains spin-dependent response fits, not the required VV vector-current operators or matrix elements."
+    },
+    {
+      "check_id": "central-standards-validator",
+      "status": "BLOCKED",
+      "evidence": [
+        "research/standards-lock.yaml",
+        "research/standards-provenance/tasks/20261124-chiral-vv-source-matching.json"
+      ],
+      "details": "The LZ private Actions runner has repeatedly failed to provision (runner_id=0, zero steps). No central machine-validator PASS is claimed."
+    },
+    {
+      "check_id": "su2-singlet-source-projection",
+      "status": "PASS",
+      "evidence": [
+        "https://doi.org/10.1103/PhysRevC.84.054008",
+        "research/three_body_full_current_nucleon_match/CHI_EFT_VV_SOURCE_MATCHING_AUDIT_2026-11-24.md"
+      ],
+      "details": "The SU(2) source is explicitly embedded as r_mu=l_mu=0 and v_mu^(s)=B_mu. The factor of two is relative only to the isolated electromagnetic isoscalar source v_mu^(s)=e A_mu/2, not to the full electromagnetic current."
+    },
+    {
+      "check_id": "candidate-U1B-operator-projection",
+      "status": "PASS",
+      "evidence": [
+        "https://doi.org/10.1103/PhysRevC.84.054008",
+        "research/three_body_full_current_nucleon_match/CHI_EFT_VV_SOURCE_MATCHING_AUDIT_2026-11-24.md"
+      ],
+      "details": "Identified the isoscalar tau1 dot tau2 projection of the one-pion-exchange charge, the U(1)_B identity substitution in short-range C2/C4/C5/C7 current terms, and the surviving isoscalar L2 magnetic contact. Unitary phases beta8/beta9 must be fixed consistently with the selected NN potential."
+    },
+    {
+      "check_id": "reusable-VS-IMSRG-software-audit",
+      "status": "PASS",
+      "evidence": [
+        "https://github.com/ragnarstroberg/imsrg",
+        "https://github.com/Takayuki-Miyagi/NuHamil-public",
+        "https://github.com/BaishanHu/AbInitio4DarkMatter",
+        "research/three_body_full_current_nucleon_match/CHI_EFT_VV_SOURCE_MATCHING_AUDIT_2026-11-24.md"
+      ],
+      "details": "IMSRG++ supports NAT, VS-IMSRG and ensemble normal ordering. NuHamil supplies NN+3N matrix elements and a Tmag NLO vector multipole, but source inspection shows its Tz0 operator uses rank-one isospin tau1 tau2 (isovector), not U(1)_B; N3LO vector currents and two-body charge are not implemented. Hu's repository contains fitted axial Sigma responses but not raw NN+3N inputs or VV operators; exact Hu interaction reproduction is not claimed."
+    }
+  ]
+}
