@@ -1,6 +1,6 @@
 # Research Task Brief — [short task title]
 
-简体中文版：[research-task-brief.zh-CN.md](research-task-brief.zh-CN.md)。
+简体中文版：[简体中文版](TEMPLATE.zh-CN.md)。
 
 > Complete every field before substantive work. If a field does not apply, write N/A and explain why. Do not leave ambiguous blanks.
 
