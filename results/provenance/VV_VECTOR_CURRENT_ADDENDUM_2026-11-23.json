@@ -1,0 +1,92 @@
+{
+  "record_version": "1.0",
+  "record_id": "vv-universal-vector-current-audit-2026-11-23",
+  "recorded_date": "2026-11-23",
+  "repository": "lm846802297-bit/radiative-dark-matter-nuclear-currents",
+  "branch": "research/bootstrap-20261123",
+  "purpose": "Source-pinned literature and matching audit for the universal u+d+s VV benchmark. This is a theory/documentation record, not a numerical production result.",
+  "source_project": {
+    "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+    "original_p4_baseline_commit": "dd9a7387814cd157d9cde739fa80181e4cd7d428",
+    "current_p4_source_commit": "7ff7c16e410027c83160418000738039472fd9b4",
+    "formal_qA_qN_minimal_pr": 111,
+    "formal_qA_qN_pr_head": "3afcd791d4f4964dae0bc282f97bc86d451af797",
+    "p3c_bound_current_audit_commit": "d02e5e009f32a1db1b2520a789148bbd0160ccfd",
+    "p3c_bound_current_audit_path": "research/three_body_full_current_nucleon_match/results/2026-11-23/p3c_bound_current_audit/AUDIT_REPORT.md"
+  },
+  "adopted_relations": {
+    "universal_source": "J_uds^mu = sum_{q=u,d,s} qbar gamma^mu q = 3 J_B^mu",
+    "charge_symmetric_nucleon_matching": "F_i^{uds,N} = 3 (F_i^{EM,p} + F_i^{EM,n} + F_i^{s,N})",
+    "external_coupling_normalization": "If g_VN=3 g_Vq is already used in the external rate prefactor, use Fhat_i=F_i^{uds,N}/3 exactly once.",
+    "formal_one_body_transfer": "q_N^mu=q_A^mu is the external transfer assigned at the one-body current vertex; t_N=t_A=-2 m_A E_R. It is not a reconstruction of microscopic bound-nucleon off-shell momenta.",
+    "momentum_separation": "F_i use t_N; AFH y_A uses Q_A^2=2 m_A E_R+E_R^2; the mediator propagator uses invariant t_A."
+  },
+  "literature": [
+    {
+      "reference": "Hoferichter, Klos, Schwenk (2015), Phys. Lett. B 746, 410-416",
+      "arxiv": "1503.04811",
+      "doi": "10.1016/j.physletb.2015.05.041",
+      "location": "Table 1 and Sec. 5.2",
+      "finding": "Through the paper's O(p^3) counting, the only two-body vector current appears in AV (axial dark-matter/vector nucleon), with an i(tau_1 x tau_2)_3 isospin structure. This is not a VV current and is not an all-orders absence theorem."
+    },
+    {
+      "reference": "Filandri, Viviani (2024), Phys. Rev. C 110, 034002",
+      "doi": "10.1103/PhysRevC.110.034002",
+      "location": "Eqs. (1), (14), (15); deuteron and 4He calculations through N2LO",
+      "finding": "Useful source-level organization of SU(2) isovector and singlet vector sources and few-body methods. Their v_mu^(s) is an SU(2) singlet source, not a strange-quark current; their N2LO counting is not equated with the HKS O(p^3) scheme."
+    },
+    {
+      "reference": "Kolling, Epelbaum, Phillips (2012), Phys. Rev. C 86, 047001",
+      "arxiv": "1209.0837",
+      "doi": "10.1103/PhysRevC.86.047001",
+      "location": "Isoscalar electromagnetic two-body magnetic current at O(e P^4)",
+      "finding": "The dbar_9 and L_2 terms are electromagnetic-source LECs in a specified NN/regulator scheme and are not imported as baryon-number-current coefficients."
+    },
+    {
+      "reference": "Krebs (2020), Eur. Phys. J. A 56, 234",
+      "doi": "10.1140/epja/s10050-020-00230-9",
+      "finding": "Reference for consistent nuclear-current construction with the nuclear interaction, regulator, and unitary-transformation/off-shell convention."
+    },
+    {
+      "reference": "Hoferichter, Menendez, Schwenk (2020), Phys. Rev. D 102, 074018",
+      "arxiv": "2007.08529",
+      "doi": "10.1103/PhysRevD.102.074018",
+      "location": "Table I",
+      "finding": "Uses kappa_s=-0.017(4) and <r_E,s^2>=-0.0048(6) fm^2 as strange nucleon vector-form-factor inputs; provides xenon nuclear-response methodology."
+    },
+    {
+      "reference": "Sufian et al. (2017), Phys. Rev. Lett. 118, 042001",
+      "doi": "10.1103/PhysRevLett.118.042001",
+      "finding": "Historical physical-point lattice strange magnetic moment kappa_s=-0.064(17), retained as an alternative input."
+    },
+    {
+      "reference": "Alexandrou et al. (2026), arXiv:2603.26591",
+      "arxiv": "2603.26591",
+      "location": "Eq. (28), Table XIV",
+      "finding": "Preprint reports G_M^s(0)=-0.0179(20) and G_E^s z-expansion coefficient c_1,0=0.0897(86) with Q_cut^2=0.85 GeV^2. Retained as a separately labelled sensitivity input."
+    }
+  ],
+  "scope_decisions": [
+    "The HKS AV two-body vector current is not inserted into the VV benchmark.",
+    "The 2024 few-body source formalism is used as a method reference, not as xenon nuclear data.",
+    "Electromagnetic isoscalar LECs are not reused for the universal u+d+s baryon-number source without source-specific matching.",
+    "The truncated LZ P3-C impulse-current divergence is recorded as a model-specific warning about bound-state current conservation, not a universal result.",
+    "No LZ code, AFH raw data, xenon OBDMEs, or numerical spectra are copied into this repository by this addendum."
+  ],
+  "imported_document_sha256": {
+    "README.md": "78fa284ee68c1cac7538d0598958bdeb667e602542cd2dfb3f1da5360597d8a9",
+    "docs/CONVENTIONS.md": "8fb06e704d881bb356de03acca57ff47f656fe2cc101714d0d75dd1628aa3b29",
+    "docs/LITERATURE_REVIEW.md": "d1b18e7a674338aeeb0d82daa03df7a434793aafbe164facfc39ea575e9619a3",
+    "docs/RESEARCH_PLAN.md": "615cbe24d8f531d666c31368ca18ee7a475d2901fba1733cee26e128dd5b0ae4",
+    "theory/nuclear_currents/README.md": "a031632c92656905d70d460a6599dd84310858339c7946d6617297e92ad58388",
+    "nuclear/chiral_eft/README.md": "abaee53c11f41a219810810eac387551b4b7e96be19e13af26b3949b41d40684",
+    "docs/VV_UNIVERSAL_VECTOR_CURRENT_AUDIT.md": "ded46d7bc0e939d64fc47d9b15b660042e2db697bef02bc5ae0f5a305d86d541"
+  },
+  "validation": {
+    "documentation_and_reference_audit": true,
+    "numerical_physics_calculation_performed": false,
+    "new_cross_section_or_event_rate_generated": false,
+    "raw_data_imported": false,
+    "current_status": "LITERATURE_AND_MATCHING_AUDIT_RECORDED; VV numerical recovery and source-pinned data import remain pending."
+  }
+}
