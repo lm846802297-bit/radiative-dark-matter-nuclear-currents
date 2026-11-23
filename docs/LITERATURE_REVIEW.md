@@ -18,7 +18,7 @@ This is the AFH nuclear-response framework used for elastic nuclear multipoles. 
 
 ## Chiral EFT one- and two-body currents
 
-Martin Hoferichter, Philipp Klos, and Achim Schwenk, “Chiral power counting of one- and two-body currents in direct detection of dark matter,” Phys. Lett. B 746, 410–416 (2015). [arXiv:1503.04811](https://arxiv.org/abs/1503.04811), [DOI](https://doi.org/10.1016/j.physletb.2015.05.041). Establishes common chiral power counting for vector, axial-vector, scalar, and pseudoscalar WIMP-nucleon interactions and derives one-/two-body currents through third order. Exchange-current content depends on both dark-side and nucleon-side channels.
+Martin Hoferichter, Philipp Klos, and Achim Schwenk, “Chiral power counting of one- and two-body currents in direct detection of dark matter,” Phys. Lett. B 746, 410–416 (2015). [arXiv:1503.04811](https://arxiv.org/abs/1503.04811), [DOI](https://doi.org/10.1016/j.physletb.2015.05.041). Establishes common chiral power counting for vector, axial-vector, scalar, and pseudoscalar WIMP-nucleon interactions and derives one-/two-body currents through third order. Section 5.2 states that the only two-body vector current through \\(\\mathcal O(p^3)\\) occurs in the AV channel (axial dark-matter bilinear, vector nucleon current), with an \\(i(\\boldsymbol\\tau_1\\times\\boldsymbol\\tau_2)_3\\) structure. This is not a VV current; the statement is limited to the paper's order and counting.
 
 Martin Hoferichter, Philipp Klos, Javier Menéndez, and Achim Schwenk, “Analysis strategies for general spin-independent WIMP-nucleus scattering,” Phys. Rev. D 94, 063505 (2016). [arXiv:1605.08043](https://arxiv.org/abs/1605.08043), [DOI](https://doi.org/10.1103/PhysRevD.94.063505). Provides coherent scalar/vector response formalism and xenon structure-factor fits, including scalar two-body contributions. These are not AFH \(W_M\) columns and require normalization, isospin, oscillator-length, and nuclear-model matching.
 
@@ -31,6 +31,20 @@ Javier Menéndez, D. Gazit, and A. Schwenk, “Spin-dependent WIMP scattering of
 P. Klos et al., “Large-scale nuclear structure calculations for spin-dependent WIMP scattering with chiral effective field theory currents,” Phys. Rev. D 88, 083516 (2013). [arXiv:1304.7684](https://arxiv.org/abs/1304.7684), [DOI](https://doi.org/10.1103/PhysRevD.88.083516). Provides xenon spin-dependent structure factors and nuclear-structure calculations with chiral-EFT current effects.
 
 B.-S. Hu et al., “Ab Initio Structure Factors for Spin-Dependent Dark Matter Direct Detection,” Phys. Rev. Lett. 128, 072502 (2022). [DOI](https://doi.org/10.1103/PhysRevLett.128.072502). Provides ab initio spin-dependent structure factors for \(^{129,131}\mathrm{Xe}\) using chiral interactions and consistent axial-current effects.
+
+## Vector-current source matching and two-body-current hierarchy
+
+S. Kölling, E. Epelbaum, and D. R. Phillips, “The magnetic form factor of the deuteron in chiral effective field theory,” Phys. Rev. C 86, 047001 (2012). [arXiv:1209.0837](https://arxiv.org/abs/1209.0837), [DOI](https://doi.org/10.1103/PhysRevC.86.047001). Derives isoscalar electromagnetic two-nucleon charge/current contributions at higher chiral order. Its \\(\\bar d_9\\) and \\(L_2\\) coefficients belong to the electromagnetic source and its chosen NN/regulator scheme; they are not automatically LECs for the universal dark-matter baryon-number source.
+
+Hermann Krebs, “Nuclear currents in chiral effective field theory,” Eur. Phys. J. A 56, 234 (2020). [DOI](https://doi.org/10.1140/epja/s10050-020-00230-9). Review of chiral nuclear currents, including the relation between current operators, nuclear forces, regulator choices, and unitary-transformation/off-shell conventions.
+
+Martin Hoferichter, Javier Menéndez, and Achim Schwenk, “Coherent elastic neutrino-nucleus scattering: EFT analysis and nuclear responses,” Phys. Rev. D 102, 074018 (2020). [arXiv:2007.08529](https://arxiv.org/abs/2007.08529), [DOI](https://doi.org/10.1103/PhysRevD.102.074018). Provides xenon nuclear responses and vector-current form-factor inputs. Its Table I lists \\(\\kappa_s=-0.017(4)\\) and \\(\\langle r_{E,s}^2\\rangle=-0.0048(6)\\,\\mathrm{fm}^2\\). Useful for nucleon input and response methodology; its weak-current coefficients are not the universal dark-matter source.
+
+Raza Sabbir Sufian et al. (\(\\chi\)QCD Collaboration), “Strange Quark Magnetic Moment of the Nucleon at the Physical Point,” Phys. Rev. Lett. 118, 042001 (2017). [DOI](https://doi.org/10.1103/PhysRevLett.118.042001). Historical physical-point lattice input, \\(\\kappa_s=-0.064(17)\\), retained as an alternative to the later lattice-informed values.
+
+Constantia Alexandrou et al., “Nucleon strange electromagnetic form factors from \\(N_f=2+1+1\\) lattice QCD,” [arXiv:2603.26591](https://arxiv.org/abs/2603.26591) (2026 preprint). Table XIV reports \\(G_M^s(0)=-0.0179(20)\\) and the electric z-expansion coefficient \\(c_{1,0}=0.0897(86)\\) for \\(Q_{\\rm cut}^2=0.85\\,\\mathrm{GeV}^2\\). Treat this as a separately labelled preprint sensitivity input, not a silent replacement of the frozen baseline.
+
+For the special universal \\(u+d+s\\) vector source and its VV-specific scope, see [VV_UNIVERSAL_VECTOR_CURRENT_AUDIT.md](VV_UNIVERSAL_VECTOR_CURRENT_AUDIT.md).
 
 ## Few-body chiral-EFT method cross-check
 
