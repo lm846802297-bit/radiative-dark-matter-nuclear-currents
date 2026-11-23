@@ -34,7 +34,7 @@ B.-S. Hu et al., “Ab Initio Structure Factors for Spin-Dependent Dark Matter D
 
 ## Vector-current source matching and two-body-current hierarchy
 
-S. Kölling, E. Epelbaum, and D. R. Phillips, “The magnetic form factor of the deuteron in chiral effective field theory,” Phys. Rev. C 86, 047001 (2012). [arXiv:1209.0837](https://arxiv.org/abs/1209.0837), [DOI](https://doi.org/10.1103/PhysRevC.86.047001). Derives isoscalar electromagnetic two-nucleon charge/current contributions at higher chiral order. Its \\(\\bar d_9\\) and \\(L_2\\) coefficients belong to the electromagnetic source and its chosen NN/regulator scheme; they are not automatically LECs for the universal dark-matter baryon-number source.
+S. Kölling, E. Epelbaum, and D. R. Phillips, “The magnetic form factor of the deuteron in chiral effective field theory,” Phys. Rev. C 86, 047001 (2012). [arXiv:1209.0837](https://arxiv.org/abs/1209.0837), [DOI](https://doi.org/10.1103/PhysRevC.86.047001). Derives isoscalar electromagnetic two-nucleon charge/current contributions at higher chiral order. Its \(\bar d_9\) and \(L_2\) coefficients belong to the electromagnetic source and its chosen NN/regulator scheme; they are not automatically LECs for the universal dark-matter baryon-number source.
 
 Hermann Krebs, “Nuclear currents in chiral effective field theory,” Eur. Phys. J. A 56, 234 (2020). [DOI](https://doi.org/10.1140/epja/s10050-020-00230-9). Review of chiral nuclear currents, including the relation between current operators, nuclear forces, regulator choices, and unitary-transformation/off-shell conventions.
 
