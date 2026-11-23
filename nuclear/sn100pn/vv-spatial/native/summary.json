@@ -1,0 +1,615 @@
+{
+  "scope": "leading-static transverse AFH diagnostic at four fixed radiative VV points, not full current or cross section",
+  "parent": "7f82851b777e21a8618a8bd5767448dcc58f4a70",
+  "source_pins": {
+    "afh_package_ref": "aac9b33d66f6a7fe1ca5d5d8cc648f5afe52a81b",
+    "spatial_operator_helper_ref": "ebe6e8cbd2e67d79e2a34305651d6b53ac565795",
+    "SN100PN_OBDME_author_ref": "1395f0c161905341fc89a2978148b1ce7c9ee1dd"
+  },
+  "checks": {
+    "signed_BD_native_anchor_max_abs": 3.0878077872387166e-16,
+    "particle_coefficient_crosscheck_max_relative": 7.771561172376096e-15,
+    "SN100PN_50_vs_80_digit_signed_input_max_abs": 4.472135746960954e-52,
+    "published_q0_control": {
+      "129": {
+        "published_q0_species_response_max_relative_by_response": {
+          "Delta": 0.0004310632194128135,
+          "SigmaPrime": 0.00140894243948105,
+          "SigmaPrimeDelta": 0.0026553939241156783
+        },
+        "all_ten_q0_signs_agree": true
+      },
+      "131": {
+        "published_q0_species_response_max_relative_by_response": {
+          "Delta": 0.0008916472613255731,
+          "SigmaPrime": 0.0011405066884089265,
+          "SigmaPrimeDelta": 0.0035089701219791253
+        },
+        "all_ten_q0_signs_agree": true
+      }
+    }
+  },
+  "inputs_sha256": {
+    "afh": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+    "helper": "a9c0a68e354bd3b4504e6a65c24788662e95bdcc1466debeccdcbe5ef3a963e0",
+    "129": "26ef95e96f79bcd883cc3374e26aac62fdb80be23439e1604a96703468e8dd91",
+    "131": "2dd36c7aa74a88f8fc979b2423ac2970a605300d0eca973d94cb139bda438bd0",
+    "sup": "00d6b232355a140d70b64fae5ef01c5a58203866b3137d9bae6a61e8ec21cc38",
+    "native_rank": "cc1d89d0d3cce9cb138226a9dcc880e76bde8a3d2bc22698ac072900320726e1",
+    "finite_t_summary": "8fa341408682ba3fd6ccf41054fe3ebd9cce82698a23014c1a6125cb26305e65",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/three_body_multipole_leptonic_weights.py": "b42492780f2668cfd968c8d597b948d654ef2a4df1d9b3935e8f3831b84ad651",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/nucleon_vector_form_factors.py": "07f956d4427abd1aba0e8d4f31cc7349e144fcd592e9066037b81b750d154eb4",
+    "compressed_T3_tensor": "413f0722450d644950d21857e76f0f391b78091e134ee63301773667c066f6fd",
+    "raw_T3_tensor": "360ac092abc52fa46407536029226b00297c3e0fc7d678840012c2cb0a6e4f4d"
+  },
+  "benchmarks": [
+    {
+      "A": 129,
+      "ER_keV": 200.0,
+      "Q_A_GeV": 0.21923762378951292,
+      "y": 1.6143506364536668,
+      "L_T": 5.046052161619095,
+      "allowed_density_ranks": [
+        1
+      ],
+      "raw_norm_AFH_iso0_signed": [
+        [
+          0.015481183037698854,
+          0.026900257433408663
+        ]
+      ],
+      "SN100PN_F_normalized_amplitudes_p_Delta_SigmaPrime": [
+        [
+          -0.00047719756088188787,
+          0.004684349406700948
+        ]
+      ],
+      "SN100PN_F_normalized_amplitudes_n_Delta_SigmaPrime": [
+        [
+          0.015893864844788913,
+          0.14719062428045943
+        ]
+      ],
+      "schemes": {
+        "anchors": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.001505872350495278,
+              0.004546662742142044,
+              0.002616618755267711
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.00020714990657164225,
+              0.0001041141240127033,
+              -0.0002937157201242035
+            ],
+            "spatial_kernel": 1.7548310460142026e-05,
+            "conditional_charge_plus_spatial": 133704729.37938674,
+            "spatial_over_conditional_charge": 1.312467445362464e-13
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.0002376736301426892,
+              0.023066007632475658,
+              0.002341405938087086
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              3.26947169608421e-05,
+              0.0005281889850475533,
+              -0.000262823053539557
+            ],
+            "spatial_kernel": 0.00029806064846883836,
+            "conditional_charge_plus_spatial": 150108949.630724,
+            "spatial_over_conditional_charge": 1.985628766323895e-12
+          },
+          "both_over_charge_only_model_ratio": 1.000000000001854
+        },
+        "bishara_linear": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.001505872350495278,
+              0.004546662742142044,
+              0.002616618755267711
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.00015519043643200732,
+              7.263058768558175e-05,
+              -0.00021233532538170475
+            ],
+            "spatial_kernel": 1.548569873588431e-05,
+            "conditional_charge_plus_spatial": 100268982.6835782,
+            "spatial_over_conditional_charge": 1.5444156628930185e-13
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.0002376736301426892,
+              0.023066007632475658,
+              0.002341405938087086
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              2.4493891781791557e-05,
+              0.00036846755189885657,
+              -0.00019000215094900646
+            ],
+            "spatial_kernel": 0.0002029592927316416,
+            "conditional_charge_plus_spatial": 112576621.47046448,
+            "spatial_over_conditional_charge": 1.8028547142468276e-12
+          },
+          "both_over_charge_only_model_ratio": 1.0000000000016485
+        },
+        "isoscalar_zexp": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.001505872350495278,
+              0.004546662742142044,
+              0.002616618755267711
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.0001637823734281544,
+              8.398303145459556e-05,
+              -0.0002345629145395751
+            ],
+            "spatial_kernel": 1.3202490343174816e-05,
+            "conditional_charge_plus_spatial": 105682434.82522547,
+            "spatial_over_conditional_charge": 1.249260614122901e-13
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.0002376736301426892,
+              0.023066007632475658,
+              0.002341405938087086
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              2.584996745125977e-05,
+              0.00042606046553114344,
+              -0.0002098918689825658
+            ],
+            "spatial_kernel": 0.00024201856399983738,
+            "conditional_charge_plus_spatial": 118646890.97847772,
+            "spatial_over_conditional_charge": 2.0398222153518774e-12
+          },
+          "both_over_charge_only_model_ratio": 1.000000000001915
+        }
+      }
+    },
+    {
+      "A": 129,
+      "ER_keV": 267.0,
+      "Q_A_GeV": 0.2533120092461155,
+      "y": 2.155158700498621,
+      "L_T": 98.9970014419804,
+      "allowed_density_ranks": [
+        1
+      ],
+      "raw_norm_AFH_iso0_signed": [
+        [
+          0.011622062803709022,
+          0.020305695253188455
+        ]
+      ],
+      "SN100PN_F_normalized_amplitudes_p_Delta_SigmaPrime": [
+        [
+          -7.180507043523557e-05,
+          0.0009567075431997729
+        ]
+      ],
+      "SN100PN_F_normalized_amplitudes_n_Delta_SigmaPrime": [
+        [
+          0.011851092937521769,
+          0.12193125603525726
+        ]
+      ],
+      "schemes": {
+        "anchors": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.000848684566054393,
+              0.0025906908808813285,
+              0.0014827944449659377
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.003057697923526454,
+              0.0015537609296542576,
+              -0.004359326355417936
+            ],
+            "spatial_kernel": 0.00025213249776277546,
+            "conditional_charge_plus_spatial": 28844843.173094757,
+            "spatial_over_conditional_charge": 8.740990417315141e-12
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.00013875162265569203,
+              0.015101451592460183,
+              0.0014475326983906908
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.0004999036926671815,
+              0.009057061048305176,
+              -0.004255658944398553
+            ],
+            "spatial_kernel": 0.0053013057965738035,
+            "conditional_charge_plus_spatial": 34058522.64215372,
+            "spatial_over_conditional_charge": 1.556528406442862e-10
+          },
+          "both_over_charge_only_model_ratio": 1.0000000001469118
+        },
+        "bishara_linear": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.000848684566054393,
+              0.0025906908808813285,
+              0.0014827944449659377
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.00205852314780872,
+              0.0009453787997268242,
+              -0.0027900423958680575
+            ],
+            "spatial_kernel": 0.0002138595516674875,
+            "conditional_charge_plus_spatial": 19510586.689557523,
+            "spatial_over_conditional_charge": 1.0961205578932886e-11
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.00013875162265569203,
+              0.015101451592460183,
+              0.0014475326983906908
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.00033654839319236196,
+              0.00551072776994374,
+              -0.0027236935042659217
+            ],
+            "spatial_kernel": 0.0031235826588701804,
+            "conditional_charge_plus_spatial": 23046467.597226713,
+            "spatial_over_conditional_charge": 1.3553411802116725e-10
+          },
+          "both_over_charge_only_model_ratio": 1.0000000001245732
+        },
+        "isoscalar_zexp": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.000848684566054393,
+              0.0025906908808813285,
+              0.0014827944449659377
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.0022429166990186643,
+              0.0011638221570695547,
+              -0.003231319328558679
+            ],
+            "spatial_kernel": 0.00017541952752954046,
+            "conditional_charge_plus_spatial": 21137379.923056822,
+            "spatial_over_conditional_charge": 8.299019470225223e-12
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.00013875162265569203,
+              0.015101451592460183,
+              0.0014475326983906908
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.00036669493462950816,
+              0.006784060613684442,
+              -0.003154476605243816
+            ],
+            "spatial_kernel": 0.003996278943070135,
+            "conditional_charge_plus_spatial": 24955775.315777067,
+            "spatial_over_conditional_charge": 1.6013443353866168e-10
+          },
+          "both_over_charge_only_model_ratio": 1.000000000151835
+        }
+      }
+    },
+    {
+      "A": 131,
+      "ER_keV": 200.0,
+      "Q_A_GeV": 0.22093060215101032,
+      "y": 1.6467675584777626,
+      "L_T": 6.374438564510218,
+      "allowed_density_ranks": [
+        1,
+        2,
+        3
+      ],
+      "raw_norm_AFH_iso0_signed": [
+        [
+          -0.03046549662371792,
+          -0.007136297273571533
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0140174034651987,
+          -0.03977840884621972
+        ]
+      ],
+      "SN100PN_F_normalized_amplitudes_p_Delta_SigmaPrime": [
+        [
+          0.0007460924323066629,
+          0.0020739002540058073
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0014173600039529316,
+          -0.0011029030116374012
+        ]
+      ],
+      "SN100PN_F_normalized_amplitudes_n_Delta_SigmaPrime": [
+        [
+          -0.07111169684254678,
+          -0.012418107146653309
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.02755922213542106,
+          -0.08246802189496256
+        ]
+      ],
+      "schemes": {
+        "anchors": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.003533142177640608,
+              0.005131001643382088,
+              -0.0010687043672618825
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.0006234899836448306,
+              0.00015072692758341872,
+              0.00015389202328414426
+            ],
+            "spatial_kernel": 0.0009281089345123937,
+            "conditional_charge_plus_spatial": 146256007.4140193,
+            "spatial_over_conditional_charge": 6.345783335182988e-12
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.005790960596498291,
+              0.007091102105982467,
+              -0.0016937233998738366
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.0010219248889694272,
+              0.0002083063128606868,
+              0.00024389394193091463
+            ],
+            "spatial_kernel": 0.0014741251437610284,
+            "conditional_charge_plus_spatial": 165974135.18643165,
+            "spatial_over_conditional_charge": 8.881655820157154e-12
+          },
+          "both_over_charge_only_model_ratio": 1.000000000002536
+        },
+        "bishara_linear": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.003533142177640608,
+              0.005131001643382088,
+              -0.0010687043672618825
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.00046485261900384897,
+              0.00010450571463030838,
+              0.00011064546200550739
+            ],
+            "spatial_kernel": 0.0006800037956396647,
+            "conditional_charge_plus_spatial": 109165735.60284778,
+            "spatial_over_conditional_charge": 6.22909552973471e-12
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.005790960596498291,
+              0.007091102105982467,
+              -0.0016937233998738366
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.0007619119368776637,
+              0.0001444280755703898,
+              0.00017535514388204696
+            ],
+            "spatial_kernel": 0.0010816951563301005,
+            "conditional_charge_plus_spatial": 123891584.54833643,
+            "spatial_over_conditional_charge": 8.730981690830827e-12
+          },
+          "both_over_charge_only_model_ratio": 1.0000000000025018
+        },
+        "isoscalar_zexp": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.003533142177640608,
+              0.005131001643382088,
+              -0.0010687043672618825
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.0004912333327495471,
+              0.00012116807368543574,
+              0.00012247401680430441
+            ],
+            "spatial_kernel": 0.0007348754232392871,
+            "conditional_charge_plus_spatial": 115195085.1124944,
+            "spatial_over_conditional_charge": 6.379399108272098e-12
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.005790960596498291,
+              0.007091102105982467,
+              -0.0016937233998738366
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.000805150976273145,
+              0.00016745564359677,
+              0.00019410148820619546
+            ],
+            "spatial_kernel": 0.0011667081080761104,
+            "conditional_charge_plus_spatial": 130723145.14498383,
+            "spatial_over_conditional_charge": 8.925030887166447e-12
+          },
+          "both_over_charge_only_model_ratio": 1.0000000000025455
+        }
+      }
+    },
+    {
+      "A": 131,
+      "ER_keV": 267.0,
+      "Q_A_GeV": 0.2552681134213372,
+      "y": 2.198435294108585,
+      "L_T": 136.46893925846118,
+      "allowed_density_ranks": [
+        1,
+        2,
+        3
+      ],
+      "raw_norm_AFH_iso0_signed": [
+        [
+          -0.025295216512652232,
+          0.002680803956968931
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.008867927080075303,
+          -0.01796265871922462
+        ]
+      ],
+      "SN100PN_F_normalized_amplitudes_p_Delta_SigmaPrime": [
+        [
+          0.0007522478928849406,
+          -0.0003353437993676961
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0007201367963785214,
+          -0.0010367587482271977
+        ]
+      ],
+      "SN100PN_F_normalized_amplitudes_n_Delta_SigmaPrime": [
+        [
+          -0.057449387783678404,
+          0.00457796059105827
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.021431948868958953,
+          -0.03519710837520424
+        ]
+      ],
+      "schemes": {
+        "anchors": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.0022571969653014017,
+              0.001036234915834773,
+              -0.0007134653181168819
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.011384424606980793,
+              0.0008700018487994483,
+              0.0029363285858101922
+            ],
+            "spatial_kernel": 0.015190755041590431,
+            "conditional_charge_plus_spatial": 2152278.9871888366,
+            "spatial_over_conditional_charge": 7.057986087875959e-09
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.0037052805711206534,
+              0.0013308929239596202,
+              -0.001043199966246218
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.01868799575671998,
+              0.0011173907448063603,
+              0.004293380215999763
+            ],
+            "spatial_kernel": 0.024098766717526098,
+            "conditional_charge_plus_spatial": 4029293.995017096,
+            "spatial_over_conditional_charge": 5.980890670043038e-09
+          },
+          "both_over_charge_only_model_ratio": 0.9999999989229046
+        },
+        "bishara_linear": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.0022571969653014017,
+              0.001036234915834773,
+              -0.0007134653181168819
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.007612394346914537,
+              0.0005247300241947081,
+              0.0018647371322813716
+            ],
+            "spatial_kernel": 0.010001861503390616,
+            "conditional_charge_plus_spatial": 1462928.9265677105,
+            "spatial_over_conditional_charge": 6.836874567268433e-09
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.0037052805711206534,
+              0.0013308929239596202,
+              -0.001043199966246218
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.012496054755932563,
+              0.0006739393408948307,
+              0.0027265427821893265
+            ],
+            "spatial_kernel": 0.01589653687901672,
+            "conditional_charge_plus_spatial": 2737836.394934683,
+            "spatial_over_conditional_charge": 5.806240650729272e-09
+          },
+          "both_over_charge_only_model_ratio": 0.9999999989693661
+        },
+        "isoscalar_zexp": {
+          "AFH_BD": {
+            "responses_equal_pn": [
+              0.0022571969653014017,
+              0.001036234915834773,
+              -0.0007134653181168819
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.008312708954002329,
+              0.0006486780920618499,
+              0.0021665809767081727
+            ],
+            "spatial_kernel": 0.01112796802277235,
+            "conditional_charge_plus_spatial": 1566161.1286090387,
+            "spatial_over_conditional_charge": 7.105251112778215e-09
+          },
+          "SN100PN": {
+            "responses_equal_pn": [
+              0.0037052805711206534,
+              0.0013308929239596202,
+              -0.001043199966246218
+            ],
+            "spatial_terms_Delta_SigmaPrime_SigmaPrimeDelta": [
+              0.013645649650487056,
+              0.0008331325932568741,
+              0.003167886573291563
+            ],
+            "spatial_kernel": 0.017646668817035492,
+            "conditional_charge_plus_spatial": 2932222.42603199,
+            "spatial_over_conditional_charge": 6.0181890591146994e-09
+          },
+          "both_over_charge_only_model_ratio": 0.9999999989129379
+        }
+      }
+    }
+  ]
+}

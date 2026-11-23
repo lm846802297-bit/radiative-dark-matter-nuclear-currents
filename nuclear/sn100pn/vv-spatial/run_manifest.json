@@ -1,0 +1,105 @@
+{
+  "scope": "leading-static transverse AFH diagnostic at four fixed radiative VV points, not full current or cross section",
+  "status": "four-point comparison verified locally",
+  "source": {
+    "parent": "7f82851b777e21a8618a8bd5767448dcc58f4a70",
+    "verified_clean": true,
+    "pinned_refs": {
+      "afh_package_ref": "aac9b33d66f6a7fe1ca5d5d8cc648f5afe52a81b",
+      "spatial_operator_helper_ref": "ebe6e8cbd2e67d79e2a34305651d6b53ac565795",
+      "SN100PN_OBDME_author_ref": "1395f0c161905341fc89a2978148b1ce7c9ee1dd"
+    },
+    "working_sources_sha256": {
+      "compute.py": "95401d5a793503664a93605be1e48454ece4f8745d7a8e8def38eaa39026e184",
+      "requirements.txt": "d7cf70f5975ba847628ca27bdc6d4ed31a23be143f074d84244149d96276a593",
+      "test_compute.py": "b907ff03527dd7632a441bebcd9cfb1475126fac811f146301da15fe0033783c"
+    }
+  },
+  "inputs_sha256": {
+    "afh": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+    "helper": "a9c0a68e354bd3b4504e6a65c24788662e95bdcc1466debeccdcbe5ef3a963e0",
+    "129": "26ef95e96f79bcd883cc3374e26aac62fdb80be23439e1604a96703468e8dd91",
+    "131": "2dd36c7aa74a88f8fc979b2423ac2970a605300d0eca973d94cb139bda438bd0",
+    "sup": "00d6b232355a140d70b64fae5ef01c5a58203866b3137d9bae6a61e8ec21cc38",
+    "native_rank": "cc1d89d0d3cce9cb138226a9dcc880e76bde8a3d2bc22698ac072900320726e1",
+    "finite_t_summary": "8fa341408682ba3fd6ccf41054fe3ebd9cce82698a23014c1a6125cb26305e65",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/three_body_multipole_leptonic_weights.py": "b42492780f2668cfd968c8d597b948d654ef2a4df1d9b3935e8f3831b84ad651",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/nucleon_vector_form_factors.py": "07f956d4427abd1aba0e8d4f31cc7349e144fcd592e9066037b81b750d154eb4",
+    "compressed_T3_tensor": "413f0722450d644950d21857e76f0f391b78091e134ee63301773667c066f6fd",
+    "raw_T3_tensor": "360ac092abc52fa46407536029226b00297c3e0fc7d678840012c2cb0a6e4f4d"
+  },
+  "parameters": {
+    "isotopes": [
+      129,
+      131
+    ],
+    "ER_keV": [
+      200,
+      267
+    ],
+    "lab_speed_km_s": 776,
+    "mchi_GeV": 1000,
+    "ms_GeV": 0.0003,
+    "fixed_pole_width_delta_m_keV": [
+      450,
+      362
+    ],
+    "g2": 1.0,
+    "mN_GeV": 0.938918,
+    "FF": [
+      "anchors",
+      "bishara_linear",
+      "isoscalar_zexp"
+    ],
+    "same_inherited_T3_tensors": true,
+    "Q_A": "exact momenta used by fixed finite-t_N archive, not interpolation",
+    "normalization": "physical equal p/n, no C0 applied; no model rescaling",
+    "arithmetic": "50/80 decimal recoupling digits; binary64 kernel and JSON",
+    "no_new_phase_space_convolution_or_transverse_higher_order_terms": true
+  },
+  "environment": {
+    "os": "Debian GNU/Linux 13",
+    "kernel": "6.18.57",
+    "architecture": "x86_64",
+    "cpu": "Intel Xeon Platinum 8573C",
+    "visible_logical_processors": 9,
+    "mem_total_kB": 10206468,
+    "accelerator": "none",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "mpmath": "1.3.0",
+    "sympy": "1.14.0",
+    "BLAS_LAPACK": "OpenBLAS 0.3.30 USE64BITINT (NumPy build metadata)",
+    "OPENBLAS_NUM_THREADS": 1
+  },
+  "verification": {
+    "tests": 3,
+    "checks": {
+      "signed_BD_native_anchor_max_abs": 3.0878077872387166e-16,
+      "particle_coefficient_crosscheck_max_relative": 7.771561172376096e-15,
+      "SN100PN_50_vs_80_digit_signed_input_max_abs": 4.472135746960954e-52,
+      "published_q0_control": {
+        "129": {
+          "published_q0_species_response_max_relative_by_response": {
+            "Delta": 0.0004310632194128135,
+            "SigmaPrime": 0.00140894243948105,
+            "SigmaPrimeDelta": 0.0026553939241156783
+          },
+          "all_ten_q0_signs_agree": true
+        },
+        "131": {
+          "published_q0_species_response_max_relative_by_response": {
+            "Delta": 0.0008916472613255731,
+            "SigmaPrime": 0.0011405066884089265,
+            "SigmaPrimeDelta": 0.0035089701219791253
+          },
+          "all_ten_q0_signs_agree": true
+        }
+      }
+    },
+    "fresh_output_byte_identical": true
+  },
+  "output_sha256": {
+    "native/summary.json": "18d8cdd2632fedfcebcb25a0ace84f88d2996eab2099b84309e9d9a3b8584e1a"
+  }
+}
