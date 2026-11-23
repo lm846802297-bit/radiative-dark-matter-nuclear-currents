@@ -44,6 +44,54 @@ jobs:
             --require-central-commit \
             --lock docs/standards-lock.yaml
 
+      - name: Validate task and run provenance records when present
+        env:
+          PROJECT_ROOT: ${{ github.workspace }}
+          CENTRAL_ROOT: ${{ runner.temp }}/central-standards
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import subprocess
+          from pathlib import Path
+
+          root = Path(os.environ["PROJECT_ROOT"]).resolve()
+          central = Path(os.environ["CENTRAL_ROOT"])
+          validator = root / "schemas/validate_standards_adoption.py"
+          lock = root / "docs/standards-lock.yaml"
+
+          def validate(extra):
+              command = [
+                  "python", str(validator),
+                  "--repo-root", str(root),
+                  "--central-root", str(central),
+                  "--require-central-commit",
+                  "--lock", str(lock),
+                  *extra,
+              ]
+              subprocess.run(command, cwd=root, check=True)
+
+          task_dir = root / "docs/standards-provenance/tasks"
+          if task_dir.is_dir():
+              for task in sorted(task_dir.glob("*.json")):
+                  extra = ["--task-provenance", str(task)]
+                  report = root / "docs/standards-provenance/reports" / task.name
+                  if report.is_file():
+                      extra.extend(["--report", str(report)])
+                  validate(extra)
+
+          ignored = {".git", ".venv", "node_modules", "__pycache__"}
+          for manifest_path in root.rglob("run_manifest.json"):
+              if ignored.intersection(manifest_path.parts):
+                  continue
+              try:
+                  record = json.loads(manifest_path.read_text(encoding="utf-8"))
+              except (OSError, json.JSONDecodeError):
+                  continue
+              if record.get("extensions", {}).get("standards_provenance") is not None:
+                  validate(["--run-manifest", str(manifest_path)])
+          PY
+
       - name: Validate RCRPS schemas and validator syntax
         run: |
           python -m compileall -q schemas
