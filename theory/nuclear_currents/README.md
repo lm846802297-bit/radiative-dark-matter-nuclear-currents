@@ -9,6 +9,18 @@ J_V^\mu=\bar u_N\left[F_1^V(t_N)\gamma^\mu+
 
 Recover the inherited VV benchmark first. Keep the Dirac/Pauli sign, \(q_N\) scheme, and form-factor argument explicit. Use vector-current continuity only when the selected Hamiltonian/current pair supports it.
 
+### Universal \(u+d+s\) VV benchmark
+
+For equal light-flavor vector couplings, \(J_{uds}^\mu=3J_B^\mu\). Under charge symmetry,
+
+\[
+F_i^{uds,N}=3(F_i^{\mathrm{EM},p}+F_i^{\mathrm{EM},n}+F_i^{s,N}).
+\]
+
+When the external coupling is \(g_{VN}=3g_{Vq}\), use \(\widehat F_i=F_i^{uds,N}/3\), with the division by three applied once. Keep the external one-body transfer assignment \(q_N=q_A\), \(t_N=t_A\), distinct from the spatial AFH argument \(Q_A^2\).
+
+The form-factor sign convention must be translated explicitly when using a reference: Hoferichter et al. (2015) write the Pauli term with a minus sign in their Eq. (19). Their only two-body vector current through \(\mathcal O(p^3)\) is in the AV channel, not VV. Higher-order electromagnetic isoscalar currents require a separate match to the baryon-number source. See [the full VV source audit](../../docs/VV_UNIVERSAL_VECTOR_CURRENT_AUDIT.md).
+
 ## Axial
 
 \[
