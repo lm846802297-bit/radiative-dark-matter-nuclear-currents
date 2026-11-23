@@ -22,11 +22,12 @@
   },
   "original_pr_decision": {
     "pull_request": 67,
-    "head": "f63c58249cdf40f4551f0b0b475332e1314e2af7",
+    "head": "4e0d6628d6446ee3caf91c779ef59e80145c595c",
     "base": "research/p3b-p3c-p4-gates-20261119",
-    "changed_files": 200,
+    "changed_files": 224,
     "state": "open",
-    "decision": "Do not merge wholesale; import selected pinned components and preserve the original PR/source archive."
+    "decision": "Do not merge wholesale; import selected pinned components and preserve the original PR/source archive.",
+    "latest_status": "open; not merged wholesale; latest reviewed head includes failed P3-C cross-archive and Gram-eigenmode checks, with other P4 checks pending"
   },
   "native_afh_validation": {
     "isotopes": [
@@ -379,5 +380,29 @@
     "P4 secondary-parameter halo spectrum; it is not the Fig. 3 benchmark and remains a leading-static candidate.",
     "121-point dense-q spatial interpolation/native audit; not required for the 2,401-point Native AFH baseline imported here."
   ],
-  "next_gate": "Independently reproduce the original Fig. 3 VV event spectrum, including the paper's LZ nuclear-recoil efficiency, 2.84 tonne-year exposure, normalized endothermic 2-to-2 curve, and F3 loop-induced elastic curve."
+  "next_gate": "Independently reproduce the original Fig. 3 VV event spectrum, including the paper's LZ nuclear-recoil efficiency, 2.84 tonne-year exposure, normalized endothermic 2-to-2 curve, and F3 loop-induced elastic curve.",
+  "sha256_manifests": {
+    "native_afh_source": "nuclear/afh/data/native_v6_2026-11-22/SOURCE_SHA256SUMS.txt",
+    "native_afh_target": "nuclear/afh/data/native_v6_2026-11-22/SHA256SUMS.txt"
+  },
+  "redactions": [
+    {
+      "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/native_metadata.txt",
+      "source_sha256": "3850b31e54670f1161b14c358f04b2ae398bee1c390925f54dd3913b85ebfaf9",
+      "target_sha256": "e3f0bcc3276f7a730acc9355e9c994fce031cf4149ea80149a84593c207faca4",
+      "reason": "Absolute local Windows workspace path redacted; AFH package SHA-256 and Wolfram version retained."
+    },
+    {
+      "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/wolfram_native.log",
+      "source_sha256": "37b9c4380bb5530626791e976fab6054b1f8368fe4c0ff253f9c4af7ab7b5e61",
+      "target_sha256": "2fc586b9a8279da081ebb6ef62c99975b61404686ea22898cddc67a0ef5c0881",
+      "reason": "Absolute local Windows output paths replaced by relative native/ paths."
+    },
+    {
+      "target_path": "nuclear/afh/data/native_v6_2026-11-22/native/spatial_multipoles/native_spatial_multipole_metadata.txt",
+      "source_sha256": "120640f5d8e8e5ab8ce6a5f32c822357bb1d955c2d4a2cf2cb9568d9058016dc",
+      "target_sha256": "33a7d613e7916d1fff30eeb081688957b019f28b60fe279fcf7f59655ba85a6b",
+      "reason": "Absolute local Windows workspace path redacted; AFH package SHA-256 and Wolfram version retained."
+    }
+  ]
 }
