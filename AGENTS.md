@@ -12,7 +12,7 @@ The fixed process is dark-matter-line scalar radiation, \(\chi_1+A\to\chi_1+A+s\
 
 Follow the pinned central [Research Compute Policy](https://github.com/lm846802297-bit/high-energy-theory-research/blob/142267bc803c90aa681110293b66b73947bbcaa1/RESEARCH_COMPUTE_POLICY.md), [Calculation-result Archival Policy](https://github.com/lm846802297-bit/high-energy-theory-research/blob/142267bc803c90aa681110293b66b73947bbcaa1/docs/CALCULATION_RESULT_ARCHIVAL_POLICY.md), and [RCRPS v1.0.1](https://github.com/lm846802297-bit/high-energy-theory-research/blob/142267bc803c90aa681110293b66b73947bbcaa1/docs/STRUCTURED_RESULT_DATA_STANDARD_v1.0.1.md).
 
-The local [nuclear-current RCRPS extension](docs/NUCLEAR_CURRENT_RCRPS_EXTENSION.md) defines the project-specific \`extensions.nuclear_currents\` fields. The existing [repository provenance validator](tools/validate_provenance.py) remains responsible for checking the top-level \`results/provenance/SHA256SUMS.txt\` inventory; it is separate from RCRPS record validation.
+The local [nuclear-current RCRPS extension](docs/NUCLEAR_CURRENT_RCRPS_EXTENSION.md) defines the project-specific `extensions.nuclear_currents` fields. The existing [repository provenance validator](tools/validate_provenance.py) remains responsible for checking the top-level `results/provenance/SHA256SUMS.txt` inventory; it is separate from RCRPS record validation.
 
 The existing Native AFH manifest is a project-specific historical record. Preserve it and its exact source/data fingerprints; do not retrofit or overwrite it as an RCRPS record.
 
