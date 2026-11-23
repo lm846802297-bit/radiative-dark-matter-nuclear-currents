@@ -43,3 +43,17 @@ Work on a descriptive research branch. Do not commit research changes directly t
 ## Claims and status language
 
 Use “derived”, “implemented”, “tested”, “numerically converged”, and “independently validated” only for the exact scope supported by archived evidence. Never promote a leading one-body result to a full chiral-EFT current result. Never label a response-level contraction as an amplitude-level nuclear validation.
+
+
+## Central standards and new-run records
+
+This repository adopts the shared standards from `lm846802297-bit/high-energy-theory-research`, pinned by [`docs/standards-lock.yaml`](docs/standards-lock.yaml). The central Research Compute Policy, Task Handoff Standard, Calculation-result Archival Policy, and RCRPS v1.0.1 are normative for shared requirements; the project-specific nuclear-current extension is [docs/STRUCTURED_RESULT_DATA_STANDARD_v1.0.1.md](docs/STRUCTURED_RESULT_DATA_STANDARD_v1.0.1.md).
+
+For every new substantial numerical run, use RCRPS v1.0.1: `run_manifest.json`, `result_summary.json`, `validation_report.json`, and native unrounded outputs as applicable. Validate records with `schemas/validate_result_records.py`. The 14-field `execution.source_control` object and task-level `extensions.standards_provenance` are required. Keep the existing AFH/native migration manifests and all accepted historical files byte-for-byte unchanged; they are not retroactively migrated.
+
+The canonical standards lock path in this repository is `docs/standards-lock.yaml` because this project uses a top-level `theory/`, `nuclear/`, `src/`, and `results/` layout rather than a `research/` directory. New task briefs belong under `docs/task_briefs/`.
+
+
+## Task-level standards provenance
+
+For every substantive research task, create a machine-readable adoption record under `docs/standards-provenance/tasks/<task-id>.json` using the copied central standards-adoption schema. Bind the exact `docs/standards-lock.yaml` and finalized task brief bytes by SHA-256; record the locked central commit, only the profiles actually applied, local extensions, and predeclared acceptance criteria. For numerical runs, repeat this provenance in `run_manifest.extensions.standards_provenance`. The adoption workflow validates these records when present. A standards lock alone does not prove task-level application.

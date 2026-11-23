@@ -57,3 +57,10 @@ files, hashes, and validation boundaries are documented in
 [VV baseline migration](docs/VV_BASELINE_MIGRATION.md). The next numerical
 gate is the paper's Fig. 3 event-spectrum recovery, including LZ efficiency
 and the stated 2.84 tonne-year exposure.
+
+
+## Central research standards and run records
+
+This repository adopts the shared research standards from [high-energy-theory-research](https://github.com/lm846802297-bit/high-energy-theory-research), pinned by [docs/standards-lock.yaml](docs/standards-lock.yaml). The common run/result/validation record contract is RCRPS v1.0.1; the project-specific nuclear-current fields are defined in [docs/STRUCTURED_RESULT_DATA_STANDARD_v1.0.1.md](docs/STRUCTURED_RESULT_DATA_STANDARD_v1.0.1.md). New substantial numerical runs must archive exact source and input identities, the actual execution environment, native unrounded outputs, SHA-256 checksums, convergence/error analysis, and independent physical validation.
+
+Historical migration and AFH manifests remain unchanged under their original formats. The RCRPS adoption applies prospectively to new runs; it does not retroactively certify historical records.

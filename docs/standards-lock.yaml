@@ -1,0 +1,33 @@
+lock_version: 1
+
+central_repository: lm846802297-bit/high-energy-theory-research
+standards_release: null
+source_commit: "db503f0eb579bdbcac702e44237a6610c34690e7"
+
+adopted_at: "2026-11-23"
+adoption_pr: "https://github.com/lm846802297-bit/radiative-dark-matter-nuclear-currents/pull/9"
+
+adopted_profiles:
+  - core-governance
+  - research-compute
+  - task-handoff
+  - scientific-diff
+  - research-quality-gate
+  - calculation-result-archive
+  - rcrps-v1.0.1
+  - git-review-and-merge
+  - generated-figure-and-report
+
+local_extensions:
+  - path: "AGENTS.md"
+    scope: "General radiative dark-matter nuclear-current theory, channel conventions, and project-specific physical validation gates"
+  - path: "docs/STRUCTURED_RESULT_DATA_STANDARD_v1.0.1.md"
+    scope: "Project-specific RCRPS extensions for three-body amplitudes, nuclear currents, AFH and chiral-EFT data"
+  - path: "docs/RESEARCH_COMPUTE_POLICY.md"
+    scope: "Project pointer to the pinned central compute policy"
+  - path: "docs/RESEARCH_TASK_HANDOFF_STANDARD.md"
+    scope: "Project pointer to the pinned central task handoff standard"
+  - path: "docs/CALCULATION_RESULT_ARCHIVAL_POLICY.md"
+    scope: "Project pointer to the pinned central archival policy"
+
+deviations: []
