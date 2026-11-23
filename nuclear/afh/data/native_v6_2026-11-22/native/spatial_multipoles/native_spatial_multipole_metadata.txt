@@ -1,6 +1,6 @@
 source=AFH DMFormFactor v6.0 native Wolfram execution
 source_commit=aac9b33d66f6a7fe1ca5d5d8cc648f5afe52a81b
-AFH_source_path=C:\Users\84680\.codex\worktrees\lz-pr67-review-fixes\main\v6\dmformfactor-V6.m
+AFH_source_path=[local workspace path redacted; source package SHA-256 pinned]
 AFH_source_sha256=dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372
 wolfram_version=14.2.0 for Microsoft Windows (64-bit) (December 26, 2024)
 isotopes=129,131
