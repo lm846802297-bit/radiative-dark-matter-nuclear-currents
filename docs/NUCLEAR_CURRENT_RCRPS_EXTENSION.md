@@ -68,7 +68,7 @@ For AFH inputs, record:
 
 - AFH/DMFormFactor version and source SHA-256;
 - isotope and density-matrix source/version/hash;
-- the spatial argument (for example, (y_A=(b_A q_A/2)^2));
+- the spatial argument (for example, `y_A = (b_A q_A/2)^2`);
 - response names and multipole ranks;
 - raw package normalization and any downstream conversion, including the equal-proton/equal-neutron factor-four conversion where applicable;
 - signed interference terms and whether the output is a raw response, reconstructed amplitude, or contracted observable.
