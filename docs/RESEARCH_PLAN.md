@@ -6,6 +6,7 @@
 - [x] General-current framework note migrated with source provenance.
 - [x] Kinematic, Lorentz, AFH, and channel conventions established.
 - [x] Prior-work boundary and reusable references recorded.
+- [x] Universal \\(u+d+s\\) VV source, one-nucleon matching, and channel-specific two-body-current literature audited.
 - [ ] Import source-pinned VV baseline data and an independent reproduction report.
 - [ ] Freeze machine-readable benchmark configuration and environment lock.
 
@@ -18,7 +19,7 @@
 
 ## Stage 2 — nuclear-current matching
 
-- Vector: reproduce inherited AFH vector benchmark, then add only channel-allowed chiral corrections.
+- Vector: reproduce the inherited universal \\(u+d+s\\) VV/AFH benchmark with explicit \\(g_{VN}=3g_{Vq}\\) normalization and finite-\\(t_N\\) form factors; compare the historical, 2020, and 2026 strange-form-factor input sets. Add a two-body vector operator only after source-specific matching shows it contributes to VV at the selected order. The published AV two-body vector current is not a VV correction.
 - Axial: match \(G_A,G_P\), axial charge and spatial multipoles; compare xenon axial structure factors and uncertainty bands.
 - Scalar: match quark/gluon Wilson coefficients, nucleon scalar form factors, pion-exchange two-body current, and trace-anomaly terms.
 - Preserve amplitudes and signed interference until after nuclear contraction and squaring.
