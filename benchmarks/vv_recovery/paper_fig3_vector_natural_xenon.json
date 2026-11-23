@@ -1,0 +1,61 @@
+{
+  "benchmark_id": "paper_fig3_vector_natural_xenon",
+  "status": "adopted_paper_facing_reference",
+  "source": {
+    "document": "3body_for_HDM.pdf",
+    "figure": "Fig. 3",
+    "figure_pdf_page": 4,
+    "coupling_definition_pdf_page": 5,
+    "equations": [
+      "Eq. (13)",
+      "Eq. (17)",
+      "Eq. (22)"
+    ],
+    "figure_caption_summary": "Natural-xenon differential rates for 2->3 scalar emission, endothermic 2->2 scattering, and loop-induced elastic scattering."
+  },
+  "dark_sector": {
+    "m_chi1_GeV": 1000,
+    "m_Aprime_GeV": 5,
+    "m_s_keV": 300,
+    "Delta_m_chi2_chi1_MeV": 10,
+    "width_scheme": "pole"
+  },
+  "couplings": {
+    "g1": 0.1,
+    "g2": 1.725,
+    "g_Aprime_N": 0.04857,
+    "mapping_to_current_code": "Use g_Aprime_N as g_VN, with g_VN=3*g_Vq, provided the figure's A'-nucleon convention is the same universal vector-current convention as Eq. (17).",
+    "g_VN": 0.04857,
+    "g_Vq": 0.01619,
+    "g1_g2_gVN": 0.008378325,
+    "coupling_product_squared": 0.000070196329805625
+  },
+  "comparison_channels": {
+    "radiative_2_to_3": "Use the couplings above and the stated particle masses.",
+    "inelastic_2_to_2": {
+      "delta_iDM_keV": 300,
+      "normalization": "Normalize to the same integrated rate as the radiative signal over the displayed recoil interval; do not interpret this curve as using the same microscopic coupling product."
+    },
+    "loop_induced_elastic_2_to_2": {
+      "normalization": "Retain its predicted normalization relative to the radiative signal for the same dark-sector benchmark and vector coupling, using the loop function F3."
+    }
+  },
+  "detector": {
+    "target": "natural xenon",
+    "exposure_tonne_years": 2.84,
+    "plotted_quantity": "dN/dE_R per keV for the stated exposure",
+    "detector_nuclear_recoil_efficiency": "Required for a faithful event-spectrum reproduction; must be taken from the paper's LZ efficiency input, not inferred from the exposure alone."
+  },
+  "implementation_status": {
+    "current_p4_rate_unit": "events/(kg day keV)",
+    "current_p4_includes_exposure": false,
+    "current_p4_includes_lz_efficiency": false,
+    "current_p4_afh_status": "provisional source-translated AFH; native Mathematica AFH validation remains open",
+    "current_p4_full_current_status": "leading-static candidate only; direct bound-nucleus P3-C amplitude comparison remains open",
+    "previous_1e_8_setting": "Retain as a secondary normalization/reference run only; it is not a mandatory or universal benchmark."
+  },
+  "derived_checks": {
+    "coupling_product_squared_formula": "(g1*g2*g_VN)^2",
+    "note": "Derived directly from the three couplings printed on Fig. 3, under the g_Aprime_N = g_VN convention."
+  }
+}

@@ -1,0 +1,11 @@
+Welcome to DMFormFactor version 1.1.
+Functions are SetCoeffsNonrel, SetCoeffsRel, SetCoeffsNucl, ZeroCoeffs, SetJChi, SetMchi, SetIsotope, SetHALO, SetHelm, TransitionProbability, ResponseNucl, DiffCrossSection, ApproxTotalCrossSection, and EventRate.
+Starting native AFH rank-resolved multipoles for Xe-129
+Getting default matrix...
+Setting isotope to xenon-129.
+Xe-129: 2401 native rank/q rows.
+Starting native AFH rank-resolved multipoles for Xe-131
+Getting default matrix...
+Setting isotope to xenon-131.
+Xe-131: 7203 native rank/q rows.
+Native AFH spatial multipole export complete: 9604 rows.

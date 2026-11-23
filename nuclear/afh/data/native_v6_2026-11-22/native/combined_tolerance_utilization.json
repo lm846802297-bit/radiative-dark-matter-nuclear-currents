@@ -1,0 +1,94 @@
+{
+  "rtol": 5e-07,
+  "atol": 2e-12,
+  "max_combined_tolerance_fraction": {
+    "M": {
+      "max_fraction_of_combined_tolerance": 0.058788561677346536,
+      "worst_key": {
+        "A": 132,
+        "q_GeV": 0.25475,
+        "python": 3.161591446962097e-07,
+        "native": 3.1615901782581565e-07,
+        "absolute_difference": 1.268703940436082e-13,
+        "allowed_difference": 2.1580795723481048e-12
+      }
+    },
+    "SigmaDoublePrime": {
+      "max_fraction_of_combined_tolerance": 3.0703375619551975e-07,
+      "worst_key": {
+        "A": 131,
+        "q_GeV": 0.3285,
+        "python": 0.00022146807090848134,
+        "native": 0.00022146807090851596,
+        "absolute_difference": 3.461315435659973e-17,
+        "allowed_difference": 1.1273403545425799e-10
+      }
+    },
+    "SigmaPrime": {
+      "max_fraction_of_combined_tolerance": 2.308978575057787e-05,
+      "worst_key": {
+        "A": 129,
+        "q_GeV": 0.29975,
+        "python": 1.8328090319715656e-08,
+        "native": 1.832809027332449e-08,
+        "absolute_difference": 4.6391167340505477e-17,
+        "allowed_difference": 2.009164045159858e-12
+      }
+    },
+    "PhiPP": {
+      "max_fraction_of_combined_tolerance": 0.0010965993013486981,
+      "worst_key": {
+        "A": 136,
+        "q_GeV": 0.1765,
+        "python": 1.1076001707764025e-08,
+        "native": 1.1075999508492454e-08,
+        "absolute_difference": 2.1992715705646316e-15,
+        "allowed_difference": 2.005538000853882e-12
+      }
+    },
+    "PhiTildePrime": {
+      "max_fraction_of_combined_tolerance": 3.131426587335547e-06,
+      "worst_key": {
+        "A": 131,
+        "q_GeV": 0.17175,
+        "python": 4.434578819439025e-08,
+        "native": 4.434578820072253e-08,
+        "absolute_difference": 6.332285964775141e-18,
+        "allowed_difference": 2.0221728941003614e-12
+      }
+    },
+    "Delta": {
+      "max_fraction_of_combined_tolerance": 1.0353719779305789e-07,
+      "worst_key": {
+        "A": 131,
+        "q_GeV": 0.355,
+        "python": 1.9299354098822197e-05,
+        "native": 1.929935409882099e-05,
+        "absolute_difference": 1.2061749168901237e-18,
+        "allowed_difference": 1.1649677049411097e-11
+      }
+    },
+    "MPhiPP": {
+      "max_fraction_of_combined_tolerance": 0.0007446390992849297,
+      "worst_key": {
+        "A": 136,
+        "q_GeV": 0.305,
+        "python": -1.1149136149979955e-05,
+        "native": -1.1149136155620274e-05,
+        "absolute_difference": 5.640319550932922e-15,
+        "allowed_difference": 7.574568077810137e-12
+      }
+    },
+    "SigmaPrimeDelta": {
+      "max_fraction_of_combined_tolerance": 6.584698558697012e-07,
+      "worst_key": {
+        "A": 131,
+        "q_GeV": 0.23775,
+        "python": -4.500538251059217e-05,
+        "native": -4.5005382510608305e-05,
+        "absolute_difference": 1.6134283579299913e-17,
+        "allowed_difference": 2.450269125530415e-11
+      }
+    }
+  }
+}

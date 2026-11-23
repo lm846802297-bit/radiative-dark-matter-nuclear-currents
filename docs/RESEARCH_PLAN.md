@@ -7,8 +7,10 @@
 - [x] Kinematic, Lorentz, AFH, and channel conventions established.
 - [x] Prior-work boundary and reusable references recorded.
 - [x] Universal \(u+d+s\) VV source, one-nucleon matching, and channel-specific two-body-current literature audited.
-- [ ] Import source-pinned VV baseline data and an independent reproduction report.
-- [ ] Freeze machine-readable benchmark configuration and environment lock.
+- [x] Import source-pinned VV/P3 code snapshot and Native AFH xenon response data with provenance.
+- [x] Freeze the machine-readable paper Fig. 3 benchmark definition.
+- [ ] Complete an independent Fig. 3 numerical reproduction and archive residuals/figures.
+- [ ] Freeze the production environment lock for the independent reproduction.
 
 ## Stage 1 — dark-matter-side three-body kernels
 

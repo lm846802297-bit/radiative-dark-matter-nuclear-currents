@@ -18,3 +18,12 @@ jobs:
           python-version: "3.12"
       - name: Validate SHA-256 manifest
         run: python tools/validate_provenance.py
+      - name: Validate imported VV and Native AFH snapshots
+        run: |
+          (cd benchmarks/vv_recovery && sha256sum --check SHA256SUMS.txt)
+          (cd benchmarks/vv_recovery/source_snapshot && sha256sum --check SHA256SUMS.txt)
+          (cd benchmarks/vv_recovery/source_references && sha256sum --check SHA256SUMS.txt)
+          (cd nuclear/afh/data/native_v6_2026-11-22 && sha256sum --check SHA256SUMS.txt)
+          (cd results/provenance && sha256sum --check VV_BASELINE_IMPORT_SHA256SUMS.txt)
+          python -m json.tool benchmarks/vv_recovery/paper_fig3_vector_natural_xenon.json > /dev/null
+          python -m json.tool results/provenance/VV_BASELINE_IMPORT_2026-11-23.json > /dev/null
