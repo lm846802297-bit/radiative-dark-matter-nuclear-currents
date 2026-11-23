@@ -7,8 +7,10 @@
 - [x] Kinematic, Lorentz, AFH, and channel conventions established.
 - [x] Prior-work boundary and reusable references recorded.
 - [x] Universal \(u+d+s\) VV source, one-nucleon matching, and channel-specific two-body-current literature audited.
-- [ ] Import source-pinned VV baseline data and an independent reproduction report.
-- [ ] Freeze machine-readable benchmark configuration and environment lock.
+- [x] Import the source-pinned VV/P3 code snapshot, frozen Fig. 3 benchmark definition, and Native AFH seven-isotope response archive.
+- [ ] Independently reproduce the paper's Fig. 3 event spectrum and archive the comparison report.
+- [x] Freeze the machine-readable paper benchmark definition and exact source pins.
+- [ ] Freeze the new project's numerical environment lock.
 
 ## Stage 1 — dark-matter-side three-body kernels
 
@@ -26,7 +28,7 @@
 
 ## Stage 3 — xenon nuclear responses
 
-- Vector coherent channel: AFH seven-isotope set.
+- Vector coherent channel: the Native AFH seven-isotope/eight-response archive is imported and pointwise validated (16,807 rows); apply the physical equal-\(p=n\) factor four exactly once downstream. Full P3-C particle--nuclear current validation remains separate and open.
 - Axial elastic spin channel: \(^{129}\mathrm{Xe}\) and \(^{131}\mathrm{Xe}\) first.
 - Scalar coherent channel: published xenon scalar structure factors as cross-checks; map normalization before use.
 - Keep AFH, shell-model, and chiral-EFT uncertainties separate.
