@@ -27,3 +27,12 @@ The source note is retained as a historical record in the original repository. T
 ## Reuse policy
 
 The original repository remains the authoritative home for the first paper's code and historical calculations. This repository may import selected, pinned components after checking their physical scope, source identity, input hashes, dependencies, and redistribution rights. The new project must not silently inherit the original repository's assumptions or mark the original leading one-body impulse result as a complete chiral-EFT current calculation.
+
+## Universal vector-current literature audit
+
+- Repository-local theory note: `docs/VV_UNIVERSAL_VECTOR_CURRENT_AUDIT.md`.
+- Provenance record: `results/provenance/VV_VECTOR_CURRENT_ADDENDUM_2026-11-23.json`.
+- The note uses the original LZ P4 baseline pin above and the P3-C bound-current audit at source commit `d02e5e009f32a1db1b2520a789148bbd0160ccfd`.
+- This is a literature/matching import only. No LZ code, raw AFH tables, xenon OBDMEs, or numerical rates have been copied.
+- A narrow q_A/q_N interface PR (#111) is being validated in the source repository; it is not treated as merged or as a new numerical result here.
+
