@@ -2,13 +2,11 @@
 
 ## Decision
 
-The original-project PR #67 is **not merged wholesale**. At the migration
+The original-project PR #67 is **not merged wholesale**. At the initial migration
 audit it remained open with 200 changed files and targeted
 \`research/p3b-p3c-p4-gates-20261119\`, not \`main\`. Its scope combines the
 P3/P4 integration branch, native AFH work, recoil scans, interpolation
-audits, and exploratory Gram eigenmode analysis. Those changes should not
-be treated as one indivisible contribution to the new general-current
-project.
+audits, and exploratory Gram eigenmode analysis. At the latest migration review, PR #67 had advanced to head `4e0d6628d6446ee3caf91c779ef59e80145c595c` with 224 changed files; the P3-C native cross-archive and Gram-eigenmode checks were failing while other P4 jobs remained pending or in progress. Those changes should not be treated as one indivisible contribution to the new general-current project.
 
 Instead, this PR imports a curated, source-pinned subset. The original
 repository and PR remain available as the historical calculation archive.
@@ -100,3 +98,8 @@ It is an independent reproduction of the paper's Fig. 3 VV event spectrum:
 
 The imported code/data are a source baseline, not a claim that these
 five reproduction steps have already passed.
+
+
+## Provenance redaction
+
+The imported Native AFH metadata and Wolfram log preserve the original source-file hashes in `SOURCE_SHA256SUMS.txt`. Absolute local Windows workspace/output paths have been redacted from the public copies; the AFH package SHA-256, Wolfram version, hardware, isotope coverage, grid, normalization, and numerical validation data are retained. `SHA256SUMS.txt` verifies the public, sanitized files.
