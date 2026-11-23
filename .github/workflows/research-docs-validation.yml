@@ -16,6 +16,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Diagnose checkout bytes for manifest entries
+        run: |
+          while read -r expected relative; do
+            case "$expected" in \#*|"") continue ;; esac
+            printf '%s ' "$relative"
+            sha256sum "$relative"
+            git ls-files --eol -- "$relative"
+          done < results/provenance/SHA256SUMS.txt
       - name: Validate SHA-256 manifest
         run: python tools/validate_provenance.py
       - name: Validate imported VV and Native AFH snapshots
