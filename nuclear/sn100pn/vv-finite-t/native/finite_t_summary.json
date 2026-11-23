@@ -1,0 +1,830 @@
+{
+  "scope": "charge-only response swap with inherited invariant-t one-body inputs; no full cross section",
+  "base": "112555411a63afb5e7a900f3748a03edfdbf3a10",
+  "inputs_sha256": {
+    "nuclear/sn100pn/vv-charge-matching/native/summary.json": "cc9837753476352b027b0d12bb12c013c0f5f342639ae8b02b2054f9083138df",
+    "nuclear/sn100pn/vv-charge-matching/native/off_grid.json": "8b893156b31a4fc28767db227be2c6cf0528e97ff78188a0553709c44af4f4a7",
+    "nuclear/sn100pn/vv-charge-matching/native/radiative_tensors.json.xz": "413f0722450d644950d21857e76f0f391b78091e134ee63301773667c066f6fd",
+    "radiative_tensors.json (uncompressed)": "360ac092abc52fa46407536029226b00297c3e0fc7d678840012c2cb0a6e4f4d",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/nucleon_vector_form_factors.py": "07f956d4427abd1aba0e8d4f31cc7349e144fcd592e9066037b81b750d154eb4",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/three_body_multipole_leptonic_weights.py": "b42492780f2668cfd968c8d597b948d654ef2a4df1d9b3935e8f3831b84ad651"
+  },
+  "primary_sources": {
+    "Bishara_Appendix_A_Eqs_A3_A6_A8": "https://arxiv.org/abs/1707.06998",
+    "Borah_isoscalar_Sachs_Eq16": "https://arxiv.org/abs/2003.13640"
+  },
+  "schemes": {
+    "anchors": "constant inherited effective F1/F2",
+    "bishara_linear": "adopted first-order finite t_N Dirac, constant Pauli anchor",
+    "isoscalar_zexp": "alternate central sensitivity; finite EM isoscalar Dirac/Pauli, fixed strange Pauli, linear strange Dirac"
+  },
+  "verification": {
+    "independent_vs_pinned_FF_max_abs": 2.220446049250313e-16,
+    "independent_vs_pinned_coeff_max_abs": 1.734723475976807e-18,
+    "kernel_gram_closure_max_relative": 2.9732655351365364e-16,
+    "archived_anchors_replay_max_relative": 0.0,
+    "exact_transfer_kinematics_max_abs_GeV2": 1.3877787807814457e-17
+  },
+  "benchmarks": [
+    {
+      "A": 129,
+      "ER_keV": 200.0,
+      "Q_A_GeV": 0.21923762378951292,
+      "Q_A2_GeV2": 0.048065135684872,
+      "t_A_equals_t_N_GeV2": -0.048065095684872,
+      "Q2_for_FF_positive": 0.048065095684872,
+      "L00": 13054403.755049305,
+      "conditional_L_C": 13054346.417610642,
+      "cases": {
+        "anchors": {
+          "F1hat_p": 1.0,
+          "F2hat_p": -0.184,
+          "F1hat_n": 1.0,
+          "F2hat_n": -0.184,
+          "c_M": 0.9956927351943599,
+          "c_PhiPP": 0.008614536780332617,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  134044006.13614646,
+                  214.21272027867286,
+                  -338903.7101683902
+                ],
+                "kernel": 133705316.63869834,
+                "correction_PhiPP_plus_interference_over_M": -0.002526703783413559,
+                "signed_interference_over_M": -0.002528301860988628
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  134043417.38922822,
+                  214.21177941542547,
+                  -338902.22163846117
+                ],
+                "kernel": 133704729.37936918,
+                "correction_PhiPP_plus_interference_over_M": -0.0025267037834135584,
+                "signed_interference_over_M": -0.002528301860988628
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  150572901.8740106,
+                  356.9221053312155,
+                  -463649.8555707847
+                ],
+                "kernel": 150109608.94054514,
+                "correction_PhiPP_plus_interference_over_M": -0.003076867933734227,
+                "signed_interference_over_M": -0.0030792383609551215
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  150572240.52902022,
+                  356.92053766104794,
+                  -463647.8191319206
+                ],
+                "kernel": 150108949.63042596,
+                "correction_PhiPP_plus_interference_over_M": -0.003076867933734227,
+                "signed_interference_over_M": -0.003079238360955122
+              }
+            }
+          }
+        },
+        "bishara_linear": {
+          "F1hat_p": 0.8655459056708514,
+          "F2hat_p": -0.184,
+          "F1hat_n": 0.8655459056708514,
+          "F2hat_n": -0.184,
+          "c_M": 0.8621549848343223,
+          "c_PhiPP": 0.006781847316939007,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  100500311.82697438,
+                  132.76310877820674,
+                  -231021.50403222902
+                ],
+                "kernel": 100269423.08605093,
+                "correction_PhiPP_plus_interference_over_M": -0.0022973932789478175,
+                "signed_interference_over_M": -0.0022987143008070016
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  100499870.41037863,
+                  132.76252565723476,
+                  -231020.48934158776
+                ],
+                "kernel": 100268982.68356271,
+                "correction_PhiPP_plus_interference_over_M": -0.0022973932789478175,
+                "signed_interference_over_M": -0.002298714300807001
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  112892952.3015039,
+                  221.21043154575224,
+                  -316057.5814442027
+                ],
+                "kernel": 112577115.93049124,
+                "correction_PhiPP_plus_interference_over_M": -0.0027976624277585623,
+                "signed_interference_over_M": -0.002799621898452135
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  112892456.45406042,
+                  221.20945994721825,
+                  -316056.1932588416
+                ],
+                "kernel": 112576621.47026153,
+                "correction_PhiPP_plus_interference_over_M": -0.002797662427758562,
+                "signed_interference_over_M": -0.0027996218984521347
+              }
+            }
+          }
+        },
+        "isoscalar_zexp": {
+          "F1hat_p": 0.8891831194000853,
+          "F2hat_p": -0.15630609390273448,
+          "F1hat_n": 0.8891831194000853,
+          "F2hat_n": -0.15630609390273448,
+          "c_M": 0.8852536199038628,
+          "c_PhiPP": 0.00785900553274124,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  105957607.81997076,
+                  178.28573105688582,
+                  -274887.10097945516
+                ],
+                "kernel": 105682899.00472236,
+                "correction_PhiPP_plus_interference_over_M": -0.002592629457199028,
+                "signed_interference_over_M": -0.0025943120709794355
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  105957142.433887,
+                  178.28494799184807,
+                  -274885.8936227204
+                ],
+                "kernel": 105682434.82521227,
+                "correction_PhiPP_plus_interference_over_M": -0.0025926294571990277,
+                "signed_interference_over_M": -0.002594312070979435
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  119023184.58668543,
+                  297.06040984193606,
+                  -376069.5467277997
+                ],
+                "kernel": 118647412.10036747,
+                "correction_PhiPP_plus_interference_over_M": -0.0031571368857491794,
+                "signed_interference_over_M": -0.0031596327054575282
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  119022661.814089,
+                  297.05910509578695,
+                  -376067.8949584065
+                ],
+                "kernel": 118646890.97823569,
+                "correction_PhiPP_plus_interference_over_M": -0.0031571368857491794,
+                "signed_interference_over_M": -0.0031596327054575287
+              }
+            }
+          }
+        }
+      },
+      "effects": {
+        "anchors": {
+          "nuclear_only_anchors": 1.122689902797021,
+          "nuclear_only_at_scheme": 1.122689902797021,
+          "form_factor_only_AFH_BD": 1.0,
+          "form_factor_only_SN100PN": 1.0,
+          "model_by_ff_ratio_of_ratios": 1.0,
+          "joint_vs_anchor_AFH_BD": 1.122689902797021
+        },
+        "bishara_linear": {
+          "nuclear_only_anchors": 1.122689902797021,
+          "nuclear_only_at_scheme": 1.1227462217856572,
+          "form_factor_only_AFH_BD": 0.7499284666218721,
+          "form_factor_only_SN100PN": 0.7499660862821937,
+          "model_by_ff_ratio_of_ratios": 1.0000501643316608,
+          "joint_vs_anchor_AFH_BD": 0.8419793525092183
+        },
+        "isoscalar_zexp": {
+          "nuclear_only_anchors": 1.122689902797021,
+          "nuclear_only_at_scheme": 1.1226737080240938,
+          "form_factor_only_AFH_BD": 0.7904165792471901,
+          "form_factor_only_SN100PN": 0.7904051775083959,
+          "model_by_ff_ratio_of_ratios": 0.9999855750257602,
+          "joint_vs_anchor_AFH_BD": 0.887379911907163
+        }
+      }
+    },
+    {
+      "A": 129,
+      "ER_keV": 267.0,
+      "Q_A_GeV": 0.2533120092461155,
+      "Q_A2_GeV2": 0.06416697402830411,
+      "t_A_equals_t_N_GeV2": -0.06416690273930412,
+      "Q2_for_FF_positive": 0.06416690273930412,
+      "L00": 327932705.4137509,
+      "conditional_L_C": 327931040.2552925,
+      "cases": {
+        "anchors": {
+          "F1hat_p": 1.0,
+          "F2hat_p": -0.184,
+          "F1hat_n": 1.0,
+          "F2hat_n": -0.184,
+          "c_M": 0.9942498014844704,
+          "c_PhiPP": 0.011500409807923453,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  29577159.1179707,
+                  4588.0989148676,
+                  -736757.5765583351
+                ],
+                "kernel": 28844989.640327234,
+                "correction_PhiPP_plus_interference_over_M": -0.024754557215017,
+                "signed_interference_over_M": -0.024909680257651612
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  29577008.932716627,
+                  4588.07561767403,
+                  -736753.8354916767
+                ],
+                "kernel": 28844843.172842626,
+                "correction_PhiPP_plus_interference_over_M": -0.024754557215017,
+                "signed_interference_over_M": -0.024909680257651612
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  35032907.8342194,
+                  6868.6833978819695,
+                  -981080.9394141382
+                ],
+                "kernel": 34058695.57820315,
+                "correction_PhiPP_plus_interference_over_M": -0.02780848968136942,
+                "signed_interference_over_M": -0.028004553434637793
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  35032729.94606785,
+                  6868.648520463312,
+                  -981075.9577358924
+                ],
+                "kernel": 34058522.63685241,
+                "correction_PhiPP_plus_interference_over_M": -0.027808489681369418,
+                "signed_interference_over_M": -0.028004553434637786
+              }
+            }
+          }
+        },
+        "bishara_linear": {
+          "F1hat_p": 0.8205037840705867,
+          "F2hat_p": -0.184,
+          "F1hat_n": 0.8205037840705867,
+          "F2hat_n": -0.184,
+          "c_M": 0.816386716685406,
+          "c_PhiPP": 0.008234143918430145,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  19941475.595980417,
+                  2352.031026760147,
+                  -433141.867388163
+                ],
+                "kernel": 19510685.759619016,
+                "correction_PhiPP_plus_interference_over_M": -0.021602706093035398,
+                "signed_interference_over_M": -0.02172065278235834
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  19941374.338264387,
+                  2352.019083747773,
+                  -433139.6680044716
+                ],
+                "kernel": 19510586.689343665,
+                "correction_PhiPP_plus_interference_over_M": -0.021602706093035398,
+                "signed_interference_over_M": -0.02172065278235834
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  23619843.739754315,
+                  3521.143890873788,
+                  -576780.264876077
+                ],
+                "kernel": 23046584.61876911,
+                "correction_PhiPP_plus_interference_over_M": -0.02427023342327861,
+                "signed_interference_over_M": -0.024419309087354547
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  23619723.804225042,
+                  3521.1260114051156,
+                  -576777.3361333171
+                ],
+                "kernel": 23046467.59410313,
+                "correction_PhiPP_plus_interference_over_M": -0.024270233423278605,
+                "signed_interference_over_M": -0.024419309087354547
+              }
+            }
+          }
+        },
+        "isoscalar_zexp": {
+          "F1hat_p": 0.8564643355784124,
+          "F2hat_p": -0.1502421265230866,
+          "F1hat_n": 0.8564643355784124,
+          "F2hat_n": -0.1502421265230866,
+          "c_M": 0.8514057978486008,
+          "c_PhiPP": 0.01011708669962635,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  21688955.535671256,
+                  3550.725368839742,
+                  -555019.0074011703
+                ],
+                "kernel": 21137487.253638923,
+                "correction_PhiPP_plus_interference_over_M": -0.025426225856074316,
+                "signed_interference_over_M": -0.02558993707596224
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  21688845.404698752,
+                  3550.7073391638855,
+                  -555016.1891565137
+                ],
+                "kernel": 21137379.922881402,
+                "correction_PhiPP_plus_interference_over_M": -0.025426225856074305,
+                "signed_interference_over_M": -0.025589937075962233
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  25689660.6354595,
+                  5315.667522414708,
+                  -739074.2715093461
+                ],
+                "kernel": 24955902.03147257,
+                "correction_PhiPP_plus_interference_over_M": -0.0285624093832568,
+                "signed_interference_over_M": -0.0287693279407981
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  25689530.189929076,
+                  5315.6405308137155,
+                  -739070.5186791029
+                ],
+                "kernel": 24955775.311780788,
+                "correction_PhiPP_plus_interference_over_M": -0.028562409383256805,
+                "signed_interference_over_M": -0.0287693279407981
+              }
+            }
+          }
+        }
+      },
+      "effects": {
+        "anchors": {
+          "nuclear_only_anchors": 1.1807491007237807,
+          "nuclear_only_at_scheme": 1.1807491007237807,
+          "form_factor_only_AFH_BD": 1.0,
+          "form_factor_only_SN100PN": 1.0,
+          "model_by_ff_ratio_of_ratios": 1.0,
+          "joint_vs_anchor_AFH_BD": 1.1807491007237807
+        },
+        "bishara_linear": {
+          "nuclear_only_anchors": 1.1807491007237807,
+          "nuclear_only_at_scheme": 1.1812288354553018,
+          "form_factor_only_AFH_BD": 0.6763977384946523,
+          "form_factor_only_SN100PN": 0.6766725568174267,
+          "model_by_ff_ratio_of_ratios": 1.000406296927287,
+          "joint_vs_anchor_AFH_BD": 0.7989805129466379
+        },
+        "isoscalar_zexp": {
+          "nuclear_only_anchors": 1.1807491007237807,
+          "nuclear_only_at_scheme": 1.1806465797951593,
+          "form_factor_only_AFH_BD": 0.7327957997976638,
+          "form_factor_only_SN100PN": 0.7327321733203378,
+          "model_by_ff_ratio_of_ratios": 0.9999131729775965,
+          "joint_vs_anchor_AFH_BD": 0.8651728547193701
+        }
+      }
+    },
+    {
+      "A": 131,
+      "ER_keV": 200.0,
+      "Q_A_GeV": 0.22093060215101032,
+      "Q_A2_GeV2": 0.04881033096680801,
+      "t_A_equals_t_N_GeV2": -0.048810290966808,
+      "Q2_for_FF_positive": 0.048810290966808,
+      "L00": 15474549.289579466,
+      "conditional_L_C": 15474482.008675465,
+      "cases": {
+        "anchors": {
+          "F1hat_p": 1.0,
+          "F2hat_p": -0.184,
+          "F1hat_n": 1.0,
+          "F2hat_n": -0.184,
+          "c_M": 0.9956259558950475,
+          "c_PhiPP": 0.008748095378957118,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  146750904.5767483,
+                  421.3737878860334,
+                  -494682.6365864864
+                ],
+                "kernel": 146256643.3139497,
+                "correction_PhiPP_plus_interference_over_M": -0.0033680287302086773,
+                "signed_interference_over_M": -0.0033709000841475258
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  146750266.52691963,
+                  421.3719558191447,
+                  -494680.4857842653
+                ],
+                "kernel": 146256007.41309118,
+                "correction_PhiPP_plus_interference_over_M": -0.0033680287302086777,
+                "signed_interference_over_M": -0.003370900084147526
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  166654895.02536762,
+                  695.272043100132,
+                  -680733.4799067846
+                ],
+                "kernel": 165974856.81750393,
+                "correction_PhiPP_plus_interference_over_M": -0.00408051745350877,
+                "signed_interference_over_M": -0.004084689380429934
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  166654170.43612215,
+                  695.2690201667521,
+                  -680730.5201847886
+                ],
+                "kernel": 165974135.18495753,
+                "correction_PhiPP_plus_interference_over_M": -0.004080517453508771,
+                "signed_interference_over_M": -0.004084689380429936
+              }
+            }
+          }
+        },
+        "bishara_linear": {
+          "F1hat_p": 0.8634613460688491,
+          "F2hat_p": -0.184,
+          "F1hat_n": 0.8634613460688491,
+          "F2hat_n": -0.184,
+          "c_M": 0.8600322799612474,
+          "c_PhiPP": 0.006858137835437931,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  109500945.94655865,
+                  258.97206279844556,
+                  -334994.67895866564
+                ],
+                "kernel": 109166210.23966278,
+                "correction_PhiPP_plus_interference_over_M": -0.0030569206868699852,
+                "signed_interference_over_M": -0.003059285708108476
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  109500469.8536855,
+                  258.970936828689,
+                  -334993.22245454305
+                ],
+                "kernel": 109165735.60216779,
+                "correction_PhiPP_plus_interference_over_M": -0.003056920686869985,
+                "signed_interference_over_M": -0.0030592857081084756
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  124352682.55779868,
+                  427.30715669582577,
+                  -460986.65425447875
+                ],
+                "kernel": 123892123.2107009,
+                "correction_PhiPP_plus_interference_over_M": -0.0037036542969928823,
+                "signed_interference_over_M": -0.0037070905490133982
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  124352141.891913,
+                  427.3052988315836,
+                  -460984.6499570837
+                ],
+                "kernel": 123891584.54725474,
+                "correction_PhiPP_plus_interference_over_M": -0.0037036542969928815,
+                "signed_interference_over_M": -0.003707090549013398
+              }
+            }
+          }
+        },
+        "isoscalar_zexp": {
+          "F1hat_p": 0.8876242806046443,
+          "F2hat_p": -0.15599877499109938,
+          "F1hat_n": 0.8876242806046443,
+          "F2hat_n": -0.15599877499109938,
+          "c_M": 0.8836403934088656,
+          "c_PhiPP": 0.007967780921143053,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  115595116.60131271,
+                  349.55479682388903,
+                  -399880.19207862305
+                ],
+                "kernel": 115195585.96403092,
+                "correction_PhiPP_plus_interference_over_M": -0.003456293388757757,
+                "signed_interference_over_M": -0.003459317346923996
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  115594614.01194501,
+                  349.5532770146663,
+                  -399878.45346250496
+                ],
+                "kernel": 115195085.11175951,
+                "correction_PhiPP_plus_interference_over_M": -0.003456293388757757,
+                "signed_interference_over_M": -0.003459317346923996
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  131273412.441297,
+                  576.7698056931091,
+                  -550275.70116034
+                ],
+                "kernel": 130723713.50994235,
+                "correction_PhiPP_plus_interference_over_M": -0.004187435377292884,
+                "signed_interference_over_M": -0.00419182903016567
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  131272841.68516737,
+                  576.7672979888006,
+                  -550273.3086482267
+                ],
+                "kernel": 130723145.14381713,
+                "correction_PhiPP_plus_interference_over_M": -0.004187435377292884,
+                "signed_interference_over_M": -0.00419182903016567
+              }
+            }
+          }
+        }
+      },
+      "effects": {
+        "anchors": {
+          "nuclear_only_anchors": 1.1348192673971584,
+          "nuclear_only_at_scheme": 1.1348192673971584,
+          "form_factor_only_AFH_BD": 1.0,
+          "form_factor_only_SN100PN": 1.0,
+          "model_by_ff_ratio_of_ratios": 1.0,
+          "joint_vs_anchor_AFH_BD": 1.1348192673971584
+        },
+        "bishara_linear": {
+          "nuclear_only_anchors": 1.1348192673971584,
+          "nuclear_only_at_scheme": 1.134894423271715,
+          "form_factor_only_AFH_BD": 0.746401720743243,
+          "form_factor_only_SN100PN": 0.7464511528208474,
+          "model_by_ff_ratio_of_ratios": 1.000066227175301,
+          "joint_vs_anchor_AFH_BD": 0.8470871503919185
+        },
+        "isoscalar_zexp": {
+          "nuclear_only_anchors": 1.1348192673971584,
+          "nuclear_only_at_scheme": 1.1347979387922034,
+          "form_factor_only_AFH_BD": 0.7876263488199703,
+          "form_factor_only_SN100PN": 0.7876115456070456,
+          "model_by_ff_ratio_of_ratios": 0.9999812052847816,
+          "joint_vs_anchor_AFH_BD": 0.8937967571793312
+        }
+      }
+    },
+    {
+      "A": 131,
+      "ER_keV": 267.0,
+      "Q_A_GeV": 0.2552681134213372,
+      "Q_A2_GeV2": 0.06516180972968867,
+      "t_A_equals_t_N_GeV2": -0.06516173844068868,
+      "Q2_for_FF_positive": 0.06516173844068868,
+      "L00": 435091344.8118852,
+      "conditional_L_C": 435089155.4008328,
+      "cases": {
+        "anchors": {
+          "F1hat_p": 1.0,
+          "F2hat_p": -0.184,
+          "F1hat_n": 1.0,
+          "F2hat_n": -0.184,
+          "c_M": 0.9941606511198885,
+          "c_PhiPP": 0.011678710537087161,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  2406119.0101030753,
+                  7916.159570128215,
+                  -261745.3671974814
+                ],
+                "kernel": 2152289.802475722,
+                "correction_PhiPP_plus_interference_over_M": -0.10549320568165887,
+                "signed_interference_over_M": -0.1087832173298313
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  2406106.9023385406,
+                  7916.119735441862,
+                  -261744.0500759006
+                ],
+                "kernel": 2152278.9719980815,
+                "correction_PhiPP_plus_interference_over_M": -0.10549320568165886,
+                "signed_interference_over_M": -0.10878321732983127
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  4492022.976363362,
+                  12588.096608441285,
+                  -475296.8262533448
+                ],
+                "kernel": 4029314.2467184584,
+                "correction_PhiPP_plus_interference_over_M": -0.10300675933307489,
+                "signed_interference_over_M": -0.10580908173317809
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  4492000.372179506,
+                  12588.033264230531,
+                  -475294.43452540773
+                ],
+                "kernel": 4029293.9709183294,
+                "correction_PhiPP_plus_interference_over_M": -0.10300675933307488,
+                "signed_interference_over_M": -0.10580908173317807
+              }
+            }
+          }
+        },
+        "bishara_linear": {
+          "F1hat_p": 0.8177208970019135,
+          "F2hat_p": -0.184,
+          "F1hat_n": 0.8177208970019135,
+          "F2hat_n": -0.184,
+          "c_M": 0.8135657115331305,
+          "c_PhiPP": 0.00831038002937427,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  1611347.6052023408,
+                  4008.3581560581524,
+                  -152419.68519160192
+                ],
+                "kernel": 1462936.278166797,
+                "correction_PhiPP_plus_interference_over_M": -0.09210385552837148,
+                "signed_interference_over_M": -0.0945914368194082
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  1611339.4967848829,
+                  4008.3379857105842,
+                  -152418.91820474423
+                ],
+                "kernel": 1462928.916565849,
+                "correction_PhiPP_plus_interference_over_M": -0.09210385552837147,
+                "signed_interference_over_M": -0.0945914368194082
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  3008251.227426577,
+                  6373.999824371448,
+                  -276775.07115319604
+                ],
+                "kernel": 2737850.1560977525,
+                "correction_PhiPP_plus_interference_over_M": -0.08988646588541095,
+                "signed_interference_over_M": -0.09200530481955944
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  3008236.0896892617,
+                  6373.9677499442505,
+                  -276773.6784010601
+                ],
+                "kernel": 2737836.379038146,
+                "correction_PhiPP_plus_interference_over_M": -0.08988646588541095,
+                "signed_interference_over_M": -0.09200530481955946
+              }
+            }
+          }
+        },
+        "isoscalar_zexp": {
+          "F1hat_p": 0.8545072364388168,
+          "F2hat_p": -0.14990391459601543,
+          "F1hat_n": 0.8545072364388168,
+          "F2hat_n": -0.14990391459601543,
+          "c_M": 0.849382104536119,
+          "c_PhiPP": 0.010250275019507978,
+          "models": {
+            "AFH_BD": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  1756346.4134389549,
+                  6098.117482272498,
+                  -196275.53236470852
+                ],
+                "kernel": 1566168.9985565187,
+                "correction_PhiPP_plus_interference_over_M": -0.1082801282407982,
+                "signed_interference_over_M": -0.11175217534700221
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  1756337.5753770277,
+                  6098.086796105159,
+                  -196274.54469206228
+                ],
+                "kernel": 1566161.1174810706,
+                "correction_PhiPP_plus_interference_over_M": -0.10828012824079818,
+                "signed_interference_over_M": -0.11175217534700219
+              }
+            },
+            "SN100PN": {
+              "L00": {
+                "terms_M_PhiPP_MPhiPP": [
+                  3278951.876650188,
+                  9697.08749759672,
+                  -356411.80053340516
+                ],
+                "kernel": 2932237.1636143797,
+                "correction_PhiPP_plus_interference_over_M": -0.10573949422826413,
+                "signed_interference_over_M": -0.10869686837170639
+              },
+              "conditional_L_C": {
+                "terms_M_PhiPP_MPhiPP": [
+                  3278935.376727667,
+                  9697.038701152487,
+                  -356410.00704349874
+                ],
+                "kernel": 2932222.408385321,
+                "correction_PhiPP_plus_interference_over_M": -0.10573949422826413,
+                "signed_interference_over_M": -0.10869686837170639
+              }
+            }
+          }
+        }
+      },
+      "effects": {
+        "anchors": {
+          "nuclear_only_anchors": 1.8721058112544346,
+          "nuclear_only_at_scheme": 1.8721058112544346,
+          "form_factor_only_AFH_BD": 1.0,
+          "form_factor_only_SN100PN": 1.0,
+          "model_by_ff_ratio_of_ratios": 1.0,
+          "joint_vs_anchor_AFH_BD": 1.8721058112544346
+        },
+        "bishara_linear": {
+          "nuclear_only_anchors": 1.8721058112544346,
+          "nuclear_only_at_scheme": 1.8714760150240775,
+          "form_factor_only_AFH_BD": 0.6797115688064034,
+          "form_factor_only_SN100PN": 0.6794829066329349,
+          "model_by_ff_ratio_of_ratios": 0.9996635894047382,
+          "joint_vs_anchor_AFH_BD": 1.2720638981555716
+        },
+        "isoscalar_zexp": {
+          "nuclear_only_anchors": 1.8721058112544346,
+          "nuclear_only_at_scheme": 1.8722354779828465,
+          "form_factor_only_AFH_BD": 0.7276757046170065,
+          "form_factor_only_SN100PN": 0.7277261052553653,
+          "model_by_ff_ratio_of_ratios": 1.0000692624998182,
+          "joint_vs_anchor_AFH_BD": 1.3623802706501256
+        }
+      }
+    }
+  ]
+}

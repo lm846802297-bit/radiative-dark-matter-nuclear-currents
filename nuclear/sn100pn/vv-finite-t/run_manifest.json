@@ -1,0 +1,83 @@
+{
+  "scope": "charge-only response swap with inherited invariant-t one-body inputs; no full cross section",
+  "status": "verified on four frozen kinematic points; awaiting publication review",
+  "source": {
+    "parent": "112555411a63afb5e7a900f3748a03edfdbf3a10",
+    "parent_checkout_clean_at_run": true,
+    "working_driver_sha256": {
+      "finite_t.py": "6debb0fbdef59591f9d758ca0668e0b4d4fee830545fc1f61e4eb05831df205c",
+      "test_finite_t.py": "c51dc76834f1668a4da0bcb99f55dfab272ce14d01f60e9cf6430ff190f93d1b",
+      "requirements.txt": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7"
+    }
+  },
+  "inputs_sha256": {
+    "nuclear/sn100pn/vv-charge-matching/native/summary.json": "cc9837753476352b027b0d12bb12c013c0f5f342639ae8b02b2054f9083138df",
+    "nuclear/sn100pn/vv-charge-matching/native/off_grid.json": "8b893156b31a4fc28767db227be2c6cf0528e97ff78188a0553709c44af4f4a7",
+    "nuclear/sn100pn/vv-charge-matching/native/radiative_tensors.json.xz": "413f0722450d644950d21857e76f0f391b78091e134ee63301773667c066f6fd",
+    "radiative_tensors.json (uncompressed)": "360ac092abc52fa46407536029226b00297c3e0fc7d678840012c2cb0a6e4f4d",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/nucleon_vector_form_factors.py": "07f956d4427abd1aba0e8d4f31cc7349e144fcd592e9066037b81b750d154eb4",
+    "benchmarks/vv_recovery/source_snapshot/research/three_body_full_current_nucleon_match/three_body_multipole_leptonic_weights.py": "b42492780f2668cfd968c8d597b948d654ef2a4df1d9b3935e8f3831b84ad651"
+  },
+  "formal_sources": {
+    "Bishara_Appendix_A_Eqs_A3_A6_A8": "https://arxiv.org/abs/1707.06998",
+    "Borah_isoscalar_Sachs_Eq16": "https://arxiv.org/abs/2003.13640"
+  },
+  "run": {
+    "phase_space_tensors": "reused from SHA-pinned anchor archive, not recalculated",
+    "nuclear_responses": "reused exact momentum AFH/B&D and SN100PN (Xe129 J=0, Xe131 J=0+2)",
+    "mchi_GeV": 1000,
+    "scalar_mass_GeV": 0.0003,
+    "lab_speed_km_s": 776,
+    "g2": 1.0,
+    "width": "constant pole",
+    "benchmarks": [
+      {
+        "ER_keV": 200,
+        "delta_m_keV": 450
+      },
+      {
+        "ER_keV": 267,
+        "delta_m_keV": 362
+      }
+    ],
+    "mN_GeV": 0.938918,
+    "nucleon_response_precision": "binary64",
+    "schemes": {
+      "anchors": "constant inherited effective F1/F2",
+      "bishara_linear": "adopted first-order finite t_N Dirac, constant Pauli anchor",
+      "isoscalar_zexp": "alternate central sensitivity; finite EM isoscalar Dirac/Pauli, fixed strange Pauli, linear strange Dirac"
+    },
+    "interpolation": "none, use inherited exact momenta",
+    "correlation_uncertainty": "central prescriptions only; no fitted covariance, finite-t strange Pauli or isospin-breaking input"
+  },
+  "environment": {
+    "os": "Debian GNU/Linux 13",
+    "kernel": "6.18.57",
+    "arch": "x86_64",
+    "cpu": "Intel Xeon Platinum 8573C",
+    "visible_logical_processors": 9,
+    "mem_total_kB": 10206468,
+    "accelerator": "none",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "blas_lapack": "SciPy OpenBLAS 0.3.30 USE64BITINT (NumPy build metadata)",
+    "env": {
+      "OPENBLAS_NUM_THREADS": 1,
+      "PYTHONDONTWRITEBYTECODE": 1
+    }
+  },
+  "verification": {
+    "independent_vs_pinned_FF_max_abs": 2.220446049250313e-16,
+    "independent_vs_pinned_coeff_max_abs": 1.734723475976807e-18,
+    "kernel_gram_closure_max_relative": 2.9732655351365364e-16,
+    "archived_anchors_replay_max_relative": 0.0,
+    "exact_transfer_kinematics_max_abs_GeV2": 1.3877787807814457e-17,
+    "stage_tests": 3,
+    "pinned_nucleon_tests": 13,
+    "repeat_output_identical": true
+  },
+  "outputs_sha256": {
+    "native/finite_t_summary.json": "8fa341408682ba3fd6ccf41054fe3ebd9cce82698a23014c1a6125cb26305e65"
+  },
+  "replay": "OPENBLAS_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 python finite_t.py --repo /path/to/clean-anchor-commit --output /tmp/finite_t_replay.json"
+}
