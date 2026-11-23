@@ -16,6 +16,8 @@ The local [nuclear-current RCRPS extension](docs/NUCLEAR_CURRENT_RCRPS_EXTENSION
 
 The existing Native AFH manifest is a project-specific historical record. Preserve it and its exact source/data fingerprints; do not retrofit or overwrite it as an RCRPS record.
 
+For document edits and migration, follow the central [Research Document Review Standard](https://github.com/lm846802297-bit/high-energy-theory-research/blob/142267bc803c90aa681110293b66b73947bbcaa1/docs/DOCUMENT_REVIEW_STANDARD.md). For PR review, merge strategy, and main-branch verification, follow the central [Git Merge Policy](https://github.com/lm846802297-bit/high-energy-theory-research/blob/142267bc803c90aa681110293b66b73947bbcaa1/docs/governance/GIT_MERGE_POLICY.md).
+
 ## Physical validation gates
 
 As applicable, test direct covariant amplitudes against tensor contractions; both radiation diagrams and their coherent interference; Lorentz-index and metric conventions; exact phase-space boundaries; vector Ward/continuity identities only when justified by the selected Hamiltonian/current; axial PCAC and induced-pseudoscalar relations; scalar-source normalization and trace anomaly; AFH multipole reconstruction, signed interference, positivity and Cauchy-Schwarz bounds; analytic limits; independent quadrature and precision refinements.
