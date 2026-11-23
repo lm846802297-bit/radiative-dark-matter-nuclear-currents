@@ -19,14 +19,15 @@
   },
   "migrated_target": {
     "path": "docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md",
-    "sha256": "43ca8e1decfbcc67192b49bdc605dd477eec76beab2468c880a2dc5026d4086a",
+    "sha256": "816b81ff97725755b965ff544d7653f193b9c828aa93bb9930769dd9bb8c7ec9",
     "corrections": [
       "Normalized escaped Markdown backticks.",
       "Corrected spinor and scalar fit-variable typos.",
       "Restored exact author names from the supplied manuscript PDF.",
       "Retained Lorentz indices in the integrated three-body response tensor.",
       "Clarified scalar-density versus vector W_M normalization.",
-      "Specified scalar nucleon form-factor normalization as source-convention dependent."
+      "Specified scalar nucleon form-factor normalization as source-convention dependent.",
+      "Replaced a fixed-percentage statement for scalar two-body effects with the model-dependent hierarchy supported by the cited paper."
     ]
   },
   "execution_environment": {
@@ -63,8 +64,12 @@
       "sha256": "8180a5699b35239e2fb1c282dfe2ea05eac34b82c86d4389a58f31f13f2a1410"
     },
     {
+      "path": "docs/EXTERNAL_BASELINES.md",
+      "sha256": "e66bee2e2e452ecefedea11eb3a2d23e17f386380cfcf7454795e8db1c00d41e"
+    },
+    {
       "path": "docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md",
-      "sha256": "43ca8e1decfbcc67192b49bdc605dd477eec76beab2468c880a2dc5026d4086a"
+      "sha256": "816b81ff97725755b965ff544d7653f193b9c828aa93bb9930769dd9bb8c7ec9"
     },
     {
       "path": "docs/LITERATURE_REVIEW.md",
@@ -72,7 +77,7 @@
     },
     {
       "path": "docs/MIGRATION_NOTES.md",
-      "sha256": "56dfe5c69ef12fc17cbf0d933432865364564ad82dd397fd37a62ac4ddaf3428"
+      "sha256": "77bf93bd5b680da96dd044c392062e4687f5f1f3d83cca909ff43ce2cf0b59ca"
     },
     {
       "path": "docs/RESEARCH_PLAN.md",
