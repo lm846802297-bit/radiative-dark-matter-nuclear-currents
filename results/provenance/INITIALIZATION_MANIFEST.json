@@ -41,7 +41,7 @@
   "tracked_files": [
     {
       "path": ".github/workflows/research-docs-validation.yml",
-      "sha256": "ab567fabee12f6363f7ca01a5bdc1bc2eb3ce1306fd484c436124582a254fae5"
+      "sha256": "66e472a3ccacc341a36c52549b1f523fdc32744a3b73777b2012f24e0d7692d4"
     },
     {
       "path": ".gitignore",
@@ -53,7 +53,7 @@
     },
     {
       "path": "benchmarks/README.md",
-      "sha256": "ecc55e1613ccbe2c19bf078a5dfa7593cda7c95718874a73b1967eb8e31ecbe5"
+      "sha256": "89d70140962c7c0254177010ae749e430e30a1288e3667adb49f2a4f250c23a3"
     },
     {
       "path": "CITATION.cff",
@@ -65,7 +65,7 @@
     },
     {
       "path": "docs/EXTERNAL_BASELINES.md",
-      "sha256": "e66bee2e2e452ecefedea11eb3a2d23e17f386380cfcf7454795e8db1c00d41e"
+      "sha256": "12039a1a58fde0554a9bed638202c143ce4aea3927f34108ad5ffe976ff125d3"
     },
     {
       "path": "docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md",
@@ -81,7 +81,7 @@
     },
     {
       "path": "docs/RESEARCH_PLAN.md",
-      "sha256": "c1deb65aeabfe2d88584ae48b590064364b6d8c1938d6122c1bf23345c91627e"
+      "sha256": "0ae3e5f7c7873df7e2ba6934ebafda9f42b4731341fa2713180d42802fecdabe"
     },
     {
       "path": "environment/README.md",
@@ -89,7 +89,7 @@
     },
     {
       "path": "nuclear/afh/README.md",
-      "sha256": "0d0b2e5d3d87c3b9580bcc63d0ef7be329b66c1675f90a916c2e99fe8edf85da"
+      "sha256": "bdec099cd664f50b7621bd075f9c62294131436456d8d7a279576ea7de6b1c97"
     },
     {
       "path": "nuclear/chiral_eft/README.md",
@@ -105,7 +105,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "b505f691fbbf9dcaffa04527ce73ec4a6722e510251ce6015b370d822ec025b7"
+      "sha256": "e6c17e394d78713cba07acedb045e4906a9c44608bc54d3b69e013c84eb49dfa"
     },
     {
       "path": "results/provenance/README.md",
