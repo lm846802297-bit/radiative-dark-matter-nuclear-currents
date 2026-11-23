@@ -1,0 +1,73 @@
+Xe-128: 400/2401 q nodes
+Xe-128: 800/2401 q nodes
+Xe-128: 1200/2401 q nodes
+Xe-128: 1600/2401 q nodes
+Xe-128: 2000/2401 q nodes
+Xe-128: 2400/2401 q nodes
+Xe-129: 400/2401 q nodes
+Xe-129: 800/2401 q nodes
+Xe-129: 1200/2401 q nodes
+Xe-129: 1600/2401 q nodes
+Xe-129: 2000/2401 q nodes
+Xe-129: 2400/2401 q nodes
+Xe-130: 400/2401 q nodes
+Xe-130: 800/2401 q nodes
+Xe-130: 1200/2401 q nodes
+Xe-130: 1600/2401 q nodes
+Xe-130: 2000/2401 q nodes
+Xe-130: 2400/2401 q nodes
+Xe-131: 400/2401 q nodes
+Xe-131: 800/2401 q nodes
+Xe-131: 1200/2401 q nodes
+Xe-131: 1600/2401 q nodes
+Xe-131: 2000/2401 q nodes
+Xe-131: 2400/2401 q nodes
+Xe-132: 400/2401 q nodes
+Xe-132: 800/2401 q nodes
+Xe-132: 1200/2401 q nodes
+Xe-132: 1600/2401 q nodes
+Xe-132: 2000/2401 q nodes
+Xe-132: 2400/2401 q nodes
+Xe-134: 400/2401 q nodes
+Xe-134: 800/2401 q nodes
+Xe-134: 1200/2401 q nodes
+Xe-134: 1600/2401 q nodes
+Xe-134: 2000/2401 q nodes
+Xe-134: 2400/2401 q nodes
+Xe-136: 400/2401 q nodes
+Xe-136: 800/2401 q nodes
+Xe-136: 1200/2401 q nodes
+Xe-136: 1600/2401 q nodes
+Xe-136: 2000/2401 q nodes
+Xe-136: 2400/2401 q nodes
+{
+  "status": "PROVISIONAL_PYTHON",
+  "csv": "C:\\Users\\84680\\Documents\\Codex\\2026-11-22\\67-halo-fold-pass-p4-t\\work\\native_afh_eight_response\\python-reference-local\\afh_v6_full_eight_response_7isotope.csv",
+  "metadata": "C:\\Users\\84680\\Documents\\Codex\\2026-11-22\\67-halo-fold-pass-p4-t\\work\\native_afh_eight_response\\python-reference-local\\metadata.json",
+  "rows": 16807,
+  "isotopes": [
+    128,
+    129,
+    130,
+    131,
+    132,
+    134,
+    136
+  ],
+  "q_grid": {
+    "points": 2401,
+    "q_min_GeV": 0.0,
+    "q_max_GeV": 0.6,
+    "step_GeV": 0.00025
+  },
+  "responses": {
+    "1": "M",
+    "2": "SigmaDoublePrime",
+    "3": "SigmaPrime",
+    "4": "PhiPP",
+    "5": "PhiTildePrime",
+    "6": "Delta",
+    "7": "M-PhiPP interference",
+    "8": "SigmaPrime-Delta interference"
+  }
+}

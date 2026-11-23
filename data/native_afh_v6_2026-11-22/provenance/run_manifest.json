@@ -1,0 +1,304 @@
+{
+  "schema": "native-afh-eight-response-run-v1",
+  "run_id": "native-afh-eight-response-2026-11-22-local-windows",
+  "run_date": "2026-11-22",
+  "execution_target": "Codex desktop local Windows environment",
+  "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+  "working_branch": "fix/pr67-halo-audit-finite",
+  "workspace_head_commit": "aac9b33d66f6a7fe1ca5d5d8cc648f5afe52a81b",
+  "historical_runner_source_commit": "aa493b2b76727da2fd51609fe87c647910f7e456",
+  "environment": {
+    "os": "Windows 10 Pro, build 26300",
+    "cpu": "AMD Ryzen 7 9800X3D 8-Core Processor",
+    "physical_memory_GiB": 31.1,
+    "wolfram": "14.2.0 for Microsoft Windows (64-bit) (December 26, 2024)",
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0"
+  },
+  "afh_source": {
+    "version": "DMFormFactor v6.0",
+    "path_in_archive": "source/dmformfactor-V6.m",
+    "sha256": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372"
+  },
+  "inputs": {
+    "isotopes": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      134,
+      136
+    ],
+    "density_matrix_sha256": {
+      "Xe-128": "fa2017a7ea1951cad6407078aeebede34b9182d0554f38968d5033c6c16bbeb4",
+      "Xe-129": "a0bd848d443a073b80ad731cc87fcfb29d7c899da932d5a230e2e245295f158e",
+      "Xe-130": "38eedadeecc45acc637264b386f8e0d2b63c8dc9e811395e348fbb3e4da8beea",
+      "Xe-131": "4ca110f6828ef6cebe4373fb0c9704220d8227c4a131bc2b5801dc2884e00a00",
+      "Xe-132": "5a367bb5a4d278bf9c3c9f7e2aae8cd7252efe8c3371f1da2d06516c766f07f3",
+      "Xe-134": "843bd0d85d77f904c41b6a8ecb349369cadfec9d3b79f477406208e8dc410a7c",
+      "Xe-136": "9069106f11e2efd537380c62d7e4e63114ed84ec6bbfde687bd5da493d988df0"
+    }
+  },
+  "calculation": {
+    "native_entrypoint": "source/run_afh_full_response_database.wls",
+    "native_call": "ResponseNuclear[y,index,0,0], index=1..8",
+    "native_command": "wolframscript -file research/afh_full_response_database/run_afh_full_response_database.wls",
+    "response_indices": {
+      "1": "M",
+      "2": "SigmaDoublePrime",
+      "3": "SigmaPrime",
+      "4": "PhiPP",
+      "5": "PhiTildePrime",
+      "6": "Delta",
+      "7": "signed M-PhiPP interference",
+      "8": "signed SigmaPrime-Delta interference"
+    },
+    "q_A_grid_GeV": {
+      "min": 0.0,
+      "max": 0.6,
+      "step": 0.00025,
+      "points_per_isotope": 2401
+    },
+    "rows": 16807,
+    "normalization": "raw AFH isoscalar tau1=tau2=0; no equal-p/n factor-four rescaling in the compared W columns",
+    "kinematics": {
+      "spatial_recoil": "Q_A^2=2*m_A*E_R+E_R^2; q_A=sqrt(Q_A^2); AFH y_A=(b_A*q_A/2)^2",
+      "invariant_transfer": "t_A=-2*m_A*E_R; not used by the AFH response evaluation",
+      "mediator_denominator": "(m_V^2-t_A)^2; outside this nuclear-response calculation"
+    }
+  },
+  "comparison": {
+    "reference": "locally regenerated source-translated Python AFH-8 database",
+    "comparison_json": "native/native_python_comparison.json",
+    "status": "PASS",
+    "native_afh_validated": true,
+    "rows_compared": 16807,
+    "tolerances": {
+      "rtol": 5e-07,
+      "atol": 2e-12,
+      "imaginary_atol": 2e-12
+    },
+    "failures": [],
+    "max_differences": {
+      "M": {
+        "max_abs": 2.0463630789890885e-12,
+        "max_rel": 6.27818232427859e-06,
+        "worst_key": {
+          "A": 131,
+          "q_GeV": 0.021
+        }
+      },
+      "SigmaDoublePrime": {
+        "max_abs": 1.4051260155412137e-16,
+        "max_rel": 1.562895916084343e-13,
+        "worst_key": {
+          "A": 129,
+          "q_GeV": 0.0155
+        }
+      },
+      "SigmaPrime": {
+        "max_abs": 2.949029909160572e-16,
+        "max_rel": 2.1979761662964989e-07,
+        "worst_key": {
+          "A": 129,
+          "q_GeV": 0.0155
+        }
+      },
+      "PhiPP": {
+        "max_abs": 8.526512829121202e-14,
+        "max_rel": 6.00127421681661e-07,
+        "worst_key": {
+          "A": 131,
+          "q_GeV": 0.01075
+        }
+      },
+      "PhiTildePrime": {
+        "max_abs": 1.5959455978986625e-16,
+        "max_rel": 9.145634128837647e-10,
+        "worst_key": {
+          "A": 131,
+          "q_GeV": 0.016
+        }
+      },
+      "Delta": {
+        "max_abs": 2.0816681711721685e-16,
+        "max_rel": 4.20565849988141e-09,
+        "worst_key": {
+          "A": 131,
+          "q_GeV": 0.00425
+        }
+      },
+      "MPhiPP": {
+        "max_abs": 3.126388037344441e-13,
+        "max_rel": 1.2914805490797328e-09,
+        "worst_key": {
+          "A": 131,
+          "q_GeV": 0.00075
+        }
+      },
+      "SigmaPrimeDelta": {
+        "max_abs": 1.6306400674181987e-16,
+        "max_rel": 1.8856824944082545e-10,
+        "worst_key": {
+          "A": 131,
+          "q_GeV": 0.0085
+        }
+      }
+    },
+    "max_combined_tolerance_fraction": 0.058788561677346536
+  },
+  "native_spatial_multipoles": {
+    "status": "PASS_NATIVE_AFH_MULTIPOLE_AMPLITUDE_CROSSCHECK",
+    "scope": "direct P3-B versus native Wolfram AFH DeltaJ and SigmaPJ amplitudes for Xe-129 and Xe-131",
+    "native_afh_multipole_amplitudes_validated": true,
+    "native_afh_validated": true,
+    "isotopes": [
+      129,
+      131
+    ],
+    "rank_map": {
+      "129": [
+        1
+      ],
+      "131": [
+        1,
+        2,
+        3
+      ]
+    },
+    "q_points_per_isotope": 2401,
+    "rows_compared": 9604,
+    "max_y_absolute_difference": 7.105427357601002e-15,
+    "max_native_imaginary_residual": 0.0,
+    "native_imaginary_tolerance": 2e-12,
+    "rtol": 5e-07,
+    "atol": 2e-12,
+    "P3_B_multipole_sha256": "eb556aea24e6d03a22254b242f79e24f4e77db67134f22aa3d13585fef43be50",
+    "native_multipole_csv_sha256": "cc1d89d0d3cce9cb138226a9dcc880e76bde8a3d2bc22698ac072900320726e1",
+    "native_multipole_metadata_sha256": "120640f5d8e8e5ab8ce6a5f32c822357bb1d955c2d4a2cf2cb9568d9058016dc",
+    "native_source_commit": "aac9b33d66f6a7fe1ca5d5d8cc648f5afe52a81b",
+    "native_wolfram_version": "14.2.0 for Microsoft Windows (64-bit) (December 26, 2024)",
+    "amplitude_comparisons": {
+      "Delta": {
+        "max_absolute_difference": 8.881784197001252e-16,
+        "max_relative_difference": 1.0,
+        "failed_points": 0,
+        "worst_point": {
+          "A": 131,
+          "q_GeV": 0.0,
+          "J": 3,
+          "p3_python": 0.0,
+          "native_wolfram": 5.285841083175207e-18
+        }
+      },
+      "SigmaPrime": {
+        "max_absolute_difference": 2.0539125955565396e-15,
+        "max_relative_difference": 1.0,
+        "failed_points": 0,
+        "worst_point": {
+          "A": 131,
+          "q_GeV": 0.0,
+          "J": 3,
+          "p3_python": 0.0,
+          "native_wolfram": 2.5883255180180016e-18
+        }
+      }
+    },
+    "acceptance_note": "The raw AFH package multipole amplitudes are compared before the physical equal-p/n factor-four and common C0 response conversion. This validates the two spatial amplitude channels, not the full three-body tensor contraction or event rate.",
+    "native_run_id": null
+  },
+  "q_zero_limit_check": {
+    "status": "PASS_Q_ZERO_LIMIT_STABILITY",
+    "comparison": "native evaluation at 1e-8 and 1e-9 GeV versus P3-B Python q=0 amplitudes",
+    "rows": [
+      {
+        "A": 129,
+        "J": 1,
+        "q_eval_GeV": 1e-08,
+        "delta_abs_error": 5.689893001203927e-16,
+        "sigma_prime_abs_error": 3.608224830031759e-15
+      },
+      {
+        "A": 129,
+        "J": 1,
+        "q_eval_GeV": 1e-09,
+        "delta_abs_error": 2.7755575615628914e-17,
+        "sigma_prime_abs_error": 3.885780586188048e-16
+      },
+      {
+        "A": 131,
+        "J": 1,
+        "q_eval_GeV": 1e-08,
+        "delta_abs_error": 3.9968028886505635e-15,
+        "sigma_prime_abs_error": 4.551914400963142e-15
+      },
+      {
+        "A": 131,
+        "J": 1,
+        "q_eval_GeV": 1e-09,
+        "delta_abs_error": 0.0,
+        "sigma_prime_abs_error": 5.551115123125783e-17
+      },
+      {
+        "A": 131,
+        "J": 2,
+        "q_eval_GeV": 1e-08,
+        "delta_abs_error": 0.0,
+        "sigma_prime_abs_error": 0.0
+      },
+      {
+        "A": 131,
+        "J": 2,
+        "q_eval_GeV": 1e-09,
+        "delta_abs_error": 0.0,
+        "sigma_prime_abs_error": 0.0
+      },
+      {
+        "A": 131,
+        "J": 3,
+        "q_eval_GeV": 1e-08,
+        "delta_abs_error": 5.28584108317518e-16,
+        "sigma_prime_abs_error": 2.5883255180179424e-16
+      },
+      {
+        "A": 131,
+        "J": 3,
+        "q_eval_GeV": 1e-09,
+        "delta_abs_error": 5.285841083175207e-18,
+        "sigma_prime_abs_error": 2.5883255180180016e-18
+      }
+    ],
+    "max_absolute_error_by_eval_q_GeV": {
+      "1e-08": 4.551914400963142e-15,
+      "1e-09": 3.885780586188048e-16
+    },
+    "tolerance_atol": 2e-12
+  },
+  "status": {
+    "computed": true,
+    "archived": true,
+    "numerically_validated": true,
+    "native_afh_validated": true,
+    "native_afh_spatial_multipole_amplitudes_validated": true,
+    "physically_validated_full_current": false,
+    "full_current_complete": false,
+    "p4_full_current_rate_promotion": false,
+    "note": "The nuclear-response gate passed. The direct covariant bound-nucleus P3-C amplitude gate is separate and remains open."
+  },
+  "source_file_sha256": {
+    "source/dmformfactor-V6.m": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+    "source/README.md": "a24be7f7f5ea8c1f83e6e5591b4f145085de7ae9742659b026367fa7f2ca6fdf",
+    "source/run_afh_full_response_database.py": "ded304c59e93966bfd6e03e9b512a1e47ad66264437b0897648b22377222acec",
+    "source/run_afh_full_response_database.wls": "10b254971a1f9dade783cfdf603f15885b08894e4de54aae2791243bf3369642",
+    "source/validate_afh_full_response_database.py": "3e7e5edaa5419e474028c3b0c7ddf4af3c44cc013049cffdeba2f5e45612ba2b",
+    "source/compare_native_afh_full_response.py": "f1aea8595f1f3fbda65bcf6f5874c24270bce3d047b5749cf14538627bf07c0f",
+    "source/run_afh_spatial_multipoles_native.wls": "659d8bc187119f6774d475710b758ccebaab4d87285e9812ac158ac670acf2a8",
+    "source/run_afh_default_xe131.py": "ed0451fd883541001110c2475355def9184d21ee30f78bf15df65304de80459a",
+    "source/run_afh_spatial_response_audit.py": "1d414ee562477e2f6f943ec12e249e0fa4c8d204dabcdef4fb9a7f71e69cd181",
+    "source/afh_spatial_obdme_responses.py": "639e484159757bdeb671f48e5cb4bcadd4404e5e1df839b73d4e217c68bd253d",
+    "source/compare_p3_multipoles_vs_native.py": "84aa3d91356e653021aba7baced359f1e1da59c597e9783e23dfedbfa8b7b044"
+  }
+}
