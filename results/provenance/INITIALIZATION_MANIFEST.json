@@ -105,7 +105,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "9454a7e4518440b960232d2c228e81f6f75edc9f4297db221c3f13dc7b7fee6b"
+      "sha256": "b505f691fbbf9dcaffa04527ce73ec4a6722e510251ce6015b370d822ec025b7"
     },
     {
       "path": "results/provenance/README.md",
@@ -135,5 +135,13 @@
       "path": "tools/validate_provenance.py",
       "sha256": "ea54a928a1eb27f603c8beb56cceb436c2a1f030007727189e2bf0ab2708fa10"
     }
-  ]
+  ],
+  "external_baseline": {
+    "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+    "branch": "research/p4-provisional-halo-fold-20261119",
+    "commit": "dd9a7387814cd157d9cde739fa80181e4cd7d428",
+    "role": "pinned source for original VV/P3/P4 calculations",
+    "raw_data_imported": false,
+    "full_chiral_eft_current_complete": false
+  }
 }
