@@ -310,7 +310,7 @@ The conversion \(u=2y_A\) is essential when reusing these data alongside AFH fil
 | 4 | -0.00570646 | -0.0487362 |
 | 5 | 0.000165335 | 0.00167317 |
 
-These are amplitude-level nuclear structure inputs in the conventions of that paper, not AFH \(W_M\) values. Before combining them with the project's physical-\(A^2\) AFH normalization, the amplitude normalization, isospin decomposition, Wilson coefficients, oscillator length, and shell-model assumptions must be matched. The paper finds typical scalar two-body corrections at the several-percent level in its specified elastic benchmarks; that number is not a universal prediction for the present model.
+These are amplitude-level nuclear structure inputs in the conventions of that paper, not AFH \(W_M\) values. Before combining them with the project's physical-\(A^2\) AFH normalization, the amplitude normalization, isospin decomposition, Wilson coefficients, oscillator length, and shell-model assumptions must be matched. The paper shows that scalar two-body responses can provide the leading correction to the standard coherent structure factor in its generalized-response analysis. Their rate-level impact is model dependent through Wilson coefficients, nucleon matrix elements, and interference; it is not a universal percentage correction.
 
 The scalar mediator/current is a distinct Lorentz-rank-zero channel. Its dark kernel is
 
