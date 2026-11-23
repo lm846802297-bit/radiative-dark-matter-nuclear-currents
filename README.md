@@ -23,7 +23,7 @@ The project develops reusable three-body response kernels and matches them to ve
 | Work package | Status | Evidence boundary |
 |---|---|---|
 | Literature audit and theory architecture | Initial framework established | See docs/LITERATURE_REVIEW.md and docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md |
-| VV recovery benchmark | Reusable external baseline | Existing calculations remain in the original repository; no numerical data have yet been copied here |
+| VV recovery benchmark | Source and matching audit recorded; reproduction pending | The universal \\(u+d+s\\) source and one-body matching are documented; raw nuclear data and numerical spectra remain pinned in the original repository |
 | VA / axial nuclear current | Theory task opened | Requires explicit \(G_A,G_P\), PCAC, and xenon axial-response normalization |
 | SS / scalar nuclear current | Theory task opened | Requires scalar Wilson-source convention and one-/two-body matching |
 | New numerical V/A/S predictions | Not yet performed | No new cross sections or rates are claimed by this bootstrap |
@@ -32,10 +32,11 @@ The project develops reusable three-body response kernels and matches them to ve
 
 1. Research conventions — docs/CONVENTIONS.md
 2. Literature review — docs/LITERATURE_REVIEW.md
-3. General 2-to-3 current framework — docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md
-4. Research plan and gates — docs/RESEARCH_PLAN.md
-5. External baseline pins — docs/EXTERNAL_BASELINES.md
-6. Research and provenance protocol — AGENTS.md
+3. Universal \\(u+d+s\\) VV current audit — docs/VV_UNIVERSAL_VECTOR_CURRENT_AUDIT.md
+4. General 2-to-3 current framework — docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md
+5. Research plan and gates — docs/RESEARCH_PLAN.md
+6. External baseline pins — docs/EXTERNAL_BASELINES.md
+7. Research and provenance protocol — AGENTS.md
 
 ## Relationship to the original project
 
