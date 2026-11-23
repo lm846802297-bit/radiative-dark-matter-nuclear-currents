@@ -15,11 +15,11 @@
     "commit": "de39bf15e08870af82e5217ac30092e0d8e89878",
     "path": "research/radiative_dark_matter_nuclear_current_theory/GENERAL_2TO3_CURRENT_FRAMEWORK.md",
     "git_blob_sha1": "e86874ab7d9bba447909b86364f915980e23004b",
-    "sha256": "aea315b1e0713b8c6fa70b6056fa1ab16a826d72efb7878bdce27edc5c0b570d"
+    "sha256": "ba5bd93752244f8627504a9af868d813fbc864cd4b06372f2f5cd80d9746a04b"
   },
   "migrated_target": {
     "path": "docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md",
-    "sha256": "2328ea2d7a040517846bb996e9e9cc1cf8c5a31bd2d6e1affb1256722c5fd11a",
+    "sha256": "43ca8e1decfbcc67192b49bdc605dd477eec76beab2468c880a2dc5026d4086a",
     "corrections": [
       "Normalized escaped Markdown backticks.",
       "Corrected spinor and scalar fit-variable typos.",
@@ -35,123 +35,100 @@
     "numerical_physics_results_generated": false,
     "os": null,
     "hardware": null,
-    "software": "GitHub repository API; JavaScript SHA-256 used only for file-integrity bookkeeping"
+    "software": "GitHub repository API; SHA-256 calculated with a standard SHA-256 implementation for file-integrity bookkeeping"
   },
   "tracked_files": [
     {
-      "path": "README.md",
-      "sha256": "c0fb04ce5a2fd7d3db1fe1125e192212b0bfa36489f1032bc0e4d001daa346b7",
-      "bytes": 2840
-    },
-    {
-      "path": "docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md",
-      "sha256": "2328ea2d7a040517846bb996e9e9cc1cf8c5a31bd2d6e1affb1256722c5fd11a",
-      "bytes": 22961
-    },
-    {
-      "path": "AGENTS.md",
-      "sha256": "e347940ae5b6a02dae96c12d083a589d4319dac21ed841a4f39506ff3b73789e",
-      "bytes": 3600
-    },
-    {
-      "path": "CITATION.cff",
-      "sha256": "ad89d4baadf60de10043f329992d64c306fcc742119dc384d8647fd5a065a07e",
-      "bytes": 775
-    },
-    {
-      "path": "docs/CONVENTIONS.md",
-      "sha256": "2e8d68ca7ae6003e80b5cb8cea9b46e4e44a073eefc281df8e2ae67dd79fdfa9",
-      "bytes": 2128
-    },
-    {
-      "path": "docs/LITERATURE_REVIEW.md",
-      "sha256": "04434df4bb01e944b76996f06e6b8de6aefab50aa11b84f25b91f382a6fd0327",
-      "bytes": 5469
-    },
-    {
-      "path": "docs/RESEARCH_PLAN.md",
-      "sha256": "6d09ef3a8b11fc86cf3a9b0ecab73afeb5db64f6a70ed068669d39a41f4365f7",
-      "bytes": 3006
-    },
-    {
-      "path": "docs/MIGRATION_NOTES.md",
-      "sha256": "3642bbe355478dc4063b576e55104902e2cfd8e5c423e4fba755877813213354",
-      "bytes": 1615
-    },
-    {
-      "path": "theory/kinematics/README.md",
-      "sha256": "951cc8229f146dda6b8939e91e34b5cbd55fc39921ae1fbe5b5ff1da6cfacd83",
-      "bytes": 541
-    },
-    {
-      "path": "theory/dark_matter_currents/README.md",
-      "sha256": "283aad7c4ca1b2a55e77464eacde3ef03a4fc9ce1e6a3c144ff325f23a789fc1",
-      "bytes": 1116
-    },
-    {
-      "path": "theory/nuclear_currents/README.md",
-      "sha256": "862f48ffe78feec46980f55bbf97855f75a6b57ae9610d97e3c855b1f7a75171",
-      "bytes": 1192
-    },
-    {
-      "path": "nuclear/afh/README.md",
-      "sha256": "7f8d6176976a7ad17e5047d70448d4b203331ef2bff2e18dcb8d05d168a6a833",
-      "bytes": 924
-    },
-    {
-      "path": "nuclear/chiral_eft/README.md",
-      "sha256": "054c69eb52b8bdc8238883fff249261a13c49a006c67f7e17e1967d9cac6cdae",
-      "bytes": 795
-    },
-    {
-      "path": "nuclear/xenon/README.md",
-      "sha256": "b6b29ad764f82b73575fdbf3c2f84406241838cce025a4afb0a50aadf7acabc1",
-      "bytes": 647
-    },
-    {
-      "path": "benchmarks/README.md",
-      "sha256": "50b26dadc26073454a6995718f2b20f5e9756f4ff288b87ae790d8db9315d0f2",
-      "bytes": 552
-    },
-    {
-      "path": "src/README.md",
-      "sha256": "95660c03de950461924fe49807ca02b6fe84867c4dcf2f863f1c6352071cfba0",
-      "bytes": 402
-    },
-    {
-      "path": "tests/README.md",
-      "sha256": "29852267457d67ebeb16743bdeb09916d11e462ed4bd03ae3127ce3a012293c3",
-      "bytes": 946
-    },
-    {
-      "path": "environment/README.md",
-      "sha256": "21b24ab5eae04a06c4638a602413d2e385cd4af453c6267d722c43d7b6ced0e9",
-      "bytes": 556
-    },
-    {
-      "path": "results/provenance/README.md",
-      "sha256": "6113acbe8a60d007dac642a9b669c9ae0786ec8c49bd16d87b791fb0438b8dc5",
-      "bytes": 543
-    },
-    {
-      "path": "paper/README.md",
-      "sha256": "62ed43df0f713b8d95871eb240c99368c20b78f5f1a7fbb3b8a8f2ffbc29b90b",
-      "bytes": 450
-    },
-    {
-      "path": "tools/validate_provenance.py",
-      "sha256": "61ab58ed1d9f3e51e73d4ef685e3f295873dfbbf7874e13445d574201e24a11f",
-      "bytes": 1945
-    },
-    {
       "path": ".github/workflows/research-docs-validation.yml",
-      "sha256": "1d1a6f740480c8e829453fb3868d3918296e71f400f58dcc2cee7180d7848655",
-      "bytes": 465
+      "sha256": "ab567fabee12f6363f7ca01a5bdc1bc2eb3ce1306fd484c436124582a254fae5"
     },
     {
       "path": ".gitignore",
-      "sha256": "57fb410ab0d7d19662586be9b761af823ae9898f6a259b48ced6545433112eec",
-      "bytes": 215
+      "sha256": "b117d9182de9bfa0d776e9348afcaa0ff61432d56c35028724c0c82f2477bc8a"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "dadc005117c13066ebd559d0719cdd8759c95d13c59388f80f31a2a34655a029"
+    },
+    {
+      "path": "benchmarks/README.md",
+      "sha256": "ecc55e1613ccbe2c19bf078a5dfa7593cda7c95718874a73b1967eb8e31ecbe5"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "02aa55a5cf2fdb2c3c329520a4c0354f36954bb042812968abace5aa006787b0"
+    },
+    {
+      "path": "docs/CONVENTIONS.md",
+      "sha256": "8180a5699b35239e2fb1c282dfe2ea05eac34b82c86d4389a58f31f13f2a1410"
+    },
+    {
+      "path": "docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md",
+      "sha256": "43ca8e1decfbcc67192b49bdc605dd477eec76beab2468c880a2dc5026d4086a"
+    },
+    {
+      "path": "docs/LITERATURE_REVIEW.md",
+      "sha256": "92ebacebc8eb7d995c5ef29a73e551c08511602e8f92b82b34270160f0e27469"
+    },
+    {
+      "path": "docs/MIGRATION_NOTES.md",
+      "sha256": "56dfe5c69ef12fc17cbf0d933432865364564ad82dd397fd37a62ac4ddaf3428"
+    },
+    {
+      "path": "docs/RESEARCH_PLAN.md",
+      "sha256": "c1deb65aeabfe2d88584ae48b590064364b6d8c1938d6122c1bf23345c91627e"
+    },
+    {
+      "path": "environment/README.md",
+      "sha256": "14d23e30b5ba50de09eab3307cc0346c486e416cfd12cb35db83118eb333f867"
+    },
+    {
+      "path": "nuclear/afh/README.md",
+      "sha256": "0d0b2e5d3d87c3b9580bcc63d0ef7be329b66c1675f90a916c2e99fe8edf85da"
+    },
+    {
+      "path": "nuclear/chiral_eft/README.md",
+      "sha256": "1b2098bd693e736a60d5b01e3948a1cd8a9039a214b7f490a7eb392d3490efb6"
+    },
+    {
+      "path": "nuclear/xenon/README.md",
+      "sha256": "dce78300cf5e2875df413c3e6c5e8ea707d81edb38c669316466f8f9d635360d"
+    },
+    {
+      "path": "paper/README.md",
+      "sha256": "7d97460a1d141748da40cc53c2cf90361a9d47552e14c3d25ee86f066843c455"
+    },
+    {
+      "path": "README.md",
+      "sha256": "9454a7e4518440b960232d2c228e81f6f75edc9f4297db221c3f13dc7b7fee6b"
+    },
+    {
+      "path": "results/provenance/README.md",
+      "sha256": "8c8024827976357f640869c1206a3e68aeece9e16517d92d26b2c11129bd436f"
+    },
+    {
+      "path": "src/README.md",
+      "sha256": "e4440631767129f7d77e89b94e056a2af47c25b7e83d7f7b20334933f4c5d015"
+    },
+    {
+      "path": "tests/README.md",
+      "sha256": "97397647e4cfd5c99aaae41c4239767dc69c5641e41cbe9d43d3bb0821dc7231"
+    },
+    {
+      "path": "theory/dark_matter_currents/README.md",
+      "sha256": "8a0c8a5181bad29a4d9a38863f9148dce30a1313446ecc3c907d4ca1579d4265"
+    },
+    {
+      "path": "theory/kinematics/README.md",
+      "sha256": "13c21a22840ea4d1f99051d93129b4c6970e344197194f6b719b5b000b498c4a"
+    },
+    {
+      "path": "theory/nuclear_currents/README.md",
+      "sha256": "03db3339c52169cb1c0dfe4c18fbecbe5d911f922accbfcdffc2f83cd5d1ce8d"
+    },
+    {
+      "path": "tools/validate_provenance.py",
+      "sha256": "ea54a928a1eb27f603c8beb56cceb436c2a1f030007727189e2bf0ab2708fa10"
     }
   ]
 }
