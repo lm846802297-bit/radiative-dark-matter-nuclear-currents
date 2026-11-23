@@ -34,5 +34,5 @@ The original repository remains the authoritative home for the first paper's cod
 - Provenance record: `results/provenance/VV_VECTOR_CURRENT_ADDENDUM_2026-11-23.json`.
 - The note uses the original LZ P4 baseline pin above and the P3-C bound-current audit at source commit `d02e5e009f32a1db1b2520a789148bbd0160ccfd`.
 - This is a literature/matching import only. No LZ code, raw AFH tables, xenon OBDMEs, or numerical rates have been copied.
-- The narrow q_A/q_N interface PR (#111) was merged into the source project's P4 research branch at commit `f63c58249cdf40f4551f0b0b475332e1314e2af7`; it has not been merged to the source project's `main`. This is an interface/provenance change, not a new numerical result imported here.
+- The narrow q_A/q_N interface PR (#111) was merged into the source project's P4 research branch at commit `f63c58249cdf40f4551f0b0b475332e1314e2af7`; PR #112 then corrected its regression assertion only, at P4 HEAD `55e06b9403f7ac3e2913d1dd5d192167bf80617d`. Neither change has been merged to the source project's `main`; the follow-up changes no physics kernel or numerical input.
 
