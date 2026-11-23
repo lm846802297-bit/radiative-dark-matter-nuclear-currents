@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "created_date": "2026-11-23",
+  "purpose": "Initial repository bootstrap and theory-note migration only; no numerical physics production run was performed.",
+  "repository": {
+    "full_name": "lm846802297-bit/radiative-dark-matter-nuclear-currents",
+    "visibility": "public",
+    "default_branch": "main",
+    "bootstrap_branch": "research/bootstrap-20261123",
+    "parent_main_commit": "98db777925a29076558371ca5611bbbb465fa5da"
+  },
+  "migrated_source": {
+    "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+    "branch": "research/general-radiative-nuclear-currents-20261123",
+    "commit": "de39bf15e08870af82e5217ac30092e0d8e89878",
+    "path": "research/radiative_dark_matter_nuclear_current_theory/GENERAL_2TO3_CURRENT_FRAMEWORK.md",
+    "git_blob_sha1": "e86874ab7d9bba447909b86364f915980e23004b",
+    "sha256": "ba5bd93752244f8627504a9af868d813fbc864cd4b06372f2f5cd80d9746a04b"
+  },
+  "migrated_target": {
+    "path": "docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md",
+    "sha256": "816b81ff97725755b965ff544d7653f193b9c828aa93bb9930769dd9bb8c7ec9",
+    "corrections": [
+      "Normalized escaped Markdown backticks.",
+      "Corrected spinor and scalar fit-variable typos.",
+      "Restored exact author names from the supplied manuscript PDF.",
+      "Retained Lorentz indices in the integrated three-body response tensor.",
+      "Clarified scalar-density versus vector W_M normalization.",
+      "Specified scalar nucleon form-factor normalization as source-convention dependent.",
+      "Replaced a fixed-percentage statement for scalar two-body effects with the model-dependent hierarchy supported by the cited paper."
+    ]
+  },
+  "execution_environment": {
+    "operation": "GitHub repository initialization through connected GitHub API",
+    "local_scientific_computation": false,
+    "numerical_physics_results_generated": false,
+    "os": null,
+    "hardware": null,
+    "software": "GitHub repository API; SHA-256 calculated with a standard SHA-256 implementation for file-integrity bookkeeping"
+  },
+  "tracked_files": [
+    {
+      "path": ".github/workflows/research-docs-validation.yml",
+      "sha256": "ab567fabee12f6363f7ca01a5bdc1bc2eb3ce1306fd484c436124582a254fae5"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "b117d9182de9bfa0d776e9348afcaa0ff61432d56c35028724c0c82f2477bc8a"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "dadc005117c13066ebd559d0719cdd8759c95d13c59388f80f31a2a34655a029"
+    },
+    {
+      "path": "benchmarks/README.md",
+      "sha256": "ecc55e1613ccbe2c19bf078a5dfa7593cda7c95718874a73b1967eb8e31ecbe5"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "02aa55a5cf2fdb2c3c329520a4c0354f36954bb042812968abace5aa006787b0"
+    },
+    {
+      "path": "docs/CONVENTIONS.md",
+      "sha256": "8180a5699b35239e2fb1c282dfe2ea05eac34b82c86d4389a58f31f13f2a1410"
+    },
+    {
+      "path": "docs/EXTERNAL_BASELINES.md",
+      "sha256": "e66bee2e2e452ecefedea11eb3a2d23e17f386380cfcf7454795e8db1c00d41e"
+    },
+    {
+      "path": "docs/GENERAL_2TO3_CURRENT_FRAMEWORK.md",
+      "sha256": "816b81ff97725755b965ff544d7653f193b9c828aa93bb9930769dd9bb8c7ec9"
+    },
+    {
+      "path": "docs/LITERATURE_REVIEW.md",
+      "sha256": "92ebacebc8eb7d995c5ef29a73e551c08511602e8f92b82b34270160f0e27469"
+    },
+    {
+      "path": "docs/MIGRATION_NOTES.md",
+      "sha256": "77bf93bd5b680da96dd044c392062e4687f5f1f3d83cca909ff43ce2cf0b59ca"
+    },
+    {
+      "path": "docs/RESEARCH_PLAN.md",
+      "sha256": "c1deb65aeabfe2d88584ae48b590064364b6d8c1938d6122c1bf23345c91627e"
+    },
+    {
+      "path": "environment/README.md",
+      "sha256": "14d23e30b5ba50de09eab3307cc0346c486e416cfd12cb35db83118eb333f867"
+    },
+    {
+      "path": "nuclear/afh/README.md",
+      "sha256": "0d0b2e5d3d87c3b9580bcc63d0ef7be329b66c1675f90a916c2e99fe8edf85da"
+    },
+    {
+      "path": "nuclear/chiral_eft/README.md",
+      "sha256": "1b2098bd693e736a60d5b01e3948a1cd8a9039a214b7f490a7eb392d3490efb6"
+    },
+    {
+      "path": "nuclear/xenon/README.md",
+      "sha256": "dce78300cf5e2875df413c3e6c5e8ea707d81edb38c669316466f8f9d635360d"
+    },
+    {
+      "path": "paper/README.md",
+      "sha256": "7d97460a1d141748da40cc53c2cf90361a9d47552e14c3d25ee86f066843c455"
+    },
+    {
+      "path": "README.md",
+      "sha256": "b505f691fbbf9dcaffa04527ce73ec4a6722e510251ce6015b370d822ec025b7"
+    },
+    {
+      "path": "results/provenance/README.md",
+      "sha256": "8c8024827976357f640869c1206a3e68aeece9e16517d92d26b2c11129bd436f"
+    },
+    {
+      "path": "src/README.md",
+      "sha256": "e4440631767129f7d77e89b94e056a2af47c25b7e83d7f7b20334933f4c5d015"
+    },
+    {
+      "path": "tests/README.md",
+      "sha256": "97397647e4cfd5c99aaae41c4239767dc69c5641e41cbe9d43d3bb0821dc7231"
+    },
+    {
+      "path": "theory/dark_matter_currents/README.md",
+      "sha256": "8a0c8a5181bad29a4d9a38863f9148dce30a1313446ecc3c907d4ca1579d4265"
+    },
+    {
+      "path": "theory/kinematics/README.md",
+      "sha256": "13c21a22840ea4d1f99051d93129b4c6970e344197194f6b719b5b000b498c4a"
+    },
+    {
+      "path": "theory/nuclear_currents/README.md",
+      "sha256": "03db3339c52169cb1c0dfe4c18fbecbe5d911f922accbfcdffc2f83cd5d1ce8d"
+    },
+    {
+      "path": "tools/validate_provenance.py",
+      "sha256": "ea54a928a1eb27f603c8beb56cceb436c2a1f030007727189e2bf0ab2708fa10"
+    }
+  ],
+  "external_baseline": {
+    "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+    "branch": "research/p4-provisional-halo-fold-20261119",
+    "commit": "dd9a7387814cd157d9cde739fa80181e4cd7d428",
+    "role": "pinned source for original VV/P3/P4 calculations",
+    "raw_data_imported": false,
+    "full_chiral_eft_current_complete": false
+  }
+}
