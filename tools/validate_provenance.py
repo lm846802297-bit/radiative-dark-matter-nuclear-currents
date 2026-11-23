@@ -44,7 +44,7 @@ def main() -> int:
         else:
             checked += 1
     if failures:
-        print("\\n".join(failures), file=sys.stderr)
+        print("\n".join(failures), file=sys.stderr)
         return 1
     print(f"PASS: verified {checked} files")
     return 0
