@@ -1,0 +1,31 @@
+Welcome to DMFormFactor version 1.1.
+Functions are SetCoeffsNonrel, SetCoeffsRel, SetCoeffsNucl, ZeroCoeffs, SetJChi, SetMchi, SetIsotope, SetHALO, SetHelm, TransitionProbability, ResponseNucl, DiffCrossSection, ApproxTotalCrossSection, and EventRate.
+Starting native AFH export for Xe-128
+Getting default matrix...
+Setting isotope to xenon-128.
+Wrote C:\Users\84680\Documents\Codex\2026-11-22\67-halo-fold-pass-p4-t\work\native_afh_eight_response\native\afh_v6_xe128_eight_response_native.csv (2401 q nodes)
+Starting native AFH export for Xe-129
+Getting default matrix...
+Setting isotope to xenon-129.
+Wrote C:\Users\84680\Documents\Codex\2026-11-22\67-halo-fold-pass-p4-t\work\native_afh_eight_response\native\afh_v6_xe129_eight_response_native.csv (2401 q nodes)
+Starting native AFH export for Xe-130
+Getting default matrix...
+Setting isotope to xenon-130.
+Wrote C:\Users\84680\Documents\Codex\2026-11-22\67-halo-fold-pass-p4-t\work\native_afh_eight_response\native\afh_v6_xe130_eight_response_native.csv (2401 q nodes)
+Starting native AFH export for Xe-131
+Getting default matrix...
+Setting isotope to xenon-131.
+Wrote C:\Users\84680\Documents\Codex\2026-11-22\67-halo-fold-pass-p4-t\work\native_afh_eight_response\native\afh_v6_xe131_eight_response_native.csv (2401 q nodes)
+Starting native AFH export for Xe-132
+Getting default matrix...
+Setting isotope to xenon-132.
+Wrote C:\Users\84680\Documents\Codex\2026-11-22\67-halo-fold-pass-p4-t\work\native_afh_eight_response\native\afh_v6_xe132_eight_response_native.csv (2401 q nodes)
+Starting native AFH export for Xe-134
+Getting default matrix...
+Setting isotope to xenon-134.
+Wrote C:\Users\84680\Documents\Codex\2026-11-22\67-halo-fold-pass-p4-t\work\native_afh_eight_response\native\afh_v6_xe134_eight_response_native.csv (2401 q nodes)
+Starting native AFH export for Xe-136
+Getting default matrix...
+Setting isotope to xenon-136.
+Wrote C:\Users\84680\Documents\Codex\2026-11-22\67-halo-fold-pass-p4-t\work\native_afh_eight_response\native\afh_v6_xe136_eight_response_native.csv (2401 q nodes)
+Native AFH eight-response export complete: 16807 rows.

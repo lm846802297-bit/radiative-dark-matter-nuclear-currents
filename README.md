@@ -47,3 +47,13 @@ The initial framework note was migrated from original repository commit de39bf15
 ## Scientific status policy
 
 A derivation, code test, AFH database validation, and complete nuclear-current prediction are different milestones. No result is promoted to complete without source identity, input hashes, environment metadata, native outputs, convergence/error analysis, and independent physical validation. All research changes enter main through reviewed pull requests.
+
+## VV recovery baseline import (2026-11-23)
+
+The source-pinned VV/P3 kernel snapshot and Native AFH xenon response data
+have now been imported. This is a curated source/data migration, not an
+independent Fig. 3 reproduction. The original-paper benchmark, imported
+files, hashes, and validation boundaries are documented in
+[VV baseline migration](docs/VV_BASELINE_MIGRATION.md). The next numerical
+gate is the paper's Fig. 3 event-spectrum recovery, including LZ efficiency
+and the stated 2.84 tonne-year exposure.

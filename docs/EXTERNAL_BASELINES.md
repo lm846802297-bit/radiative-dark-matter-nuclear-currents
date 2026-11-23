@@ -36,3 +36,21 @@ The original repository remains the authoritative home for the first paper's cod
 - This is a literature/matching import only. No LZ code, raw AFH tables, xenon OBDMEs, or numerical rates have been copied.
 - The narrow q_A/q_N interface PR (#111) was merged into the source project's P4 research branch at commit `f63c58249cdf40f4551f0b0b475332e1314e2af7`; PR #112 then corrected its regression assertion only, at P4 HEAD `55e06b9403f7ac3e2913d1dd5d192167bf80617d`. Neither change has been merged to the source project's `main`; the follow-up changes no physics kernel or numerical input.
 
+## Curated VV/P3 baseline import (2026-11-23)
+
+- Core source repository: \`lm846802297-bit/LZ-3-body-for-hdm\`.
+- Exact source commit: \`dd9a7387814cd157d9cde739fa80181e4cd7d428\`.
+- Paper Fig. 3 benchmark-definition commit:
+  \`5ea4d360fe03ce58079220bb0b7624b3faf03fb8\`.
+- Imported Native AFH dataset: 7 xenon isotopes, 16,807 eight-response rows,
+  9,604 rank-resolved spatial multipole rows; Native imaginary residual zero.
+- AFH DMFormFactor v6.0 SHA-256:
+  \`dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372\`.
+- Curated import record:
+  \`results/provenance/VV_BASELINE_IMPORT_2026-11-23.json\`.
+
+The upstream AFH package source is not redistributed. The raw Native response
+tables retain AFH isoscalar normalization; apply the equal-\(p=n\) factor
+four exactly once downstream. The P3-C current-completeness gate remains
+open. The source repository's exploratory eigenmode analysis and secondary
+P4 halo spectrum are not promoted as the paper's main result.

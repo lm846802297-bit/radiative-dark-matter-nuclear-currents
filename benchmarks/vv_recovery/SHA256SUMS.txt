@@ -1,0 +1,3 @@
+# SHA-256 of the frozen Fig. 3 benchmark definition and its README.
+f0c687eaa5068b8d8270ed64081c10cd12b9447d5188074da81dc3e87c9e8192  README.md
+940fad45c3d408a94ed755adc29e11e966d899317faa49956527e221e2035308  paper_fig3_vector_natural_xenon.json
