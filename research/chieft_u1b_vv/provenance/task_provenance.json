@@ -1,0 +1,58 @@
+{
+  "record_type": "task_provenance",
+  "provenance_version": "1.0.0",
+  "task_id": "20261124-chiral-vv-source-matching",
+  "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+  "task_brief_path": "research/three_body_full_current_nucleon_match/task_briefs/20261124-chiral-vv-source-matching.md",
+  "task_brief_sha256": "c241f55e1b968fb0abb14285e2c5fbfc691fc4dc9707d6bfc63199d3c9db95c9",
+  "central_repository": "lm846802297-bit/high-energy-theory-research",
+  "central_commit_sha": "db503f0eb579bdbcac702e44237a6610c34690e7",
+  "lock_file_path": "research/standards-lock.yaml",
+  "lock_file_sha256": "6f665b1506cb09c3bbe1e0eb955ab6582ceee66149dee2f2b21177256cccb333",
+  "applied_profiles": [
+    "core-governance",
+    "task-handoff",
+    "scientific-diff",
+    "research-quality-gate",
+    "document-review",
+    "git-review-and-merge"
+  ],
+  "project_extensions": [
+    {
+      "path": "AGENTS.md",
+      "scope": "LZ project physics conventions and model boundaries"
+    },
+    {
+      "path": "research/RESEARCH_GOVERNANCE_AND_SOURCE_HIERARCHY.md",
+      "scope": "LZ source hierarchy and scientific claim boundaries"
+    },
+    {
+      "path": "research/RESEARCH_TASK_HANDOFF_STANDARD.md",
+      "scope": "LZ task handoff and kinematic conventions"
+    },
+    {
+      "path": "research/STRUCTURED_RESULT_DATA_STANDARD_v1.0.1.md",
+      "scope": "LZ result/provenance extensions"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/FULL_CURRENT_CHI_EFT_INPUT_AUDIT.md",
+      "scope": "Existing χEFT input inventory and source-current gap"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/FULL_CURRENT_MODEL_CLOSURE_AUDIT.md",
+      "scope": "Existing full-current model closure decision"
+    },
+    {
+      "path": "research/three_body_full_current_nucleon_match/CHI_EFT_VV_SOURCE_MATCHING_AUDIT_2026-11-24.md",
+      "scope": "Source-specific U(1)_B matching and channel power-counting literature audit"
+    }
+  ],
+  "acceptance_criteria": [
+    "Identify the exact three-flavor universal vector source and its baryon-number interpretation.",
+    "Separate VV and AV two-body current contributions using the power counting of the cited source.",
+    "Identify higher-order electromagnetic charge-current results and explain why they require source/isospin matching before reuse.",
+    "Inspect the public Hu et al. xenon VS-IMSRG repository and classify reusable methods versus unavailable VV data/operators.",
+    "Define the next source-specific operator derivation and nuclear-structure acceptance gate without claiming numerical χEFT completion.",
+    "Audit reusable public nuclear many-body software and state exact operator/input limitations; do not claim the Hu 1.8/2.0(EM) Hamiltonian is reproduced without its raw inputs."
+  ]
+}
