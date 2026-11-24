@@ -2,7 +2,7 @@
 
 The normative compute policy is maintained centrally at the pinned revision:
 
-[Research Compute Policy](https://github.com/lm846802297-bit/high-energy-theory-research/blob/db503f0eb579bdbcac702e44237a6610c34690e7/RESEARCH_COMPUTE_POLICY.md).
+[Research Compute Policy](https://github.com/lm846802297-bit/high-energy-theory-research/blob/14155487afc075d301fa7f6cf452c7bff137e869/RESEARCH_COMPUTE_POLICY.md).
 
 For this repository, the primary scientific calculation runs in the actual available local research environment. Record the machine that really executed the program, its OS, hardware, runtime, dependencies, command, and resources. GitHub is the canonical archive; GitHub Actions is for CI and independent verification, not the default production computer.
 
