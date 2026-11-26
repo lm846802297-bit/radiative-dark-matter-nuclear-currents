@@ -1,0 +1,1310 @@
+{
+  "status": "NATIVE_P4_QUADRATURE_DIAGNOSTIC",
+  "native_afh_validated": true,
+  "full_current_complete": false,
+  "baseline_orders": {
+    "nv": 8,
+    "nw": 8,
+    "nz": 6,
+    "nphi": 4
+  },
+  "speed_refined_orders": {
+    "nv": 12,
+    "nw": 8,
+    "nz": 6,
+    "nphi": 4
+  },
+  "speed_ultra_refined_orders": {
+    "nv": 24,
+    "nw": 8,
+    "nz": 6,
+    "nphi": 4
+  },
+  "speed_high_refined_orders": {
+    "nv": 48,
+    "nw": 8,
+    "nz": 6,
+    "nphi": 4
+  },
+  "phase_space_refined_orders": {
+    "nv": 8,
+    "nw": 10,
+    "nz": 8,
+    "nphi": 6
+  },
+  "maximum_relative_differences": {
+    "speed_8_to_12": 0.0019470330956657589,
+    "speed_12_to_24": 0.0003014736143073611,
+    "speed_8_to_24": 0.0022479197308685936,
+    "speed_24_to_48": 8.997891382276048e-06,
+    "speed_12_to_48": 0.000310468793062801,
+    "speed_8_to_48": 0.0022568973957132954,
+    "phase_space_8x6x4_to_10x8x6": 2.5525174650094067e-09
+  },
+  "acceptance_thresholds": {
+    "speed_24_to_48": 1e-05,
+    "phase_space_8x6x4_to_10x8x6": 1e-08
+  },
+  "comparisons": [
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 2.2636496910144313e-09,
+      "refined": 2.267963436957256e-09,
+      "relative_difference": 0.0019020350471840044
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.6732887229642373e-09,
+      "refined": 1.6764778358973373e-09,
+      "relative_difference": 0.0019022696660901553
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.6673167676054419e-09,
+      "refined": 1.6704945828553313e-09,
+      "relative_difference": 0.0019023199970261023
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 4.4746152607875765e-21,
+      "refined": 4.475441120050552e-21,
+      "relative_difference": 0.00018453136591950562
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.6673167676099165e-09,
+      "refined": 1.670494582859807e-09,
+      "relative_difference": 0.0019023199970216245
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.5319456617203621e-09,
+      "refined": 1.5320093800146354e-09,
+      "relative_difference": 4.159132124416483e-05
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.1323125520305946e-09,
+      "refined": 1.1323596450321748e-09,
+      "relative_difference": 4.158837855697166e-05
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.1282497658081557e-09,
+      "refined": 1.1282966891254987e-09,
+      "relative_difference": 4.1587747083997666e-05
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 2.179750770696515e-21,
+      "refined": 2.17974929659162e-21,
+      "relative_difference": 6.762722211524079e-07
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.1282497658103355e-09,
+      "refined": 1.1282966891276783e-09,
+      "relative_difference": 4.158774708373405e-05
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.630182502312081e-11,
+      "refined": 1.6333614116744125e-11,
+      "relative_difference": 0.0019462375807400754
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.0731192592105081e-11,
+      "refined": 1.075212733988465e-11,
+      "relative_difference": 0.0019470330956657589
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.0803102798945621e-11,
+      "refined": 1.0824161139993621e-11,
+      "relative_difference": 0.0019454940457411154
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 3.1706406870302745e-21,
+      "refined": 3.1707721664126504e-21,
+      "relative_difference": 4.146604532756794e-05
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.0803102802116261e-11,
+      "refined": 1.0824161143164394e-11,
+      "relative_difference": 0.001945494045183452
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.0550356925226029e-11,
+      "refined": 1.0550776449695278e-11,
+      "relative_difference": 3.97624261351584e-05
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 6.942802438021887e-12,
+      "refined": 6.9430784458502625e-12,
+      "relative_difference": 3.9752946841652244e-05
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 6.993818143339779e-12,
+      "refined": 6.994096306540873e-12,
+      "relative_difference": 3.977114253256976e-05
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 1.4216757880557674e-21,
+      "refined": 1.4216758296753845e-21,
+      "relative_difference": 2.9275040238736298e-08
+    },
+    {
+      "refinement": "speed_8_to_12",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 6.993818144761454e-12,
+      "refined": 6.994096307962547e-12,
+      "relative_difference": 3.9771142524370075e-05
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 2.267963436957256e-09,
+      "refined": 2.2686451777317298e-09,
+      "relative_difference": 0.00030050568558079625
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.6764778358973373e-09,
+      "refined": 1.6769818160929859e-09,
+      "relative_difference": 0.00030052812189863034
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.6704945828553313e-09,
+      "refined": 1.6709967724207079e-09,
+      "relative_difference": 0.0003005329355897194
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 4.475441120050552e-21,
+      "refined": 4.47534978328689e-21,
+      "relative_difference": 2.0408438232570893e-05
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.670494582859807e-09,
+      "refined": 1.670996772425183e-09,
+      "relative_difference": 0.0003005329355885433
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.5320093800146354e-09,
+      "refined": 1.5320191640416717e-09,
+      "relative_difference": 6.386360736177833e-06
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.1323596450321748e-09,
+      "refined": 1.1323668762300959e-09,
+      "relative_difference": 6.385914382380629e-06
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.1282966891254987e-09,
+      "refined": 1.1283038942694372e-09,
+      "relative_difference": 6.385818550356147e-06
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 2.17974929659162e-21,
+      "refined": 2.1797495643863508e-21,
+      "relative_difference": 1.2285573321060062e-07
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.1282966891276783e-09,
+      "refined": 1.128303894271617e-09,
+      "relative_difference": 6.38581855052709e-06
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.6333614116744125e-11,
+      "refined": 1.6338538549133816e-11,
+      "relative_difference": 0.0003013998084884921
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.075212733988465e-11,
+      "refined": 1.0755369800091495e-11,
+      "relative_difference": 0.0003014736143073611
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.0824161139993621e-11,
+      "refined": 1.0827423784223272e-11,
+      "relative_difference": 0.0003013315350605118
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 3.1707721664126504e-21,
+      "refined": 3.1707159276378476e-21,
+      "relative_difference": 1.7736618038504036e-05
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.0824161143164394e-11,
+      "refined": 1.0827423787393984e-11,
+      "relative_difference": 0.00030133153496674875
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.0550776449695278e-11,
+      "refined": 1.0550840949735253e-11,
+      "relative_difference": 6.1132605715344445e-06
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 6.9430784458502625e-12,
+      "refined": 6.9431208810633366e-12,
+      "relative_difference": 6.111835556516037e-06
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 6.994096306540873e-12,
+      "refined": 6.994139072690435e-12,
+      "relative_difference": 6.114569515652597e-06
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 1.4216758296753845e-21,
+      "refined": 1.4216761362399703e-21,
+      "relative_difference": 2.156360214638699e-07
+    },
+    {
+      "refinement": "speed_12_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 6.994096307962547e-12,
+      "refined": 6.99413907411211e-12,
+      "relative_difference": 6.1145695145252045e-06
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 2.2636496910144313e-09,
+      "refined": 2.2686451777317298e-09,
+      "relative_difference": 0.002201969160418948
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.6732887229642373e-09,
+      "refined": 1.6769818160929859e-09,
+      "relative_difference": 0.0022022261024586907
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.6673167676054419e-09,
+      "refined": 1.6709967724207079e-09,
+      "relative_difference": 0.0022022812228026847
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 4.4746152607875765e-21,
+      "refined": 4.47534978328689e-21,
+      "relative_difference": 0.00016412627724792628
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.6673167676099165e-09,
+      "refined": 1.670996772425183e-09,
+      "relative_difference": 0.0022022812227970342
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.5319456617203621e-09,
+      "refined": 1.5320191640416717e-09,
+      "relative_difference": 4.7977416363161706e-05
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.1323125520305946e-09,
+      "refined": 1.1323668762300959e-09,
+      "relative_difference": 4.797402735952752e-05
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.1282497658081557e-09,
+      "refined": 1.1283038942694372e-09,
+      "relative_difference": 4.797330006254702e-05
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 2.179750770696515e-21,
+      "refined": 2.1797495643863508e-21,
+      "relative_difference": 5.534165559322041e-07
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.1282497658103355e-09,
+      "refined": 1.128303894271617e-09,
+      "relative_difference": 4.797330006245434e-05
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.630182502312081e-11,
+      "refined": 1.6338538549133816e-11,
+      "relative_difference": 0.0022470507935944592
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.0731192592105081e-11,
+      "refined": 1.0755369800091495e-11,
+      "relative_difference": 0.0022479197308685936
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.0803102798945621e-11,
+      "refined": 1.0827423784223272e-11,
+      "relative_difference": 0.002246239342094373
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 3.1706406870302745e-21,
+      "refined": 3.1707159276378476e-21,
+      "relative_difference": 2.372984817631712e-05
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.0803102802116261e-11,
+      "refined": 1.0827423787393984e-11,
+      "relative_difference": 0.002246239341443297
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.0550356925226029e-11,
+      "refined": 1.0550840949735253e-11,
+      "relative_difference": 4.587544362862092e-05
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 6.942802438021887e-12,
+      "refined": 6.9431208810633366e-12,
+      "relative_difference": 4.58645394346943e-05
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 6.993818143339779e-12,
+      "refined": 6.994139072690435e-12,
+      "relative_difference": 4.5885468864806625e-05
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 1.4216757880557674e-21,
+      "refined": 1.4216761362399703e-21,
+      "relative_difference": 2.44911055389853e-07
+    },
+    {
+      "refinement": "speed_8_to_24",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 6.993818144761454e-12,
+      "refined": 6.99413907411211e-12,
+      "relative_difference": 4.588546885547964e-05
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 2.2686451777317298e-09,
+      "refined": 2.2686655513042273e-09,
+      "relative_difference": 8.980421325555188e-06
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.6769818160929859e-09,
+      "refined": 1.6769968772336926e-09,
+      "relative_difference": 8.981018934038422e-06
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.6709967724207079e-09,
+      "refined": 1.67101178002335e-09,
+      "relative_difference": 8.981147123838803e-06
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 4.47534978328689e-21,
+      "refined": 4.4753501119164976e-21,
+      "relative_difference": 7.343103883122686e-08
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.670996772425183e-09,
+      "refined": 1.6710117800278252e-09,
+      "relative_difference": 8.981147123938506e-06
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.5320191640416717e-09,
+      "refined": 1.5320194906382543e-09,
+      "relative_difference": 2.1318043572674222e-07
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.1323668762300959e-09,
+      "refined": 1.1323671176129138e-09,
+      "relative_difference": 2.131665730749298e-07
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.1283038942694372e-09,
+      "refined": 1.1283041347827719e-09,
+      "relative_difference": 2.1316356757047736e-07
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 2.1797495643863508e-21,
+      "refined": 2.179749581967005e-21,
+      "relative_difference": 8.065446845770861e-09
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.128303894271617e-09,
+      "refined": 1.1283041347849515e-09,
+      "relative_difference": 2.1316356738678596e-07
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.6338538549133816e-11,
+      "refined": 1.6338685530713516e-11,
+      "relative_difference": 8.995924392061221e-06
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.0755369800091495e-11,
+      "refined": 1.0755466576611517e-11,
+      "relative_difference": 8.997891382276048e-06
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.0827423784223272e-11,
+      "refined": 1.0827521168108039e-11,
+      "relative_difference": 8.994107077219081e-06
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 3.1707159276378476e-21,
+      "refined": 3.1707164616003775e-21,
+      "relative_difference": 1.684043768685661e-07
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.0827423787393984e-11,
+      "refined": 1.0827521171278755e-11,
+      "relative_difference": 8.994107074883682e-06
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.0550840949735253e-11,
+      "refined": 1.055084310288506e-11,
+      "relative_difference": 2.040737205043019e-07
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 6.9431208810633366e-12,
+      "refined": 6.943122297638761e-12,
+      "relative_difference": 2.0402570544658922e-07
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 6.994139072690435e-12,
+      "refined": 6.994140500324051e-12,
+      "relative_difference": 2.0411852123866303e-07
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 1.4216761362399703e-21,
+      "refined": 1.4216761517382186e-21,
+      "relative_difference": 1.0901391474775265e-08
+    },
+    {
+      "refinement": "speed_24_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 6.99413907411211e-12,
+      "refined": 6.994140501745727e-12,
+      "relative_difference": 2.041185213126683e-07
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 2.267963436957256e-09,
+      "refined": 2.2686655513042273e-09,
+      "relative_difference": 0.00030948340823868417
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.6764778358973373e-09,
+      "refined": 1.6769968772336926e-09,
+      "relative_difference": 0.0003095064417839158
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.6704945828553313e-09,
+      "refined": 1.67101178002335e-09,
+      "relative_difference": 0.00030951138358304814
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 4.475441120050552e-21,
+      "refined": 4.4753501119164976e-21,
+      "relative_difference": 2.033500868696048e-05
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.670494582859807e-09,
+      "refined": 1.6710117800278252e-09,
+      "relative_difference": 0.0003095113835819717
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.5320093800146354e-09,
+      "refined": 1.5320194906382543e-09,
+      "relative_difference": 6.599539810457411e-06
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.1323596450321748e-09,
+      "refined": 1.1323671176129138e-09,
+      "relative_difference": 6.5990795941920736e-06
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.1282966891254987e-09,
+      "refined": 1.1283041347827719e-09,
+      "relative_difference": 6.598980756702761e-06
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 2.17974929659162e-21,
+      "refined": 2.179749581967005e-21,
+      "relative_difference": 1.309211790654851e-07
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.1282966891276783e-09,
+      "refined": 1.1283041347849515e-09,
+      "relative_difference": 6.598980756690013e-06
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.6333614116744125e-11,
+      "refined": 1.6338685530713516e-11,
+      "relative_difference": 0.00031039302151066435
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.075212733988465e-11,
+      "refined": 1.0755466576611517e-11,
+      "relative_difference": 0.000310468793062801
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.0824161139993621e-11,
+      "refined": 1.0827521168108039e-11,
+      "relative_difference": 0.00031032293192963885
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 3.1707721664126504e-21,
+      "refined": 3.1707164616003775e-21,
+      "relative_difference": 1.7568216620200044e-05
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.0824161143164394e-11,
+      "refined": 1.0827521171278755e-11,
+      "relative_difference": 0.00031032293183354194
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.0550776449695278e-11,
+      "refined": 1.055084310288506e-11,
+      "relative_difference": 6.317333044482918e-06
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 6.9430784458502625e-12,
+      "refined": 6.943122297638761e-12,
+      "relative_difference": 6.315860014991066e-06
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 6.994096306540873e-12,
+      "refined": 6.994140500324051e-12,
+      "relative_difference": 6.318686788794372e-06
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 1.4216758296753845e-21,
+      "refined": 1.4216761517382186e-21,
+      "relative_difference": 2.2653741058791248e-07
+    },
+    {
+      "refinement": "speed_12_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 6.994096307962547e-12,
+      "refined": 6.994140501745727e-12,
+      "relative_difference": 6.318686787740985e-06
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 2.2636496910144313e-09,
+      "refined": 2.2686655513042273e-09,
+      "relative_difference": 0.0022109298071336966
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.6732887229642373e-09,
+      "refined": 1.6769968772336926e-09,
+      "relative_difference": 0.002211187343158406
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.6673167676054419e-09,
+      "refined": 1.67101178002335e-09,
+      "relative_difference": 0.002211242590914853
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 4.4746152607875765e-21,
+      "refined": 4.4753501119164976e-21,
+      "relative_difference": 0.00016419969623479447
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.6673167676099165e-09,
+      "refined": 1.6710117800278252e-09,
+      "relative_difference": 0.0022112425909093024
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.5319456617203621e-09,
+      "refined": 1.5320194906382543e-09,
+      "relative_difference": 4.8190586571041926e-05
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.1323125520305946e-09,
+      "refined": 1.1323671176129138e-09,
+      "relative_difference": 4.818718370614344e-05
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.1282497658081557e-09,
+      "refined": 1.1283041347827719e-09,
+      "relative_difference": 4.8186453403957705e-05
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 2.179750770696515e-21,
+      "refined": 2.179749581967005e-21,
+      "relative_difference": 5.453511134849336e-07
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.1282497658103355e-09,
+      "refined": 1.1283041347849515e-09,
+      "relative_difference": 4.818645340368134e-05
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.630182502312081e-11,
+      "refined": 1.6338685530713516e-11,
+      "relative_difference": 0.0022560265036874762
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.0731192592105081e-11,
+      "refined": 1.0755466576611517e-11,
+      "relative_difference": 0.0022568973957132954
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.0803102798945621e-11,
+      "refined": 1.0827521168108039e-11,
+      "relative_difference": 0.002255213246254428
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 3.1706406870302745e-21,
+      "refined": 3.1707164616003775e-21,
+      "relative_difference": 2.389824855697539e-05
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.0803102802116261e-11,
+      "refined": 1.0827521171278755e-11,
+      "relative_difference": 0.0022552132456010276
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.0550356925226029e-11,
+      "refined": 1.055084310288506e-11,
+      "relative_difference": 4.607950798715276e-05
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 6.942802438021887e-12,
+      "refined": 6.943122297638761e-12,
+      "relative_difference": 4.6068555782595876e-05
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 6.993818143339779e-12,
+      "refined": 6.994140500324051e-12,
+      "relative_difference": 4.608957801997124e-05
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 1.4216757880557674e-21,
+      "refined": 1.4216761517382186e-21,
+      "relative_difference": 2.5581244419475695e-07
+    },
+    {
+      "refinement": "speed_8_to_48",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 6.993818144761454e-12,
+      "refined": 6.994140501745727e-12,
+      "relative_difference": 4.608957801071825e-05
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 2.2636496910144313e-09,
+      "refined": 2.263649691069156e-09,
+      "relative_difference": 2.4175390380052994e-11
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.6732887229642373e-09,
+      "refined": 1.6732887230045948e-09,
+      "relative_difference": 2.411868385064828e-11
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.6673167676054419e-09,
+      "refined": 1.667316767645634e-09,
+      "relative_difference": 2.4105848605628905e-11
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 4.4746152607875765e-21,
+      "refined": 4.474615258149303e-21,
+      "relative_difference": 5.896090163492858e-10
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 200.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.6673167676099165e-09,
+      "refined": 1.6673167676501086e-09,
+      "relative_difference": 2.4105848605564214e-11
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.5319456617203621e-09,
+      "refined": 1.5319456617201911e-09,
+      "relative_difference": 1.1163554682043023e-13
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.1323125520305946e-09,
+      "refined": 1.1323125520304502e-09,
+      "relative_difference": 1.27476302043681e-13
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.1282497658081557e-09,
+      "refined": 1.1282497658080078e-09,
+      "relative_difference": 1.3105124323951788e-13
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 2.179750770696515e-21,
+      "refined": 2.179750770697286e-21,
+      "relative_difference": 3.535946156360807e-13
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 200.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.1282497658103355e-09,
+      "refined": 1.1282497658101874e-09,
+      "relative_difference": 1.3123453169134759e-13
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.630182502312081e-11,
+      "refined": 1.6301825025934463e-11,
+      "relative_difference": 1.725973391291243e-10
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 1.0731192592105081e-11,
+      "refined": 1.0731192593951836e-11,
+      "relative_difference": 1.720922458864111e-10
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 1.0803102798945621e-11,
+      "refined": 1.0803102800816836e-11,
+      "relative_difference": 1.7321088748673602e-10
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 3.1706406870302745e-21,
+      "refined": 3.1706406789371588e-21,
+      "relative_difference": 2.5525174650094067e-09
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 267.0,
+      "halo_model": "mb_untruncated",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 1.0803102802116261e-11,
+      "refined": 1.0803102803987478e-11,
+      "relative_difference": 1.7321103698433626e-10
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_A_original_AFH_M_events_kg_day_keV",
+      "baseline": 1.0550356925226029e-11,
+      "refined": 1.0550356925293024e-11,
+      "relative_difference": 6.3500379885393265e-12
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_B_baseline_M_events_kg_day_keV",
+      "baseline": 6.942802438021887e-12,
+      "refined": 6.9428024380655186e-12,
+      "relative_difference": 6.2844009059299155e-12
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_C_charge_extension_events_kg_day_keV",
+      "baseline": 6.993818143339779e-12,
+      "refined": 6.993818143384027e-12,
+      "relative_difference": 6.326802800624193e-12
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_spatial_candidate_events_kg_day_keV",
+      "baseline": 1.4216757880557674e-21,
+      "refined": 1.421675788052856e-21,
+      "relative_difference": 2.0477779487275834e-12
+    },
+    {
+      "refinement": "phase_space_8x6x4_to_10x8x6",
+      "ER_keV": 267.0,
+      "halo_model": "shm_cutoff",
+      "quantity": "rate_leading_static_vector_candidate_events_kg_day_keV",
+      "baseline": 6.993818144761454e-12,
+      "refined": 6.993818144805704e-12,
+      "relative_difference": 6.327033801503222e-12
+    }
+  ]
+}

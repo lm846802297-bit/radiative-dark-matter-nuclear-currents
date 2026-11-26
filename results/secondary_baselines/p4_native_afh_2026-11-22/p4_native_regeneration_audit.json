@@ -1,0 +1,98 @@
+{
+  "status": "PASS_NATIVE_AFH_P4_REGENERATION_AUDIT",
+  "result_root": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration",
+  "native_afh_validated": true,
+  "full_current_complete": false,
+  "native_afh_comparison_rows": 16807,
+  "native_afh_verified_archive_files": 50,
+  "raw_native_response_cauchy_diagnostics": {
+    "M_PhiPP": {
+      "grid_points": 16807,
+      "strict_tolerance_exceedances": 95,
+      "tolerance": "max(1e-12, 2e-10*max(abs(cross), diagonal_bound))",
+      "maximum_absolute_excess": 3.863554012308035e-10,
+      "maximum_absolute_at": {
+        "A": 132,
+        "q_GeV": 0.25475000000000003
+      },
+      "maximum_relative_excess": 3.1387148930662632e-06,
+      "maximum_relative_at": {
+        "A": 136,
+        "q_GeV": 0.36225,
+        "absolute_excess": 8.522350225970577e-11
+      },
+      "raw_native_values_clipped": false
+    },
+    "SigmaPrime_Delta": {
+      "grid_points": 16807,
+      "strict_tolerance_exceedances": 0,
+      "tolerance": "max(1e-12, 2e-10*max(abs(cross), diagonal_bound))",
+      "maximum_absolute_excess": 8.216482359162775e-14,
+      "maximum_absolute_at": {
+        "A": 129,
+        "q_GeV": 0.3005
+      },
+      "maximum_relative_excess": 1.0992640705205721e-07,
+      "maximum_relative_at": {
+        "A": 129,
+        "q_GeV": 0.3725,
+        "absolute_excess": 6.723493293071562e-15
+      },
+      "raw_native_values_clipped": false
+    }
+  },
+  "result_manifest_files_verified": 20,
+  "five_point": {
+    "status": "PASS_NATIVE_P4_FIVE_POINT",
+    "spectrum_rows": 10,
+    "isotope_rows": 70,
+    "native_afh_validated": true,
+    "full_current_complete": false,
+    "max_open_abundance_closure_abs": 0.0,
+    "max_sampled_response_Cauchy_excess": 0.0,
+    "max_particle_Cauchy_identity_relative_residual": 3.9918667838200303e-16,
+    "max_D_vs_C_plus_spatial_relative_residual": 1.711459885929987e-16
+  },
+  "continuous_81_point": {
+    "status": "PASS_NATIVE_P4_CONTINUOUS_GRID",
+    "spectrum_rows": 162,
+    "recoil_points_per_halo": 81,
+    "isotope_rows": 1134,
+    "max_sampled_response_Cauchy_excess": 0.0,
+    "max_particle_Cauchy_identity_relative_residual": 4.647341607734595e-16,
+    "max_D_vs_C_plus_spatial_relative_residual": 3.904744637139561e-16,
+    "native_afh_validated": true,
+    "full_current_complete": false
+  },
+  "kinematics": {
+    "five_point": {
+      "open_isotope_rows_checked": 70,
+      "max_relative_tA_mass_shell_residual": 2.1648592568906148e-16,
+      "max_relative_QA2_residual": 2.164856849419246e-16,
+      "identities": {
+        "tA_GeV2": "-2*mA_GeV*ER_GeV",
+        "QA2_GeV2": "2*mA_GeV*ER_GeV+ER_GeV^2",
+        "mediator_denominator": "(mV_GeV^2-tA_GeV2)^2",
+        "formal_impulse_assignment": "qN^mu=qA^mu; tN=tA"
+      }
+    },
+    "continuous_81_point": {
+      "open_isotope_rows_checked": 1134,
+      "max_relative_tA_mass_shell_residual": 2.2106023004072415e-16,
+      "max_relative_QA2_residual": 2.2105979689553139e-16,
+      "identities": {
+        "tA_GeV2": "-2*mA_GeV*ER_GeV",
+        "QA2_GeV2": "2*mA_GeV*ER_GeV+ER_GeV^2",
+        "mediator_denominator": "(mV_GeV^2-tA_GeV2)^2",
+        "formal_impulse_assignment": "qN^mu=qA^mu; tN=tA"
+      }
+    }
+  },
+  "quadrature": {
+    "speed_24_to_48_max_relative_difference": 8.997891382276048e-06,
+    "speed_acceptance_threshold": 1e-05,
+    "phase_space_max_relative_difference": 2.5525174650094067e-09,
+    "phase_space_acceptance_threshold": 1e-08
+  },
+  "matched_provisional_comparison": "PASS; all common recoil/halo rows and rate columns compared"
+}

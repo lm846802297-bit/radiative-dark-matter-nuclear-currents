@@ -1,0 +1,50 @@
+{
+  "schema": "p4-secondary-baseline-import-v1",
+  "source_repository": "lm846802297-bit/LZ-3-body-for-hdm",
+  "source_result_commit": "55e06b9403f7ac3e2913d1dd5d192167bf80617d",
+  "source_run_workspace_commit": "fada259460ac42460baf933021dc16dc7a9cfb9e",
+  "source_result_directory": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/",
+  "target_directory": "results/secondary_baselines/p4_native_afh_2026-11-22/",
+  "native_afh_package_sha256": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+  "status": {
+    "native_afh_validated": true,
+    "p4_native_regeneration_audit": "PASS_NATIVE_AFH_P4_REGENERATION_AUDIT",
+    "full_current_complete": false,
+    "p3_tensor_validation_complete": false,
+    "interpretation": "leading-static one-body vector-current candidate only"
+  },
+  "numerical": {
+    "native_afh_rows": 16807,
+    "isotopes": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      134,
+      136
+    ],
+    "q_grid": {
+      "points_per_isotope": 2401,
+      "q_min_GeV": 0,
+      "q_max_GeV": 0.6,
+      "step_GeV": 0.00025
+    },
+    "continuous_recoil_points": 81,
+    "halo_models": [
+      "mb_untruncated",
+      "shm_cutoff"
+    ],
+    "speed_24_to_48_max_relative_difference": 0.000008997891382276048,
+    "speed_acceptance_threshold": 0.00001,
+    "phase_space_8x6x4_to_10x8x6_max_relative_difference": 2.5525174650094067e-9,
+    "phase_space_acceptance_threshold": 1e-8,
+    "matched_provisional_native_continuous_max_relative_difference": 1.5274858e-10
+  },
+  "imported_obdme_source": {
+    "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+    "commit": "55e06b9403f7ac3e2913d1dd5d192167bf80617d",
+    "model": "AFH v6.0 default density matrices (B&D/default baseline)",
+    "note": "These are not SN100PN OBDMEs."
+  }
+}
