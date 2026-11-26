@@ -1,0 +1,94 @@
+{
+  "status": "PASS_STAGE_B_GAUSS_HERMITE_CONVERGENCE",
+  "scope": "All seven isotopes at 40, 420, and 800 keV; direct and leading-NR charge plus all vector L=K-1,K,K+1 multipoles.",
+  "quadrature_orders": [
+    10,
+    14,
+    18,
+    22
+  ],
+  "acceptance": {
+    "final_order_18_to_22": "max absolute difference <= 1e-10 + 1e-5*max amplitude scale",
+    "pass": true
+  },
+  "comparisons": {
+    "order_10_to_14": {
+      "rank_rows": 33,
+      "complex_components_compared": 528,
+      "max_absolute_difference": 4.275767240269346e-12,
+      "max_relative_difference": 1.9608064564670613,
+      "pass": true,
+      "worst_component": {
+        "A": 131,
+        "ER_keV": 40.0,
+        "J": 0,
+        "representation": "exact",
+        "component": "charge_spin",
+        "lower": [
+          -0.009875077206459183,
+          -6.5853605028811e-36
+        ],
+        "upper": [
+          -0.009875077202183415,
+          2.1484696754217797e-36
+        ],
+        "absolute_difference": 4.275767240269346e-12,
+        "relative_difference": 4.329857023773558e-10
+      }
+    },
+    "order_14_to_18": {
+      "rank_rows": 33,
+      "complex_components_compared": 528,
+      "max_absolute_difference": 7.105427357601002e-14,
+      "max_relative_difference": 1.8896542591227221,
+      "pass": true,
+      "worst_component": {
+        "A": 129,
+        "ER_keV": 40.0,
+        "J": 0,
+        "representation": "exact",
+        "component": "charge_identity",
+        "lower": [
+          17.187303445605604,
+          -2.0033069155245673e-49
+        ],
+        "upper": [
+          17.187303445605675,
+          -3.3628909454213253e-49
+        ],
+        "absolute_difference": 7.105427357601002e-14,
+        "relative_difference": 4.134114103523125e-15
+      }
+    },
+    "order_18_to_22": {
+      "rank_rows": 33,
+      "complex_components_compared": 528,
+      "max_absolute_difference": 6.039613253960852e-14,
+      "max_relative_difference": 1.9030379729392104,
+      "pass": true,
+      "worst_component": {
+        "A": 129,
+        "ER_keV": 40.0,
+        "J": 0,
+        "representation": "exact",
+        "component": "charge_identity",
+        "lower": [
+          17.187303445605675,
+          -3.3628909454213253e-49
+        ],
+        "upper": [
+          17.187303445605615,
+          -4.564252614603504e-49
+        ],
+        "absolute_difference": 6.039613253960852e-14,
+        "relative_difference": 3.513996987994656e-15
+      }
+    }
+  },
+  "source_sha256": {
+    "10": "99b5b9a2a04b2d8b2483ba9583be7b68029251e7a4c21bf3bc125f48f8b46e72",
+    "14": "650474eecd28a8ad97f7fb4ea7c105277aaef5d79971fa0729148e429b084f95",
+    "18": "124a2b6d0756c0ca64b98686ae3eaf9bd686a3f1786c2fcb0068c9070ee258ea",
+    "22": "fda2cd6ec1e83d7a1fb52b3d50adff6e03e19130d05386379bd652daecf4487a"
+  }
+}

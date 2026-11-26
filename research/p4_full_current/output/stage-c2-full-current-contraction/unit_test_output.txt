@@ -1,0 +1,17 @@
+test_afh_six_response_projection_and_all_residuals_reconstruct_full_kernel (__main__.StageC2ContractionTests.test_afh_six_response_projection_and_all_residuals_reconstruct_full_kernel) ... ok
+test_bilinear_matches_independent_loop_for_target_spins (__main__.StageC2ContractionTests.test_bilinear_matches_independent_loop_for_target_spins) ... ok
+test_conserved_current_projects_to_lc (__main__.StageC2ContractionTests.test_conserved_current_projects_to_lc) ... ok
+test_current_component_decomposition_is_exact (__main__.StageC2ContractionTests.test_current_component_decomposition_is_exact) ... ok
+test_nonconserved_longitudinal_residual_matches_independent_formula (__main__.StageC2ContractionTests.test_nonconserved_longitudinal_residual_matches_independent_formula) ... ok
+test_physical_afh_normalization_applies_factor_four_once (__main__.StageC2ContractionTests.test_physical_afh_normalization_applies_factor_four_once) ... ok
+test_proca_dressed_tensor_preserves_hermiticity_psd_and_diagram_sum (__main__.StageC2ContractionTests.test_proca_dressed_tensor_preserves_hermiticity_psd_and_diagram_sum) ... ok
+test_proca_numerator_matches_direct_covariant_amplitude (__main__.StageC2ContractionTests.test_proca_numerator_matches_direct_covariant_amplitude) ... ok
+test_rank0_L1_is_longitudinal_for_all_target_spins (__main__.StageC2ContractionTests.test_rank0_L1_is_longitudinal_for_all_target_spins) ... ok
+test_spin_zero_rank0_L1_longitudinal_current_is_retained (__main__.StageC2ContractionTests.test_spin_zero_rank0_L1_longitudinal_current_is_retained) ... ok
+test_spinful_dimensions_follow_target_spin (__main__.StageC2ContractionTests.test_spinful_dimensions_follow_target_spin) ... ok
+test_zero_transfer_proca_numerator_reduces_to_metric_vertex (__main__.StageC2ContractionTests.test_zero_transfer_proca_numerator_reduces_to_metric_vertex) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.069s
+
+OK

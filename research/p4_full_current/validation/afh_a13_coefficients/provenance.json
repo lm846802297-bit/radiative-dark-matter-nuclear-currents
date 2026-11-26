@@ -1,0 +1,44 @@
+{
+  "status": "PASS_INDEPENDENT_A13_COEFFICIENT_IDENTITY",
+  "run_started_utc": "2026-11-25T04:08:26Z",
+  "run_finished_utc": "2026-11-25T04:08:31Z",
+  "wall_time_seconds": 4.54,
+  "environment": {
+    "os": "Linux",
+    "kernel": "6.18.57",
+    "architecture": "x86_64",
+    "cpu_model": "Intel Xeon Platinum 8573C",
+    "logical_cpu_count": 5,
+    "memory_total_bytes": 6236844032,
+    "gpu": null,
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "numpy": "2.3.5"
+  },
+  "random_seed": 20261125,
+  "samples": {
+    "single_current_vectors": 20000,
+    "complex_hermitian_psd_gram_tensors": 2000
+  },
+  "physics_conventions": {
+    "metric": "+---",
+    "q_N": "+Q_A zhat",
+    "q_AFH": "-Q_A zhat",
+    "external_nucleon_coupling": "g_VN=3*g_Vq",
+    "effective_form_factors": "f_i=F_i^(uds)/3"
+  },
+  "source": {
+    "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+    "AFH_source_path": "v6/dmformfactor-V6.m",
+    "AFH_source_blob_sha1": "91b43b1a4596bebd6073ecd44c0c9464e5dd0c63",
+    "AFH_source_sha256": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+    "literature": "Anand, Fitzpatrick, Haxton, arXiv:1308.6288, Appendix A, Eq. (A13)"
+  },
+  "executed_script_sha256": "2918ce76c93fd540256e3c0216b6c03679c545023161d43e7c6067ddd38b88dc",
+  "report_sha256": "8daa3d917e37423c6794016553a6b6850da84f4065d06b6c7adab35cc00fd9e7",
+  "scope_boundary": {
+    "full_bound_nucleon_current_validated": false,
+    "native_AFH_spatial_multipoles_recomputed": false,
+    "C2_production_run": false,
+    "detector_rate": false
+  }
+}

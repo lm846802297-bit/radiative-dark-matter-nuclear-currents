@@ -1,0 +1,104 @@
+{
+  "stage": "P4-FC Stage A",
+  "status": "PASS_P4_FC_NATIVE_SEVEN_ISOTOPE_EXPORT_AUDIT",
+  "pr": 139,
+  "branch": "research/p4-full-current-seven-isotope-native-export-20261124",
+  "base": "research/p4-81-borah-sufian-ame2020-20261124",
+  "run_head": "d7caff871d581879e45fd54a6dc506aa7c8aa133",
+  "run": {
+    "date": "2026-11-24",
+    "timezone": "Asia/Shanghai",
+    "native_start": "2026-11-24T10:43:23.7867107+08:00",
+    "native_end": "2026-11-24T11:36:32.9981376+08:00",
+    "native_wall_minutes": 53.15,
+    "audit_start": "2026-11-24T11:38:30.4752168+08:00",
+    "audit_end": "2026-11-24T11:40:04.2978968+08:00",
+    "execution": "local Windows host; not GitHub Actions"
+  },
+  "environment": {
+    "os": "Windows 11",
+    "python": "3.13.18",
+    "wolfram": "14.2.0 for Microsoft Windows (64-bit)",
+    "wolfram_processors": 8,
+    "logical_cpus": 16,
+    "processor": "AMD64 Family 26 Model 68 Stepping 0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "commands": [
+    "wolframscript -file research/three_body_full_current_nucleon_match/p4_full_current/export_p4_fc_native_multipoles_7isotope_81point.wls",
+    "python research/three_body_full_current_nucleon_match/p4_full_current/audit_p4_fc_native_export.py",
+    "python -m unittest discover -s research/three_body_full_current_nucleon_match/p4_full_current -p 'test_*.py' -v"
+  ],
+  "source_sha256": {
+    "afh_v6": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+    "isotope_mass_input": "fd1bb996e5f582c74c3c86d129f1d2dded510c65237d0a7b2ba08861f1d8c991",
+    "export_wls": "c938e980cf46fc4a85955105ddca132a7aeb32d732dfd0c6b689cc1e949dc6f8",
+    "audit_script": "7ffeee3683b93e4d4c2aec3af7a4b8069a31089d3e9ec20461db542f59b49157",
+    "unit_tests": "801138a31e929b4175a668a883839156a8d3343bc2a253a29489d01b9abf9a6a",
+    "task_brief": "2bbfe0c571621557dafd33f97746134662fc13713754702e20670aa3ef4dde89"
+  },
+  "outputs": {
+    "native_multipoles_csv": "26113db76a969dba98b0fb7b4d6b5389189d2dec33ec680d699741fb0b43a2dc",
+    "native_responses_csv": "39a5b8c2401eb5f4e5acabb0a4f38b9a9d1fa7103d12d208462b3fcefef57c48",
+    "obdme_terms_csv": "c004e6204c4c93a91821bbeda191484a4070df936563b16ff4838fc0dc411147",
+    "native_metadata": "297cdc5a0dcebaf7e5c73e3e3c6a30692c5697147538eb2243d845a04417bd3a",
+    "validation_report": "1382ddf8740cadd99973c9d4347e52ee1594616bbe5d53e44f94e682183fe841",
+    "native_run_log": "5aed94c0a874fbe8762a69c36e934fe1b1ae49cb4f22d302e88bcc8ad1c3609c",
+    "readme": "6d0f1ae621b1ea8e255fac9499c9196b5b595c1fb9d80d906ead2c0dca351009"
+  },
+  "coverage": {
+    "isotopes": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      134,
+      136
+    ],
+    "recoil_points_per_isotope": 81,
+    "isotope_recoil_points": 567,
+    "charge_multipole_rows": 1782,
+    "spatial_multipole_rows": 648,
+    "native_response_rows": 567,
+    "obdme_term_rows": 11664,
+    "multipole_channel_rows": {
+      "M": 891,
+      "PhiPP": 891,
+      "Delta": 324,
+      "SigmaPrime": 324
+    }
+  },
+  "audit": {
+    "status": "PASS",
+    "unit_tests": "4/4",
+    "max_response_absolute_residuals": {
+      "M": 4.121147867408581E-13,
+      "PhiPP": 1.2878587085651816E-14,
+      "MPhiPP": 3.549938121238938E-14,
+      "Delta": 2.5153490401663703E-17,
+      "SigmaPrime": 1.5241172039714979E-16,
+      "SigmaPrimeDelta": 1.951563910473908E-17
+    },
+    "max_Q_A_residual_GeV": 0.0,
+    "max_t_A_residual_GeV2": 0.0,
+    "max_y_residual": 2.6645352591003757E-15,
+    "max_Cauchy_excess": 2.5763850688281797E-12,
+    "Cauchy_tolerance_absolute": 5E-12,
+    "max_multipole_imaginary_residual": 0.0,
+    "max_response_imaginary_residual": 0.0
+  },
+  "boundaries": {
+    "full_current_complete": false,
+    "P3_tensor_validation_complete": false,
+    "stage_b_started": false,
+    "stage_a_scope": "Native AFH multipole/response export and rank reconstruction only; no direct bound-current contraction or halo fold"
+  },
+  "historical_reuse": {
+    "finite_tN_full_dirac": "results/2026-11-23-finite-tN-full-dirac-afh-high-order/",
+    "native_full_current_closeout": "native_full_current_closeout/",
+    "action": "referenced as immutable benchmark; not rerun"
+  }
+}

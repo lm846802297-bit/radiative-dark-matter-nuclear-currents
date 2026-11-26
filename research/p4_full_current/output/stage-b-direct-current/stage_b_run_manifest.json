@@ -1,0 +1,166 @@
+{
+  "record_type": "P4-FC Stage B local calculation run manifest",
+  "status": "COMPUTED_AND_NUMERICALLY_AUDITED_PENDING_DRAFT_PR_REVIEW",
+  "recorded_at_utc": "2026-11-24",
+  "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+  "pull_request": 141,
+  "pull_request_state": "draft",
+  "source_branch": "research/p4-full-current-stage-b-seven-isotope-bound-current-20261124",
+  "source_commit_before_results": "76428ffef2bbb438e0c699b53e857a677b406344",
+  "scope": "Finite-tN direct one-body Dirac-Pauli current multipoles only; no T3 contraction, halo fold, detector fold, or exchange-current completion.",
+  "prescription": {
+    "qN_equals_qA": "(E_R, 0, 0, Q_A)",
+    "Q_A_squared_GeV2": "2*m_A*E_R + E_R^2",
+    "tN_equals_tA_GeV2": "-2*m_A*E_R",
+    "form_factors": "Borah2020 proton/neutron electromagnetic Dirac-Pauli plus Sufian2017 unit strange-current input; raw F1/F2 divided by 3 once.",
+    "vertex_energy": "external q_N^0=E_R",
+    "mass_scheme": "P4 AME2020 nuclear mass; (atomic_mass_u - 54*m_e_u)*u_GeV",
+    "grid": "81 points, 40–800 keV inclusive, 9.5 keV step, isotopes 128,129,130,131,132,134,136"
+  },
+  "execution_environment": {
+    "mode": "ChatGPT Work execution environment",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "operating_system": "Linux",
+    "architecture": "x86_64",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "logical_cpu_count": 9,
+    "mem_total_kib": 10206472,
+    "mem_available_at_manifest_kib": 9595464,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0",
+    "github_actions_used": false,
+    "environment_note": "The available Work execution environment for this run was Linux x86_64; no Windows host was available in this session. The Python commands are platform-neutral. The actual platform is recorded explicitly."
+  },
+  "source_sha256": {
+    "AFH": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+    "native_multipoles": "26113db76a969dba98b0fb7b4d6b5389189d2dec33ec680d699741fb0b43a2dc",
+    "density_matrices": {
+      "128": "fa2017a7ea1951cad6407078aeebede34b9182d0554f38968d5033c6c16bbeb4",
+      "129": "a0bd848d443a073b80ad731cc87fcfb29d7c899da932d5a230e2e245295f158e",
+      "130": "38eedadeecc45acc637264b386f8e0d2b63c8dc9e811395e348fbb3e4da8beea",
+      "131": "4ca110f6828ef6cebe4373fb0c9704220d8227c4a131bc2b5801dc2884e00a00",
+      "132": "5a367bb5a4d278bf9c3c9f7e2aae8cd7252efe8c3371f1da2d06516c766f07f3",
+      "134": "843bd0d85d77f904c41b6a8ecb349369cadfec9d3b79f477406208e8dc410a7c",
+      "136": "9069106f11e2efd537380c62d7e4e63114ed84ec6bbfde687bd5da493d988df0"
+    },
+    "form_factor_module": "d409248b3a6d99a8fa9119bb6e5ca906e67360c9442bc37562ff385b8ee85b5b",
+    "borah_source": "c1acaca81c65e981612958e793804bde3489e5307640e0e9a44a9dad199a83cb",
+    "borah_parameters": "6dfba4a914259e4dd48bb670b26ab892d53dde75a6e013a79914dde1e40f7281",
+    "borah_covariance": "044097e0190d815a2f37c6f3192c3ce6c6fb6fce014da6428a862dc92985dbbd",
+    "nuclear_mass_input": "fd1bb996e5f582c74c3c86d129f1d2dded510c65237d0a7b2ba08861f1d8c991",
+    "rate_kinematics": "daf409e8246c04c290511dfb78f60992131057f75044cacaeebb159d3f9239a2",
+    "direct_script": "78058780862acb06d5c3fd86957dead6d16d9a8e3041c9b4bdc3d5450189b75e",
+    "direct_current_script": "78058780862acb06d5c3fd86957dead6d16d9a8e3041c9b4bdc3d5450189b75e",
+    "independent_audit_script": "3f8d6b11a23bfa7212ae4066435b1777edea10a5ad206582a955abda508b6af3",
+    "convergence_audit_script": "536ae4de97cdc749fe1c287109096775bcde26e42a65cfa7c58115cd25847b3d",
+    "focused_test_script": "c6a811476d0418f4c135b173f3b47b802b733fa58e1d84236acbb21290b66e71",
+    "task_brief": "f4238be19efaf85c1677ae518748c1a9754f6df98859b155274a6f61f0036f33"
+  },
+  "runs": {
+    "pilot_xe128_40keV_order14": {
+      "status": "COMPLETED_P4_FC_STAGE_B_DIRECT_CURRENT_RUN",
+      "rows": 1,
+      "wall_time_seconds": 1.2300493470011133,
+      "max_multipole_fit_residual": 1.070372203308747e-15,
+      "max_leading_NR_to_Native_absolute_residual": 8.171241461241152e-14
+    },
+    "production_order14": {
+      "status": "COMPLETED_P4_FC_STAGE_B_DIRECT_CURRENT_RUN",
+      "isotope_recoil_points": 567,
+      "rank_resolved_rows": 891,
+      "wall_time_seconds": 614.6615211330009,
+      "run_started_utc": "2026-11-24T05:15:27.250330+00:00",
+      "max_multipole_fit_residual": 8.050890597698874e-15,
+      "max_leading_NR_to_Native_absolute_residual": 1.3855583347321954e-13
+    },
+    "independent_audit": {
+      "status": "PASS_P4_FC_STAGE_B_DIRECT_CURRENT_AUDIT",
+      "rank_resolved_rows": 891,
+      "max_direct_multipole_fit_residual": 8.050890597698874e-15,
+      "max_kinematic_identity_residual_GeV2": 2.7755575615628914e-17,
+      "max_form_factor_recalculation_residuals": {
+        "F1_uds_raw": 0.0,
+        "F2_uds_raw": 0.0,
+        "F1_effective": 0.0,
+        "F2_effective": 0.0
+      },
+      "max_leading_NR_to_Native_residuals": {
+        "M": 1.3855583347321954e-13,
+        "PhiPP": 1.0928757898653885e-16,
+        "Delta": 2.396143422914417e-15,
+        "SigmaPrime": 1.5110335358560405e-15
+      },
+      "K0_L1_rows_all_targets": 567,
+      "K0_L1_rows_spin_zero_targets": 405
+    },
+    "focused_unit_tests": {
+      "command": "python -m unittest discover -s research/three_body_full_current_nucleon_match/p4_full_current -p 'test_stage_b_*.py' -v",
+      "passed": 7,
+      "failed": 0,
+      "test_names": [
+        "test_direct_vector_fit_retains_K0_L1_longitudinal_component",
+        "test_exact_nuclear_masses_and_target_spins",
+        "test_finite_form_factor_current_shape",
+        "test_native_afh_is_stage_a_archive",
+        "test_one_point_spin_zero_pilot_preserves_rank_zero_L1",
+        "test_seven_isotope_recoil_grid",
+        "test_spin_zero_rank_zero_longitudinal_basis_is_allowed"
+      ]
+    },
+    "quadrature_convergence": {
+      "status": "PASS_STAGE_B_GAUSS_HERMITE_CONVERGENCE",
+      "orders": [
+        10,
+        14,
+        18,
+        22
+      ],
+      "anchor_energies_keV": [
+        40.0,
+        420.0,
+        800.0
+      ],
+      "complex_components_compared_per_order_pair": 528,
+      "order_10_to_14_max_abs": 4.275767240269346e-12,
+      "order_14_to_18_max_abs": 7.105427357601002e-14,
+      "order_18_to_22_max_abs": 6.039613253960852e-14,
+      "acceptance": "abs(delta) <= 1e-10 + 1e-5*max(|a|,|b|) for each compared component; all three consecutive comparisons passed",
+      "run_wall_time_seconds": {
+        "10": 22.367947691000154,
+        "18": 58.05897160399945,
+        "22": 95.1337964409995
+      }
+    }
+  },
+  "commands": [
+    "python research/three_body_full_current_nucleon_match/p4_full_current/direct_bound_current_seven_isotope.py --order 14 --isotopes 128 --recoil-kev 40 --out research/three_body_full_current_nucleon_match/p4_full_current/output/stage-b-direct-current/pilot_xe128_o14.json",
+    "python research/three_body_full_current_nucleon_match/p4_full_current/direct_bound_current_seven_isotope.py --order 14 --out research/three_body_full_current_nucleon_match/p4_full_current/output/stage-b-direct-current/direct_bound_current_o14.json",
+    "python research/three_body_full_current_nucleon_match/p4_full_current/audit_stage_b_direct_current.py --json research/three_body_full_current_nucleon_match/p4_full_current/output/stage-b-direct-current/direct_bound_current_o14.json",
+    "python -m unittest discover -s research/three_body_full_current_nucleon_match/p4_full_current -p 'test_stage_b_*.py' -v",
+    "python research/three_body_full_current_nucleon_match/p4_full_current/direct_bound_current_seven_isotope.py --order 10 --recoil-kev 40 420 800 --out research/three_body_full_current_nucleon_match/p4_full_current/output/stage-b-direct-current/convergence_o10.json",
+    "python research/three_body_full_current_nucleon_match/p4_full_current/direct_bound_current_seven_isotope.py --order 18 --recoil-kev 40 420 800 --out research/three_body_full_current_nucleon_match/p4_full_current/output/stage-b-direct-current/convergence_o18.json",
+    "python research/three_body_full_current_nucleon_match/p4_full_current/direct_bound_current_seven_isotope.py --order 22 --recoil-kev 40 420 800 --out research/three_body_full_current_nucleon_match/p4_full_current/output/stage-b-direct-current/convergence_o22.json",
+    "python research/three_body_full_current_nucleon_match/p4_full_current/audit_stage_b_convergence.py --o10 .../convergence_o10.json --o14 .../direct_bound_current_o14.json --o18 .../convergence_o18.json --o22 .../convergence_o22.json --out .../convergence_report.json"
+  ],
+  "audit_script_correction": {
+    "issue": "The original audit counted J=0 rank rows from all seven isotopes but sized its per-isotope summary for only the five spin-zero targets, causing KeyError at Xe-129.",
+    "fix": "Count K=0/L=1 rows for all seven isotopes and separately count the five spin-zero targets.",
+    "result": "567 total K=0 rank rows; 405 rows for the five spin-zero targets; all alias and coverage checks passed."
+  },
+  "artifacts": {
+    "pilot_xe128_o14.json": "c9f1c9ba5318144dfa74b02915707a2af05594e86b7b7db0c7d3035b39b47fac",
+    "pilot_xe128_o14.csv": "02da22806bda7a13a8443d0835eb686c6757f8aeac0d634fb3db2ed077cfab46",
+    "direct_bound_current_o14.json": "650474eecd28a8ad97f7fb4ea7c105277aaef5d79971fa0729148e429b084f95",
+    "direct_bound_current_o14.csv": "0b335b39cd288beda1367fd977e311d595c2a88c2c5e7dfcaa9456cf8e26d355",
+    "convergence_o10.json": "99b5b9a2a04b2d8b2483ba9583be7b68029251e7a4c21bf3bc125f48f8b46e72",
+    "convergence_o10.csv": "4356025d9d7e4543d9782145d6dd6f7c818beac1489c867fd5e04b51a6d448cb",
+    "convergence_o18.json": "124a2b6d0756c0ca64b98686ae3eaf9bd686a3f1786c2fcb0068c9070ee258ea",
+    "convergence_o18.csv": "7a75ae4366e0839409ac283a35c1c5ab30a67aa43e37c1a1872c1ad733ae8d38",
+    "convergence_o22.json": "fda2cd6ec1e83d7a1fb52b3d50adff6e03e19130d05386379bd652daecf4487a",
+    "convergence_o22.csv": "7d791cbb5cea72fe021b23b020ffade344bdc0e820e5f71bf30cb237b21fc745",
+    "stage_b_validation_report.json": "5f0272f2c976ab894d8e69fc6930c609c13a0aba93ee445c5b83710c0ff4f313",
+    "convergence_report.json": "e8e35049d6dd0b5e490355955afa23361554def4829abf5804f22700a14b7e9a"
+  }
+}

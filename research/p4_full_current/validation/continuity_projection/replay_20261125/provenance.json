@@ -1,0 +1,32 @@
+{
+  "status": "PASS_C2_CONTINUITY_PROJECTION_STRESS_REPLAY",
+  "run_started_utc": "2026-11-25T04:15:15Z",
+  "run_finished_utc": "2026-11-25T04:15:19Z",
+  "wall_time_seconds": 4.55,
+  "environment": {
+    "os": "Linux",
+    "kernel": "6.18.57",
+    "architecture": "x86_64",
+    "cpu_model": "Intel Xeon Platinum 8573C",
+    "logical_cpu_count": 5,
+    "memory_total_bytes": 6236844032,
+    "gpu": null,
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "numpy": "2.3.5"
+  },
+  "source": {
+    "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+    "path": "research/three_body_full_current_nucleon_match/p4_full_current/validation/continuity_projection/test_c2_continuity_projection_stress.py",
+    "source_blob_sha1": "f87be7dd973066fa849628f2d98b91990e34fd56",
+    "source_sha256": "17a793d74df9562c62d6da5ffcd95fbc95bfa846da177015078d8937b9bbf67f",
+    "branch": "main"
+  },
+  "random_seeds": [20261125, 20261126, 20261127],
+  "scope_boundary": {
+    "synthetic_tensor_validation_only": true,
+    "C1_production_grid_used": false,
+    "Stage_B_production_current_used": false,
+    "C2_production_run": false,
+    "detector_rate": false
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "status": "PASS_P4_FC_STAGE_B_DIRECT_CURRENT_AUDIT",
+  "scope": "Seven-isotope finite-tN direct Dirac-Pauli impulse-current multipoles; no T3 contraction or halo fold.",
+  "source_sha256": {
+    "direct_script": "78058780862acb06d5c3fd86957dead6d16d9a8e3041c9b4bdc3d5450189b75e",
+    "native_stage_a_multipoles": "26113db76a969dba98b0fb7b4d6b5389189d2dec33ec680d699741fb0b43a2dc",
+    "nuclear_mass_input": "fd1bb996e5f582c74c3c86d129f1d2dded510c65237d0a7b2ba08861f1d8c991",
+    "density_matrices": {
+      "128": "fa2017a7ea1951cad6407078aeebede34b9182d0554f38968d5033c6c16bbeb4",
+      "129": "a0bd848d443a073b80ad731cc87fcfb29d7c899da932d5a230e2e245295f158e",
+      "130": "38eedadeecc45acc637264b386f8e0d2b63c8dc9e811395e348fbb3e4da8beea",
+      "131": "4ca110f6828ef6cebe4373fb0c9704220d8227c4a131bc2b5801dc2884e00a00",
+      "132": "5a367bb5a4d278bf9c3c9f7e2aae8cd7252efe8c3371f1da2d06516c766f07f3",
+      "134": "843bd0d85d77f904c41b6a8ecb349369cadfec9d3b79f477406208e8dc410a7c",
+      "136": "9069106f11e2efd537380c62d7e4e63114ed84ec6bbfde687bd5da493d988df0"
+    },
+    "form_factor_module": "d409248b3a6d99a8fa9119bb6e5ca906e67360c9442bc37562ff385b8ee85b5b",
+    "afh_v6": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372"
+  },
+  "coverage": {
+    "isotopes": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      134,
+      136
+    ],
+    "recoil_points_per_isotope": 81,
+    "isotope_recoil_points": 567,
+    "rank_resolved_rows": 891,
+    "expected_rank_rows": 891,
+    "rank0_longitudinal_rows_all_targets": 567,
+    "spin_zero_rank0_longitudinal_rows": 405,
+    "max_rank0_longitudinal_amplitude_by_isotope": {
+      "128": 2.287104930679317e-06,
+      "129": 3.1884957101433776e-06,
+      "130": 2.250480226631198e-06,
+      "131": 4.44847479810713e-06,
+      "132": 2.2193268841728093e-06,
+      "134": 2.171860099878552e-06,
+      "136": 2.148199776180158e-06
+    },
+    "rank0_L1_presence_check": "all five spin-zero isotopes retain explicit L=1 fields, including any exact zero values; no channel is dropped"
+  },
+  "checks": {
+    "max_direct_multipole_fit_residual": 8.050890597698874e-15,
+    "max_tN_identity_residual_GeV2": 0.0,
+    "max_QA_identity_residual_GeV": 0.0,
+    "max_QA2_minus_QN2_minus_ER2_residual_GeV2": 2.7755575615628914e-17,
+    "max_form_factor_recalculation_absolute_residuals": {
+      "F1_uds_raw": 0.0,
+      "F2_uds_raw": 0.0,
+      "F1_effective": 0.0,
+      "F2_effective": 0.0
+    },
+    "max_leading_NR_vs_Native_AFH_amplitude_residuals": {
+      "M": 1.3855583347321954e-13,
+      "PhiPP": 1.0928757898653885e-16,
+      "Delta": 2.396143422914417e-15,
+      "SigmaPrime": 1.5110335358560405e-15
+    },
+    "max_rank0_longitudinal_alias_residual": 0.0,
+    "max_exact_vs_leading_NR_multipole_differences": {
+      "vector_identity_LJm1": 1.2868507212745317e-07,
+      "vector_identity_LJ": 0.0007039397392981372,
+      "vector_identity_LJp1": 4.4484747982423566e-06,
+      "vector_spin_LJm1": 9.775165343146958e-08,
+      "vector_spin_LJ": 0.00018203870177187003,
+      "vector_spin_LJp1": 2.3119491023272765e-06
+    },
+    "fit_tolerance": 1e-10,
+    "leading_NR_AFH_match_tolerance_absolute": 1e-10,
+    "kinematic_tolerance_absolute": 2e-13
+  },
+  "model": {
+    "nucleon_transfer": "q_N^mu=q_A^mu; t_N=t_A=-2*m_A*E_R; Q_A^2=Q_N^2+E_R^2",
+    "form_factors": "Borah2020 proton/neutron electromagnetic form factors plus Sufian2017 unit strange current; raw flavor sums divided by 3 once",
+    "vertex_energy": "external",
+    "bound_basis": "AFH v6.0 HO momentum orbitals embedded in positive-energy free Dirac spinors",
+    "current": "exact covariant Dirac-Pauli and leading-NR control",
+    "normalization": "Native AFH raw amplitudes; no factor-four or C0 rescaling",
+    "even_even_targets": "retain direct K=0,L=1 longitudinal current; do not map it onto AFH Delta or SigmaPrime"
+  },
+  "native_run_runtime": {
+    "run_started_utc": "2026-11-24T05:15:27.250330+00:00",
+    "wall_time_seconds": 614.6615211330009,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "processor": "",
+    "logical_cpu_count": 9,
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "audit_runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "processor": "",
+    "logical_cpu_count": 9,
+    "quadrature_order_per_axis": 14
+  }
+}

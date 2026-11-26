@@ -1,0 +1,12 @@
+{
+  "status": "PASS_C2_CONTINUITY_PROJECTION_STRESS_REPLAY",
+  "tests_passed": 4,
+  "tests_total": 4,
+  "unittest_returncode": 0,
+  "random_stress_samples": 20000,
+  "max_analytic_longitudinal_residual_relative": 5.87315574842313e-14,
+  "max_full_kernel_decomposition_relative": 1.9559898855147555e-15,
+  "max_conserved_current_residual_relative": 0.0,
+  "test_source_sha256": "17a793d74df9562c62d6da5ffcd95fbc95bfa846da177015078d8937b9bbf67f",
+  "test_output_sha256": "eaa7c5d94c9252b67fd33bf791fcf6d5424df2d366eed6685db0623972bd0d18"
+}
