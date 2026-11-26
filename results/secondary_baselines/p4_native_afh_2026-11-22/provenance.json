@@ -1,0 +1,795 @@
+{
+  "calculation_json_summaries": {
+    "baseline-five-recoil.json": {
+      "A_reference": "q=0 effective nucleon current times the same finite-size AFH W_M(y_A)",
+      "C_extension": "B plus Phi'' and signed M-Phi'' interference; diagnostic extension, not the primary baseline",
+      "P3_tensor_validation_complete": false,
+      "approximation": "leading-static one-body vector-current candidate with M, Phi'', M-Phi'', Delta, Sigma', and Sigma'-Delta; P3 tensor validation pending",
+      "coupling_product_squared": 1e-08,
+      "delta_m_GeV": 0.001,
+      "form_factor_prescription": "bishara_linear",
+      "formal_width_prescription": "Asymmetric Pole prescription: first p-k chi2 propagator zero-width (+i0+); second p'+k chi2 propagator uses constant Gamma_chi2(m_chi2).",
+      "full_current_complete": false,
+      "g2": 1.0,
+      "halo_models": [
+        "mb_untruncated",
+        "shm_cutoff"
+      ],
+      "mV_GeV": 10.0,
+      "mchi_GeV": 1000.0,
+      "mediator_denominator": "(m_V^2-t_A)^2=(m_V^2+2*m_A*E_R)^2; t_A=-2*m_A*E_R",
+      "ms_GeV": 0.00019999999999999998,
+      "native_afh_validated": true,
+      "natural_atom_fraction_coverage": 0.998158,
+      "nucleon_transfer_scheme": "one-body impulse-current external-transfer assignment q_N^mu=q_A^mu; t_N=t_A=-2*m_A*E_R",
+      "primary_baseline": "B: finite-t_N effective nucleon current times finite-size AFH W_M(y_A) only",
+      "recoil_energies_keV": [
+        150.0,
+        200.0,
+        267.0,
+        350.0,
+        400.0
+      ],
+      "recoil_momentum": "q_A=sqrt(2 m_A E_R + E_R^2), exact nuclear mass-shell relation",
+      "response_interpolation": "common linear interpolation on native AFH response matrices to preserve PSD/Cauchy bounds; PCHIP retained as a diagnostic",
+      "result_rows": 10,
+      "rho_GeV_cm3": 0.3,
+      "scope": "seven-isotope natural-xenon leading-static vector-current candidate; not promoted to a complete full-current prediction until P3 passes",
+      "status": "COMPUTED_WITHIN_LEADING_STATIC_VECTOR_CURRENT_CANDIDATE",
+      "width_scheme": "pole"
+    },
+    "continuous-81-point-spectrum.json": {
+      "A_reference": "q=0 effective nucleon current times the same finite-size AFH W_M(y_A)",
+      "C_extension": "B plus Phi'' and signed M-Phi'' interference; diagnostic extension, not the primary baseline",
+      "P3_tensor_validation_complete": false,
+      "approximation": "leading-static one-body vector-current candidate with M, Phi'', M-Phi'', Delta, Sigma', and Sigma'-Delta; P3 tensor validation pending",
+      "coupling_product_squared": 1e-08,
+      "delta_m_GeV": 0.001,
+      "form_factor_prescription": "bishara_linear",
+      "formal_width_prescription": "Asymmetric Pole prescription: first p-k chi2 propagator zero-width (+i0+); second p'+k chi2 propagator uses constant Gamma_chi2(m_chi2).",
+      "full_current_complete": false,
+      "g2": 1.0,
+      "halo_models": [
+        "mb_untruncated",
+        "shm_cutoff"
+      ],
+      "mV_GeV": 10.0,
+      "mchi_GeV": 1000.0,
+      "mediator_denominator": "(m_V^2-t_A)^2=(m_V^2+2*m_A*E_R)^2; t_A=-2*m_A*E_R",
+      "ms_GeV": 0.00019999999999999998,
+      "native_afh_validated": true,
+      "natural_atom_fraction_coverage": 0.998158,
+      "nucleon_transfer_scheme": "one-body impulse-current external-transfer assignment q_N^mu=q_A^mu; t_N=t_A=-2*m_A*E_R",
+      "primary_baseline": "B: finite-t_N effective nucleon current times finite-size AFH W_M(y_A) only",
+      "recoil_energies_keV": [
+        40.0,
+        49.5,
+        59.0,
+        68.5,
+        78.0,
+        87.5,
+        97.0,
+        106.5,
+        116.0,
+        125.5,
+        135.0,
+        144.5,
+        154.0,
+        163.5,
+        173.0,
+        182.5,
+        192.0,
+        201.5,
+        211.0,
+        220.5,
+        230.0,
+        239.5,
+        249.0,
+        258.5,
+        268.0,
+        277.5,
+        287.0,
+        296.5,
+        306.0,
+        315.5,
+        325.0,
+        334.5,
+        344.0,
+        353.5,
+        363.0,
+        372.5,
+        382.0,
+        391.5,
+        401.0,
+        410.5,
+        420.0,
+        429.5,
+        439.0,
+        448.5,
+        458.0,
+        467.5,
+        477.0,
+        486.5,
+        496.0,
+        505.5,
+        515.0,
+        524.5,
+        534.0,
+        543.5,
+        553.0,
+        562.5,
+        572.0,
+        581.5,
+        591.0,
+        600.5,
+        610.0,
+        619.5,
+        629.0,
+        638.5,
+        648.0,
+        657.5,
+        667.0,
+        676.5,
+        686.0,
+        695.5,
+        705.0,
+        714.5,
+        724.0,
+        733.5,
+        743.0,
+        752.5,
+        762.0,
+        771.5,
+        781.0,
+        790.5,
+        800.0
+      ],
+      "recoil_momentum": "q_A=sqrt(2 m_A E_R + E_R^2), exact nuclear mass-shell relation",
+      "response_interpolation": "common linear interpolation on native AFH response matrices to preserve PSD/Cauchy bounds; PCHIP retained as a diagnostic",
+      "result_rows": 162,
+      "rho_GeV_cm3": 0.3,
+      "scope": "seven-isotope natural-xenon leading-static vector-current candidate; not promoted to a complete full-current prediction until P3 passes",
+      "status": "COMPUTED_WITHIN_LEADING_STATIC_VECTOR_CURRENT_CANDIDATE",
+      "width_scheme": "pole"
+    },
+    "kernel-refined.json": {
+      "A_reference": "q=0 effective nucleon current times the same finite-size AFH W_M(y_A)",
+      "C_extension": "B plus Phi'' and signed M-Phi'' interference; diagnostic extension, not the primary baseline",
+      "P3_tensor_validation_complete": false,
+      "approximation": "leading-static one-body vector-current candidate with M, Phi'', M-Phi'', Delta, Sigma', and Sigma'-Delta; P3 tensor validation pending",
+      "coupling_product_squared": 1e-08,
+      "delta_m_GeV": 0.001,
+      "form_factor_prescription": "bishara_linear",
+      "formal_width_prescription": "Asymmetric Pole prescription: first p-k chi2 propagator zero-width (+i0+); second p'+k chi2 propagator uses constant Gamma_chi2(m_chi2).",
+      "full_current_complete": false,
+      "g2": 1.0,
+      "halo_models": [
+        "mb_untruncated",
+        "shm_cutoff"
+      ],
+      "mV_GeV": 10.0,
+      "mchi_GeV": 1000.0,
+      "mediator_denominator": "(m_V^2-t_A)^2=(m_V^2+2*m_A*E_R)^2; t_A=-2*m_A*E_R",
+      "ms_GeV": 0.00019999999999999998,
+      "native_afh_validated": true,
+      "natural_atom_fraction_coverage": 0.998158,
+      "nucleon_transfer_scheme": "one-body impulse-current external-transfer assignment q_N^mu=q_A^mu; t_N=t_A=-2*m_A*E_R",
+      "primary_baseline": "B: finite-t_N effective nucleon current times finite-size AFH W_M(y_A) only",
+      "recoil_energies_keV": [
+        200.0,
+        267.0
+      ],
+      "recoil_momentum": "q_A=sqrt(2 m_A E_R + E_R^2), exact nuclear mass-shell relation",
+      "response_interpolation": "common linear interpolation on native AFH response matrices to preserve PSD/Cauchy bounds; PCHIP retained as a diagnostic",
+      "result_rows": 4,
+      "rho_GeV_cm3": 0.3,
+      "scope": "seven-isotope natural-xenon leading-static vector-current candidate; not promoted to a complete full-current prediction until P3 passes",
+      "status": "COMPUTED_WITHIN_LEADING_STATIC_VECTOR_CURRENT_CANDIDATE",
+      "width_scheme": "pole"
+    },
+    "matched-provisional-vs-native.json": {
+      "full_current_complete": false,
+      "status": "PASS_MATCHED_NATIVE_P4_COMPARISON"
+    },
+    "p4_native_regeneration_audit.json": {
+      "full_current_complete": false,
+      "native_afh_validated": true,
+      "status": "PASS_NATIVE_AFH_P4_REGENERATION_AUDIT"
+    },
+    "plots\\plot_manifest.json": {
+      "formal_width_prescription": "Asymmetric Pole prescription: first p-k chi2 propagator zero-width (+i0+); second p'+k chi2 propagator uses constant Gamma_chi2(m_chi2).",
+      "full_current_complete": false,
+      "native_afh_validated": true,
+      "natural_atom_fraction_coverage": 0.998158,
+      "status": "NATIVE_AFH_P4_PLOTS_EXPORTED",
+      "width_scheme": "pole"
+    },
+    "quadrature-comparison.json": {
+      "full_current_complete": false,
+      "maximum_relative_differences": {
+        "phase_space_8x6x4_to_10x8x6": 2.5525174650094067e-09,
+        "speed_12_to_24": 0.0003014736143073611,
+        "speed_12_to_48": 0.000310468793062801,
+        "speed_24_to_48": 8.997891382276048e-06,
+        "speed_8_to_12": 0.0019470330956657589,
+        "speed_8_to_24": 0.0022479197308685936,
+        "speed_8_to_48": 0.0022568973957132954
+      },
+      "native_afh_validated": true,
+      "status": "NATIVE_P4_QUADRATURE_DIAGNOSTIC"
+    },
+    "speed-48.json": {
+      "A_reference": "q=0 effective nucleon current times the same finite-size AFH W_M(y_A)",
+      "C_extension": "B plus Phi'' and signed M-Phi'' interference; diagnostic extension, not the primary baseline",
+      "P3_tensor_validation_complete": false,
+      "approximation": "leading-static one-body vector-current candidate with M, Phi'', M-Phi'', Delta, Sigma', and Sigma'-Delta; P3 tensor validation pending",
+      "coupling_product_squared": 1e-08,
+      "delta_m_GeV": 0.001,
+      "form_factor_prescription": "bishara_linear",
+      "formal_width_prescription": "Asymmetric Pole prescription: first p-k chi2 propagator zero-width (+i0+); second p'+k chi2 propagator uses constant Gamma_chi2(m_chi2).",
+      "full_current_complete": false,
+      "g2": 1.0,
+      "halo_models": [
+        "mb_untruncated",
+        "shm_cutoff"
+      ],
+      "mV_GeV": 10.0,
+      "mchi_GeV": 1000.0,
+      "mediator_denominator": "(m_V^2-t_A)^2=(m_V^2+2*m_A*E_R)^2; t_A=-2*m_A*E_R",
+      "ms_GeV": 0.00019999999999999998,
+      "native_afh_validated": true,
+      "natural_atom_fraction_coverage": 0.998158,
+      "nucleon_transfer_scheme": "one-body impulse-current external-transfer assignment q_N^mu=q_A^mu; t_N=t_A=-2*m_A*E_R",
+      "primary_baseline": "B: finite-t_N effective nucleon current times finite-size AFH W_M(y_A) only",
+      "recoil_energies_keV": [
+        200.0,
+        267.0
+      ],
+      "recoil_momentum": "q_A=sqrt(2 m_A E_R + E_R^2), exact nuclear mass-shell relation",
+      "response_interpolation": "common linear interpolation on native AFH response matrices to preserve PSD/Cauchy bounds; PCHIP retained as a diagnostic",
+      "result_rows": 4,
+      "rho_GeV_cm3": 0.3,
+      "scope": "seven-isotope natural-xenon leading-static vector-current candidate; not promoted to a complete full-current prediction until P3 passes",
+      "status": "COMPUTED_WITHIN_LEADING_STATIC_VECTOR_CURRENT_CANDIDATE",
+      "width_scheme": "pole"
+    },
+    "speed-refined.json": {
+      "A_reference": "q=0 effective nucleon current times the same finite-size AFH W_M(y_A)",
+      "C_extension": "B plus Phi'' and signed M-Phi'' interference; diagnostic extension, not the primary baseline",
+      "P3_tensor_validation_complete": false,
+      "approximation": "leading-static one-body vector-current candidate with M, Phi'', M-Phi'', Delta, Sigma', and Sigma'-Delta; P3 tensor validation pending",
+      "coupling_product_squared": 1e-08,
+      "delta_m_GeV": 0.001,
+      "form_factor_prescription": "bishara_linear",
+      "formal_width_prescription": "Asymmetric Pole prescription: first p-k chi2 propagator zero-width (+i0+); second p'+k chi2 propagator uses constant Gamma_chi2(m_chi2).",
+      "full_current_complete": false,
+      "g2": 1.0,
+      "halo_models": [
+        "mb_untruncated",
+        "shm_cutoff"
+      ],
+      "mV_GeV": 10.0,
+      "mchi_GeV": 1000.0,
+      "mediator_denominator": "(m_V^2-t_A)^2=(m_V^2+2*m_A*E_R)^2; t_A=-2*m_A*E_R",
+      "ms_GeV": 0.00019999999999999998,
+      "native_afh_validated": true,
+      "natural_atom_fraction_coverage": 0.998158,
+      "nucleon_transfer_scheme": "one-body impulse-current external-transfer assignment q_N^mu=q_A^mu; t_N=t_A=-2*m_A*E_R",
+      "primary_baseline": "B: finite-t_N effective nucleon current times finite-size AFH W_M(y_A) only",
+      "recoil_energies_keV": [
+        200.0,
+        267.0
+      ],
+      "recoil_momentum": "q_A=sqrt(2 m_A E_R + E_R^2), exact nuclear mass-shell relation",
+      "response_interpolation": "common linear interpolation on native AFH response matrices to preserve PSD/Cauchy bounds; PCHIP retained as a diagnostic",
+      "result_rows": 4,
+      "rho_GeV_cm3": 0.3,
+      "scope": "seven-isotope natural-xenon leading-static vector-current candidate; not promoted to a complete full-current prediction until P3 passes",
+      "status": "COMPUTED_WITHIN_LEADING_STATIC_VECTOR_CURRENT_CANDIDATE",
+      "width_scheme": "pole"
+    },
+    "speed-ultra-refined.json": {
+      "A_reference": "q=0 effective nucleon current times the same finite-size AFH W_M(y_A)",
+      "C_extension": "B plus Phi'' and signed M-Phi'' interference; diagnostic extension, not the primary baseline",
+      "P3_tensor_validation_complete": false,
+      "approximation": "leading-static one-body vector-current candidate with M, Phi'', M-Phi'', Delta, Sigma', and Sigma'-Delta; P3 tensor validation pending",
+      "coupling_product_squared": 1e-08,
+      "delta_m_GeV": 0.001,
+      "form_factor_prescription": "bishara_linear",
+      "formal_width_prescription": "Asymmetric Pole prescription: first p-k chi2 propagator zero-width (+i0+); second p'+k chi2 propagator uses constant Gamma_chi2(m_chi2).",
+      "full_current_complete": false,
+      "g2": 1.0,
+      "halo_models": [
+        "mb_untruncated",
+        "shm_cutoff"
+      ],
+      "mV_GeV": 10.0,
+      "mchi_GeV": 1000.0,
+      "mediator_denominator": "(m_V^2-t_A)^2=(m_V^2+2*m_A*E_R)^2; t_A=-2*m_A*E_R",
+      "ms_GeV": 0.00019999999999999998,
+      "native_afh_validated": true,
+      "natural_atom_fraction_coverage": 0.998158,
+      "nucleon_transfer_scheme": "one-body impulse-current external-transfer assignment q_N^mu=q_A^mu; t_N=t_A=-2*m_A*E_R",
+      "primary_baseline": "B: finite-t_N effective nucleon current times finite-size AFH W_M(y_A) only",
+      "recoil_energies_keV": [
+        200.0,
+        267.0
+      ],
+      "recoil_momentum": "q_A=sqrt(2 m_A E_R + E_R^2), exact nuclear mass-shell relation",
+      "response_interpolation": "common linear interpolation on native AFH response matrices to preserve PSD/Cauchy bounds; PCHIP retained as a diagnostic",
+      "result_rows": 4,
+      "rho_GeV_cm3": 0.3,
+      "scope": "seven-isotope natural-xenon leading-static vector-current candidate; not promoted to a complete full-current prediction until P3 passes",
+      "status": "COMPUTED_WITHIN_LEADING_STATIC_VECTOR_CURRENT_CANDIDATE",
+      "width_scheme": "pole"
+    }
+  },
+  "github": {
+    "checked_out_branch": "research/native-afh-eight-response-20261122",
+    "checked_out_commit": "fada259460ac42460baf933021dc16dc7a9cfb9e",
+    "event": null,
+    "external_input_repositories": {},
+    "pull_request_head_sha": null,
+    "repository": null,
+    "run_attempt": null,
+    "run_id": null,
+    "workflow_sha": null
+  },
+  "input_files": [
+    {
+      "bytes": 1012,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/diagnostics/initial_exact_q_zero_indeterminate.log",
+      "sha256": "d7a5e808ba029dd0fe0217d4e5ecff0c009e2d5434260fa36b02cffbc8716836"
+    },
+    {
+      "bytes": 796,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/diagnostics/initial_exact_q_zero_indeterminate_metadata.txt",
+      "sha256": "d0c4abdfc3100e5cc25b5750f4e77c54efdb64aaac872c4d5b30dbc7c7b7e717"
+    },
+    {
+      "bytes": 1054,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/diagnostics/probe_context.wls",
+      "sha256": "8d056c09c3639d8a8d6a4c59f62a312c41d40b1cf271ba9b09022bf653498de9"
+    },
+    {
+      "bytes": 1645,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/diagnostics/spatial_qzero_limit_comparison.json",
+      "sha256": "8917aaaa2aafbc759de3af194e7cfcaf4fa535bb8e014a754d1f840434685c0c"
+    },
+    {
+      "bytes": 564,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/inputs/density_matrices/afh_default_xe128_density_matrix.csv",
+      "sha256": "fa2017a7ea1951cad6407078aeebede34b9182d0554f38968d5033c6c16bbeb4"
+    },
+    {
+      "bytes": 1070,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/inputs/density_matrices/afh_default_xe129_density_matrix.csv",
+      "sha256": "a0bd848d443a073b80ad731cc87fcfb29d7c899da932d5a230e2e245295f158e"
+    },
+    {
+      "bytes": 567,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/inputs/density_matrices/afh_default_xe130_density_matrix.csv",
+      "sha256": "38eedadeecc45acc637264b386f8e0d2b63c8dc9e811395e348fbb3e4da8beea"
+    },
+    {
+      "bytes": 1815,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/inputs/density_matrices/afh_default_xe131_density_matrix.csv",
+      "sha256": "4ca110f6828ef6cebe4373fb0c9704220d8227c4a131bc2b5801dc2884e00a00"
+    },
+    {
+      "bytes": 565,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/inputs/density_matrices/afh_default_xe132_density_matrix.csv",
+      "sha256": "5a367bb5a4d278bf9c3c9f7e2aae8cd7252efe8c3371f1da2d06516c766f07f3"
+    },
+    {
+      "bytes": 577,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/inputs/density_matrices/afh_default_xe134_density_matrix.csv",
+      "sha256": "843bd0d85d77f904c41b6a8ecb349369cadfec9d3b79f477406208e8dc410a7c"
+    },
+    {
+      "bytes": 588,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/inputs/density_matrices/afh_default_xe136_density_matrix.csv",
+      "sha256": "9069106f11e2efd537380c62d7e4e63114ed84ec6bbfde687bd5da493d988df0"
+    },
+    {
+      "bytes": 2345,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/inputs/density_matrices/density_matrix_extraction_metadata.json",
+      "sha256": "4833fce6da44ac145bdf8e7bf0d07f03d0c35a6b9d33ec38317fc039b75d4bc4"
+    },
+    {
+      "bytes": 293596,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe128_eight_response_native.csv",
+      "sha256": "7c492562fca01cdfd2a185e671755c84b04bf6b5e34cc1a313f8e76b628a8abb"
+    },
+    {
+      "bytes": 493415,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe129_eight_response_native.csv",
+      "sha256": "80684a3f1201bc312c1c60af3b5b263e1480ab5a05874743a738cce9b86dc532"
+    },
+    {
+      "bytes": 293208,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe130_eight_response_native.csv",
+      "sha256": "36534761e2b061e4e3cff14d3f3ec0f679f68fa3455f8596e23a654f21cbe44a"
+    },
+    {
+      "bytes": 538596,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe131_eight_response_native.csv",
+      "sha256": "585ab0f483be0d8131566cefc4cb420c6db7e07bebbcd2b887da568cda2f4ffb"
+    },
+    {
+      "bytes": 293022,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe132_eight_response_native.csv",
+      "sha256": "7f03e4a14c1e646e624b2d53f8c5ca42f0538c45f4670c524d9a1e39fe8d768e"
+    },
+    {
+      "bytes": 293051,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe134_eight_response_native.csv",
+      "sha256": "031b30c6b7b0e9e720b155979fc7c9ab37665303e7c9fbf8678bde78f39f3885"
+    },
+    {
+      "bytes": 292504,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/afh_v6_xe136_eight_response_native.csv",
+      "sha256": "c00ec4ce6c55fd7fa925a2bf2c3436057a3f54ad31710e1c8f555d7622c7dea4"
+    },
+    {
+      "bytes": 3022,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/combined_tolerance_utilization.json",
+      "sha256": "7074e110d69f6fda79f74c29bec8568ecd8319eb316715a4a62897796bedef66"
+    },
+    {
+      "bytes": 1974,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/comparison.log",
+      "sha256": "1d3b68ac621e22788a676a9a2f2c97bd433c70883dc30ceb191f69d4d366a030"
+    },
+    {
+      "bytes": 681,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/native_metadata.txt",
+      "sha256": "3850b31e54670f1161b14c358f04b2ae398bee1c390925f54dd3913b85ebfaf9"
+    },
+    {
+      "bytes": 1974,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/native_python_comparison.json",
+      "sha256": "1d3b68ac621e22788a676a9a2f2c97bd433c70883dc30ceb191f69d4d366a030"
+    },
+    {
+      "bytes": 680119,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/spatial_multipoles/afh_v6_xe129_xe131_spatial_multipoles_native.csv",
+      "sha256": "cc1d89d0d3cce9cb138226a9dcc880e76bde8a3d2bc22698ac072900320726e1"
+    },
+    {
+      "bytes": 933,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/spatial_multipoles/native_spatial_multipole_metadata.txt",
+      "sha256": "120640f5d8e8e5ab8ce6a5f32c822357bb1d955c2d4a2cf2cb9568d9058016dc"
+    },
+    {
+      "bytes": 2066,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/spatial_multipoles/spatial_amplitude_comparison.json",
+      "sha256": "ebbda5a9e9b3addefb54fbe119d013f4bc20a0860b6ce8a34a5b60204924a15a"
+    },
+    {
+      "bytes": 610,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/spatial_multipoles/wolfram_native_spatial.log",
+      "sha256": "afc33230c23a89380711eefdd0dda24931db64ffeb600b690b8c6e1931ee986f"
+    },
+    {
+      "bytes": 2137,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/native/wolfram_native.log",
+      "sha256": "37b9c4380bb5530626791e976fab6054b1f8368fe4c0ff253f9c4af7ab7b5e61"
+    },
+    {
+      "bytes": 1969781,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/p3_python_reference/afh_spatial_obdme_multipoles_7isotope_2401.csv",
+      "sha256": "eb556aea24e6d03a22254b242f79e24f4e77db67134f22aa3d13585fef43be50"
+    },
+    {
+      "bytes": 2048932,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/p3_python_reference/afh_spatial_obdme_responses_7isotope_2401.csv",
+      "sha256": "7e99f6b8d2c5d66ac9bb54c44e824d1b89b9507114e42e629308093ee15481ec"
+    },
+    {
+      "bytes": 273,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/p3_python_reference/generator.log",
+      "sha256": "3a385651c0723f897ed6ba0a3de8f2e3a32bbe01844e890c9ffbba6c3bdeef36"
+    },
+    {
+      "bytes": 3574,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/p3_python_reference/metadata.json",
+      "sha256": "5171664cad0fc5fba3672d1da394d041ab2dfdf7389d71dfe77e606fe23bd103"
+    },
+    {
+      "bytes": 6549717,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/python_reference/afh_v6_full_eight_response_7isotope.csv",
+      "sha256": "f362abf9ab03281251ef277ff1a7283ef795aefdf1db18ac0d67c7a36d79127c"
+    },
+    {
+      "bytes": 1960,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/python_reference/generator.log",
+      "sha256": "049464ec6e946e71886fefeb3316bc95cc20df6cb59ac1ce8a579683cf5ce1c9"
+    },
+    {
+      "bytes": 9935,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/python_reference/local_validation.json",
+      "sha256": "ea1073dcef2ed959b25373e613f1140ef340c2043c16e8e5d044b612e457ef23"
+    },
+    {
+      "bytes": 9284,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/python_reference/metadata.json",
+      "sha256": "76ee84f9499020412b3a72a6b2dd73277c853cdebbc3d93f465472c119eb0211"
+    },
+    {
+      "bytes": 9935,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/python_reference/validator.log",
+      "sha256": "ea1073dcef2ed959b25373e613f1140ef340c2043c16e8e5d044b612e457ef23"
+    },
+    {
+      "bytes": 7186,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/REPORT.md",
+      "sha256": "fc795899d290bba6241669a27bbbca343936cc5cf7d2a7eeb9b4775a79e60135"
+    },
+    {
+      "bytes": 10803,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/run_manifest.json",
+      "sha256": "5cc300da9d199946a6d9df08c8e448d2ddd426a50f4310a9984ce1c1e06b39f7"
+    },
+    {
+      "bytes": 5589,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/SHA256SUMS.txt",
+      "sha256": "5d41d9bd09c1b98a760838b78d871c3fdfa691c64260aa87d093f9fe7e99957d"
+    },
+    {
+      "bytes": 23367,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/afh_spatial_obdme_responses.py",
+      "sha256": "639e484159757bdeb671f48e5cb4bcadd4404e5e1df839b73d4e217c68bd253d"
+    },
+    {
+      "bytes": 5383,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/compare_native_afh_full_response.py",
+      "sha256": "f1aea8595f1f3fbda65bcf6f5874c24270bce3d047b5749cf14538627bf07c0f"
+    },
+    {
+      "bytes": 10293,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/compare_p3_multipoles_vs_native.py",
+      "sha256": "84aa3d91356e653021aba7baced359f1e1da59c597e9783e23dfedbfa8b7b044"
+    },
+    {
+      "bytes": 94031,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/dmformfactor-V6.m",
+      "sha256": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372"
+    },
+    {
+      "bytes": 5600,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/README.md",
+      "sha256": "a24be7f7f5ea8c1f83e6e5591b4f145085de7ae9742659b026367fa7f2ca6fdf"
+    },
+    {
+      "bytes": 18025,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/run_afh_default_xe131.py",
+      "sha256": "ed0451fd883541001110c2475355def9184d21ee30f78bf15df65304de80459a"
+    },
+    {
+      "bytes": 14699,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/run_afh_full_response_database.py",
+      "sha256": "ded304c59e93966bfd6e03e9b512a1e47ad66264437b0897648b22377222acec"
+    },
+    {
+      "bytes": 2947,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/run_afh_full_response_database.wls",
+      "sha256": "10b254971a1f9dade783cfdf603f15885b08894e4de54aae2791243bf3369642"
+    },
+    {
+      "bytes": 6525,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/run_afh_spatial_multipoles_native.wls",
+      "sha256": "659d8bc187119f6774d475710b758ccebaab4d87285e9812ac158ac670acf2a8"
+    },
+    {
+      "bytes": 14129,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/run_afh_spatial_response_audit.py",
+      "sha256": "1d414ee562477e2f6f943ec12e249e0fa4c8d204dabcdef4fb9a7f71e69cd181"
+    },
+    {
+      "bytes": 8573,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/native_afh_eight_response/source/validate_afh_full_response_database.py",
+      "sha256": "3e7e5edaa5419e474028c3b0c7ddf4af3c44cc013049cffdeba2f5e45612ba2b"
+    },
+    {
+      "bytes": 132617,
+      "path": "work/pr67-p4-baseline/five-point/baseline-five-recoil.json",
+      "sha256": "76b09aee4a7c1ec5766f72de5e89db3e6aa0cfd25fa5260b085754134b41bb18"
+    },
+    {
+      "bytes": 2077995,
+      "path": "work/pr67-p4-baseline/continuous/continuous-81-point-spectrum.json",
+      "sha256": "fdacf2337beedaae5ad39252e38e75826ade4a9da8b1c9531111a3830c1e626c"
+    }
+  ],
+  "output_files": [
+    {
+      "bytes": 224896,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/baseline-five-recoil.json",
+      "sha256": "0fcf5059a64f1789106768e99792d23496778d905145f49bff308067c7ebaa81"
+    },
+    {
+      "bytes": 3490783,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/continuous-81-point-spectrum.json",
+      "sha256": "54cd0d14e09cf1b97455f9c8d839d7acc0b840499cf0a301db8a2239ecede1a4"
+    },
+    {
+      "bytes": 95946,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/kernel-refined.json",
+      "sha256": "90e0f6019ab2ced11a643dedaa2acb8f1120dfb248607453ae086c0389a79674"
+    },
+    {
+      "bytes": 321634,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/matched-provisional-vs-native.json",
+      "sha256": "aa1ec33761a1a5d61b469c6bc2a47898091142b3a496ceb54891a5f63c5dbd7e"
+    },
+    {
+      "bytes": 3677,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/p4_native_regeneration_audit.json",
+      "sha256": "f40c60ab23570de4b29a1dced9958187579af54114c8fee7e00abe1bcf03f336"
+    },
+    {
+      "bytes": 96304,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/plots/natural_xenon_isotope_contributions.csv",
+      "sha256": "dfa1ab9a3bba6d1ce55f4cd528a224cc1b754133762fa0d13ba56b3c68e745df"
+    },
+    {
+      "bytes": 37352,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/plots/natural_xenon_recoil_spectrum.csv",
+      "sha256": "75d87919d51a684f77834b40e94d10ff7272423d346e78f339d66f2ce2100cf1"
+    },
+    {
+      "bytes": 140490,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/plots/p4_absolute_spectrum_mb_untruncated.png",
+      "sha256": "ec8014f5505d5181ed7e64bfa08a25acc978ee80fcbc1221b2cf8937ba0d4039"
+    },
+    {
+      "bytes": 137212,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/plots/p4_absolute_spectrum_shm_cutoff.png",
+      "sha256": "20fbee10060a52daf43deeb600c68c8d65ce104c0950f8f2bf5ae771668e8d30"
+    },
+    {
+      "bytes": 144431,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/plots/p4_isotope_composition_shm.png",
+      "sha256": "0df95b29b48c0c144d370f12d81ebf4d824217c497dfd347531fbb8ca1f2d3a7"
+    },
+    {
+      "bytes": 78912,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/plots/p4_native_afh_natural_xenon_spectra.pdf",
+      "sha256": "169be77473608d41b29035199d1160ee2f1d65978d360672e39aacb52f1439b6"
+    },
+    {
+      "bytes": 119002,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/plots/p4_response_ratios_mb_untruncated.png",
+      "sha256": "2a870cc79885a10e057ed9d7bcc2e11c26aac4377a2e03b7828a36c2d57d9e30"
+    },
+    {
+      "bytes": 114640,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/plots/p4_response_ratios_shm_cutoff.png",
+      "sha256": "486f622b63fd86223628db241e916801b095d17b09718c64d14ae71962513f66"
+    },
+    {
+      "bytes": 1910,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/plots/plot_manifest.json",
+      "sha256": "ba31a2142beac206d116e303f61bd4095c0a2afc1ed63eab6d3af1058d09702c"
+    },
+    {
+      "bytes": 45597,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/quadrature-comparison.json",
+      "sha256": "bae7d8e084de884895eb0ecd9a4a8d34bc9244f583a50691eaf9a145ca8fe5a2"
+    },
+    {
+      "bytes": 5979,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/reproduction.md",
+      "sha256": "d56102f0071eb8f260eb858052686b955980fd79066d766e64d05be771465121"
+    },
+    {
+      "bytes": 95963,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/speed-48.json",
+      "sha256": "510ef45531229e7e602c32d6c6bcdbfde2b19a6c5218666d113f4aa41abb0ab1"
+    },
+    {
+      "bytes": 95954,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/speed-refined.json",
+      "sha256": "6d3d033ed0da3005a7c580d8cf66c86618210062f70f79df0b4970d10e06ac31"
+    },
+    {
+      "bytes": 95962,
+      "path": "research/three_body_full_current_nucleon_match/results/2026-11-22/p4_native_afh_regeneration/speed-ultra-refined.json",
+      "sha256": "b754a3390317a68ef56e8beb56d12c04fc346a7c6a1d146551b85ee4ff86de3e"
+    }
+  ],
+  "record": "p4_native_afh_regeneration",
+  "runtime": {
+    "cpu_model": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "gpu": [
+      "NVIDIA GeForce RTX 5060"
+    ],
+    "logical_cpu_count": 16,
+    "machine": "AMD64",
+    "memory_bytes": null,
+    "packages": {
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "sympy": "1.14.0"
+    },
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+    "release": "11",
+    "system": "Windows"
+  },
+  "source_files": [
+    {
+      "bytes": 87560,
+      "path": "research/three_body_full_current_nucleon_match/native_charge_sector_halo_fold.py",
+      "sha256": "e67a7d2c022c40263a75a303c19489e63df811276990b790c8356a3443aec3fd"
+    },
+    {
+      "bytes": 5562,
+      "path": "research/three_body_full_current_nucleon_match/run_p4_native_continuous_parallel.py",
+      "sha256": "824013bdab9dcbd1e9461468b3be72f8b63e114cf63e00619730610c253b88b3"
+    },
+    {
+      "bytes": 10373,
+      "path": "research/three_body_full_current_nucleon_match/compare_p4_native_regeneration.py",
+      "sha256": "801e212018e5986b21628996523689c32fce5a7deea1d06faf3ece3920a48aed"
+    },
+    {
+      "bytes": 14300,
+      "path": "research/three_body_full_current_nucleon_match/audit_p4_native_regeneration.py",
+      "sha256": "e79c8df7af3b3553b75b73d13e97494c2735caa0f2d97fad0774c12121107e21"
+    },
+    {
+      "bytes": 9106,
+      "path": "research/three_body_full_current_nucleon_match/audit_p4_continuous_spectrum.py",
+      "sha256": "d10464cc9b1935f59de5a216c9260408e792b5b153fd3fdcab0f3bc528a08df1"
+    },
+    {
+      "bytes": 9922,
+      "path": "research/three_body_full_current_nucleon_match/plot_p4_provisional_halo_spectra.py",
+      "sha256": "dd8138c743ea5a16c019bd2e52031cd0ca5f6b5cbad275d68e5f50543715de51"
+    },
+    {
+      "bytes": 9127,
+      "path": "research/three_body_full_current_nucleon_match/write_research_provenance.py",
+      "sha256": "e00d207bd11fb8f2651955f4b130403ea242c74d69364b5d9f3753d503fb82a7"
+    },
+    {
+      "bytes": 7229,
+      "path": "research/three_body_full_current_nucleon_match/FULL_CURRENT_CHI_EFT_INPUT_AUDIT.md",
+      "sha256": "b6cb3d123afb6adf74ef253e3a57e63c7b326e8cafeca369c2d280215846d4a8"
+    },
+    {
+      "bytes": 5138,
+      "path": "research/three_body_full_current_nucleon_match/FULL_CURRENT_MODEL_CLOSURE_AUDIT.md",
+      "sha256": "29b1686dc3bdf480754ec660300da1e349b6de61aab78716ab5ab41962f706a4"
+    },
+    {
+      "bytes": 17801,
+      "path": "research/three_body_full_current_nucleon_match/P3B_P3C_P4_EXECUTION_PLAN.md",
+      "sha256": "65eb62cf18c988a83b1bd59eb476e8bc77dcb538957ac8cbf1e64d325ca764f5"
+    },
+    {
+      "bytes": 15268,
+      "path": "research/three_body_full_current_nucleon_match/P3C_BOUND_CURRENT_AMPLITUDE_RESULTS.md",
+      "sha256": "fc98b8ce95bd3ab76c82e81f1a955fc65fb2be043144839d84e7aa3e3a66ef5b"
+    },
+    {
+      "bytes": 29402,
+      "path": "research/three_body_full_current_nucleon_match/NATIVE_AFH_GATE_AND_HALO_FOLD_DEPENDENCY.md",
+      "sha256": "adf56c15934d5710b70e02445ba78a1448056ac258ed1d1ecffab715c7852a25"
+    },
+    {
+      "bytes": 50635,
+      "path": "research/three_body_full_current_nucleon_match/README.md",
+      "sha256": "1a7bf9548526802f6b2d32d9d1ddb951ea220a63cb1f516a7b6b54bbe4e211c6"
+    },
+    {
+      "bytes": 20432,
+      "path": "research/three_body_full_current_nucleon_match/task_briefs/2026-11-22-p4-native-afh-and-current-closure.md",
+      "sha256": "83fbbdbafa63079c32f458f078741e3b6b87a39542939a43a103f991d0c536f5"
+    }
+  ]
+}
