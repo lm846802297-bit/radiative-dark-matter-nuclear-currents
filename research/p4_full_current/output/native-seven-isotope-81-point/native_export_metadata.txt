@@ -1,0 +1,31 @@
+status=NATIVE_AFH_P4_FC_SEVEN_ISOTOPE_EXPORT_COMPLETE
+wolfram_version=14.2.0 for Microsoft Windows (64-bit) (December 26, 2024)
+system=Microsoft Windows (64-bit)
+processor_type=x86-64
+processor_count=8
+machine_name=lm
+system_id=Windows-x86-64
+afh_source_path=C:\p139\v6\dmformfactor-V6.m
+afh_source_sha256=dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372
+mass_input_path=C:\p139\research\afh_default_density_natural_xenon_halo\input\natural_xenon_isotope_weights.csv
+mass_input_sha256=fd1bb996e5f582c74c3c86d129f1d2dded510c65237d0a7b2ba08861f1d8c991
+mass_formula=(atomic_mass_u-54*0.000548579909065)*0.93149410242_GeV
+isotopes=128,129,130,131,132,134,136
+recoil_grid_keV=40 to 800 inclusive, 81 points, 9.5 keV step
+transfer=Q_A=sqrt(2*m_A*E_R+E_R^2); t_A=-2*m_A*E_R
+charge_multipoles=Native AFH MJ and PhiPPJ, all T=0 OBDME ranks
+spatial_multipoles=Native AFH DeltaJ and SigmaPJ, all nonzero T=0 OBDME ranks
+native_responses=ResponseNuclear[y,index,0,0], indices 1..8, raw package convention
+normalization=raw amplitudes/responses; no physical factor-four or C0 rescaling applied
+rank_map=128:J_A=0:charge=0:spatial=;129:J_A=0.50000000000000000000:charge=0,1:spatial=1;130:J_A=0:charge=0:spatial=;131:J_A=1.5000000000000000000:charge=0,1,2,3:spatial=1,2,3;132:J_A=0:charge=0:spatial=;134:J_A=0:charge=0:spatial=;136:J_A=0:charge=0:spatial=
+c0_by_isotope=128=1.0000924953327088;129=1.0001103230777202;130=1.0001260610682263;131=1.0000825298069378;132=1.0000445028489864;134=1.0002068258192742;136=1.000001506359772
+recoil_isotope_points=567
+multipole_rows=2430
+native_response_rows=567
+obdme_term_rows=11664
+max_multipole_imaginary_residual=0.
+max_response_imaginary_residual=0.
+multipole_csv_sha256=26113db76a969dba98b0fb7b4d6b5389189d2dec33ec680d699741fb0b43a2dc
+response_csv_sha256=39a5b8c2401eb5f4e5acabb0a4f38b9a9d1fa7103d12d208462b3fcefef57c48
+obdme_terms_csv_sha256=c004e6204c4c93a91821bbeda191484a4070df936563b16ff4838fc0dc411147
+script_sha256=c938e980cf46fc4a85955105ddca132a7aeb32d732dfd0c6b689cc1e949dc6f8

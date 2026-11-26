@@ -1,0 +1,395 @@
+C1: 27216 tensor nodes; workers=8
+{
+  "status": "FAIL_CONVERGENCE",
+  "production": true,
+  "tensor_rows": 27216,
+  "open_rows": 27216,
+  "validation": {
+    "status": "FAIL",
+    "coverage_complete": true,
+    "point_coverage_rows": 1134,
+    "expected_point_coverage_rows": 1134,
+    "tensor_rows": 27216,
+    "expected_tensor_rows_from_speed_grid": 27216,
+    "phase_space_open_rows": 27216,
+    "max_hermiticity_relative": 0.0,
+    "hermiticity_tolerance": 1e-10,
+    "max_psd_negative_eigenvalue_relative": 0.0,
+    "psd_relative_tolerance": 1e-10,
+    "max_gram_partial_trace_relative": 0.0,
+    "partial_trace_tolerance": 1e-12,
+    "max_current_diagram_decomposition_relative": 3.777999089306485e-16,
+    "decomposition_tolerance": 1e-12,
+    "max_q_frame_rotation_residual": 1.0180973017014365e-15,
+    "rotation_tolerance": 1e-12
+  },
+  "convergence": {
+    "status": "FAIL",
+    "speed_checks": [
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 2.1007843826446688e-07,
+        "max_component_relative_to_tensor_norm": 2.1007773905430624e-07
+      },
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 9.107898837108451e-06,
+        "max_component_relative_to_tensor_norm": 9.107868724703089e-06
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 1.988497318383545e-07,
+        "max_component_relative_to_tensor_norm": 1.9884905590573722e-07
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 9.1975603181786e-06,
+        "max_component_relative_to_tensor_norm": 9.197529249027001e-06
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 2.129475186719052e-07,
+        "max_component_relative_to_tensor_norm": 2.1294682058520862e-07
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 8.998304096974418e-06,
+        "max_component_relative_to_tensor_norm": 8.998274804036676e-06
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 2.0200089651154255e-07,
+        "max_component_relative_to_tensor_norm": 2.0200022029135335e-07
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 9.088155816151277e-06,
+        "max_component_relative_to_tensor_norm": 9.088125588126148e-06
+      }
+    ],
+    "phase_space_checks": [
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 684.3761717203347,
+        "production_order": [
+          8,
+          6,
+          4
+        ],
+        "comparison_order": [
+          10,
+          8,
+          6
+        ],
+        "relative_frobenius": 6.694431443060967e-07,
+        "max_component_relative_to_tensor_norm": 4.733666552267072e-07
+      },
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1122.7676115797283,
+        "production_order": [
+          8,
+          6,
+          4
+        ],
+        "comparison_order": [
+          10,
+          8,
+          6
+        ],
+        "relative_frobenius": 3.12809047165067e-06,
+        "max_component_relative_to_tensor_norm": 2.2111306189719015e-06
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 689.485969320176,
+        "production_order": [
+          8,
+          6,
+          4
+        ],
+        "comparison_order": [
+          10,
+          8,
+          6
+        ],
+        "relative_frobenius": 6.57245707306816e-07,
+        "max_component_relative_to_tensor_norm": 4.6474178573057596e-07
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1127.8774091795694,
+        "production_order": [
+          8,
+          6,
+          4
+        ],
+        "comparison_order": [
+          10,
+          8,
+          6
+        ],
+        "relative_frobenius": 3.609973601282251e-06,
+        "max_component_relative_to_tensor_norm": 2.529310012101943e-06
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 682.5308521771891,
+        "production_order": [
+          8,
+          6,
+          4
+        ],
+        "comparison_order": [
+          10,
+          8,
+          6
+        ],
+        "relative_frobenius": 6.766725059810008e-07,
+        "max_component_relative_to_tensor_norm": 4.784785808171354e-07
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1120.9222920365826,
+        "production_order": [
+          8,
+          6,
+          4
+        ],
+        "comparison_order": [
+          10,
+          8,
+          6
+        ],
+        "relative_frobenius": 3.1645548628216856e-06,
+        "max_component_relative_to_tensor_norm": 2.2366601132845084e-06
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 687.637872833768,
+        "production_order": [
+          8,
+          6,
+          4
+        ],
+        "comparison_order": [
+          10,
+          8,
+          6
+        ],
+        "relative_frobenius": 6.649545340056462e-07,
+        "max_component_relative_to_tensor_norm": 4.7019274315603596e-07
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1126.0293126931617,
+        "production_order": [
+          8,
+          6,
+          4
+        ],
+        "comparison_order": [
+          10,
+          8,
+          6
+        ],
+        "relative_frobenius": 3.6785399008114782e-06,
+        "max_component_relative_to_tensor_norm": 2.569336834577953e-06
+      }
+    ],
+    "dirac_trace_checks": [
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 684.3761717203347,
+        "max_relative_residual": 6.875444658049901e-11,
+        "residuals": {
+          "I00": 3.4413315622743405e-16,
+          "Ispatial_trace": 1.5960131904623928e-11,
+          "Ilongitudinal": 6.106278122510642e-12,
+          "Itransverse": 6.875444658049901e-11,
+          "Icharge": 0.0,
+          "Ispatial_nuclear": 1.663225113190947e-12,
+          "Iinterference": 3.997440111929763e-16,
+          "Ifull": 0.0
+        }
+      },
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1122.7676115797283,
+        "max_relative_residual": 1.8188892584003262e-11,
+        "residuals": {
+          "I00": 6.693897122160233e-16,
+          "Ispatial_trace": 7.92297136215512e-12,
+          "Ilongitudinal": 3.721927700804398e-12,
+          "Itransverse": 1.8188892584003262e-11,
+          "Icharge": 3.04410478330184e-16,
+          "Ispatial_nuclear": 3.721765881342829e-12,
+          "Iinterference": 4.1593744768036725e-16,
+          "Ifull": 4.56618267108547e-16
+        }
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 689.485969320176,
+        "max_relative_residual": 4.592781710499594e-11,
+        "residuals": {
+          "I00": 6.002429718402123e-16,
+          "Ispatial_trace": 9.276261040849579e-12,
+          "Ilongitudinal": 3.5305685460892665e-12,
+          "Itransverse": 4.592781710499594e-11,
+          "Icharge": 5.118098964423141e-16,
+          "Ispatial_nuclear": 1.4774848011711583e-12,
+          "Iinterference": 1.505489118905112e-16,
+          "Ifull": 5.118121089254449e-16
+        }
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1127.8774091795694,
+        "max_relative_residual": 2.2554890987507468e-11,
+        "residuals": {
+          "I00": 1.9129153339828106e-16,
+          "Ispatial_trace": 9.331957220703399e-12,
+          "Ilongitudinal": 4.29537183178518e-12,
+          "Itransverse": 2.2554890987507468e-11,
+          "Icharge": 4.34956751368915e-16,
+          "Ispatial_nuclear": 4.2959071405541935e-12,
+          "Iinterference": 2.546626631187496e-16,
+          "Ifull": 6.524393779478231e-16
+        }
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 682.5308521771891,
+        "max_relative_residual": 6.450850964512256e-11,
+        "residuals": {
+          "I00": 1.6461097882727398e-16,
+          "Ispatial_trace": 1.4414831052758703e-11,
+          "Ilongitudinal": 5.533118977094868e-12,
+          "Itransverse": 6.450850964512256e-11,
+          "Icharge": 1.8146854304813668e-16,
+          "Ispatial_nuclear": 1.5848988788036422e-12,
+          "Iinterference": 0.0,
+          "Ifull": 1.0888152732468563e-15
+        }
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1120.9222920365826,
+        "max_relative_residual": 1.1708585818744162e-11,
+        "residuals": {
+          "I00": 2.6035375596506797e-16,
+          "Ispatial_trace": 5.108423604319361e-12,
+          "Ilongitudinal": 2.401389607341931e-12,
+          "Itransverse": 1.1708585818744162e-11,
+          "Icharge": 1.4350809742060456e-16,
+          "Ispatial_nuclear": 2.400881550692677e-12,
+          "Iinterference": 5.9416163694312985e-16,
+          "Ifull": 2.870177815284078e-16
+        }
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 687.637872833768,
+        "max_relative_residual": 4.460520841575999e-11,
+        "residuals": {
+          "I00": 1.4324211937389853e-16,
+          "Ispatial_trace": 8.652531954964163e-12,
+          "Ilongitudinal": 3.302946979349297e-12,
+          "Itransverse": 4.460520841575999e-11,
+          "Icharge": 0.0,
+          "Ispatial_nuclear": 1.4571122086692867e-12,
+          "Iinterference": 0.0,
+          "Ifull": 7.895595933835909e-16
+        }
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1126.0293126931617,
+        "max_relative_residual": 1.113252873731104e-11,
+        "residuals": {
+          "I00": 3.7067807405627977e-16,
+          "Ispatial_trace": 4.6079932872239595e-12,
+          "Ilongitudinal": 2.121467246323367e-12,
+          "Itransverse": 1.113252873731104e-11,
+          "Icharge": 4.086384384886646e-16,
+          "Ispatial_nuclear": 2.121994712116604e-12,
+          "Iinterference": 2.415957542181281e-16,
+          "Ifull": 0.0
+        }
+      }
+    ],
+    "max_speed_relative_frobenius": 9.1975603181786e-06,
+    "speed_tolerance": 1e-05,
+    "max_phase_space_relative_frobenius": 3.6785399008114782e-06,
+    "phase_space_tolerance": 1e-06,
+    "max_independent_dirac_trace_residual": 6.875444658049901e-11,
+    "dirac_trace_tolerance": 1e-08
+  },
+  "output_dir": "C:\\p4c1_run_output\\stage-c1-full-lorentz-grid",
+  "wall_time_seconds": 470.1923631999962
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "Proca_numerator_applied_once": true,
+  "tensor_rows": 27216,
+  "natural_rate_rows": 162,
+  "max_spinful_AFH_match": 1.5570291902128366e-12,
+  "max_spinzero_charge_AFH_match": 8.625840200971966e-12,
+  "max_explicit_loop_residual": 1.8580498141226378e-16,
+  "max_diagram_residual": 2.0554645088474403e-15,
+  "wall_time_seconds": 21.041383499992662,
+  "output_dir": "C:\\p4c2_run_output\\stage-c2-full-current-contraction"
+}

@@ -1,0 +1,81 @@
+{
+  "status": "PASS_P4_FC_NATIVE_SEVEN_ISOTOPE_EXPORT_AUDIT",
+  "scope": "Native AFH response/multipole export integrity and rank reconstruction only; no direct bound-current contraction or halo fold.",
+  "source_sha256": {
+    "audit_script": "7ffeee3683b93e4d4c2aec3af7a4b8069a31089d3e9ec20461db542f59b49157",
+    "audit_unit_tests": "801138a31e929b4175a668a883839156a8d3343bc2a253a29489d01b9abf9a6a",
+    "afh_v6": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372",
+    "isotope_mass_input": "fd1bb996e5f582c74c3c86d129f1d2dded510c65237d0a7b2ba08861f1d8c991",
+    "native_export_wls": "c938e980cf46fc4a85955105ddca132a7aeb32d732dfd0c6b689cc1e949dc6f8",
+    "native_multipoles_csv": "26113db76a969dba98b0fb7b4d6b5389189d2dec33ec680d699741fb0b43a2dc",
+    "native_responses_csv": "39a5b8c2401eb5f4e5acabb0a4f38b9a9d1fa7103d12d208462b3fcefef57c48",
+    "obdme_terms_csv": "c004e6204c4c93a91821bbeda191484a4070df936563b16ff4838fc0dc411147"
+  },
+  "coverage": {
+    "isotopes": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      134,
+      136
+    ],
+    "recoil_points_per_isotope": 81,
+    "isotope_recoil_points": 567,
+    "charge_multipole_rows": 1782,
+    "spatial_multipole_rows": 648,
+    "obdme_term_rows": 11664,
+    "multipole_channel_rows": {
+      "M": 891,
+      "PhiPP": 891,
+      "Delta": 324,
+      "SigmaPrime": 324
+    }
+  },
+  "checks": {
+    "max_multipole_imaginary_residual": 0.0,
+    "max_native_response_imaginary_residual": 0.0,
+    "max_Q_A_reconstruction_residual_GeV": 0.0,
+    "max_t_A_reconstruction_residual_GeV2": 0.0,
+    "max_y_reconstruction_residual": 2.6645352591003757e-15,
+    "max_response_absolute_residuals": {
+      "M": 4.121147867408581e-13,
+      "PhiPP": 1.2878587085651816e-14,
+      "MPhiPP": 3.549938121238938e-14,
+      "Delta": 2.5153490401663703e-17,
+      "SigmaPrime": 1.5241172039714979e-16,
+      "SigmaPrimeDelta": 1.951563910473908e-17
+    },
+    "max_Cauchy_excess": 2.5763850688281797e-12,
+    "response_reconstruction_tolerance": "abs <= 2e-12 + 5e-7*max(abs(reconstructed),abs(native))",
+    "Cauchy_tolerance_absolute": 5e-12
+  },
+  "normalization": {
+    "native_response_convention": "raw AFH package tau1=tau2=0",
+    "physical_factor_four_and_C0_applied": false,
+    "C0_by_isotope": {
+      "128": 1.0000924953327088,
+      "129": 1.0001103230777202,
+      "130": 1.0001260610682263,
+      "131": 1.0000825298069378,
+      "132": 1.0000445028489864,
+      "134": 1.0002068258192742,
+      "136": 1.000001506359772
+    }
+  },
+  "native_runtime": {
+    "wolfram_version": "14.2.0 for Microsoft Windows (64-bit) (December 26, 2024)",
+    "system": "Microsoft Windows (64-bit)",
+    "system_id": "Windows-x86-64",
+    "processor_type": "x86-64",
+    "processor_count": "8",
+    "machine_name": "lm"
+  },
+  "audit_runtime": {
+    "python": "3.13.18 (main, Nov 11 2026, 00:19:14) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "logical_cpu_count": 16
+  }
+}

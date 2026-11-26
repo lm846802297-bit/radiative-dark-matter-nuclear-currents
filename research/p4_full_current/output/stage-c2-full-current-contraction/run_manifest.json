@@ -1,0 +1,704 @@
+{
+  "schema": "p4-fc-stage-c2-full-current-contraction-v2-proca",
+  "status": "PASS",
+  "production": true,
+  "repository": "lm846802297-bit/LZ-3-body-for-hdm",
+  "parent_stage": "C1",
+  "scope": "Full one-body four-current contraction with the Proca numerator g_{mu nu}-q_mu q_nu/mV^2 over the complete seven-isotope, 81-recoil, two-halo C1 speed grid; includes the physical AFH factor four and C0(A) exactly once, then folds stored speed nodes into natural-xenon rates.",
+  "benchmark": {
+    "mchi_GeV": 1000.0,
+    "ms_GeV": 0.0002,
+    "delta_m_GeV": 0.001,
+    "mV_GeV": 10.0,
+    "g2": 1.0,
+    "coupling_product_squared": 1e-08,
+    "rho_chi_GeV_cm3": 0.3
+  },
+  "kinematics": {
+    "mass_scheme": "AME2020 exact nuclear mass=(atomic_mass_u-54*m_e_u)*u_GeV",
+    "Q_A_squared_GeV2": "2*m_A*E_R+E_R^2",
+    "t_A_GeV2": "-2*m_A*E_R",
+    "t_N_GeV2": "t_A; formal external-transfer one-body impulse prescription",
+    "AFH_argument": "Q_A",
+    "form_factor_argument": "t_N",
+    "mediator_argument": "t_A"
+  },
+  "propagator": {
+    "metric": "(+---)",
+    "q_A_upper_GeV": "(E_R,0,0,+Q_A)",
+    "numerator": "g_{mu nu}-q_{A,mu}q_{A,nu}/mV^2",
+    "numerator_contraction": "L_Proca=M^T L M with M^mu{}_nu=delta^mu_nu-q_A,nu*q_A^mu/mV^2",
+    "numerator_applied_once": true,
+    "scalar_denominator": "(mV^2-t_A)^2, applied once in the rate kernel"
+  },
+  "normalization": {
+    "Stage_B_form_factors": "effective Fhat_i=F_i^(uds)/3 already included in Stage B current matrices",
+    "DM_tensor_coupling_convention": "unit scalar-emission vertex amplitude; g2 enters the pole width, while the external coupling product carries (g1*g2*gVN)^2",
+    "external_coupling_basis": "(g1*g2*gVN)^2 with gVN=3*gVq",
+    "C0_applied_once": true,
+    "AFH_factor_four_applied_once": true,
+    "physical_kernel": "4*C0(A)*K_raw",
+    "leading_NR_AFH_comparison": "C0(A)*K_AFH6 is compared to the raw AFH multipole contraction after J^3 is continuity-projected to (E_R/Q_A)J^0; actual J^3 and nonconserved residuals remain in the full exact-current kernel; factor four is not included in this raw matching check",
+    "no_additional_nucleon_form_factor_factor": true
+  },
+  "grid": {
+    "isotopes": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      134,
+      136
+    ],
+    "recoil_points": 81,
+    "halo_models": [
+      "shm_cutoff",
+      "mb_untruncated"
+    ],
+    "speed_order": 24,
+    "phase_space_order_reused": [
+      14,
+      6,
+      4
+    ],
+    "tensor_rows": 27216,
+    "isotope_halo_points": 1134,
+    "natural_rate_rows": 162
+  },
+  "source_sha256": {
+    "C2_script": "4f47a57ee521cdba3c9f52bf0fb443d5afcdab81b21ea79d54b061fccc667376",
+    "C1_script": "c82b5a47c12fb59967dd41cf0de54c01a3c2a42c0e16152e2e0484babaa91bbc",
+    "Stage_B_direct_current_script": "78058780862acb06d5c3fd86957dead6d16d9a8e3041c9b4bdc3d5450189b75e",
+    "rate_formula_reference": "71ed1c7f4b68d243f7a6b7f65727066e13bb958852630a0ab61f9d690d95f5c1"
+  },
+  "input_sha256": {
+    "c1_tensor_npz": "98898fbdac7a08a81453972d013ad027e46679a02e67d41a3d59a529f1671c76",
+    "c1_tensor_index": "3647a0b4261be85b146ffe040f4e0241fd1508d85cc0d5f1f9b502dc1b33c06c",
+    "c1_run_manifest": "18d36a643205ad0f8cde581cb04f1ff6dbd3f2aa6e86e1877837b6b8678fc8e8",
+    "c1_convergence_report": "1cb9df212451374652e0713a477f86e8954e3f9d8aee9aa71123e2910b3a0878",
+    "stage_b_csv": "0b335b39cd288beda1367fd977e311d595c2a88c2c5e7dfcaa9456cf8e26d355",
+    "stage_b_validation_report": "5f0272f2c976ab894d8e69fc6930c609c13a0aba93ee445c5b83710c0ff4f313",
+    "stage_a_responses": "39a5b8c2401eb5f4e5acabb0a4f38b9a9d1fa7103d12d208462b3fcefef57c48",
+    "isotope_input": "fd1bb996e5f582c74c3c86d129f1d2dded510c65237d0a7b2ba08861f1d8c991",
+    "b_freeze": "2b0b8c58baf559c176fe9e64d14f75973d7987b072fa6af2275f09430d5fbe88",
+    "stage_b_script": "78058780862acb06d5c3fd86957dead6d16d9a8e3041c9b4bdc3d5450189b75e",
+    "c1_script": "c82b5a47c12fb59967dd41cf0de54c01a3c2a42c0e16152e2e0484babaa91bbc",
+    "rate_reference": "71ed1c7f4b68d243f7a6b7f65727066e13bb958852630a0ab61f9d690d95f5c1"
+  },
+  "upstream_C1_source_sha256": {
+    "C1_script": "c82b5a47c12fb59967dd41cf0de54c01a3c2a42c0e16152e2e0484babaa91bbc",
+    "phase_space_tensor": "738072189c2000b8d82232a1dcd4f336edde4e7fd435f2f18d2b1668d9bc06bc",
+    "halo_fold": "71ed1c7f4b68d243f7a6b7f65727066e13bb958852630a0ab61f9d690d95f5c1",
+    "stage_b_direct_current": "78058780862acb06d5c3fd86957dead6d16d9a8e3041c9b4bdc3d5450189b75e"
+  },
+  "upstream_C1_input_sha256": {
+    "mass_input": "fd1bb996e5f582c74c3c86d129f1d2dded510c65237d0a7b2ba08861f1d8c991",
+    "stage_a_multipoles": "26113db76a969dba98b0fb7b4d6b5389189d2dec33ec680d699741fb0b43a2dc",
+    "stage_a_responses": "39a5b8c2401eb5f4e5acabb0a4f38b9a9d1fa7103d12d208462b3fcefef57c48",
+    "stage_b_csv": "0b335b39cd288beda1367fd977e311d595c2a88c2c5e7dfcaa9456cf8e26d355",
+    "stage_b_script": "78058780862acb06d5c3fd86957dead6d16d9a8e3041c9b4bdc3d5450189b75e",
+    "B_freeze": "2b0b8c58baf559c176fe9e64d14f75973d7987b072fa6af2275f09430d5fbe88",
+    "B_freeze_manifest": "2b0b8c58baf559c176fe9e64d14f75973d7987b072fa6af2275f09430d5fbe88"
+  },
+  "upstream_C1_convergence_report": {
+    "status": "PASS",
+    "speed_checks": [
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 2.1007691072762187e-07,
+        "max_component_relative_to_tensor_norm": 2.1007621152710527e-07
+      },
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 9.107908463990405e-06,
+        "max_component_relative_to_tensor_norm": 9.107878351550174e-06
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 1.988479450478791e-07,
+        "max_component_relative_to_tensor_norm": 1.9884726912870624e-07
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 9.197564387522144e-06,
+        "max_component_relative_to_tensor_norm": 9.19753331834996e-06
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 2.129436887747257e-07,
+        "max_component_relative_to_tensor_norm": 2.1294299070191497e-07
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 8.998302655910075e-06,
+        "max_component_relative_to_tensor_norm": 8.998273362980234e-06
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 2.020103783837661e-07,
+        "max_component_relative_to_tensor_norm": 2.0200970212314885e-07
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "nv_low": 24,
+        "nv_high": 48,
+        "relative_frobenius": 9.088154627363278e-06,
+        "max_component_relative_to_tensor_norm": 9.088124399339401e-06
+      }
+    ],
+    "phase_space_checks": [
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 684.3761717203347,
+        "production_order": [
+          14,
+          6,
+          4
+        ],
+        "comparison_order": [
+          16,
+          14,
+          12
+        ],
+        "relative_frobenius": 8.921586196532025e-08,
+        "max_component_relative_to_tensor_norm": 6.308497546846055e-08
+      },
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1122.7676115797283,
+        "production_order": [
+          14,
+          6,
+          4
+        ],
+        "comparison_order": [
+          16,
+          14,
+          12
+        ],
+        "relative_frobenius": 4.0075090458020855e-07,
+        "max_component_relative_to_tensor_norm": 2.833717729732331e-07
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 689.485969320176,
+        "production_order": [
+          14,
+          6,
+          4
+        ],
+        "comparison_order": [
+          16,
+          14,
+          12
+        ],
+        "relative_frobenius": 8.756245093231552e-08,
+        "max_component_relative_to_tensor_norm": 6.191583808540136e-08
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1127.8774091795694,
+        "production_order": [
+          14,
+          6,
+          4
+        ],
+        "comparison_order": [
+          16,
+          14,
+          12
+        ],
+        "relative_frobenius": 4.509957354954351e-07,
+        "max_component_relative_to_tensor_norm": 3.188999972462111e-07
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 682.5308521771891,
+        "production_order": [
+          14,
+          6,
+          4
+        ],
+        "comparison_order": [
+          16,
+          14,
+          12
+        ],
+        "relative_frobenius": 9.016713043326415e-08,
+        "max_component_relative_to_tensor_norm": 6.37576232089418e-08
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1120.9222920365826,
+        "production_order": [
+          14,
+          6,
+          4
+        ],
+        "comparison_order": [
+          16,
+          14,
+          12
+        ],
+        "relative_frobenius": 4.0491297210845e-07,
+        "max_component_relative_to_tensor_norm": 2.863147871592219e-07
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 687.637872833768,
+        "production_order": [
+          14,
+          6,
+          4
+        ],
+        "comparison_order": [
+          16,
+          14,
+          12
+        ],
+        "relative_frobenius": 8.857585252667104e-08,
+        "max_component_relative_to_tensor_norm": 6.263242079983409e-08
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1126.0293126931617,
+        "production_order": [
+          14,
+          6,
+          4
+        ],
+        "comparison_order": [
+          16,
+          14,
+          12
+        ],
+        "relative_frobenius": 4.572538091907602e-07,
+        "max_component_relative_to_tensor_norm": 3.23325100777454e-07
+      }
+    ],
+    "dirac_trace_checks": [
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 684.3761717203347,
+        "max_relative_residual": 6.63189503313788e-11,
+        "residuals": {
+          "I00": 3.4413315623036536e-16,
+          "Ispatial_trace": 1.5395738336529454e-11,
+          "Ilongitudinal": 5.890456175216023e-12,
+          "Itransverse": 6.63189503313788e-11,
+          "Icharge": 9.78108648683885e-16,
+          "Ispatial_nuclear": 1.6040502259784262e-12,
+          "Iinterference": 1.199232033588126e-15,
+          "Ifull": 5.868673803232887e-16
+        }
+      },
+      {
+        "A": 129,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1122.7676115797283,
+        "max_relative_residual": 1.8271911256692077e-11,
+        "residuals": {
+          "I00": 8.032675888292556e-16,
+          "Ispatial_trace": 7.95857650504262e-12,
+          "Ilongitudinal": 3.7385088485177135e-12,
+          "Itransverse": 1.8271911256692077e-11,
+          "Icharge": 1.5220522669145816e-16,
+          "Ispatial_nuclear": 3.73831847580436e-12,
+          "Iinterference": 2.079686934086101e-16,
+          "Ifull": 4.566182296876009e-16
+        }
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 689.485969320176,
+        "max_relative_residual": 5.170652794816988e-11,
+        "residuals": {
+          "I00": 0.0,
+          "Ispatial_trace": 1.0443357854850036e-11,
+          "Ilongitudinal": 3.973766995220764e-12,
+          "Itransverse": 5.170652794816988e-11,
+          "Icharge": 1.706032988092782e-16,
+          "Ispatial_nuclear": 1.6633916466446408e-12,
+          "Iinterference": 0.0,
+          "Ifull": 1.706040363036551e-16
+        }
+      },
+      {
+        "A": 129,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1127.8774091795694,
+        "max_relative_residual": 2.2987103085988127e-11,
+        "residuals": {
+          "I00": 7.65165756968151e-16,
+          "Ispatial_trace": 9.510730014847079e-12,
+          "Ilongitudinal": 4.376652415853268e-12,
+          "Itransverse": 2.2987103085988127e-11,
+          "Icharge": 4.3495653727740254e-16,
+          "Ispatial_nuclear": 4.377196419455746e-12,
+          "Iinterference": 1.2733122947517083e-16,
+          "Ifull": 1.7398374848260739e-15
+        }
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 682.5308521771891,
+        "max_relative_residual": 5.274114478481806e-11,
+        "residuals": {
+          "I00": 6.584439153027042e-16,
+          "Ispatial_trace": 1.1784654945745556e-11,
+          "Ilongitudinal": 4.5232055515981904e-12,
+          "Itransverse": 5.274114478481806e-11,
+          "Icharge": 1.814685430463752e-16,
+          "Ispatial_nuclear": 1.295685780888789e-12,
+          "Iinterference": 5.631907039399878e-16,
+          "Ifull": 0.0
+        }
+      },
+      {
+        "A": 131,
+        "ER_keV": 201.5,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1120.9222920365826,
+        "max_relative_residual": 1.1805629051803951e-11,
+        "residuals": {
+          "I00": 2.603537311091996e-16,
+          "Ispatial_trace": 5.150928700247635e-12,
+          "Ilongitudinal": 2.4207379803408577e-12,
+          "Itransverse": 1.1805629051803951e-11,
+          "Icharge": 2.8701616743988843e-16,
+          "Ispatial_nuclear": 2.4208134939687184e-12,
+          "Iinterference": 3.9610769076625335e-16,
+          "Ifull": 0.0
+        }
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "shm_cutoff",
+        "speed_kms": 687.637872833768,
+        "max_relative_residual": 3.619882171790323e-11,
+        "residuals": {
+          "I00": 2.8648423875377706e-16,
+          "Ispatial_trace": 7.022213259881677e-12,
+          "Ilongitudinal": 2.6802235865906415e-12,
+          "Itransverse": 3.619882171790323e-11,
+          "Icharge": 9.47467467079124e-16,
+          "Ispatial_nuclear": 1.182443032377023e-12,
+          "Iinterference": 1.4109778674723963e-16,
+          "Ifull": 3.158238373600289e-16
+        }
+      },
+      {
+        "A": 131,
+        "ER_keV": 268.0,
+        "halo_model": "mb_untruncated",
+        "speed_kms": 1126.0293126931617,
+        "max_relative_residual": 1.130045912254857e-11,
+        "residuals": {
+          "I00": 5.560167886493991e-16,
+          "Ispatial_trace": 4.677326851470628e-12,
+          "Ilongitudinal": 2.1529441617169587e-12,
+          "Itransverse": 1.130045912254857e-11,
+          "Icharge": 8.172764030374424e-16,
+          "Ispatial_nuclear": 2.153502119864738e-12,
+          "Iinterference": 0.0,
+          "Ifull": 1.225922514482869e-15
+        }
+      }
+    ],
+    "max_speed_relative_frobenius": 9.197564387522144e-06,
+    "speed_tolerance": 1e-05,
+    "max_phase_space_relative_frobenius": 4.572538091907602e-07,
+    "phase_space_tolerance": 1e-06,
+    "max_independent_dirac_trace_residual": 6.63189503313788e-11,
+    "dirac_trace_tolerance": 1e-08
+  },
+  "Stage_B_independent_validation_report": {
+    "status": "PASS_P4_FC_STAGE_B_DIRECT_CURRENT_AUDIT",
+    "scope": "Seven-isotope finite-tN direct Dirac-Pauli impulse-current multipoles; no T3 contraction or halo fold.",
+    "source_sha256": {
+      "direct_script": "78058780862acb06d5c3fd86957dead6d16d9a8e3041c9b4bdc3d5450189b75e",
+      "native_stage_a_multipoles": "26113db76a969dba98b0fb7b4d6b5389189d2dec33ec680d699741fb0b43a2dc",
+      "nuclear_mass_input": "fd1bb996e5f582c74c3c86d129f1d2dded510c65237d0a7b2ba08861f1d8c991",
+      "density_matrices": {
+        "128": "fa2017a7ea1951cad6407078aeebede34b9182d0554f38968d5033c6c16bbeb4",
+        "129": "a0bd848d443a073b80ad731cc87fcfb29d7c899da932d5a230e2e245295f158e",
+        "130": "38eedadeecc45acc637264b386f8e0d2b63c8dc9e811395e348fbb3e4da8beea",
+        "131": "4ca110f6828ef6cebe4373fb0c9704220d8227c4a131bc2b5801dc2884e00a00",
+        "132": "5a367bb5a4d278bf9c3c9f7e2aae8cd7252efe8c3371f1da2d06516c766f07f3",
+        "134": "843bd0d85d77f904c41b6a8ecb349369cadfec9d3b79f477406208e8dc410a7c",
+        "136": "9069106f11e2efd537380c62d7e4e63114ed84ec6bbfde687bd5da493d988df0"
+      },
+      "form_factor_module": "d409248b3a6d99a8fa9119bb6e5ca906e67360c9442bc37562ff385b8ee85b5b",
+      "afh_v6": "dc0742f1c50b0a478adab62f2ddef6c82978ee034c1f177e0ed917deab5dd372"
+    },
+    "coverage": {
+      "isotopes": [
+        128,
+        129,
+        130,
+        131,
+        132,
+        134,
+        136
+      ],
+      "recoil_points_per_isotope": 81,
+      "isotope_recoil_points": 567,
+      "rank_resolved_rows": 891,
+      "expected_rank_rows": 891,
+      "rank0_longitudinal_rows_all_targets": 567,
+      "spin_zero_rank0_longitudinal_rows": 405,
+      "max_rank0_longitudinal_amplitude_by_isotope": {
+        "128": 2.287104930679317e-06,
+        "129": 3.1884957101433776e-06,
+        "130": 2.250480226631198e-06,
+        "131": 4.44847479810713e-06,
+        "132": 2.2193268841728093e-06,
+        "134": 2.171860099878552e-06,
+        "136": 2.148199776180158e-06
+      },
+      "rank0_L1_presence_check": "all five spin-zero isotopes retain explicit L=1 fields, including any exact zero values; no channel is dropped"
+    },
+    "checks": {
+      "max_direct_multipole_fit_residual": 8.050890597698874e-15,
+      "max_tN_identity_residual_GeV2": 0.0,
+      "max_QA_identity_residual_GeV": 0.0,
+      "max_QA2_minus_QN2_minus_ER2_residual_GeV2": 2.7755575615628914e-17,
+      "max_form_factor_recalculation_absolute_residuals": {
+        "F1_uds_raw": 0.0,
+        "F2_uds_raw": 0.0,
+        "F1_effective": 0.0,
+        "F2_effective": 0.0
+      },
+      "max_leading_NR_vs_Native_AFH_amplitude_residuals": {
+        "M": 1.3855583347321954e-13,
+        "PhiPP": 1.0928757898653885e-16,
+        "Delta": 2.396143422914417e-15,
+        "SigmaPrime": 1.5110335358560405e-15
+      },
+      "max_rank0_longitudinal_alias_residual": 0.0,
+      "max_exact_vs_leading_NR_multipole_differences": {
+        "vector_identity_LJm1": 1.2868507212745317e-07,
+        "vector_identity_LJ": 0.0007039397392981372,
+        "vector_identity_LJp1": 4.4484747982423566e-06,
+        "vector_spin_LJm1": 9.775165343146958e-08,
+        "vector_spin_LJ": 0.00018203870177187003,
+        "vector_spin_LJp1": 2.3119491023272765e-06
+      },
+      "fit_tolerance": 1e-10,
+      "leading_NR_AFH_match_tolerance_absolute": 1e-10,
+      "kinematic_tolerance_absolute": 2e-13
+    },
+    "model": {
+      "nucleon_transfer": "q_N^mu=q_A^mu; t_N=t_A=-2*m_A*E_R; Q_A^2=Q_N^2+E_R^2",
+      "form_factors": "Borah2020 proton/neutron electromagnetic form factors plus Sufian2017 unit strange current; raw flavor sums divided by 3 once",
+      "vertex_energy": "external",
+      "bound_basis": "AFH v6.0 HO momentum orbitals embedded in positive-energy free Dirac spinors",
+      "current": "exact covariant Dirac-Pauli and leading-NR control",
+      "normalization": "Native AFH raw amplitudes; no factor-four or C0 rescaling",
+      "even_even_targets": "retain direct K=0,L=1 longitudinal current; do not map it onto AFH Delta or SigmaPrime"
+    },
+    "native_run_runtime": {
+      "run_started_utc": "2026-11-24T05:15:27.250330+00:00",
+      "wall_time_seconds": 614.6615211330009,
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "machine": "x86_64",
+      "processor": "",
+      "logical_cpu_count": 9,
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "sympy": "1.14.0"
+    },
+    "audit_runtime": {
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "processor": "",
+      "logical_cpu_count": 9,
+      "quadrature_order_per_axis": 14
+    }
+  },
+  "unit_tests": {
+    "status": "PASS",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_afh_six_response_projection_and_all_residuals_reconstruct_full_kernel (__main__.StageC2ContractionTests.test_afh_six_response_projection_and_all_residuals_reconstruct_full_kernel) ... ok\ntest_bilinear_matches_independent_loop_for_target_spins (__main__.StageC2ContractionTests.test_bilinear_matches_independent_loop_for_target_spins) ... ok\ntest_conserved_current_projects_to_lc (__main__.StageC2ContractionTests.test_conserved_current_projects_to_lc) ... ok\ntest_current_component_decomposition_is_exact (__main__.StageC2ContractionTests.test_current_component_decomposition_is_exact) ... ok\ntest_nonconserved_longitudinal_residual_matches_independent_formula (__main__.StageC2ContractionTests.test_nonconserved_longitudinal_residual_matches_independent_formula) ... ok\ntest_physical_afh_normalization_applies_factor_four_once (__main__.StageC2ContractionTests.test_physical_afh_normalization_applies_factor_four_once) ... ok\ntest_proca_dressed_tensor_preserves_hermiticity_psd_and_diagram_sum (__main__.StageC2ContractionTests.test_proca_dressed_tensor_preserves_hermiticity_psd_and_diagram_sum) ... ok\ntest_proca_numerator_matches_direct_covariant_amplitude (__main__.StageC2ContractionTests.test_proca_numerator_matches_direct_covariant_amplitude) ... ok\ntest_rank0_L1_is_longitudinal_for_all_target_spins (__main__.StageC2ContractionTests.test_rank0_L1_is_longitudinal_for_all_target_spins) ... ok\ntest_spin_zero_rank0_L1_longitudinal_current_is_retained (__main__.StageC2ContractionTests.test_spin_zero_rank0_L1_longitudinal_current_is_retained) ... ok\ntest_spinful_dimensions_follow_target_spin (__main__.StageC2ContractionTests.test_spinful_dimensions_follow_target_spin) ... ok\ntest_zero_transfer_proca_numerator_reduces_to_metric_vertex (__main__.StageC2ContractionTests.test_zero_transfer_proca_numerator_reduces_to_metric_vertex) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.069s\n\nOK\n",
+    "test_script_sha256": "bf60008d75969a8169c8d1ae83a541322d599ce8947503173101a26f77d1408f"
+  },
+  "validation": {
+    "status": "PASS",
+    "C2_unit_tests": "PASS",
+    "C1_production_archive_reused": true,
+    "Stage_A_native_responses_reused_read_only": true,
+    "Stage_B_direct_current_reused_read_only": true,
+    "Stage_B_independent_nuclear_amplitude_audit_reused": true,
+    "Stage_B_independent_audit_status": "PASS_P4_FC_STAGE_B_DIRECT_CURRENT_AUDIT",
+    "Stage_B_independent_audit_max_direct_multipole_fit_residual": 8.050890597698874e-15,
+    "Stage_B_independent_audit_max_leading_NR_vs_Native_AFH_amplitude_residual": 1.3855583347321954e-13,
+    "phase_space_integrals_recomputed": false,
+    "speed_nodes_regenerated": false,
+    "C1_tensor_rows": 27216,
+    "C1_point_groups": 1134,
+    "Stage_B_recoil_points": 567,
+    "Stage_A_response_rows": 567,
+    "C0_isotope_count": 7,
+    "max_L_hermiticity_relative": 0.0,
+    "max_L_psd_negative_eigenvalue_relative": 0.0,
+    "max_L_diagram_decomposition_relative": 4.265334471736402e-16,
+    "max_Proca_L_hermiticity_relative": 2.784776038929254e-18,
+    "max_Proca_L_psd_negative_eigenvalue_relative": 0.0,
+    "max_Proca_L_diagram_decomposition_relative": 7.237875835897697e-16,
+    "Proca_numerator_applied_once": true,
+    "Proca_numerator_convention": "q_A^mu=(E_R,0,0,+Q_A), metric (+---), L_Proca=M^T L M",
+    "max_contracted_component_decomposition_relative": 1.7016298083401645e-15,
+    "max_contracted_diagram_decomposition_relative": 2.0554645088474403e-15,
+    "max_longitudinal_transverse_decomposition_relative": 5.766721870407203e-16,
+    "max_longitudinal_residual_formula_relative": 7.20255224620872e-10,
+    "max_longitudinal_residual_formula_conditioned": 3.1125315519795453e-15,
+    "max_AFH_projection_decomposition_relative": 5.766721870407203e-16,
+    "max_projected_longitudinal_transverse_cross_over_AFH6": 0.0,
+    "max_nonAFH_projection_residual_over_full": 1.5557514335684615e-05,
+    "max_longitudinal_0z_nonconserved_residual_over_full": 1.5557514335684615e-05,
+    "AFH_six_response_comparison_uses_continuity_projected_current": true,
+    "actual_longitudinal_current_retained_in_full_contraction": true,
+    "nonconserved_longitudinal_residual_retained_separately": true,
+    "max_imaginary_relative_residual": 6.203854624962587e-25,
+    "max_spinful_leading_NR_to_AFH_relative_difference": 1.5570291902128366e-12,
+    "max_spinzero_leading_NR_charge_to_AFH_relative_difference": 8.625840200971966e-12,
+    "max_explicit_loop_vs_einsum_relative_difference": 1.8580498141226378e-16,
+    "explicit_loop_sample_count": 28,
+    "max_rank0_L1_transverse_fraction_all_isotopes": 0.0,
+    "minimum_exact_raw_kernel": 0.0031787163993055147,
+    "maximum_exact_vs_leading_NR_relative_difference": 0.14105062492241435,
+    "AFH_factor_four_applied_once": true,
+    "C0_applied_once": true,
+    "C0_times_four_applied_to_physical_kernel": true,
+    "C0_times_four_not_applied_to_raw_AFH_matching_check": true,
+    "independent_nuclear_amplitude_validation": "Stage B independent one-body impulse audit plus C2 explicit Lorentz contraction and all-grid continuity-projected leading-NR/AFH six-response match; actual longitudinal residual retained separately",
+    "t_N_equals_t_A": true,
+    "mediator_uses_t_A_not_Q_A_squared": true,
+    "natural_rate_rows": 162,
+    "isotope_halo_rows": 1134,
+    "tolerances": {
+      "hermiticity": 1e-10,
+      "PSD_negative_eigenvalue_relative": 1e-10,
+      "Proca_tensor_hermiticity": 1e-10,
+      "Proca_tensor_PSD_negative_eigenvalue_relative": 1e-10,
+      "tensor_diagram_decomposition": 1e-12,
+      "Proca_tensor_diagram_decomposition": 1e-12,
+      "contracted_component_decomposition": 1e-12,
+      "contracted_diagram_decomposition": 1e-11,
+      "longitudinal_transverse_decomposition": 1e-12,
+      "longitudinal_residual_formula_conditioned": 1e-12,
+      "AFH_projection_decomposition": 1e-12,
+      "imaginary_relative": 1e-12,
+      "leading_NR_to_AFH": 1e-08,
+      "explicit_loop_vs_einsum": 1e-12,
+      "rank0_L1_transverse_fraction_all_isotopes": 1e-10
+    }
+  },
+  "runtime": {
+    "started_utc": "2026-11-25T20:20:29.012004+00:00",
+    "wall_time_seconds": 21.041383499992662,
+    "python": "3.13.18 (main, Nov 11 2026, 00:19:14) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "logical_cpu_count": 16,
+    "numpy": "2.3.5",
+    "sympy": "1.14.0",
+    "command_line": [
+      "research\\three_body_full_current_nucleon_match\\p4_full_current\\stage_c2_full_current_contraction.py",
+      "--out-dir",
+      "C:\\p4c2_run_output\\stage-c2-full-current-contraction"
+    ],
+    "github_actions_used": false,
+    "phase_space_or_speed_integration_recomputed": false,
+    "scipy": "1.17.0",
+    "gpu_info": "NVIDIA GeForce RTX 5060, 8151 MiB",
+    "memory_total_bytes": null,
+    "git_commit": "90d36811107df51120042db752c5bb3a98d322ce",
+    "git_branch": "research/p4-fc-stage-c2-production-20261126",
+    "git_status_porcelain": ""
+  },
+  "outputs": {
+    "per_speed_full_current_contractions.csv": "ba79238a14317e6803139a0a495da13fc2f2238076ec904da752d5646dab1457",
+    "isotope_halo_contributions.csv": "87e8cf6febe76a4336b8553da58e33b801ffae9f959228f02ee427b519cf89a1",
+    "natural_xenon_full_current_rates.csv": "1ae405655dc12a63933c4b7f5c3ab8f9193669e86018056be4f6f98a255557ca",
+    "validation_samples.json": "971f7eaa9f80f8108424e0d308b0e8f7865fe320dd56a3a9ce48130b695830c7",
+    "validation.json": "383e1aac5bd6b56e54ed6a1edffd9106b1f2af53b5e202954b6f4dcd359cde0d",
+    "unit_test_output.txt": "1db08b565cfd3c77755887e431b3b77deba26750ef2fab219958bb25d80281fe"
+  },
+  "scope_boundary": {
+    "Proca_numerator_applied": true,
+    "Proca_numerator_applied_once": true,
+    "C1_recomputed": false,
+    "Stage_A_recomputed": false,
+    "Stage_B_recomputed": false,
+    "phase_space_integrals_recomputed": false,
+    "speed_nodes_regenerated": false,
+    "stage_c2_complete": true,
+    "one_body_impulse_current_complete": true,
+    "independent_one_body_impulse_amplitude_validation_complete": true,
+    "independent_nuclear_amplitude_validation_complete": false,
+    "P3_tensor_validation_complete": true,
+    "full_current_complete": false,
+    "full_current_completion_boundary": "The archived one-body impulse current is contracted completely; generic full-current completion is not claimed without a consistent nuclear Hamiltonian and exchange-current closure.",
+    "detector_efficiency_or_exposure_applied": false
+  }
+}

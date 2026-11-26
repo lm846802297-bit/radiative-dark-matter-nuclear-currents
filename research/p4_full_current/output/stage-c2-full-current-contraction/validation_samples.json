@@ -1,0 +1,254 @@
+[
+  {
+    "A": 128,
+    "ER_keV": 201.5,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 8968106.694753883,
+    "explicit_loop_kernel": 8968106.694753883,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 128,
+    "ER_keV": 268.0,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 97597.1106197305,
+    "explicit_loop_kernel": 97597.1106197305,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 129,
+    "ER_keV": 201.5,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 10489019.511607729,
+    "explicit_loop_kernel": 10489019.511607729,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 129,
+    "ER_keV": 268.0,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 84197.78234886577,
+    "explicit_loop_kernel": 84197.78234886577,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 130,
+    "ER_keV": 201.5,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 8833224.700405817,
+    "explicit_loop_kernel": 8833224.700405817,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 130,
+    "ER_keV": 268.0,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 9641.768008502277,
+    "explicit_loop_kernel": 9641.768008502277,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 131,
+    "ER_keV": 201.5,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 10024732.033949742,
+    "explicit_loop_kernel": 10024732.03394974,
+    "relative_residual": 1.8580498141226378e-16
+  },
+  {
+    "A": 131,
+    "ER_keV": 268.0,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 3012.3695612511833,
+    "explicit_loop_kernel": 3012.3695612511838,
+    "relative_residual": 1.5096001391595041e-16
+  },
+  {
+    "A": 132,
+    "ER_keV": 201.5,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 8415813.990588915,
+    "explicit_loop_kernel": 8415813.990588915,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 132,
+    "ER_keV": 268.0,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 16604.7258428964,
+    "explicit_loop_kernel": 16604.7258428964,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 134,
+    "ER_keV": 201.5,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 9194343.556156924,
+    "explicit_loop_kernel": 9194343.556156924,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 134,
+    "ER_keV": 268.0,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 103490.73392553962,
+    "explicit_loop_kernel": 103490.73392553962,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 136,
+    "ER_keV": 201.5,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 7510269.535611674,
+    "explicit_loop_kernel": 7510269.535611674,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 136,
+    "ER_keV": 268.0,
+    "halo_model": "shm_cutoff",
+    "speed_index": 12,
+    "einsum_kernel": 348377.58947693533,
+    "explicit_loop_kernel": 348377.58947693533,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 128,
+    "ER_keV": 201.5,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 186013835.57171226,
+    "explicit_loop_kernel": 186013835.57171226,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 128,
+    "ER_keV": 268.0,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 2469606.1289030598,
+    "explicit_loop_kernel": 2469606.1289030598,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 129,
+    "ER_keV": 201.5,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 215696154.60250226,
+    "explicit_loop_kernel": 215696154.60250226,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 129,
+    "ER_keV": 268.0,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 2113596.986030755,
+    "explicit_loop_kernel": 2113596.986030755,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 130,
+    "ER_keV": 201.5,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 180150292.19969454,
+    "explicit_loop_kernel": 180150292.19969454,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 130,
+    "ER_keV": 268.0,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 240200.36336594602,
+    "explicit_loop_kernel": 240200.36336594602,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 131,
+    "ER_keV": 201.5,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 202823251.3656931,
+    "explicit_loop_kernel": 202823251.3656931,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 131,
+    "ER_keV": 268.0,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 74501.04043583339,
+    "explicit_loop_kernel": 74501.04043583339,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 132,
+    "ER_keV": 201.5,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 168968404.5206279,
+    "explicit_loop_kernel": 168968404.5206279,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 132,
+    "ER_keV": 268.0,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 407827.31697474,
+    "explicit_loop_kernel": 407827.31697474,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 134,
+    "ER_keV": 201.5,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 181932932.75350267,
+    "explicit_loop_kernel": 181932932.75350267,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 134,
+    "ER_keV": 268.0,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 2509203.7513077194,
+    "explicit_loop_kernel": 2509203.7513077194,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 136,
+    "ER_keV": 201.5,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 146616601.49348152,
+    "explicit_loop_kernel": 146616601.49348152,
+    "relative_residual": 0.0
+  },
+  {
+    "A": 136,
+    "ER_keV": 268.0,
+    "halo_model": "mb_untruncated",
+    "speed_index": 12,
+    "einsum_kernel": 8348369.292013237,
+    "explicit_loop_kernel": 8348369.292013237,
+    "relative_residual": 0.0
+  }
+]
